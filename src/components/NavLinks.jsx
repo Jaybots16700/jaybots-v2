@@ -24,11 +24,13 @@ import {
   faTrophy,
   faChalkboardUser,
   faGears,
+  faflagcheckered,
 } from '@fortawesome/free-solid-svg-icons'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { GoogleIcon, LogoutIcon, Printing3dIcon } from './icons'
 import { members } from '../config'
+import { faFlagCheckered } from '@fortawesome/free-solid-svg-icons'
 
 const links = [
   ['Home', '/', faHouse],
@@ -37,6 +39,7 @@ const links = [
   ['Join', '/interest', faBullhorn],
   ['Outreach', '/outreach', faComments],
   ['Awards', '/awards', faAward],
+  ['Tournament', '/tournament', faFlagCheckered],
   ['Highlights', '/highlights', faTrophy],
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
@@ -48,6 +51,7 @@ const links = [
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
   ['Upcoming Events', '/events', faCalendarWeek],
   ['Contact Us', '/#contact', faEnvelopeOpenText],
+
 
 ]
 

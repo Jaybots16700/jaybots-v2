@@ -125,7 +125,7 @@ export default function Tournaments() {
                                                 </p>
                                             </div>
                                         </Link>
-                                        <Link href="https://www.firstinspires.org/community/volunteers/roles#first_tech_challenge" target="_blank">
+                                        <Link href="https://my.firstinspires.org/ExpressVolunteer/landing-page/77595a62-b791-11f1-8a19-00505699b848" target="_blank">
                                             <div className="flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
                                                 <p className="font-normal text-white">
                                                     View Volunteer <b className="font-bold">Role Descriptions</b>
