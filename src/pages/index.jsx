@@ -92,7 +92,7 @@ export default function Home() {
                 <p className="max-w-4xl leading-8">
                   We are the
                   <span className="font-bold text-slate-300"> Jaybots </span> -
-                  This is our seventh year competing in{' '}
+                  This is our eighth year competing in{' '}
                   <Link
                     href="https://www.firstinspires.org/robotics/ftc/"
                     className={linkStyle}
@@ -105,12 +105,9 @@ export default function Home() {
                 <p>          We went to the regional competition six years in a
                   row, and last year we qualified for the{' '}
                   <span className="font-bold text-slate-300">
-                    World Championships
+                    Canada Cup of Robotics
                   </span>{' '}
-                  in Houston and this year we are going to the{' '}
-                  <span className="font-bold text-slate-300">
-                    Canada Cup of Robotics!
-                  </span>{' '}
+                  in Niagara 
                 </p>
               </div>
             </div>

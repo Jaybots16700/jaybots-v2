@@ -94,15 +94,15 @@ export default function Tournaments() {
                                         What is this year&apos;s game about?
                                     </h2>
                                     <p className="text-gray-300 leading-relaxed">
-                                        This years game is <b className="font-bold text-white">DECODE</b>!
-                                        In DECODE, teams must navigate their robots through a complex field to decode patterns,
-                                        collect game pieces, and score points by placing them in specific zones.
+                                        This years game is <b className="font-bold text-white">BIOBUZZ</b>!
+                                        In BioBuzz, teams must navigate their robots through a complex field to decode patterns,
+                                        collect game pieces, and score points by launching them into their hives.
                                         The game combines strategy, precision driving, and autonomous programming challenges.
                                     </p>
                                     <Link href="https://www.firstinspires.org/robotics/ftc/game-and-season" target="_blank">
                                         <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
                                             <p className="font-normal text-white">
-                                                Learn more about <b className="font-bold">DECODE</b>
+                                                Learn more about <b className="font-bold">BIOBUZZ</b>
                                             </p>
                                         </div>
                                     </Link>
