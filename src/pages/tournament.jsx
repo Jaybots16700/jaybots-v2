@@ -36,8 +36,8 @@ export default function Tournaments() {
                                     <div>
                                         <h3 className="mb-2 text-lg font-semibold text-green-300">WHEN?</h3>
                                         <p className="text-gray-300">
-                                            EVENT: SATURDAY, DECEMBER 6th<br />
-                                            (SNOWDATE: SUNDAY, DECEMBER 7th)
+                                            EVENT: SATURDAY, DECEMBER 5th<br />
+                                            (SNOWDATE: SUNDAY, DECEMBER 6th)
                                         </p>
                                         <p className="mt-2 text-gray-300">
                                             Opening Ceremonies: 10 AM<br />
