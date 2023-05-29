@@ -21,14 +21,17 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <main>
-        <Hero />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
-        <CallToAction />
-        <Reviews />
-        <Pricing />
-        <Faqs />
+      <main className='flex items-center justify-center'>
+        <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
+        <div className='w-full'>
+          <Hero />
+          <PrimaryFeatures />
+          <SecondaryFeatures />
+          <CallToAction />
+          <Reviews />
+          <Pricing />
+          <Faqs />
+        </div>
       </main>
       <Footer />
     </>

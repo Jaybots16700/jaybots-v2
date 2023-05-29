@@ -30,15 +30,15 @@ export function NavLinks() {
     ['Past Games', '/games', faRobot],
     ['Contact Us', '#contact', faEnvelopeOpenText],
   ].map(([label, href, icon], index) => (
-    <Link
-      key={label}
-      href={href}
-      className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-md text-gray-300 transition-colors duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 grid grid-cols-6"
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex(null)}
-    >
-      <FontAwesomeIcon icon={icon} />
-      <span className="relative z-10 col-span-5">{label}</span>
-    </Link>
+      <Link
+        key={label}
+        href={href}
+        className="items-center relative rounded-lg my-1 py-4 px-2 text-md text-gray-300 transition-all duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 grid grid-cols-6 hover:font-bold"
+        onMouseEnter={() => setHoveredIndex(index)}
+        onMouseLeave={() => setHoveredIndex(null)}
+      >
+        <FontAwesomeIcon icon={icon} className='h-6 place-self-center' />
+        <span className="relative z-10 col-span-5 pl-3">{label}</span>
+      </Link>
   ))
 }
