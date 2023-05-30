@@ -31,9 +31,9 @@ export default function Home() {
           <Reviews />
           <Pricing />
           <Faqs />
+          <Footer />
         </div>
       </main>
-      <Footer />
     </>
   )
 }

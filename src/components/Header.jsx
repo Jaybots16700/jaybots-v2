@@ -30,7 +30,7 @@ function Nav() {
     <div>
       <Link href="/" aria-label="Home"  className="flex justify-center pt-4">
         <Image
-          src='/logo.png'
+          src='/images/logo.png'
           width={175}
           height={175}
           className='rounded-full'
