@@ -55,5 +55,6 @@ export const Sponsers = [
   {name: "PTC Onshape", link: "https://www.ptc.com/en/products/onshape", image: "/images/onshape.png", width: 200},
   {name: "Stewart's Shops", link: "https://www.stewartsshops.com/", image: "/images/stewarts.png", width: 100},
   {name: "18 North Grill", link: "https://www.18northgrill.com/", image: "/images/northgrill.png", width: 100},
-  {name: "Dutches Invests", link: "https://jaybotsboosters.org/sponsors", image: "/images/dutchess.png", width: 200}
+  {name: "Dutches Invests", link: "https://jaybotsboosters.org/sponsors", image: "/images/dutchess.png", width: 200},
+  {name: "Wappingers Central School District", link: "https://www.wappingersschools.org/", image: "/images/wappingers.png", width: 100},
 ]
