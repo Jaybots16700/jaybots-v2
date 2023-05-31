@@ -20,28 +20,30 @@ function QrCodeBorder(props) {
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-gray-800">
+    <footer className="border-t border-gray-200 bg-neutral-900">
       <Container>
-        <div className="flex flex-col items-start justify-between gap-y-6 py-6 lg:flex-row lg:items-center">
-          <Link href="/" className="flex items-center">
+        <div className="flex flex-col items-start lg:justify-between justify-center gap-y-6 py-6 lg:flex-row lg:items-center">
+          <Link href="/" className="hidden lg:flex lg:items-center">
             <Image
               src='/images/logo.png'
               width={100}
               height={100}
               className='rounded-full'
+              alt=''
             />
             <div className="ml-4">
               <p className="text-base font-semibold text-gray-100">Jaybots</p>
-              <p className="mt-1 text-sm  text-gray-200">John Jay Robotics</p>
+              <p className="mt-1 text-sm  text-gray-200 xl:w-32">John Jay Robotics</p>
             </div>
           </Link>
-          <div className='flex space-x-2 items-center'>
+          <div className='flex space-x-2 items-center w-full justify-center lg:justify-end'>
             {Socials.map((item) => (
               <Link key={item.name} href={item.link} className='flex items-center justify-center p-4 h-16 rounded-lg hover:bg-gray-700 group space-x-2'>
                 <Image
                   src={item.image}
                   height={25}
                   width={35}
+                  alt={item.name}
                 />
                 <div className='text-gray-300 group-hover:text-white'>
                   {item.name}

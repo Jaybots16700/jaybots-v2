@@ -12,6 +12,8 @@ import {
   faGraduationCap,
   faEnvelopeOpenText,
   faRobot,
+  faBullhorn,
+  faCommentsDollar,
 } from '@fortawesome/free-solid-svg-icons'
 
 export function NavLinks() {
@@ -20,6 +22,7 @@ export function NavLinks() {
   return [
     ['Home', '/', faHouse],
     ['Meet the Team', '/team', faPeopleGroup],
+    ['Join', 'https://interest.jaybots.org', faBullhorn],
     ['Outreach', '/outreach', faComments],
     ['Awards', '/awards', faAward],
     ['Donate', '/donate', faCircleDollarToSlot],
@@ -27,12 +30,13 @@ export function NavLinks() {
     ['Media', '/media', faPhotoFilm],
     ['Alumni', '/alumni', faGraduationCap],
     ['Past Games', '/games', faRobot],
+    ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
     ['Contact Us', '#contact', faEnvelopeOpenText],
   ].map(([label, href, icon], index) => (
       <Link
         key={label}
         href={href}
-        className="items-center relative rounded-lg my-1 py-4 px-2 text-md text-gray-300 transition-all duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 grid grid-cols-6 hover:font-bold"
+        className="items-center relative rounded-lg my-1 py-3 px-2 text-md text-gray-300 transition-all duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 grid grid-cols-6 hover:font-bold"
         onMouseEnter={() => setHoveredIndex(index)}
         onMouseLeave={() => setHoveredIndex(null)}
       >
@@ -46,7 +50,7 @@ export function NavLinks() {
 export const Socials = [
   {name: "Twitter", link: "https://twitter.com/RoboticsJay", image: "/images/twitter.png"},
   {name: "Instagram", link: "https://www.instagram.com/johnjayroboticsclub/", image: "/images/instagram.png"},
-  {name: "YouTube", link: "https://www.youtube.com/channel/UCIg6LPq_AsOuY2rVGpZgBsA", image: "/images/youtube.png"},
+  {name: "YouTube", link: "https://www.youtube.com/@jaybots16700", image: "/images/youtube.png"},
   {name: "School", link: "https://www.wappingersschools.org/Domain/1118", image: "/images/jjhslogo.png"},
 ]
 

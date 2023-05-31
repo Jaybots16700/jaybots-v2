@@ -25,7 +25,7 @@ function MobileNavLink({ children, ...props }) {
   )
 }
 
-function Nav() {
+function NavBar() {
   return (        
     <div>
       <Link href="/" aria-label="Home"  className="flex justify-center pt-4">
@@ -34,6 +34,7 @@ function Nav() {
           width={175}
           height={175}
           className='rounded-full'
+          alt='logo'
           />
       </Link>
       <div className="grid grid-cols-1 mt-2">
@@ -43,20 +44,21 @@ function Nav() {
   )
 }
 
-export function Header() {
+export function Nav() {
   return (
     <header>
       <nav>
         <Container className="relative z-50 flex justify-between">
           <div className='fixed p-4 z-0  justify-center w-64 -left-64 lg:left-0 h-full bg-slate-900 transition-translation duration-1000'>
-            <Nav/>
+            <NavBar />
           </div>
           <div className="flex items-center gap-6">
             <Popover className="lg:hidden">
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className={open ? "z-50 fixed flex rounded-br-lg left-0 items-center justify-center w-12 h-10 bg-slate-900 text-gray-400 hover:text-white transition-all duration-300" : "z-50 fixed flex rounded-br-lg left-0 items-center justify-center w-12 h-10 bg-slate-900 text-gray-400 hover:text-white hover:bg-blue-800 transition-all duration-300"}
+                    className={open ? "z-50 fixed flex rounded-br-lg left-0 items-center justify-center w-12 h-10 bg-slate-900 text-gray-400 hover:text-white transition-all duration-300"
+                      : "z-50 fixed flex rounded-br-lg left-0 items-center justify-center w-12 h-10 bg-slate-900 text-gray-400 hover:text-white hover:bg-blue-800 transition-all duration-300 border-r-2 border-b-2 border-blue-800 hover:border-blue-600"}
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>
@@ -90,7 +92,7 @@ export function Header() {
                             }}
                             className='fixed p-4 z-20 justify-center w-64 h-full bg-slate-900 transition-translation duration-1000'
                           >
-                            <Nav />
+                            <NavBar />
                           </Popover.Panel>
                         </Popover.Overlay>
                       </>
