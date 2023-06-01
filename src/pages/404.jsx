@@ -33,7 +33,7 @@ export default function Home() {
               <h1 className='text-4xl xl:text-7xl lg:text-6xl md:text-5xl font-extrabold'>Page Not Found</h1>
               <div className='flex w-full text-md md:text-lg lg:text-xl xl:text-2xl text-center justify-center space-x-2'>
                 <p className='font-light'>
-                  We couldn't find this page. Don't fret, we're
+                  We couldn&apos;t find this page. Don&apos;t fret, we&apos;re
                   <b className='font-bold'> never gonna give you up!</b>
                 </p>
               </div>
