@@ -26,7 +26,7 @@ export default function Home() {
                 width={250}
                 height={250}
                 className='rounded-full'
-                alt='logo'
+                alt='Jaybots logo'
               />
             </div>
             <div className='w-full space-y-2 lg:space-y-4'>
