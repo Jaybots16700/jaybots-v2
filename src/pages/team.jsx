@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
@@ -15,7 +16,9 @@ import { Nav } from '@/components/Nav'
 
 import { members } from '@/config'
 
-export default function Home() {
+
+
+export default function Team() {
   return (
     <>
       <Head>
@@ -53,8 +56,8 @@ export default function Home() {
 
               {members.map((member) => (
                 <div key={member.name} className='w-72 group [perspective:5000px]'>
-                  <div className='relative h-full w-full  text-gray-300 transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden]'>
-                    <div className='overflow-hidden rounded-xl bg-slate-900 h-full w-full [backface-visibility:hidden]'>
+                  <div className='relative h-full w-full  text-gray-300 transition-all duration-1000 motion-reduce:duration-0 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden]'>
+                    <div className=' rounded-xl bg-slate-900 h-full w-full [backface-visibility:hidden]'>
                       <div className='flex items-start justify-center h-96'>
                         <Image
                           src={member.image}
@@ -67,7 +70,23 @@ export default function Home() {
                       <div className='w-full text-center p-4 space-y-1 h-36'>
                         <div className='text-2xl font-bold border-b-2 border-gray-500 pb-1 mb-2'>{member.name}</div>
                         {member.title &&
-                          <div className='text-xl font-semibold'>{member.title}</div>
+                          <div className='text-xl font-semibold whitespace-nowrap text-center overflow-hidden'>
+                            {member.motion &&
+                              <div className='motion-safe:rounded-full overflow-hidden'>
+                                <p className='w-fit pl-64 animate-slide-infinite motion-reduce:hidden'>
+                                  {member.title}
+                                </p>
+                                <p className='motion-safe:hidden'>
+                                  {member.altTitle}
+                                </p>
+                              </div>
+                            }
+                            {!member.motion &&
+                              <p className=''>
+                                {member.title}
+                              </p>
+                            }
+                          </div>
                         }
                         {member.committees[0] &&
                           <div className='text-lg font-light'>{member.committees[0]} Committee</div>
@@ -83,7 +102,7 @@ export default function Home() {
                         <p className='text-2xl font-bold border-b-2 border-gray-500 pb-1'>
                           {member.name}
                         </p>
-                        <div className='font-light text-md overflow-auto bg-slate-900 pt-2 h-[450px]'>
+                        <div className='font-light text-md overflow-y-auto bg-slate-900 pt-2 h-[450px]'>
                           {member.bio}
                         </div>
                       </div>

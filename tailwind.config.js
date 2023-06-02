@@ -21,6 +21,7 @@ module.exports = {
     },
     extend: {
       animation: {
+        'slide-infinite': 'slide 20s linear infinite',
         'fade-in': 'fade-in 0.5s linear forwards',
         marquee: 'marquee var(--marquee-duration) linear infinite',
         'spin-slow': 'spin 4s linear infinite',
@@ -40,6 +41,10 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
+        'slide': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)'},
+        },
         'fade-in': {
           from: {
             opacity: 0,

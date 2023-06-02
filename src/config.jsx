@@ -1,6 +1,8 @@
 //photo should be 3:4 aspect ratio
 //remove title for members without a title
 //committees is an array with 0 to 2 committees in it
+//motion is for long titles that need scroll animations
+//motion alt is a shortened version of long titles for reduce-motion users
 export const members = [
   { name: "Name", 
     title: "President",
@@ -66,7 +68,9 @@ export const members = [
     title: "SITCOM (Sponsership, Industry, Technology & Corporate Outreach Manager)",
     committees: [""],
     bio:"Bio",
-    image: ""
+    image: "",
+    motion: true,
+    altTitle: "SITCOM",
   },
   { name: "Name",
     title: "Fundraising Leader",
