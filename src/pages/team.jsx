@@ -57,7 +57,7 @@ export default function Team() {
               {members.map((member) => (
                 <div key={member.name} className='w-72 group [perspective:5000px]'>
                   <div className='relative h-full w-full  text-gray-300 transition-all duration-1000 motion-reduce:duration-0 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden]'>
-                    <div className=' rounded-xl bg-slate-900 h-full w-full [backface-visibility:hidden]'>
+                    <div className=' rounded-xl bg-slate-900 h-full w-full [backface-visibility:hidden] overflow-hidden'>
                       <div className='flex items-start justify-center h-96'>
                         <Image
                           src={member.image}
