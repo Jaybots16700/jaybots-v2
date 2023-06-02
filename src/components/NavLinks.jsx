@@ -31,7 +31,7 @@ export function NavLinks() {
     ['Alumni', '/alumni', faGraduationCap],
     ['Past Games', '/games', faRobot],
     ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
-    ['Contact Us', '#contact', faEnvelopeOpenText],
+    ['Contact Us', '/#contact', faEnvelopeOpenText],
   ].map(([label, href, icon], index) => (
       <Link
         key={label}
