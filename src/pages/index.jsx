@@ -7,7 +7,7 @@ import { Faqs } from '@/components/Faqs'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { Reviews } from '@/components/Reviews'
+import { Reviews } from '@/components/Photos'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
 import { Footer } from '@/components/Footer'
@@ -25,7 +25,7 @@ import {
 
 
 const linkStyle = "ml-2 font-bold text-blue-600 hover:text-blue-500"
-const buttonStyle = "h-12 w-30 rounded-lg flex justify-center items-center "
+const buttonStyle = "h-12 w-30 rounded-lg flex justify-center items-center hover:brightness-150 hover:text-gray-800 "
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
             <div className='w-full space-y-2 lg:space-y-4'>
               <h1 className='text-4xl xl:text-7xl lg:text-6xl md:text-5xl font-extrabold'>John Jay Robotics Team</h1>
               <div className='flex w-full text-md md:text-lg lg:text-xl xl:text-2xl text-center justify-center space-x-2'>
-                <p className='font-light'>
+                <p className='font-thin'>
                   <b className='font-semibold'>Jaybots </b>
                   - FTC Robotics Team #16700
                 </p>
