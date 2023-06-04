@@ -22,9 +22,8 @@ import {
   faCommentsDollar,
   faBullhorn,
 } from '@fortawesome/free-solid-svg-icons'
+import { linkStyle } from '@/config.jsx'
 
-
-const linkStyle = "ml-2 font-bold text-blue-600 hover:text-blue-500"
 const buttonStyle = "h-12 w-30 rounded-lg flex justify-center items-center hover:brightness-150 hover:text-gray-800 "
 
 export default function Home() {
