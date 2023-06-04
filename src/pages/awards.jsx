@@ -104,19 +104,22 @@ function Game({game}){
       <div className='flex justify center'>
         {game.allComps.map((comp, index) => (
           <div key={comp.team} className='w-full flex justify-center'>
-            <button className={clsx({
-              'w-48 text-white p-4 rounded-full text-lg transition-all duration-500 border-4 font-semibold hover:font-bold motion-safe:hover:scale-105': true,
-              'border-blue-950 hover:border-blue-900': comp.team == "Jaybots",
-              'border-blue-700 hover:border-blue-800': comp.team == "Bluebirds",
-              'border-red-800 hover:border-red-700': comp.team == "Phoenix",
-            })+teamColors(comp.team)+teamColors(comp.team)} onClick={() => setSelectedTeamIndex(index)}>{comp.team}</button>
+            <button className={(
+              'w-48 text-white p-4 rounded-full text-lg transition-all duration-500 border-4 font-semibold hover:font-bold motion-safe:hover:scale-105'
+              + teamColors(comp.team, false, false)
+              + teamColors(comp.team, true, false)
+              + teamColors(comp.team, false, true)
+              + teamColors(comp.team, true, true))}
+              onClick={() => setSelectedTeamIndex(index)}>
+                {comp.team}
+            </button>
           </div>
         ))}
       </div>
     )}
 
     <div className='xl:grid grid-cols-2 m-12 p-4 gap-8'>
-      <div className={"rounded-5xl mb-12 xl:mb-0 px-12"+teamColors(game.allComps[selectedTeamIndex].team)}>
+      <div className={"rounded-5xl mb-12 xl:mb-0 px-12 border-4"+teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
         <TeamStats teamComps={game.allComps[selectedTeamIndex]} />
       </div>
       <Gallery photo={game.allComps[selectedTeamIndex].images} />
@@ -263,7 +266,7 @@ function Award({award, awards}){
   return(
     <>
     {award == "Promote" &&
-      <Link href={awards.promotehref} className="font-bold text-sky-300 hover:text-sky-500">{award}
+      <Link href={awards.promotehref} className={linkStyle} target='_blank'>{award}
       </Link>
     }
     {award != "Promote" &&

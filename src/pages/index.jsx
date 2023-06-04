@@ -61,16 +61,13 @@ export default function Home() {
           <div className='w-full h-full p-12 bg-zinc-800'>
             <div className='relative w-full text-center text-white space-y-2 text-xl'>
               <h2 className='text-4xl font-semibold'>👋 Hello!</h2>
-              <p>We are the Jaybots - This is our fifth year competing in
-              <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
+              <p>We are the Jaybots - This is our fifth year competing in <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
                 FTC
               </Link>
-              . After making it to the regional competition three years in a row, we are aiming to make it even further next year. We have completed our 2023 Game Season:
-              <Link href="https://www.youtube.com/watch?v=HsitvZ0JaDc" className={linkStyle} target='_blank'>
+              . After making it to the regional competition three years in a row, we are aiming to make it even further next year. We have completed our 2023 Game Season: <Link href="https://www.youtube.com/watch?v=HsitvZ0JaDc" className={linkStyle} target='_blank'>
                 Power Play
               </Link>
-              , and are preparing for the 2024 Game Season,
-              <Link href="https://www.youtube.com/watch?v=pTvP165wi3E" className={linkStyle} target='_blank'>
+              , and are preparing for the 2024 Game Season, <Link href="https://www.youtube.com/watch?v=pTvP165wi3E" className={linkStyle} target='_blank'>
                 First In Show
               </Link>
               . Join us on our journey!

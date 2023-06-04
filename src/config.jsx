@@ -318,16 +318,46 @@ export const games = [
 ]
 
 
-export const linkStyle = "ml-2 font-bold text-blue-600 hover:text-blue-500"
+export const linkStyle = "font-bold text-blue-600 hover:text-blue-500"
 
-export const teamColors = (team, hover) => {
+export const teamColors = (team, hover, border, justborder) => {
   if (hover){
+    if(border){
+      if (team == "Jaybots") {
+        return(" hover:border-blue-900 ")
+      } else if (team == "Bluebirds"){
+        return(" hover:border-blue-800 ")
+      } else if (team == "Phoenix"){
+        return(" hover:border-red-700 ")
+      }
+    }
+
     if (team == "Jaybots") {
       return(" hover:bg-blue-600 ")
     } else if (team == "Bluebirds"){
       return(" hover:bg-blue-600 ")
     } else if (team == "Phoenix"){
       return(" hover:bg-red-600 ")
+    }
+  }
+
+  if(border){
+    if (team == "Jaybots") {
+      return(" border-blue-950 ")
+    } else if (team == "Bluebirds"){
+      return(" border-blue-700 ")
+    } else if (team == "Phoenix"){
+      return(" border-red-800 ")
+    }
+  }
+
+  if(justborder){
+    if (team == "Jaybots") {
+      return(" border-blue-700/80 ")
+    } else if (team == "Bluebirds"){
+      return(" border-blue-500 ")
+    } else if (team == "Phoenix"){
+      return(" border-red-700 ")
     }
   }
 
