@@ -12,6 +12,7 @@ import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
+import { Header } from '@/components/Header'
 
 
 
@@ -141,26 +142,7 @@ export default function Media({ reviews }) {
         <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
         
         <div className='w-full'>
-          <div className='flex p-12 text-white text-center items-center w-full h-72 bg-gray-900'>
-            <div className='lg:hidden'>
-              <Image
-                src='/images/logo.png'
-                width={250}
-                height={250}
-                className='rounded-full'
-                alt='logo'
-              />
-            </div>
-            <div className='w-full space-y-2 lg:space-y-4'>
-              <h1 className='text-4xl xl:text-7xl lg:text-6xl md:text-5xl font-extrabold'>Media</h1>
-              <div className='flex w-full text-md md:text-lg lg:text-xl xl:text-2xl text-center justify-center space-x-2'>
-                <p className='font-thin'>
-                  <b className='font-semibold'>Our pics and vids </b>
-                  - checkout what we&apos;ve been up to!
-                </p>
-              </div>
-            </div>
-          </div>
+          <Header title='Media' bold='Our pics and vids' afterBold=' - check out what we&apos;ve been up to!' />
 
           <div className='w-full h-full p-12 bg-zinc-800'>
 

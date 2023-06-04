@@ -29,7 +29,7 @@ export function NavLinks() {
     ['Calendar', '/events', faCalendarWeek],
     ['Media', '/media', faPhotoFilm],
     ['Alumni', '/alumni', faGraduationCap],
-    ['Past Games', '/games', faRobot],
+    ['Hosting', '/host', faRobot],
     ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
     ['Contact Us', '/#contact', faEnvelopeOpenText],
   ].map(([label, href, icon], index) => (

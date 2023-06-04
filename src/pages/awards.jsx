@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
+import { Header } from '@/components/Header'
 
 import { games, linkStyle } from '@/config'
 import { useState } from 'react'
@@ -25,30 +26,8 @@ export default function Awards() {
       </Head>
       <Nav />
       <main className='flex items-center justify-center'>
-        <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
-        
         <div className='w-full'>
-          <div className='flex p-12 text-white text-center items-center w-full h-72 bg-gray-900'>
-            <div className='lg:hidden'>
-              <Image
-                src='/images/logo.png'
-                width={250}
-                height={250}
-                className='rounded-full'
-                alt='logo'
-              />
-            </div>
-            <div className='w-full space-y-2 lg:space-y-4'>
-              <h1 className='text-4xl xl:text-7xl lg:text-6xl md:text-5xl font-extrabold'>Awards</h1>
-              <div className='flex w-full text-md md:text-lg lg:text-xl xl:text-2xl text-center justify-center space-x-2'>
-                <p className='font-thin'>
-                  View the
-                  <b className='font-semibold'> prestigious awards </b>
-                  we have won.
-                </p>
-              </div>
-            </div>
-          </div>
+          <Header title='Awards' beforeBold='Veiw the ' bold='prestigious awards' afterBold='we have won.' />
 
           <div className='w-full h-full bg-zinc-800 pt-10 py-4'>
             <div className='grid grid-cols-2 md:flex'>
