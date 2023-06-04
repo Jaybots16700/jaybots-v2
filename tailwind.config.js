@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       animation: {
         'slide-infinite': 'slide 20s linear infinite',
+        'gallery': 'gallery 10s linear infinite',
         'fade-in': 'fade-in 0.5s linear forwards',
         marquee: 'marquee var(--marquee-duration) linear infinite',
         'spin-slow': 'spin 4s linear infinite',
@@ -41,6 +42,20 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
+        'gallery': {
+          '0%': {
+            transform: 'translateX(30%) scale(50%)',
+            opacity: 0,
+          },
+          '25%, 75%': {
+            transform: 'translateX(0) scale(100%)',
+            opacity: 1,
+          },
+          '100%': {
+            transform: 'translateX(-30%) scale(50%)',
+            opacity: 0,
+          },
+        },
         'slide': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)'},

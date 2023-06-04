@@ -69,7 +69,7 @@ export const members = [
     committees: [""],
     bio:"Bio",
     image: "",
-    motion: true,
+    motion:true,
     altTitle: "SITCOM",
   },
   { name: "Name",
@@ -119,3 +119,223 @@ export const members = [
     image: "/images/emily.png"
   },
 ]
+
+//add games here and their years
+//most recent games on top
+//Jcomps = jaybot competeitions
+//Pcomps = pheonix competitions
+//Bcomps = blue bird competitions (Freight Frenzy only)
+//more info in README.md
+export const games = [
+  {name: "Power Play",
+    year: "2022-2023",
+    logo: "/images/powerplay.png",
+    logowidth: 500,
+    allComps: [
+      {team: "Jaybots",
+        images: "https://cdn.jaybots.org/bot/2023-snow2-crop.jpeg",
+        comps: [
+      {type: "Qualifier",
+        date: "January 14, 2023",
+        awards: {
+          advanced: true,
+          first: ["Inspire", "Control"],
+        }},
+      {type: "Qualifier",
+        date: "January 29, 2023",
+        awards: {
+          first: ["Motivate"],
+        }},
+      {type: "Qualifier",
+        date: "February 18, 2023",
+        awards: {
+          second: ["Innovate"],
+        }},
+      {type: "Regional",
+        date: "March 5, 2023",
+        awards: {
+          deansList: "Finalist",
+          third: ["Innovate"],
+        }},
+      ]},
+      {team: "Phoenix",
+        images: "https://cdn.jaybots.org/bot/p-2023.jpeg",
+        comps: [
+      {type: "Qualifier",
+        date: "January 14, 2023",
+        awards: {
+          second: ["Connect"],
+        }},
+      {type: "Qualifier",
+        date: "January 14, 2023",
+        awards: {
+          judgesChoice: true,
+        }},
+      {type: "Qualifier",
+        date: "February 18, 2023",
+        awards: {
+          second: ["Motivate"]
+        }}
+      ]},
+    ]
+  },
+  {name: "Freight Frenzy",
+    year: "2021-2022",
+    logo: "/images/freight-frenzy.png",
+    logowidth: 1000,
+    allComps: [
+      {team: "Jaybots",
+      images: "https://cdn.jaybots.org/bot/2022.jpeg",
+        comps: [
+          {type: "Qualifier",
+            date: "January 23 - 29, 2022",
+            awards: {
+              first: ["Connect"],
+              third: ["Motivate"],
+            }},
+          {type: "Qualifier",
+            date: "January 13, 2023",
+            awards: {
+              third: ["Think"],
+            }},
+          {type: "Qualifier",
+            date: "February 18, 2023",
+            awards: {
+              advanced: true,
+              first: ["Inspire"],
+              otherGold: ["Highest Scoring Team"]
+            }},
+          {type: "Regional",
+            date: "March 6, 2022",
+            awards: {
+              judgesChoice: true,
+              deansList: "Finalist",
+              third: ["Innovate"],
+            }},
+        ]},
+      {team: "Bluebirds",
+        images: "https://cdn.jaybots.org/bot/b-2022.jpeg",
+        comps: [
+          {type: "Qualifier",
+          date: "January 23 - 29, 2022",
+          awards: {
+            second: ["Connect"]
+          }},
+          {type: "Qualifier",
+            date: "February 13, 2022",
+            awards: {
+              advanced: true,
+              first: ["Inspire"],
+              winningAlliance: "Captain",
+              second: ["Connect", "Design"],
+            }},
+          { type: "Regional",
+            date: "March 6, 2022",
+            awards: {
+              first: ["Promote"],
+              promotehref: "https://drive.google.com/file/d/1Llqi59oZkiCmdPhwEei0jK7LW5Rhygec/view"
+            }},
+        ]}
+    ], 
+  },
+  {name: "Ultimate Goal",
+    year: "2020-2021",
+    logo: "/images/ultimategoal.png",
+    logowidth: 500,
+    allComps: [
+      {team: "Jaybots",
+        images: "https://cdn.jaybots.org/bot/2021.jpg",
+        comps: [ 
+          {type: "Qualifier",
+            date: "March 21 - 27, 2021",
+            awards: {
+              first: ["Connect"],
+              third: ["Think", "Innovate"]
+            }},
+          {type: "Qualifier",
+            date: "May 2 - 8, 2021",
+            awards: {
+              advanced: true,
+              first: ["Inspire"],
+              second: ["Innovate",]
+            }},
+          {type: "Qualifier",
+            date: "May 16 - 2, 2021",
+            awards: {
+              first: ["Connect"],
+            }},
+          {type: "Regional",
+            date: "May 30 - June 5, 2021",
+            awards: {
+              third: ["Collins Aerospace Innovate", "Think", "Promote",],
+              promotehref: "https://drive.google.com/file/d/1-Sj8PRzw3ZmBM-9o7yxLt1U1e0T1QiO4/view",
+            }}, 
+        ]},
+    ]
+  },
+  {name: "SkyStone",
+    year: "2019-2020",
+    logo: "/images/skystone.png",
+    logowidth: 500,
+    allComps: [
+      {team: "Jaybots",
+        images: "https://cdn.jaybots.org/bot/2020.jpg",
+        comps: [
+          {type: "Qualifier",
+            date: "December 14, 2019",
+            awards: {
+              third: ["Collins Aerospace Innovate"],
+            }},
+          {type: "Qualifier",
+            date: "January 11, 2020",
+            awards: {
+              second: ["Control"],
+            }},
+          {type: "Qualifier",
+            date: "January 25, 2020",
+            awards: {
+              third: ["Motivate"],
+            }},
+        ]}
+    ]
+  },
+  {name: "Rover Ruckus",
+    year: "2019",
+    logo: "/images/rover-ruckus.png",
+    logowidth: 300,
+    allComps: [
+      {team: "Jaybots",
+        images: "https://cdn.jaybots.org/bot/2019.jpg",
+        comps: [
+        {type: "Scrimmage",
+        date: "June 15, 2019",
+          awards: {
+            otherBronze: "Finalist",
+        }},
+      ]}
+    ]
+  },
+]
+
+
+export const linkStyle = "ml-2 font-bold text-blue-600 hover:text-blue-500"
+
+export const teamColors = (team, hover) => {
+  if (hover){
+    if (team == "Jaybots") {
+      return(" hover:bg-blue-600 ")
+    } else if (team == "Bluebirds"){
+      return(" hover:bg-blue-600 ")
+    } else if (team == "Phoenix"){
+      return(" hover:bg-red-600 ")
+    }
+  }
+
+  if (team == "Jaybots") {
+    return(" bg-blue-700/80 ")
+  } else if (team == "Bluebirds"){
+    return(" bg-blue-500 ")
+  } else if (team == "Phoenix"){
+    return(" bg-red-700 ")
+  }
+}

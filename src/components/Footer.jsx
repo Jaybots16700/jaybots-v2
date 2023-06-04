@@ -36,7 +36,7 @@ export function Footer() {
               <p className="mt-1 text-sm  text-gray-200 xl:w-32">John Jay Robotics</p>
             </div>
           </Link>
-          <div className='flex space-x-2 items-center w-full justify-center lg:justify-end'>
+          <div className='grid grid-cols-2 sm:flex space-x-2 items-center w-full justify-center lg:justify-end'>
             {Socials.map((item) => (
               <Link key={item.name} href={item.link} className='flex items-center justify-center p-4 h-16 rounded-lg hover:bg-gray-700 group space-x-2'>
                 <Image
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
         <div className='flex flex-col items-center border-t border-gray-200 pt-4 pb-2 md:justify-between'>
           <p className='text-md text-gray-400'>Meet our <Link href='https://jaybotsboosters.org/sponsors' className='text-gray-200 font-semibold hover:font-bold'>Sponsers</Link></p>
-          <div className='flex space-x-8'>
+          <div className='grid grid-cols-3 sm:flex space-x-8'>
             {Sponsers.map((item) => (
               <Link key={item.name} href={item.link} className='flex items-center'>
                 <Image 
@@ -82,8 +82,8 @@ export function Footer() {
               <span className="lg:hidden">Join newsletter</span>
             </button>
           </form>
-          <p className="mt-4 text-sm text-gray-400 md:mt-0">
-            &copy; Copyright <Link href="/" className='text-gray-200 font-semibold hover:font-bold'>Jaybots</Link>. Created by Matthew & Team. All rights reserved.
+          <p className=" text-center md:text-start md:mr-2 mt-4 text-sm text-gray-400 md:mt-0">
+            &copy; Copyright <Link href="/" className='text-gray-200 font-semibold hover:font-bold'>Jaybots</Link>. Created by Matthew. All rights reserved.
           </p>
         </div>
       </Container>
