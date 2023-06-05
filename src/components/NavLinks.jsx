@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import clsx from 'clsx'
 import {
   faHouse,
   faPeopleGroup,
@@ -16,7 +17,7 @@ import {
   faCommentsDollar,
 } from '@fortawesome/free-solid-svg-icons'
 
-export function NavLinks() {
+export function NavLinks({current}) {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
@@ -29,14 +30,17 @@ export function NavLinks() {
     ['Calendar', '/events', faCalendarWeek],
     ['Media', '/media', faPhotoFilm],
     ['Alumni', '/alumni', faGraduationCap],
-    ['Hosting', '/host', faRobot],
+    ['Competition Host', '/host', faRobot],
     ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
     ['Contact Us', '/#contact', faEnvelopeOpenText],
   ].map(([label, href, icon], index) => (
       <Link
         key={label}
         href={href}
-        className="items-center relative rounded-lg my-1 py-3 px-2 text-md text-gray-300 transition-all duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 grid grid-cols-6 hover:font-bold"
+        className={clsx({
+          "items-center relative rounded-lg my-1 py-3 px-2 text-md text-gray-300 transition-all duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 grid grid-cols-6 hover:font-bold": true,
+          "bg-blue-900 brightness-125 text-white font-semibold": current == label,
+        })}
         onMouseEnter={() => setHoveredIndex(index)}
         onMouseLeave={() => setHoveredIndex(null)}
       >

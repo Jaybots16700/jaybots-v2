@@ -137,7 +137,7 @@ export default function Media({ reviews }) {
       <Head>
         <title>Jaybots | Media</title>
       </Head>
-      <Nav />
+      <Nav current="Media" />
       <main className='flex items-center justify-center'>
         <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
         

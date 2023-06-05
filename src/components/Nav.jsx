@@ -25,7 +25,7 @@ function MobileNavLink({ children, ...props }) {
   )
 }
 
-function NavBar() {
+function NavBar({current}) {
   return (        
     <div>
       <Link href="/" aria-label="Home"  className="flex justify-center pt-4">
@@ -38,19 +38,19 @@ function NavBar() {
           />
       </Link>
       <div className="grid grid-cols-1 mt-2">
-        <NavLinks />
+        <NavLinks current={current} />
       </div>
     </div>
   )
 }
 
-export function Nav() {
+export function Nav({current}) {
   return (
     <header>
       <nav>
         <Container className="relative z-50 flex justify-between">
           <div className='fixed p-4 z-0  justify-center w-64 -left-64 lg:left-0 h-full bg-slate-900 transition-translation duration-1000'>
-            <NavBar />
+            <NavBar current={current} />
           </div>
           <div className="flex items-center gap-6">
             <Popover className="lg:hidden">

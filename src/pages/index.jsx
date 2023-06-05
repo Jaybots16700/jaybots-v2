@@ -33,7 +33,7 @@ export default function Home() {
       <Head>
         <title>Jaybots | John Jay Robotics</title>
       </Head>
-      <Nav />
+      <Nav current="Home" />
       <main className='flex items-center justify-center'>
         <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
         
