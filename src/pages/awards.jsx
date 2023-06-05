@@ -26,6 +26,8 @@ export default function Awards() {
       </Head>
       <Nav />
       <main className='flex items-center justify-center'>
+        <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
+        
         <div className='w-full'>
           <Header title='Awards' beforeBold='Veiw the ' bold='prestigious awards' afterBold='we have won.' />
 
@@ -97,8 +99,8 @@ function Game({game}){
       </div>
     )}
 
-    <div className='xl:grid grid-cols-2 m-12 p-4 gap-8'>
-      <div className={"rounded-5xl mb-12 xl:mb-0 px-12 border-4"+teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
+    <div className='xl:grid grid-cols-2 mt-12 m-2 sm:m-12 p-4 gap-8'>
+      <div className={"rounded-5xl mb-12 xl:mb-0 sm:px-12 border-4"+teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
         <TeamStats teamComps={game.allComps[selectedTeamIndex]} />
       </div>
       <Gallery photo={game.allComps[selectedTeamIndex].images} />
