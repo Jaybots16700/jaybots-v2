@@ -131,6 +131,13 @@ function CompStats({comp}){
         {comp.type} | {comp.date}
       </div>
       <div className='text-base font-light flex flex-col space-y-4 pt-3'>
+        {comp.upcoming && (
+          <p>Upcoming Competition! You can find our full schedule <Link
+            href="/events"
+            className={linkStyle}>
+              Here
+          </Link>.</p>
+        )}
         {comp.awards.advanced &&
           <div className={awardsStyle}>
             <Ribbon />
