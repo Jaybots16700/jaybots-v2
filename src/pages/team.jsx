@@ -50,7 +50,7 @@ export default function Team() {
                         />
                       </div>
                       <div className='w-full text-center p-4 space-y-1 h-36'>
-                        <div className='text-2xl font-bold border-b-2 border-gray-500 pb-1 mb-2'>{member.name}</div>
+                        <div className='text-2xl font-bold border-b-2 border-gray-500 pb-1 mb-2 text-white'>{member.name}</div>
                         {member.title &&
                           <div className='text-xl font-semibold whitespace-nowrap text-center overflow-hidden'>
                             {member.motion &&
@@ -92,6 +92,23 @@ export default function Team() {
                   </div>
                 </div>
               ))}
+
+              <Link href="/alumni" className='w-72 h-full bg-slate-900 rounded-xl text-gray-300 hover:brightness-110 transition-all duration-300'>
+                <div className='w-full h-[388px] flex items-center border-b-4 border-gray-600'>
+                  <Image
+                    src="/images/JayBotsAlumni.png"
+                    width={288}
+                    height={384}
+                    alt="Alumni logo"
+                  />
+                </div>
+                <div className='w-full text-center p-4 space-y-1 h-36'>
+                  <div className='text-2xl font-bold border-b-2 border-gray-500 pb-1 mb-2 text-white'>Alumni</div>
+                    <div className='text-xl font-semibold text-center overflow-hidden'>
+                      Meet our Former Team Members
+                    </div>
+                </div>
+              </Link>
             </div>
 
           </div>
