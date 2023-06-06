@@ -1,6 +1,6 @@
 # JAYBOTS Website
 
-This is the repo for what will soon become the new [jaybots.org](https://jaybots.org).
+This is the repo for what will soon become the new [jaybots.org](https://jaybots.org) (currently hosted at [jaybots-v2.vercel.app](jaybots-v2.vercel.app)).
 
 ## Getting started
 
@@ -22,7 +22,7 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 ## Customizing
 
-Everything is in the 'src' folder. Pages are in `src/pages`, and components to be referenced are in `src/components`. You should be able to make all yearly updates in `src/config.jsx`.
+Everything is in the 'src' folder. Pages are in `src/pages`, and components to be imported are in `src/components`. You should be able to make all yearly updates in `src/config.jsx` (until a dashboard is built into the site with a db so it can be doene from there).
 
 ## Team Page
 
