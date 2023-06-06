@@ -129,8 +129,8 @@ export const members = [
 export const games = [
   {name: "Power Play",
     year: "2022-2023",
-    logo: "/images/powerplay.png",
-    logowidth: 500,
+    logo: "/images/PowerplayWhite.png",
+    logowidth: 700,
     allComps: [
       {team: "Jaybots",
         images: "https://cdn.jaybots.org/bot/2023-snow2-crop.jpeg",
