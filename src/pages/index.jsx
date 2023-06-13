@@ -86,27 +86,22 @@ export default function Home() {
 
             <div id="contact" className='relative w-full text-center text-white space-y-4 text-xl mt-8'>
               <h2 className='text-4xl font-semibold'>Contact Us!</h2>
-              <p>Like What you see?
-                <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
+              <p>Like What you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
                   Join Today!
                 </Link>
                 <b> </b>
-                Feel free to contact us at
-                <Link href="mailto:interest.jaybots.org?subject=Question" className={linkStyle} target='_blank'>
+                Feel free to contact us at <Link href="mailto:interest.jaybots.org?subject=Question" className={linkStyle} target='_blank'>
                   interest@jaybots.org
                 </Link>
               </p>
-              <p>Interested in becoming a
-                <Link href="https://jaybotsboosters.org/sponsors" className={linkStyle} target='_blank'>
+              <p>Interested in becoming a <Link href="https://jaybotsboosters.org/sponsors" className={linkStyle} target='_blank'>
                   sponser
                 </Link>
-                ? You can reach us at
-                <Link href="mailto:joanna@jaybots.org?subject=Sponsership Question" className={linkStyle} target='_blank'>
+                ? You can reach us at <Link href="mailto:joanna@jaybots.org?subject=Sponsership Question" className={linkStyle} target='_blank'>
                   joanna@jaybots.org
                 </Link>
               </p>
-              <p>If there&apos;s anything else that you would like to discuss, send us an email at
-                <Link href="mailto:hi.jaybots.org" className={linkStyle} target='_blank'>
+              <p>If there&apos;s anything else that you would like to discuss, send us an email at <Link href="mailto:hi.jaybots.org" className={linkStyle} target='_blank'>
                   hi@jaybots.org
                 </Link>
               </p>
