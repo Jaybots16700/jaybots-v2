@@ -27,7 +27,7 @@ function MobileNavLink({ children, ...props }) {
 
 function NavBar({current}) {
   return (        
-    <div>
+    <div className=''>
       <Link href="/" aria-label="Home"  className="flex justify-center pt-4">
         <Image
           src='/images/logo.png'
@@ -49,7 +49,7 @@ export function Nav({current}) {
     <header>
       <nav>
         <Container className="relative z-50 flex justify-between">
-          <div className='fixed p-4 z-0  justify-center w-64 -left-64 lg:left-0 h-full bg-slate-900 transition-translation duration-1000'>
+          <div className='fixed p-4 z-0 justify-center w-64 -left-64 lg:left-0 h-full bg-slate-900 transition-translation duration-1000 overflow-auto scrollbar-thin scrollbar-thumb-blue-900/70 hover:scrollbar-thumb-blue-900/80 scrollbar-track-slate-950'>
             <NavBar current={current} />
           </div>
           <div className="flex items-center gap-6">
@@ -90,7 +90,7 @@ export function Nav({current}) {
                               x: -64,
                               transition: { duration: 1 },
                             }}
-                            className='fixed p-4 z-20 justify-center w-64 h-full bg-slate-900 transition-translation duration-1000'
+                            className='fixed p-4 z-20 justify-center w-64 h-full bg-slate-900 transition-translation duration-1000 overflow-auto scrollbar-thin scrollbar-thumb-blue-900/70 hover:scrollbar-thumb-blue-900/80 scrollbar-track-slate-950'
                           >
                             <NavBar />
                           </Popover.Panel>

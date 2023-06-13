@@ -80,11 +80,11 @@ export default function Team() {
                     </div>
 
                     <div className='absolute inset-0 rounded-xl h-full w-full bg-slate-900 [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden'>
-                      <div className='h-full w-full p-4 text-center'>
-                        <p className='text-2xl font-bold border-b-2 border-gray-500 pb-1'>
+                      <div className='h-full w-full text-center'>
+                        <p className='text-2xl font-bold border-b-2 border-gray-500 pb-1 m-4 mb-0'>
                           {member.name}
                         </p>
-                        <div className='font-light text-md overflow-y-auto bg-slate-900 pt-2 h-[450px]'>
+                        <div className='p-4 w-full font-light text-md overflow-y-auto bg-slate-900 pt-2 h-[450px] scrollbar-thin scrollbar-thumb-blue-900/70 scrollbar-track-slate-950 hover:scrollbar-thumb-blue-600'>
                           {member.bio}
                         </div>
                       </div>
