@@ -2,13 +2,13 @@ import Image from "next/image"
 
 export function Header({title, beforeBold, bold, afterBold}){
   return (
-    <div className='flex p-12 text-white text-center items-center w-full h-72 bg-gray-900'>
-      <div className='lg:hidden'>
+    <div className='sm:flex p-12 text-white text-center items-center w-full sm:h-72 bg-gray-900'>
+      <div className='lg:hidden flex justify-center'>
         <Image
           src='/images/logo.png'
           width={250}
           height={250}
-          className='rounded-full'
+          className='rounded-full h-32 w-32 sm:h-auto sm:w-auto'
           alt='logo'
         />
       </div>
