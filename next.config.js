@@ -19,6 +19,11 @@ module.exports = {
         hostname: 'jaybots.org',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'file.coffee',
+        port: '',
+      }
     ]
   }
 }

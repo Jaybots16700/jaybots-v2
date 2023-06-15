@@ -92,7 +92,7 @@ export function Nav({current}) {
                             }}
                             className='fixed p-4 z-20 justify-center w-64 h-full bg-slate-900 transition-translation duration-1000 overflow-auto scrollbar-thin scrollbar-thumb-blue-900/70 hover:scrollbar-thumb-blue-900/80 scrollbar-track-slate-950'
                           >
-                            <NavBar />
+                            <NavBar current={current} />
                           </Popover.Panel>
                         </Popover.Overlay>
                       </>

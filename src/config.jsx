@@ -403,6 +403,89 @@ export const games = [
   },
 ]
 
+export const buildImages = [
+  { source: "https://cdn.jaybots.org/build/field1.jpg", caption: "Anish & Silvia building the field." },
+  { source: "https://file.coffee/u/3foMurCrRKkPOI.jpg", caption: "Arnav fanboying over the bot <3" },
+  { source: "https://cdn.jaybots.org/build/matt%20-%20chassis.jpeg", caption: "Matt working on the chassis." },
+  { source: "https://cdn.jaybots.org/build/bracket1.jpg", caption: "Matt assembling the 3d printed brackets." },
+  { source: "https://cdn.jaybots.org/build/anaya%20making%20gripper%20prongs.jpeg", caption: "Anaya making prongs for the gripper." },
+  { source: "https://cdn.jaybots.org/build/Mili%20organizing%20the%20tool%20chest.jpeg",caption: "Mili organizing the tool chest." },
+  { source: "https://cdn.jaybots.org/build/extrusioncut1.jpg", caption: "Paul cutting extrusions." },
+  { source: "https://file.coffee/u/1BBly-fNkpC5VEgomBLyF.png", caption: "Bluebirds Freight Frenzy CAD Model" },
+  { source: "https://cdn.jaybots.org/build/Anaya%20cutting%20launcher%20screw.jpeg", caption: "Anaya cutting a screw for the launcher." },
+  { source: "https://cdn.jaybots.org/build/gripper1.jpg", caption: "Arnav working on the arm for the gripper." },
+  { source: "https://cdn.jaybots.org/build/ashish%27s%20launcher%20idea.jpeg", caption: "Ashish working on an idea for the launcher." },
+  { source: "https://file.coffee/u/OAopZ-c9KkRntW.png", caption: "An autonomous car being built for DTC." },
+  { source: "https://cdn.jaybots.org/build/taking%20inventory.jpeg", caption: "Anish taking inventory." },
+  { source: "https://cdn.jaybots.org/build/finishing%20launcher%20idea.jpeg", caption: "Arnav and Ashish prototyping a launcher." },
+  { source: "https://file.coffee/u/vxPWDQWSxdor7lFiztyvr.png", caption: "Jaybots Freight Frenzy CAD Model" },
+  { source: "https://file.coffee/u/_qmzx7Xi22WiRr.png", caption: "Original wheel based intake prototype." },
+  { source: "https://cdn.jaybots.org/build/buildingintake1.jpg", caption: "Silvia working on the intake." },
+  { source: "https://cdn.jaybots.org/build/wiring1.jpg", caption: "Arnav wiring the bot." },
+  { source: "https://file.coffee/u/Nqy-OfkQ3GgITx.jpg", caption: "Carousel testing during Robot in 3 Days." },
+  { source: "https://file.coffee/u/ARUxuEaSlQPRO6.png", caption: "Silvia building a lazy suzan prototype." },
+]
+
+export const codeImages = [
+  { source: "https://cdn.jaybots.org/code/talking1.jpg", caption: "Anish, Ashish & Mili talking about code." },
+  { source: "https://cdn.jaybots.org/code/mermaid.jpeg", caption: "Mermaid Robert" },
+  { source: "https://cdn.jaybots.org/code/setting%20up%20Vuforia.jpeg", caption: "Robert working on setting up Vuforia." },
+  { source: "https://cdn.jaybots.org/code/Ashish%20fix%20Anosh%20code.jpeg", caption: "Ashish trying to fix Anish's code." },
+  { source: "https://file.coffee/u/d60jjga2QwSEJ_.jpg", caption: "Planning out some auto code." },
+  { source: "https://cdn.jaybots.org/code/Robert%20%28online%29.jpeg", caption: "Robert (online) working on the code." },
+  { source: "https://cdn.jaybots.org/code/Anish%20coding%20with%20Robert%20%28online%29.jpeg", caption: "Anish coding with Robert (online)." },
+]
+
+export const outreachImages = [
+  { source: "https://cdn.jaybots.org/outreach/Collecting%20bags%20for%20a%20clothing%20drive.jpg", caption: "Collecting bags for a clothing drive." },
+  { source: "https://file.coffee/u/pRsFHjXckfpgCQ.jpg", caption: "Teaching students about Spike Primes." },
+  { source: "https://cdn.jaybots.org/overview/freshmanorientationcleanup.jpeg", caption: "Cleaning up after an Outreach Event." },
+  { source: "https://cdn.jaybots.org/outreach/discussing%20outreach%20events.jpeg", caption: "Mili discussing outreach events with Mr. A." },
+  { source: "https://cdn.jaybots.org/outreach/Silvia%20creating%20a%20google%20form%20for%20judging.jpg", caption: "Silvia creating a google form for judging." },
+  { source: "https://file.coffee/u/oib9rymL8Q_eRy.jpg", caption: "Ashish mentoring some Bluebirds." },
+  { source: "https://cdn.jaybots.org/outreach/planning%20outreach%20events.jpg", caption: "Ashish and Mili planning outreach events." },
+  { source: "https://cdn.jaybots.org/outreach/Helping%20the%20Griffin%20Robotics%20team.jpeg", caption: "Helping the Griffin Robotics team." },
+  { source: "https://file.coffee/u/N5gLGvuHnYV822.png", caption: "Robot in 3 days presentation to Bluebirds." },
+  { source: "https://cdn.jaybots.org/outreach/arnavlistening1.jpg", caption: "Arnav listening in to an outreach event" },
+  { source: "https://cdn.jaybots.org/outreach/chemistry%20classes.jpeg", caption: "Presenting our bot to chemistry classes" },
+]
+
+export const compImages = [
+  { source: "https://file.coffee/u/Th0pzWeqSxBd-Y.jpg", caption: "Judge's Choice Award at Regionals." },
+  { source: "https://file.coffee/u/SUzq0BshQTpnWl.png", caption: "More testing before competition." },
+  { source: "https://file.coffee/u/0MUtmHlML1KR2m.jpg", caption: "Judging presentation at the Peekskill qualifier." },
+  { source: "https://file.coffee/u/CvGfERlWk5zQ1A.jpg", caption: "Group photo before our Judging Interview." },
+  { source: "https://file.coffee/u/HYKUVAtiJ-_tCS.jpg", caption: "Planning with our alliance partners." },
+  { source: "https://file.coffee/u/ywKS29rh3n4BQ1.jpg", caption: "Scouting in front of our booth at Regionals." },
+  { source: "https://file.coffee/u/xEzlDiwsdanKtS.jpg", caption: "Testing on the Practice Field." },
+  { source: "https://cdn.jaybots.org/code/anish1.jpg", caption: "Anish & Robert coding competition day." },
+]
+
+export const miscImages = [
+  { source: "https://cdn.jaybots.org/overview/silvia1.jpeg", caption: "Silvia at our first inperson meeting." },
+  { source: "https://cdn.jaybots.org/overview/dictator1.jpeg", caption: "Dictator Darren" },
+  { source: "https://cdn.jaybots.org/overview/oderna1.jpeg", caption: "Cleaning up after the Freshman Orientation." },
+  { source: "https://cdn.jaybots.org/overview/unicorn%20darren.jpeg", caption: "Unicorn Darren" },
+  { source: "https://cdn.jaybots.org/overview/Silvia%20researching%20how%20to%20be%20productive.jpeg", caption: "Silvia researching how to be productive." },
+  { source: "https://file.coffee/u/rBsllVni1qJ0sE.jpg", caption: "Meditation; essential to our strategy." },
+  { source: "https://file.coffee/u/RZ423PmCn3aP5uK4C82qg.png", caption: "Utter is ready to take on Freight Frenzy" },
+  { source: "https://file.coffee/u/BKAav4CTN0QGqW.png", caption: "Feight Frenzy - Inspire Award 1st Place!" },
+  { source: "https://file.coffee/u/ux5jQ5GE11t2O8.jpg", caption: "Bowling during Robot in 3 Days." },
+  { source: "https://file.coffee/u/VsyviidRUvuy91.png", caption: "Protecting the bot from exploding." },
+  { source: "https://file.coffee/u/RNQgWDHVMKxOKQ.jpg", caption: "Scenic shot of the bot." },
+  { source: "https://file.coffee/u/PLJadgybKci6uo.png", caption: "Highest Scoring Robot!" },
+  { source: "https://cdn.jaybots.org/overview/Arnav%20%26%20Darren.jpeg", caption: "Arnav and Darren enjoying dinner." },
+  { source: "https://file.coffee/u/GCxyacshvga1z167J2LGk.png", caption: '"The King Without A Crown" is born' },
+  { source: "https://file.coffee/u/9eBeiWCI4QcCuo.jpg", caption: "Jaybots Regionals 2022" },
+  { source: "https://cdn.jaybots.org/overview/Lego%20REPLAY%20Donation.gif", caption: "Lego REPLAY Donation" },
+  { source: "https://cdn.jaybots.org/overview/GoofingOff1.jpg", caption: "Doing chem homework late at night." },
+  { source: "https://cdn.jaybots.org/overview/anish%20and%20silvia%20working.jpeg", caption: "Anish and Silvia working." },
+  { source: "https://file.coffee/u/mR49GXL2YmqMnB.jpg", caption: "Anish and Arnav experimenting with LEDs." },
+  { source: "https://cdn.jaybots.org/overview/ordering%20parts.jpeg", caption: "Matt and Mr. A ordering parts." },
+] 
+
+export const allImages = miscImages.concat(buildImages, codeImages, outreachImages, compImages)
+
 
 export const linkStyle = "font-bold text-blue-600 hover:text-blue-500"
 

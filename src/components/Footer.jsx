@@ -38,7 +38,7 @@ export function Footer() {
           </Link>
           <div className='grid grid-cols-2 sm:flex space-x-2 items-center w-full justify-center lg:justify-end'>
             {Socials.map((item) => (
-              <Link key={item.name} href={item.link} className='flex items-center justify-center p-4 h-16 rounded-lg hover:bg-gray-700 group space-x-2'>
+              <Link key={item.name} href={item.link} className='flex items-center justify-center p-4 h-16 w-auto rounded-lg hover:bg-gray-700 group space-x-2'>
                 <Image
                   src={item.image}
                   height={25}
