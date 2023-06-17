@@ -34,8 +34,7 @@ export default function Media() {
         <title>Jaybots | Media</title>
       </Head>
       <Nav current='Media' />
-      <main className='flex items-center justify-center'>
-        <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
+      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
         
         <div className='w-full'>
           <Header title='Media' bold='Our pics and vids' afterBold=' - check out what we&apos;ve been up to!' />

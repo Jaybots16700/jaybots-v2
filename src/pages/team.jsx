@@ -27,8 +27,7 @@ export default function Team() {
         <title>Jaybots | Meet The Team</title>
       </Head>
       <Nav current="Meet the Team" />
-      <main className='flex items-center justify-center'>
-        <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
+      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
         
         <div className='w-full'>
         <Header title="Meet The Team" beforeBold="Just " bold={friends} afterBold=" working on a robot."/>

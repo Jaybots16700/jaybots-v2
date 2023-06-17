@@ -34,8 +34,7 @@ export default function Home() {
         <title>Jaybots | John Jay Robotics</title>
       </Head>
       <Nav current="Home" />
-      <main className='flex items-center justify-center'>
-        <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
+      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
         
         <div className='w-full'>
           <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />

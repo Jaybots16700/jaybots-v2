@@ -25,8 +25,7 @@ export default function Awards() {
         <title>Jaybots | Awards</title>
       </Head>
       <Nav current='Awards' />
-      <main className='flex items-center justify-center'>
-        <div className='invisible w-0 lg:w-64 flex-none transition-all duration-1000' />
+      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
         
         <div className='w-full'>
           <Header title='Awards' beforeBold='Veiw the ' bold='prestigious awards' afterBold='we have won.' />
