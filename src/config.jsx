@@ -4,120 +4,125 @@
 //motion is for long titles that need scroll animations
 //motion alt is a shortened version of long titles for reduce-motion users
 export const members = [
-  { name: "Name", 
+  { name: "Anish", 
     title: "President",
-    committees: [],
+    committees: ["Code"],
     bio: "Bio",
-    image: "/images/bobPic.png"
+    image: "https://cdn.jaybots.org/team/anish2.jpg"
   },
-  { name: "Name",
+  { name: "Arnav",
     title: "Vice President",
-    committees: [],
+    committees: ["SITCOM"],
     bio: "Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/arnav.jpeg"
   },
-  { name: "Name",
+  { name: "Anaya",
     title: "Secretary",
-    committees: [],
+    committees: ["Game Master"],
     bio: "Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/anaya/anaya.png"
   },
-  { name: "Name",
+  { name: "Anthony",
     title: "Treasurer",
-    committees: [],
+    committees: ["Fundraising"],
     bio: "Bio",
     image: ""
   },
-  { name: "Name",
+  { name: "Mr. Amodio",
     title: "Mentor & Coach",
     committees: [], 
     bio: "Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg"
   },
-  { name: "Name",
+  { name: "Mrs. Wells",
     title: "Mentor & Coach",
     committees: [], 
     bio: "Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/wells/wells.png"
   },
-  { name: "Name",
+  { name: "Jason",
     title: "Foreman (Build Leader)",
-    committees: [],
+    committees: ["CAD"],
     bio: "Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/jason.jpeg"
   },
-  { name: "Name",
+  { name: "Hiro",
     title: "Architect (CAD Leader)",
-    committees: [],
-    bio: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, perferendis ad aspernatur nisi ipsum quasi amet laboriosam esse, illo inventore consequatur vero corrupti soluta ullam! Quidem iusto illum in dolores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate obcaecati molestiae iste quis omnis sequi laborum tempore voluptatibus quaerat illo voluptatem quod unde, explicabo quas veritatis. Nam harum ad cupiditate? Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, perferendis ad aspernatur nisi ipsum quasi amet laboriosam esse, illo inventore consequatur vero corrupti soluta ullam! Quidem iusto illum in dolores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate obcaecati molestiae iste quis omnis sequi laborum tempore voluptatibus quaerat illo voluptatem quod unde, explicabo quas veritatis. Nam harum ad cupiditate?",
-    image: "/images/joe.png"
+    committees: ["Manufacturing"],
+    bio: "Bio",
+    image: "https://cdn.jaybots.org/team/hiroyuki/hiroyuki.png"
   },
-  { name: "Name",
-    title: "Code Leader",
-    committees: ["committee_name"],
+  { name: "Nash",
+    title: "Programming Leader",
+    committees: ["Game Master"],
     bio:"Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/nash.png"
   },
-  { name: "Name",
+  { name: "Matthew",
     title: "Manufacturer",
-    committees: [],
+    committees: ["Code"],
     bio: "Bio",
     image: ""
   },
-  { name: "Name",
+  { name: "Joey",
     title: "SITCOM (Sponsership, Industry, Technology & Corporate Outreach Manager)",
-    committees: [""],
+    committees: ["Build"],
     bio:"Bio",
-    image: "",
+    image: "https://cdn.jaybots.org/team/joey/joey.jpeg",
     motion:true,
     altTitle: "SITCOM",
   },
-  { name: "Name",
+  { name: "Edwin",
     title: "Fundraising Leader",
-    committees: [],
+    committees: ["CAD"],
     bio: "Bio",
     image: ""
   },
-  { name: "Name",
+  { name: "Kate",
     title: "Outreach Coordinater",
-    committees: [],
+    committees: ["Build"],
     bio: "Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/kate.jpeg"
   },
-  { name: "Name",
+  { name: "Hailey",
     title: "Equipment Manager",
-    committees: [],
+    committees: ["Build"],
     bio:"Bio",
     image: ""
     },
-  { name: "Name",
+  { name: "Joanna",
     title: "Branding Leader",
-    committees: [],
+    committees: ["Media"],
     bio: "Bio",
-    image: ""
+    image: "https://cdn.jaybots.org/team/joanna/joanna.png"
   },
-  { name: "Name",
+  { name: "Pallavi",
   title: "Media Manager",
-  committees: [],
+  committees: ["Branding"],
   bio: "Bio",
-  image: ""
+  image: "https://cdn.jaybots.org/team/pallavi.jpg"
   },
-  { name: "Name",
+  { name: "Alex",
     title: "Game Master",
-    committees: [],
+    committees: ["Equipment"],
+    bio: "Bio",
+    image: "https://cdn.jaybots.org/team/alex/alexFULL.png"
+  },
+  { name: "Areej",
+    committees: ["Secretary", "Branding"],
     bio: "Bio",
     image: ""
   },
-  { name: "Name",
-    committees: ["committee_name", "committee_name"],
+  { name: "Silvia",
+    committees: ["Build"],
     bio: "Bio",
-    image: "/images/jeff.png"
+    image: "https://cdn.jaybots.org/team/silvia2.jpg"
   },
-  { name: "Name",
-    committees: ["committee_name"],
-    bio: "Bio",
-    image: "/images/emily.png"
-  },
+  { name: "Mark",
+  committees: ["Outreach"],
+  bio: "Bio",
+  image: "https://cdn.jaybots.org/team/marcus.png"
+},
 ]
 
 export const alumni = [
@@ -402,6 +407,7 @@ export const games = [
     ]
   },
 ]
+
 
 export const buildImages = [
   { source: "https://cdn.jaybots.org/build/field1.jpg", caption: "Anish & Silvia building the field." },

@@ -40,13 +40,13 @@ export default function Team() {
                 <div key={member.name} className='w-72 group [perspective:5000px]'>
                   <div className='relative h-full w-full  text-gray-300 transition-all duration-1000 motion-reduce:duration-0 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden]'>
                     <div className=' rounded-xl bg-slate-900 h-full w-full [backface-visibility:hidden] overflow-hidden'>
-                      <div className='flex items-start justify-center h-96'>
+                      <div className='flex items-center justify-center h-96 w-full border-b-4 border-gray-600 overflow-hidden'>
                         <Image
                           src={member.image}
                           height={384}
                           width={288}
                           alt={member.name}
-                          className='border-b-4 border-gray-600'
+                          className=''
                         />
                       </div>
                       <div className='w-full text-center p-4 space-y-1 h-36'>
