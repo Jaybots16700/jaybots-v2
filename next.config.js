@@ -11,6 +11,47 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'thecommencementgroup.com',
+        port: '',
+        pathname: '/wp-content/uploads/2016/09/NEW-JJHS-LOGO.gif',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.redd.it',
+        port: '',
+        pathname: '/iblf4hi92vt21.png',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.wixstatic.com',
+        port: '',
+        pathname: '/media/774e05_217a89f68e9a4d7abcdd136187700655~mv2.png/v1/crop/x_37,y_29,w_436,h_438/fill/w_440,h_444,al_c,lg_1,q_85,enc_auto/roverruckus_first_w.png',
+      },
+      {
+        protocol: 'https',
+        hostname: 'hightechkids.org',
+        port: '',
+        pathname: '/wp-content/uploads/Graphics/ChallengeLogos/FTCChallengeLogos/2020_UltimateGoal.2_web.png',
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        port: '',
+        pathname: '/wikipedia/commons/thumb/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.wappingersschools.org',
+        port: '',
+        pathname: '/cms/lib/NY01001463/Centricity/Template/GlobalAssets/images///logos/Wappingers_Logo_NEW_Blue_Red.png',
+      },
+      {
+        protocol: 'https',
+        hostname:'jaybotsboosters.org',
+        port: '',
+      },
+      {
+        protocol: 'https',
         hostname: 'cdn.jaybots.org',
         port: '',
       },

@@ -30,7 +30,7 @@ export default function Awards() {
         <div className='w-full'>
           <Header title='Awards' beforeBold='Veiw the ' bold='prestigious awards' afterBold='we have won.' />
 
-          <div className='w-full h-full bg-zinc-800 pt-10 py-4'>
+          <div className='w-full h-full bg-gray-900 pt-10 py-4'>
             <div className='grid grid-cols-2 md:flex'>
               {games.map((game, index) => (
                 <div key={game.name} className='w-full flex justify-center'>

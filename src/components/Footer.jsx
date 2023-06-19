@@ -20,7 +20,7 @@ function QrCodeBorder(props) {
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-neutral-900">
+    <footer className="border-t border-gray-500 bg-slate-950">
       <Container>
         <div className="flex flex-col items-start lg:justify-between justify-center gap-y-6 py-6 lg:flex-row lg:items-center">
           <Link href="/" className="hidden lg:flex lg:items-center">
@@ -32,31 +32,31 @@ export function Footer() {
               alt=''
             />
             <div className="ml-4">
-              <p className="text-base font-semibold text-gray-100">Jaybots</p>
-              <p className="mt-1 text-sm  text-gray-200 xl:w-32">John Jay Robotics</p>
+              <p className="text-base font-semibold text-gray-200">Jaybots</p>
+              <p className="mt-1 text-sm  text-gray-400 xl:w-32">John Jay Robotics</p>
             </div>
           </Link>
           <div className='grid grid-cols-2 sm:flex space-x-2 items-center w-full justify-center lg:justify-end'>
             {Socials.map((item) => (
-              <Link key={item.name} href={item.link} className='flex items-center justify-center p-4 h-16 w-auto rounded-lg hover:bg-gray-700 group space-x-2'>
+              <Link key={item.name} href={item.link} className='flex items-center justify-center p-4 h-16 w-auto rounded-lg hover:bg-slate-800 group space-x-2'>
                 <Image
                   src={item.image}
                   height={25}
-                  width={35}
+                  width={item.width}
                   alt={item.name}
                 />
-                <div className='text-gray-300 group-hover:text-white'>
+                <div className='text-gray-400 group-hover:text-white'>
                   {item.name}
                 </div>
               </Link>
             ))}
           </div>
         </div>
-        <div className='flex flex-col items-center border-t border-gray-200 pt-4 pb-2 md:justify-between'>
+        <div className='flex flex-col items-center border-t border-gray-400 pt-4 pb-2 md:justify-between'>
           <p className='text-md text-gray-400'>Meet our <Link href='https://jaybotsboosters.org/sponsors' className='text-gray-200 font-semibold hover:font-bold'>Sponsers</Link></p>
           <div className='grid grid-cols-3 sm:flex space-x-8'>
             {Sponsers.map((item) => (
-              <Link key={item.name} href={item.link} className='flex items-center'>
+              <Link key={item.name} href={item.link} className='flex items-center hover:brightness-125'>
                 <Image 
                   src={item.image}
                   width={item.width}
@@ -67,7 +67,7 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col items-center border-t border-gray-200 py-6 md:flex-row-reverse md:justify-between md:pt-6">
+        <div className="flex flex-col items-center border-t border-gray-400 py-6 md:flex-row-reverse md:justify-between md:pt-6">
           <form className="flex w-full justify-center md:w-auto">
             <TextField
               type="email"
@@ -83,7 +83,7 @@ export function Footer() {
             </button>
           </form>
           <p className=" text-center md:text-start md:mr-2 mt-4 text-sm text-gray-400 md:mt-0">
-            &copy; Copyright <Link href="/" className='text-gray-200 font-semibold hover:font-bold'>Jaybots</Link>. Created by Matthew. All rights reserved.
+            &copy; <span className='hidden sm:inline'>Copyright </span>2023 <Link href="/" className='text-gray-200 font-semibold hover:font-bold'>Jaybots</Link>. Created by Matthew. All rights reserved.
           </p>
         </div>
       </Container>

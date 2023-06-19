@@ -32,7 +32,7 @@ export default function Team() {
         <div className='w-full'>
         <Header title="Meet The Team" beforeBold="Just " bold={friends} afterBold=" working on a robot."/>
 
-          <div className='w-full h-full py-12 bg-zinc-800 flex justify-center'>
+          <div className='w-full h-full py-12 bg-gray-900 flex justify-center'>
             <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
 
               {members.map((member) => (

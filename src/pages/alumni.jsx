@@ -20,13 +20,13 @@ export default function Alumni() {
         <div className='w-full'>
         <Header title="Alumni" beforeBold="View all of our " bold="distiguished" afterBold=" alumni."/>
 
-          <div className='w-full h-full py-12 bg-zinc-800 flex justify-center'>
+          <div className='w-full h-full py-12 bg-gray-900 flex justify-center'>
             <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
 
               {alumni.map((alum) => (
                 <div key={alum.name} className='w-72 group [perspective:5000px]'>
                   <div className='relative h-full w-full  text-gray-300 transition-all duration-1000 motion-reduce:duration-0 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden]'>
-                    <div className=' rounded-xl bg-slate-900 h-full w-full [backface-visibility:hidden] overflow-hidden'>
+                    <div className='border-4 border-blue-800 rounded-xl bg-slate-900 h-full w-full [backface-visibility:hidden] overflow-hidden'>
                       <div className='flex items-start justify-center h-96'>
                         <Image
                           src={alum.image}
@@ -63,7 +63,7 @@ export default function Alumni() {
                       </div>
                     </div>
 
-                    <div className='absolute inset-0 rounded-xl h-full w-full bg-slate-900 [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden'>
+                    <div className='absolute inset-0 rounded-xl h-full w-full bg-slate-900 border-4 border-blue-800 [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden'>
                       <div className='h-full w-full text-center'>
                         <p className='text-2xl font-bold border-b-2 border-gray-500 pb-1 m-4 mb-0'>
                           {alum.name}
@@ -77,7 +77,7 @@ export default function Alumni() {
                 </div>
               ))}
 
-              <Link href="/team" className='w-72 h-full bg-slate-900 rounded-xl text-gray-300 hover:brightness-110 transition-all duration-300'>
+              <Link href="/team" className='border-4 border-blue-800 w-72 h-full bg-slate-900 rounded-xl hover:bg-blue-950 text-gray-300 transition-all duration-300 group'>
                 <div className='w-full h-[388px] flex items-center border-b-4 border-gray-600'>
                   <Image
                     src="https://cdn.jaybots.org/logo/birdtransparent.png"

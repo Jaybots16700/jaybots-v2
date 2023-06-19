@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export function Header({title, beforeBold, bold, afterBold}){
   return (
-    <div className='sm:flex p-12 text-white text-center items-center w-full sm:h-72 bg-gray-900'>
+    <div className='sm:flex p-12 text-white text-center items-center w-full sm:h-72 bg-gradient-to-t from-gray-900 to-gray-700 via-30% via-gray-800'>
       <div className='lg:hidden flex justify-center'>
         <Image
-          src='/images/logo.png'
+          src='https://cdn.jaybots.org/logo/logo.png'
           width={250}
           height={250}
           className='rounded-full h-32 w-32 sm:h-auto sm:w-auto'

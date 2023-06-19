@@ -56,17 +56,17 @@ export function NavLinks({current}) {
 
 
 export const Socials = [
-  {name: "Twitter", link: "https://twitter.com/RoboticsJay", image: "/images/twitter.png"},
-  {name: "Instagram", link: "https://www.instagram.com/johnjayroboticsclub/", image: "/images/instagram.png"},
-  {name: "YouTube", link: "https://www.youtube.com/@jaybots16700", image: "/images/youtube.png"},
-  {name: "School", link: "https://www.wappingersschools.org/Domain/1118", image: "/images/jjhslogo.png"},
+  {name: "Twitter", link: "https://twitter.com/RoboticsJay", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553", width: 35},
+  {name: "Instagram", link: "https://www.instagram.com/johnjayroboticsclub/", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png", width: 35},
+  {name: "YouTube", link: "https://www.youtube.com/@jaybots16700", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png", width: 35},
+  {name: "School", link: "https://www.wappingersschools.org/Domain/1118", image: "https://thecommencementgroup.com/wp-content/uploads/2016/09/NEW-JJHS-LOGO.gif", width: 45},
 ]
 
 export const Sponsers = [
-  {name: "Rev Robotics", link: "https://revrobotics.com", image: "/images/rev.png", width: 100},
-  {name: "PTC Onshape", link: "https://www.ptc.com/en/products/onshape", image: "/images/onshape.png", width: 200},
-  {name: "Stewart's Shops", link: "https://www.stewartsshops.com/", image: "/images/stewarts.png", width: 100},
-  {name: "18 North Grill", link: "https://www.18northgrill.com/", image: "/images/northgrill.png", width: 100},
-  {name: "Dutches Invests", link: "https://jaybotsboosters.org/sponsors", image: "/images/dutchess.png", width: 200},
-  {name: "Wappingers Central School District", link: "https://www.wappingersschools.org/", image: "/images/wappingers.png", width: 75},
+  {name: "Rev Robotics", link: "https://revrobotics.com", image: "https://jaybotsboosters.org/_next/image?url=%2Frevlightbetter.png&w=256&q=75", width: 100},
+  {name: "PTC Onshape", link: "https://www.ptc.com/en/products/onshape", image: "https://jaybotsboosters.org/_next/image?url=%2Fonshapelight.png&w=640&q=75", width: 200},
+  {name: "Stewart's Shops", link: "https://www.stewartsshops.com/", image: "https://jaybotsboosters.org/_next/image?url=%2Fstewlight.png&w=256&q=75", width: 100},
+  {name: "18 North Grill", link: "https://www.18northgrill.com/", image: "https://jaybotsboosters.org/_next/image?url=%2Fgrilllight.png&w=256&q=75", width: 100},
+  {name: "Dutches Invests", link: "https://jaybotsboosters.org/sponsors", image: "https://jaybotsboosters.org/_next/image?url=%2Fdutchess.jpg&w=640&q=75", width: 200},
+  {name: "Wappingers Central School District", link: "https://www.wappingersschools.org/", image: "https://www.wappingersschools.org/cms/lib/NY01001463/Centricity/Template/GlobalAssets/images///logos/Wappingers_Logo_NEW_Blue_Red.png", width: 200},
 ]

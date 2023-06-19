@@ -20,7 +20,7 @@ export default function Donate() {
         <div className='w-full'>
         <Header title="Donate" beforeBold="Parts are " bold="expensive" afterBold=", consider donating today!"/>
 
-          <div className='grid grid-cols-1 xl:grid-cols-2 space-x-6 w-full h-full p-12 bg-zinc-800 text-white text-center text-lg font-semibold space-y-6'>
+          <div className='grid grid-cols-1 xl:grid-cols-2 space-x-6 w-full h-full p-12 bg-gray-900 text-white text-center text-lg font-semibold space-y-6'>
             
             <div className='space-y-4 w-full'>
               <h1 className='text-3xl sm:text-5xl md:text-6xl font-bold'>How Can You Help?</h1>
@@ -35,7 +35,7 @@ export default function Donate() {
             </div>
 
             <div className='space-y-8'>
-              <div className='w-full bg-slate-900 rounded-5xl p-8 font-light space-y-4'>
+              <div className='w-full bg-slate-900 border-4 border-blue-800 rounded-5xl p-8 font-light space-y-4'>
                 <p>Corporations should check out our <Link
                   href="https://jaybotsboosters.org/sponsor"
                   className={linkStyle}>
@@ -47,19 +47,19 @@ export default function Donate() {
                 </p>
                 <Link
                   href="https://jaybotsboosters.org/sponsor">
-                    <div className='bg-blue-500 rounded-full h-16 text-xl flex items-center justify-center mt-4 hover:bg-blue-700 transition-colors duration-500'>
+                    <div className='bg-blue-400 rounded-full h-16 text-xl flex items-center justify-center mt-4 hover:bg-blue-700 transition-colors duration-500'>
                       <p>Learn more at <b className='font-bold'>JaybotsBoosters.org</b></p>
                     </div>
                 </Link>
               </div>
 
-              <div className='w-full bg-slate-900 rounded-5xl p-8 pb-6 font-light'>
+              <div className='w-full bg-slate-900 border-4 border-blue-800 rounded-5xl p-8 pb-6 font-light'>
                 <p>Donations accepted via <b className='font-bold'>PayPal</b>. (Account not required!)</p>
                 <Link
                   href="https://www.paypal.com/donate/?hosted_button_id=9ZWAFZYN8NTCS">
-                    <div className='bg-blue-500 rounded-full h-16 text-xl flex items-center justify-center my-6 hover:bg-blue-700 transition-colors duration-500'>
+                    <div className='bg-blue-400 rounded-full h-16 text-xl flex items-center justify-center my-6 hover:bg-blue-300 transition-colors duration-500'>
                       <Image 
-                        src="/images/paypal.png"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png"
                         height={200}
                         width={130}
                         alt="PayPal"

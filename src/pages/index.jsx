@@ -39,15 +39,15 @@ export default function Home() {
         <title>Jaybots | John Jay Robotics</title>
       </Head>
       <Nav current="Home" />
-      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000 space-y'>
+      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000 space-y text-gray-400'>
         
         <div className='w-full'>
           <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='w-full h-full bg-zinc-800 py-12'>
+          <div className='w-full h-full bg-gray-900 py-12'>
 
-            <div className='relative w-full text-center text-white space-y-6 text-xl p-12 pt-0'>
-              <h2 className='text-5xl font-bold'>Who are we?</h2>
+            <div className='relative w-full text-center space-y-6 text-xl p-12 pt-0'>
+              <h2 className='text-5xl font-bold text-gray-200'>Who are we?</h2>
               <p>We are the Jaybots - This is our fifth year competing in <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
                 FTC
               </Link>
@@ -86,12 +86,12 @@ export default function Home() {
 
             <div className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 justify-center'>
               <div className="w-full sm:w-min h-fit sm:h-full sm:flex items-center">
-                <div className="h-fit text-white bg-slate-950 p-12 w-full sm:w-min sm:rounded-r-4xl">
-                  <h2 className='text-5xl sm:text-6xl md:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white mr-20'>Media</h2>
-                  <p className='text-base md:text-lg font-light mt-4'>I don't know what to put here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique sequi molestias, harum omnis, nisi.</p>
-                  <Link href="/media" className='flex items-center mt-4 space-x-2 bg-blue-700 w-fit px-3 py-1 rounded-full hover:bg-blue-600 hover:space-x-3 group'>
-                    <p className='text-sm'>View all Media</p>
-                    <FontAwesomeIcon icon={faArrowRight} className=' transition-all duration-300 h-4 group-hover:h-6' />
+                <div className="h-fit bg-slate-950 p-12 w-full sm:w-min sm:rounded-r-4xl">
+                  <h2 className='text-gray-100 text-5xl sm:text-6xl md:text-7xl xl:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white md:mr-20'>Media</h2>
+                  <p className='text-gray-300 text-base md:text-lg font-light mt-4'>I don't know what to put here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique sequi molestias, harum omnis, nisi.</p>
+                  <Link href="/media" className='flex items-center mt-4 space-x-2 bg-blue-700 w-fit px-3 py-1 rounded-full hover:bg-blue-600 group'>
+                    <p className='text-sm text-gray-100 group-hover:font-semibold transition-all duration-300'>View all Media</p>
+                    <FontAwesomeIcon icon={faArrowRight} className='text-white transition-all duration-300 h-4 group-hover:h-6' />
                   </Link>
                 </div>
               </div>
@@ -104,14 +104,14 @@ export default function Home() {
             </div>
 
             <div className='w-full px-12 mt-20'>
-              <video controls className=''>
+              <video controls className='w-full'>
                 <source src='/videos/home.mp4' type="video/mp4" />
                 Video unavailable.
               </video>
             </div>
 
-            <div id="contact" className='relative w-full text-center text-white space-y-4 text-xl mt-8 font-light'>
-              <h2 className='text-4xl font-bold'>Contact Us!</h2>
+            <div id="contact" className='relative w-full text-center space-y-4 text-xl mt-8 font-light px-4'>
+              <h2 className='text-4xl font-bold text-gray-200'>Contact Us!</h2>
               <p>Like What you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
                   Join Today!
                 </Link>

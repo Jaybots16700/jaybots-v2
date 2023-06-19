@@ -39,7 +39,7 @@ export default function Media() {
         <div className='w-full'>
           <Header title='Media' bold='Our pics and vids' afterBold=' - check out what we&apos;ve been up to!' />
 
-          <div className='w-full h-full p-12 bg-zinc-800'>
+          <div className='w-full h-full p-12 bg-gray-900'>
           <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {tabs.map((tab, index) => (
                 <div key={tab.name} className='w-full flex justify-center'>

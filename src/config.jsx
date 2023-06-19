@@ -331,7 +331,7 @@ export const games = [
   },
   {name: "Ultimate Goal",
     year: "2020-2021",
-    logo: "/images/ultimategoal.png",
+    logo: "https://hightechkids.org/wp-content/uploads/Graphics/ChallengeLogos/FTCChallengeLogos/2020_UltimateGoal.2_web.png",
     logowidth: 500,
     allComps: [
       {team: "Jaybots",
@@ -366,7 +366,7 @@ export const games = [
   },
   {name: "SkyStone",
     year: "2019-2020",
-    logo: "/images/skystone.png",
+    logo: "https://i.redd.it/iblf4hi92vt21.png",
     logowidth: 500,
     allComps: [
       {team: "Jaybots",
@@ -392,7 +392,7 @@ export const games = [
   },
   {name: "Rover Ruckus",
     year: "2019",
-    logo: "/images/rover-ruckus.png",
+    logo: "https://static.wixstatic.com/media/774e05_217a89f68e9a4d7abcdd136187700655~mv2.png/v1/crop/x_37,y_29,w_436,h_438/fill/w_440,h_444,al_c,lg_1,q_85,enc_auto/roverruckus_first_w.png",
     logowidth: 300,
     allComps: [
       {team: "Jaybots",
