@@ -88,7 +88,7 @@ export default function Home() {
               <div className="w-full sm:w-min h-fit sm:h-full sm:flex items-center">
                 <div className="h-fit bg-slate-950 p-12 w-full sm:w-min sm:rounded-r-4xl">
                   <h2 className='text-gray-100 text-5xl sm:text-6xl md:text-7xl xl:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white md:mr-20'>Media</h2>
-                  <p className='text-gray-300 text-base md:text-lg font-light mt-4'>I don't know what to put here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique sequi molestias, harum omnis, nisi.</p>
+                  <p className='text-gray-300 text-base md:text-lg font-light mt-4'>I don&apos;t know what to put here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique sequi molestias, harum omnis, nisi.</p>
                   <Link href="/media" className='flex items-center mt-4 space-x-2 bg-blue-700 w-fit px-3 py-1 rounded-full hover:bg-blue-600 group'>
                     <p className='text-sm text-gray-100 group-hover:font-semibold transition-all duration-300'>View all Media</p>
                     <FontAwesomeIcon icon={faArrowRight} className='text-white transition-all duration-300 h-4 group-hover:h-6' />
