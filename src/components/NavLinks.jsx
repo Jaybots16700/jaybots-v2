@@ -17,37 +17,41 @@ import {
   faCommentsDollar,
 } from '@fortawesome/free-solid-svg-icons'
 
-export function NavLinks({current}) {
-  let [hoveredIndex, setHoveredIndex] = useState(null)
+const links = [
+  ['Home', '/', faHouse],
+  ['Meet the Team', '/team', faPeopleGroup],
+  ['Join', 'https://interest.jaybots.org', faBullhorn],
+  ['Outreach', '/outreach', faComments],
+  ['Awards', '/awards', faAward],
+  ['Donate', '/donate', faCircleDollarToSlot],
+  ['Calendar', '/events', faCalendarWeek],
+  ['Media', '/media', faPhotoFilm],
+  ['Alumni', '/alumni', faGraduationCap],
+  ['Competition Host', '/host', faRobot],
+  ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
+  ['Contact Us', '/#contact', faEnvelopeOpenText],
+]
 
-  return [
-    ['Home', '/', faHouse],
-    ['Meet the Team', '/team', faPeopleGroup],
-    ['Join', 'https://interest.jaybots.org', faBullhorn],
-    ['Outreach', '/outreach', faComments],
-    ['Awards', '/awards', faAward],
-    ['Donate', '/donate', faCircleDollarToSlot],
-    ['Calendar', '/events', faCalendarWeek],
-    ['Media', '/media', faPhotoFilm],
-    ['Alumni', '/alumni', faGraduationCap],
-    ['Competition Host', '/host', faRobot],
-    ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
-    ['Contact Us', '/#contact', faEnvelopeOpenText],
-  ].map(([label, href, icon], index) => (
+export function NavLinks({current}) {
+
+  return (
+  
+  <div className='space-y-1'>
+  {links.map(([label, href, icon], index) => (
       <Link
         key={label}
         href={href}
         className={clsx({
-          "items-center relative rounded-lg my-1 py-3 px-2 text-md text-gray-300 transition-all duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 grid grid-cols-6 hover:font-bold": true,
+          "flex items-center relative rounded-lg py-3 px-2 text-base text-gray-300 transition-all duration-500 delay-100 hover:delay-0 hover:text-white hover:bg-blue-800 hover:font-bold": true,
           "bg-blue-900 brightness-125 text-white font-semibold": current == label,
         })}
-        onMouseEnter={() => setHoveredIndex(index)}
-        onMouseLeave={() => setHoveredIndex(null)}
       >
-        <FontAwesomeIcon icon={icon} className='h-6 place-self-center' />
+        <FontAwesomeIcon icon={icon} className='h-6 w-6 place-self-center' />
         <span className="relative z-10 col-span-5 pl-3">{label}</span>
       </Link>
-  ))
+  ))}
+  </div>
+  )
 }
 
 

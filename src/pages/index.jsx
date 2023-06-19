@@ -10,6 +10,8 @@ import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { Reviews } from '@/components/Photos'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
+import { ReviewColumn } from '@/components/Photos'
+
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
@@ -22,8 +24,11 @@ import {
 import {
   faCommentsDollar,
   faBullhorn,
+  faArrowRight,
 } from '@fortawesome/free-solid-svg-icons'
 import { linkStyle } from '@/config.jsx'
+import { allImages } from '@/config.jsx'
+
 
 const buttonStyle = "h-12 w-30 rounded-lg flex justify-center items-center hover:brightness-150 hover:text-gray-800 "
 
@@ -34,14 +39,15 @@ export default function Home() {
         <title>Jaybots | John Jay Robotics</title>
       </Head>
       <Nav current="Home" />
-      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
+      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000 space-y'>
         
         <div className='w-full'>
           <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='w-full h-full p-12 bg-zinc-800'>
-            <div className='relative w-full text-center text-white space-y-2 text-xl'>
-              <h2 className='text-4xl font-semibold'>👋 Hello!</h2>
+          <div className='w-full h-full bg-zinc-800 py-12'>
+
+            <div className='relative w-full text-center text-white space-y-6 text-xl p-12 pt-0'>
+              <h2 className='text-5xl font-bold'>Who are we?</h2>
               <p>We are the Jaybots - This is our fifth year competing in <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
                 FTC
               </Link>
@@ -55,7 +61,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className='grid sm:grid-cols-2 grid-cols-1 w-full mt-12 gap-4 text-center text-white text-lg sm:text-sm font-semibold md:text-xl'>
+            <div className='grid sm:grid-cols-2 grid-cols-1 w-full p-12 pt-0 gap-4 text-center text-white text-lg sm:text-sm font-semibold md:text-xl'>
               <Link href="https://www.instagram.com/johnjayroboticsclub/" className={buttonStyle + "bg-fuchsia-500"} target='_blank'>
                 <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2" />
                 <p>@JohnJayRoboticsClub</p>
@@ -78,13 +84,34 @@ export default function Home() {
               </Link>
             </div>
 
-            <video controls className='w-full mt-12'>
-              <source src='/videos/home.mp4' type="video/mp4" />
-              Video unavailable.
-            </video>
+            <div className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 justify-center'>
+              <div className="w-full sm:w-min h-fit sm:h-full sm:flex items-center">
+                <div className="h-fit text-white bg-slate-950 p-12 w-full sm:w-min sm:rounded-r-4xl">
+                  <h2 className='text-5xl sm:text-6xl md:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white mr-20'>Media</h2>
+                  <p className='text-base md:text-lg font-light mt-4'>I don't know what to put here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique sequi molestias, harum omnis, nisi.</p>
+                  <Link href="/media" className='flex items-center mt-4 space-x-2 bg-blue-700 w-fit px-3 py-1 rounded-full hover:bg-blue-600 hover:space-x-3 group'>
+                    <p className='text-sm'>View all Media</p>
+                    <FontAwesomeIcon icon={faArrowRight} className=' transition-all duration-300 h-4 group-hover:h-6' />
+                  </Link>
+                </div>
+              </div>
 
-            <div id="contact" className='relative w-full text-center text-white space-y-4 text-xl mt-8'>
-              <h2 className='text-4xl font-semibold'>Contact Us!</h2>
+              <div className='relative pl-4 rounded-2xl sm:rounded-r-none overflow-hidden pr-4 sm:pr-8 sm:h-full h-[32rem] mx-8 sm:mx-0'>
+                <ReviewColumn reviews={allImages} msPerPixel={10} caption={false} />
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-gray-700" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-gray-700" />
+              </div>
+            </div>
+
+            <div className='w-full px-12 mt-20'>
+              <video controls className=''>
+                <source src='/videos/home.mp4' type="video/mp4" />
+                Video unavailable.
+              </video>
+            </div>
+
+            <div id="contact" className='relative w-full text-center text-white space-y-4 text-xl mt-8 font-light'>
+              <h2 className='text-4xl font-bold'>Contact Us!</h2>
               <p>Like What you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
                   Join Today!
                 </Link>

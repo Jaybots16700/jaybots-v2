@@ -28,7 +28,7 @@ function MobileNavLink({ children, ...props }) {
 function NavBar({current}) {
   return (        
     <div className=''>
-      <Link href="/" aria-label="Home"  className="flex justify-center pt-4">
+      <Link href="/" aria-label="Home"  className="flex justify-center py-2">
         <Image
           src='/images/logo.png'
           width={175}
