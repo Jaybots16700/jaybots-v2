@@ -1,128 +1,194 @@
 //photo should be 3:4 aspect ratio
 //remove title for members without a title
 //committees is an array with 0 to 2 committees in it
-//motion is for long titles that need scroll animations
-//motion alt is a shortened version of long titles for reduce-motion users
 export const members = [
-  { name: "Anish", 
+  {
+    name: "Anish",
     title: "President",
-    committees: ["Code"],
-    bio: "Bio",
+    committees: ["Code", "Officers"],
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/anish2.jpg"
   },
-  { name: "Arnav",
+  {
+    name: "Arnav",
     title: "Vice President",
-    committees: ["SITCOM"],
-    bio: "Bio",
+    committees: ["SITCOM", "Officers"],
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/arnav.jpeg"
   },
-  { name: "Anaya",
+  {
+    name: "Anaya",
     title: "Secretary",
-    committees: ["Game Master"],
-    bio: "Bio",
+    committees: ["Game Master", "Officers"],
+    leader: "Documentation",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/anaya/anaya.png"
   },
-  { name: "Anthony",
+  {
+    name: "Anthony",
     title: "Treasurer",
-    committees: ["Fundraising"],
-    bio: "Bio",
+    committees: ["Fundraising", "Officers"],
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: ""
   },
-  { name: "Mr. Amodio",
+  {
+    name: "Mr. Amodio",
     title: "Mentor & Coach",
-    committees: [], 
-    bio: "Bio",
+    committees: ["Advisors"], 
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg"
   },
-  { name: "Mrs. Wells",
+  {
+    name: "Mrs. Wells",
     title: "Mentor & Coach",
-    committees: [], 
-    bio: "Bio",
+    committees: ["Advisors"], 
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/wells/wells.png"
   },
-  { name: "Jason",
-    title: "Foreman (Build Leader)",
+  {
+    name: "Jason",
+    title: "Foreman",
     committees: ["CAD"],
-    bio: "Bio",
+    leader: "Build",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/jason.jpeg"
   },
-  { name: "Hiro",
-    title: "Architect (CAD Leader)",
+  {
+    name: "Hiro",
+    title: "Architect",
     committees: ["Manufacturing"],
-    bio: "Bio",
+    leader: "CAD",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/hiroyuki/hiroyuki.png"
   },
-  { name: "Nash",
+  {
+    name: "Nash",
     title: "Programming Leader",
     committees: ["Game Master"],
-    bio:"Bio",
+    leader: "Code",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/nash.png"
   },
-  { name: "Matthew",
+  {
+    name: "Matthew",
     title: "Manufacturer",
     committees: ["Code"],
-    bio: "Bio",
-    image: ""
+    leader: "Manufacturing",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
+    image: "" 
   },
-  { name: "Joey",
-    title: "SITCOM (Sponsership, Industry, Technology & Corporate Outreach Manager)",
+  {
+    name: "Joey",
+    title: "SITCOM",
     committees: ["Build"],
+    leader: "SITCOM",
     bio:"Bio",
-    image: "https://cdn.jaybots.org/team/joey/joey.jpeg",
-    motion:true,
-    altTitle: "SITCOM",
+    image: "https://cdn.jaybots.org/team/joey/joey.jpeg", 
   },
-  { name: "Edwin",
+  {
+    name: "Edwin",
     title: "Fundraising Leader",
     committees: ["CAD"],
-    bio: "Bio",
+    leader: "Fundraising",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: ""
   },
-  { name: "Kate",
+  {
+    name: "Kate",
     title: "Outreach Coordinater",
     committees: ["Build"],
-    bio: "Bio",
+    leader: "Outreach",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/kate.jpeg"
   },
-  { name: "Hailey",
+  {
+    name: "Hailey",
     title: "Equipment Manager",
     committees: ["Build"],
+    leader: "Equipment",
     bio:"Bio",
     image: ""
-    },
-  { name: "Joanna",
+  },
+  {
+    name: "Joanna",
     title: "Branding Leader",
     committees: ["Media"],
-    bio: "Bio",
+    leader: "Branding",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/joanna/joanna.png"
   },
-  { name: "Pallavi",
-  title: "Media Manager",
-  committees: ["Branding"],
-  bio: "Bio",
-  image: "https://cdn.jaybots.org/team/pallavi.jpg"
+  {
+    name: "Pallavi",
+    title: "Media Manager",
+    committees: ["Branding"],
+    leader: "Media",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
+    image: "https://cdn.jaybots.org/team/pallavi.jpg"
   },
-  { name: "Alex",
+  {
+    name: "Alex",
     title: "Game Master",
     committees: ["Equipment"],
-    bio: "Bio",
-    image: "https://cdn.jaybots.org/team/alex/alexFULL.png"
+    leader: "Game Master",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
+    image: "https://cdn.jaybots.org/team/alex/alexFULL.png" 
   },
-  { name: "Areej",
-    committees: ["Secretary", "Branding"],
-    bio: "Bio",
-    image: ""
+  {
+    name: "Areej",
+    committees: ["Documentation", "Branding"],
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
+    image: "https://cdn.jaybots.org/team/areej.jpg"
   },
-  { name: "Silvia",
+  {
+    name: "Silvia",
     committees: ["Build"],
-    bio: "Bio",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
     image: "https://cdn.jaybots.org/team/silvia2.jpg"
   },
-  { name: "Mark",
-  committees: ["Outreach"],
-  bio: "Bio",
-  image: "https://cdn.jaybots.org/team/marcus.png"
-},
+  {
+    name: "Mark",
+    committees: ["Outreach"],
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis id facere nisi cupiditate, asperiores, provident repellendus quasi doloribus aperiam inventore in quod numquam perspiciatis ex aliquid quo! Illum aperiam explicabo et numquam quaerat a amet molestiae magni natus eos ad incidunt architecto rem voluptatibus est maxime, odio in ipsum fugit.",
+    image: "https://cdn.jaybots.org/team/marcus.png"
+  },
+]
+
+export const committeeNames = [
+  "Officers",
+  "Advisors",
+  "Build",
+  "Code",
+  "CAD",
+  "Other",
+]
+
+export const otherCommittees = [
+  "Documentation",
+  "SITCOM",
+  "Equipment",
+  "Media",
+  "Branding",
+  "Manufacturing",
+  "Game Master",
+  "Fundraising",
+  "Outreach"
+]
+
+export const committeeDescript = [
+  {name: "Officers", description: "The exceptional officers of our high school robotics team, a dynamic group of visionary leaders who fuel the engine of our team's success, meticulously planning, strategizing, and inspiring their fellow teammates to embrace innovation, collaboration, and excellence, as they boldly navigate the exciting frontiers of technology and robotics."},
+  {name: "Advisors", description: "Our esteemed advisors and mentors, the guiding lights behind our team, whose wealth of knowledge, unwavering support, and invaluable expertise provide a steady compass for our growth and development, as we navigate the thrilling realm of robotics, empowering us to push boundaries, embrace challenges, and unlock our full potential."},
+  {name: "Build", description: "Our skilled builders, the master craftsmen behind the scenes, who bring designs to life through their meticulous craftsmanship, precision engineering, and unwavering dedication to constructing our formidable robots."},
+  {name: "Code", description: "Our brilliant programmers, the coding wizards who breathe life into our robots, armed with their ingenuity, problem-solving prowess, and lines of code that shape our robots' intelligence and functionality."},
+  {name: "CAD", description: "The creative minds behind the scenes, whose imaginative designs and innovative ideas lay the foundation for our robots, utilizing cutting-edge software to bring their concepts to life in the virtual realm before they become tangible realities."},
+  {name: "Documentation", description: "Our meticulous documentation committee, entrusted with the crucial task of capturing every step of our journey in the meticulous pages of our engineering notebook and portfolio, ensuring a comprehensive record of our progress, challenges, and triumphs throughout the robotics season."},
+  {name: "SITCOM", description: "Our dynamic Sponsorship, Industry, Technology, & Corporate Outreach Manager, and their dedicated team, tirelessly forging connections with sponsors and securing professional mentors to fuel our team's success, bridging the gap between academia and industry to empower our students with real-world experience and opportunities."},
+  {name: "Equipment", description: "Our efficient Equipment Management, the backbone of our robotics operations, responsible for organizing, maintaining, and optimizing our array of tools, machinery, and resources, ensuring seamless functionality and enabling our team to thrive in the workshop and beyond."},
+  {name: "Media", description: "The visual storytellers and social media wizards who capture the essence of our robotics journey through captivating photos, compelling videos, and engaging social media content, keeping our community connected and inspired by our team's accomplishments."},
+  {name: "Branding", description: "The artistic visionaries behind our team's distinctive identity, crafting captivating team colors, logos, branding elements, and design aesthetics that reflect our spirit of innovation, teamwork, and excellence, leaving a lasting impression wherever our team goes."},
+  {name: "Manufacturing", description: "The masters of precision and customization, who operate and maintain our 3D printers and CNC machines with expertise, harnessing the power of technology to manufacture bespoke parts, pushing the boundaries of engineering and ensuring our robots are equipped with cutting-edge components."},
+  {name: "Game Master", description: "Our strategic Game Master and their astute committee, who immerse themselves in the rules of the game, analyze gameplay strategies, and scout out other teams, equipping us with crucial insights and tactical advantages, setting the stage for competitive success in the thrilling world of robotics competitions."},
+  {name: "Fundraising", description: "A passionate group of individuals who spearhead creative initiatives and collaborative efforts to secure vital financial support, forging meaningful connections within our community and beyond to ensure the sustainable growth and success of our robotics team."},
+  {name: "Outreach", description: "The driving force behind our community engagement efforts, meticulously planning and organizing impactful outreach events that inspire, educate, and spread the excitement of robotics throughout our community, fostering a passion for STEM and cultivating future innovators."},
 ]
 
 export const alumni = [
@@ -210,7 +276,7 @@ export const alumni = [
 //most recent games on top
 //Jcomps = jaybot competeitions
 //Pcomps = pheonix competitions
-//Bcomps = blue bird competitions (Freight Frenzy only)
+//Bcomps = bluebird competitions (Freight Frenzy only)
 //more info in README.md
 export const games = [
   {name: "Power Play",
