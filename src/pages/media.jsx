@@ -11,6 +11,7 @@ import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 
 import { miscImages, buildImages, codeImages, outreachImages, compImages, allImages } from '@/config.jsx'
+import Colors from '@/components/Colors'
 
 import clsx from 'clsx'
 
@@ -55,9 +56,11 @@ export default function Media() {
                 </div>
               ))}
             </div>
-
-            <PhotoGrid imageList={tabs[selectedIndex].images} />
-
+            
+            <div className="relative isolate">
+              <PhotoGrid imageList={tabs[selectedIndex].images} />
+              <Colors />
+            </div>
           </div>
 
           <Footer />

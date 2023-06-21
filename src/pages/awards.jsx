@@ -6,10 +6,10 @@ import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 
-import { games, linkStyle } from '@/config'
+import { games, linkStyle, teamColors } from '@/config'
+import Colors from '@/components/Colors'
 import { useState } from 'react'
 import clsx from 'clsx'
-import { teamColors } from '@/config'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAward, faTrophy } from '@fortawesome/free-solid-svg-icons'
@@ -98,11 +98,12 @@ function Game({game}){
       </div>
     )}
 
-    <div className='xl:grid grid-cols-2 mt-12 m-2 sm:m-12 p-4 gap-8'>
-      <div className={"rounded-5xl mb-12 xl:mb-0 sm:px-12 border-4"+teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
+    <div className='xl:grid grid-cols-2 mt-12 m-2 sm:m-12 p-4 gap-8 relative isolate'>
+      <div className={"rounded-5xl mb-12 xl:mb-0 sm:px-12 border-4 bg-white/5"+teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
         <TeamStats teamComps={game.allComps[selectedTeamIndex]} />
       </div>
       <Gallery photo={game.allComps[selectedTeamIndex].images} />
+      <Colors />
     </div>
     </div>
   )

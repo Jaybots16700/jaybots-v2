@@ -25,8 +25,8 @@ import {
   faCommentsDollar,
   faBullhorn,
 } from '@fortawesome/free-solid-svg-icons'
-import { linkStyle, allImages, Colors } from '@/config.jsx'
-
+import { linkStyle, allImages } from '@/config.jsx'
+import Colors from '@/components/Colors'
 
 const buttonStyle = "h-12 w-30 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-white/5 ring-1 ring-white/10 hover:bg-white/20 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] transition-color duration-500"
 
@@ -42,12 +42,12 @@ export default function Home() {
         <div className='w-full'>
           <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='w-full h-full bg-gray-900 py-12'>
+          <div className='w-full h-full bg-gray-900 py-12 lg:pb-24'>
 
             <div className='relative w-full text-center space-y-6 text-xl p-6 sm:p-12 pt-0 flex flex-col'>
-              <h2 className='text-5xl font-bold text-gray-200'>Who are we?</h2>
+              <h2 className='text-5xl xl:text-6xl font-bold text-gray-200'>Who are we?</h2>
               <div className='w-full flex justify-center'>
-                <p className='max-w-5xl leading-8'>We are the Jaybots - This is our fifth year competing in <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
+                <p className='max-w-4xl leading-8'>We are the Jaybots - This is our fifth year competing in <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
                   FTC
                 </Link>
                 . After making it to the regional competition three years in a row, we are aiming to make it even further next year. We have completed our 2023 Game Season: <Link href="https://www.youtube.com/watch?v=HsitvZ0JaDc" className={linkStyle} target='_blank'>
@@ -63,7 +63,7 @@ export default function Home() {
 
             <JoinToday />
 
-            <div className=' relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:p-12 pt-0 pb-24 sm:pb-0 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
+            <div className=' relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:p-12 pt-0 mb-24 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
               <Link href="https://www.instagram.com/johnjayroboticsclub/" className={buttonStyle} target='_blank'>
                 <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2" />
                 <p>@JohnJayRoboticsClub</p>
@@ -86,7 +86,7 @@ export default function Home() {
               <div className="w-full sm:w-min h-fit sm:h-full sm:flex items-center">
                 <div className="h-fit bg-white/5 p-12 w-full sm:w-min sm:rounded-r-4xl ring-1 ring-white/10">
                   <h2 className='text-gray-100 text-5xl sm:text-6xl md:text-7xl xl:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white md:mr-20'>Media</h2>
-                  <p className='text-gray-300 text-base md:text-lg font-light mt-4'>A visual tapestry that showcases the remarkable moments of triumph, camaraderie, and innovation captured through captivating photos, immortalizing the unwavering dedication, creativity, and teamwork that define our exceptional robotics team.</p>
+                  <p className='text-gray-300 text-base md:text-lg font-light mt-4'>A visual tapestry that showcases the remarkable moments of triumph, camaraderie, and innovation captured through captivating photos, immortalizing the unwavering dedication, creativity, and teamwork that defines our exceptional robotics team.</p>
                   <div className="mt-4 flex">
                 <Link href="/media" target="_blank" className="group text-sm font-semibold leading-6 text-indigo-400 hover:font-bold">
                   View all Media <span aria-hidden="true" className=''>&rarr;</span>
@@ -111,7 +111,7 @@ export default function Home() {
               </video>
             </div>
 
-            <div id="contact" className='relative w-full text-center space-y-4 text-xl mt-8 font-light px-4'>
+            <div id="contact" className='relative w-full text-center space-y-4 sm:text-xl mt-8 font-light px-4 text:base'>
               <h2 className='text-4xl font-bold text-gray-200'>Contact Us!</h2>
               <p>Like What you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
                   Join Today!
@@ -156,7 +156,7 @@ const benefits = [
 
 function JoinToday() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="py-24">
       <div className="relative isolate">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
