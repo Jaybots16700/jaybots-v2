@@ -25,7 +25,7 @@ export function Footer() {
         <div className="flex flex-col items-start lg:justify-between justify-center gap-y-6 py-6 lg:flex-row lg:items-center">
           <Link href="/" className="hidden lg:flex lg:items-center">
             <Image
-              src='/images/logo.png'
+              src='https://cdn.jaybots.org/logo/logo.png'
               width={100}
               height={100}
               className='rounded-full'

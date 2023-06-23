@@ -14,10 +14,10 @@ export default function Alumni() {
       <Head>
         <title>Jaybots | Alumni</title>
       </Head>
-      <Nav current="Meet the Team" />
+      <Nav current="Alumni" />
       <main>
         <div className='lg:pl-64 animate-all duration-1000 h-screen overflow-y-auto [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
-          <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
+          <Header title="Alumni" beforeBold="Meet our " bold="distinguished" afterBold=" alumni." />
 
           <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72 flex justify-center'>
            
