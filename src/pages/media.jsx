@@ -35,12 +35,12 @@ export default function Media() {
         <title>Jaybots | Media</title>
       </Head>
       <Nav current='Media' />
-      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
-        
-        <div className='w-full'>
-          <Header title='Media' bold='Our pics and vids' afterBold=' - check out what we&apos;ve been up to!' />
+            <main>
+        <div className='lg:pl-64 animate-all duration-1000 h-screen overflow-y-auto [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+          <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='w-full h-full p-12 bg-gray-900'>
+          <div className='w-full p-12 lg:pb-24 text-gray-400 mt-72'>
+           
           <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {tabs.map((tab, index) => (
                 <div key={tab.name} className='w-full flex justify-center'>

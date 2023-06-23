@@ -37,13 +37,12 @@ export default function Team() {
         <title>Jaybots | Meet The Team</title>
       </Head>
       <Nav current="Meet the Team" />
-      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
-        
-        <div className='w-full'>
-        <Header title="Meet The Team" beforeBold="Just " bold={friends} afterBold=" working on a robot."/>
+      <main>
+        <div className='lg:pl-64 animate-all duration-1000 h-screen overflow-y-auto [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+          <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='w-full h-full py-12 bg-gray-900 text-gray-400'>
-
+          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
+            
             <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {committeeNames.map((committee, index) => (
                 <div key={committee} className='w-full flex justify-center'>

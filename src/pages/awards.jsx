@@ -25,12 +25,12 @@ export default function Awards() {
         <title>Jaybots | Awards</title>
       </Head>
       <Nav current='Awards' />
-      <main className='flex items-center justify-center lg:pl-64 animate-all duration-1000'>
-        
-        <div className='w-full'>
-          <Header title='Awards' beforeBold='Veiw the ' bold='prestigious awards' afterBold='we have won.' />
+      <main>
+        <div className='lg:pl-64 animate-all duration-1000 h-screen overflow-y-auto [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+          <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='w-full h-full bg-gray-900 pt-10 py-4'>
+          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
+            
             <div className='grid grid-cols-2 md:flex'>
               {games.map((game, index) => (
                 <div key={game.name} className='w-full flex justify-center'>
