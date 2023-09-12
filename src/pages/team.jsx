@@ -3,13 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 
-import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
-import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { Reviews } from '@/components/Photos'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
