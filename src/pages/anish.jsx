@@ -15,7 +15,7 @@ function Bio(){
   return(
     <>
       <p>
-        I'm an upcoming senior at John Jay High School & this is my 4th year of robotics. I focus on coding innovative solutions to complex problems, whether they are within robotics or my community at large. I have experience in a variety of languages including <b className='font-bold text-gray-200'>
+        I&apos;m an upcoming senior at John Jay High School & this is my 4th year of robotics. I focus on coding innovative solutions to complex problems, whether they are within robotics or my community at large. I have experience in a variety of languages including <b className='font-bold text-gray-200'>
           JavaScript
         </b>, <b className='font-bold text-gray-200'>
           Python
@@ -26,7 +26,7 @@ function Bio(){
         </b>.
       </p>
       <p className='mt-4'>
-        I'm always up for new opportunities and would love to connect!
+        I&apos;m always up for new opportunities and would love to connect!
       </p>
     </>
   )
