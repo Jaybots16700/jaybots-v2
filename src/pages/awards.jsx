@@ -6,15 +6,38 @@ import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 
-import { games, linkStyle, teamColors } from '@/config'
+import { linkStyle, teamColors } from '@/config'
 import Colors from '@/components/Colors'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import clsx from 'clsx'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAward, faTrophy } from '@fortawesome/free-solid-svg-icons'
 
 export default function Awards() {
+
+  const [games, setData] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const response = await fetch("/api/awards", {
+          method: "GET",
+        });
+
+        if (!response.ok) {
+          throw new Error(`Request failed with status: ${response.status}`);
+        }
+
+        setData(await response.json());
+
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    getData();
+  }, []);
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
