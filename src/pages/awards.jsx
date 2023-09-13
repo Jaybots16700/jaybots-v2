@@ -29,7 +29,9 @@ export default function Awards() {
           throw new Error(`Request failed with status: ${response.status}`);
         }
 
-        setData(await response.json());
+        const data = await response.json();
+
+        setData(data.reverse());
 
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -38,6 +40,7 @@ export default function Awards() {
 
     getData();
   }, []);
+
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -58,7 +61,7 @@ export default function Awards() {
               {games.map((game, index) => (
                 <div key={game.name} className='w-full flex justify-center'>
                     <button className={clsx({
-                      'h-fit my-2 w-36 text-md rounded-3xl text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
+                      'h-fit my-2 w-36 xl:w-40 text-md xl:text-lg rounded-3xl xl:rounded-5xl text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
                       'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-110': index === selectedIndex,
                       'md:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
                       'md:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
