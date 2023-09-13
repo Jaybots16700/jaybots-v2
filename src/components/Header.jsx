@@ -28,7 +28,7 @@ export function Header({title, beforeBold, bold, afterBold}){
 
 export function MemberHeader({member, text}){
   return (
-    <div className='[transform-style:preserve-3d] [transform:translateZ(-20px)scale(3)] sm:flex px-12 py-6 sm:py-12 text-white text-center items-center w-full h-72 bg-gradient-to-b from-gray-700 via-70% via-gray-800 absolute bottom-[133.3333333%] z-50 -left-4 lg:left-[46rem]'>
+    <div className='[transform-style:preserve-3d] [transform:translateZ(-20px)scale(3)] sm:flex px-12 py-6 sm:py-12 text-white text-center items-center w-full h-72 bg-gradient-to-b from-gray-700 via-70% via-gray-800 absolute bottom-[140%] z-50 -left-4 lg:left-[46rem]'>
       <div className='flex justify-center'>
         <Image
           src={member.image}
