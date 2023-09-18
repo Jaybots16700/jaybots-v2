@@ -57,14 +57,14 @@ export default function Awards() {
 
           <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
             
-            <div className='grid grid-cols-2 md:flex'>
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {games.map((game, index) => (
                 <div key={game.name} className='w-full flex justify-center'>
                     <button className={clsx({
-                      'h-fit my-2 w-36 xl:w-40 text-md xl:text-lg rounded-3xl xl:rounded-5xl text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
+                      'h-fit my-2 w-40 text-lg rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
                       'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-110': index === selectedIndex,
-                      'md:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
-                      'md:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
+                      'xl:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
+                      'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
                       'bg-gray-800 border-blue-700': !(index === selectedIndex)
                     })} onClick={() =>  setSelectedIndex(index)}>
                       <p>{game.name}</p>
