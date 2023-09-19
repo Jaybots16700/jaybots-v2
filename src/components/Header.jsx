@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export function Header({title, beforeBold, bold, afterBold}){
   return (
-    <div className='[transform-style:preserve-3d] [transform:translateZ(-20px)scale(3)] absolute w-screen h-screen z-50 lg:-left-36'>
-      <div className="sm:flex items-center w-screen py-6 px-12 sm:py-12 lg:py-24 text-white text-center bg-gray-900 sm:bg-transparent bg-gradient-to-b from-gray-800 via-gray-700 via-60%">
+    <div className='[transform-style:preserve-3d] [transform:translateZ(-20px)scale(3)] absolute w-screen h-screen lg:-left-36 [pointer-events:none] z-50'>
+      <div className="sm:flex items-center w-screen py-6 px-12 sm:py-12 lg:py-24 text-white text-center bg-gray-900 sm:bg-transparent bg-gradient-to-b from-gray-800 via-gray-700 via-60% z-50">
         <div className='lg:hidden flex justify-center'>
           <Image
             src='https://cdn.jaybots.org/logo/logo.png'
