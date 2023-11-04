@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Nav />
       <main>
-        <div className='lg:pl-64 animate-all duration-1000 h-screen overflow-y-auto [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+        <div className='lg:pl-64 animate-all duration-1000 h-screen overflow-y-auto overflow-x-hidden [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
 
           <Header title="Page Not Found" beforeBold="We couldn't find this page. Don't fret, we're " bold='never gonna give you up!' />
           
