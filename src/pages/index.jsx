@@ -45,8 +45,8 @@ export default function Home() {
                 . After making it to the regional competition three years in a row, we are aiming to make it even further next year. We have completed our 2023 Game Season: <Link href="https://www.youtube.com/watch?v=HsitvZ0JaDc" className={linkStyle} target='_blank'>
                   Power Play
                 </Link>
-                , and are preparing for the 2024 Game Season, <Link href="https://www.youtube.com/watch?v=pTvP165wi3E" className={linkStyle} target='_blank'>
-                  First In Show
+                , and are preparing for the 2024 Game Season, <Link href="https://www.youtube.com/watch?v=6e-5Uo1dRic" className={linkStyle} target='_blank'>
+                  Center Stage
                 </Link>
                 . Join us on our journey!
                 </p>
