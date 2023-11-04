@@ -66,5 +66,65 @@ module.exports = {
         port: '',
       }
     ]
+  },
+  async redirects() {
+		return [
+			{ source: '/calendar',
+				destination: "/events",
+				permanent: true
+			},
+			{ source: '/contact',
+				destination: "/#contact",
+				permanent: true
+			},
+			{ source: '/interest',
+				destination: "https://interest.jaybots.org",
+				permanent: true
+			},
+			{ source: '/map',
+				destination: "https://jjmap.jaybots.org?utm_source=map",
+				permanent: true
+			},
+			{ source: '/sponsor',
+				destination: "https://jaybotsboosters.org/sponsor",
+				permanent: true
+			},
+			{ source: '/booster',
+			destination: "https://jaybotsboosters.org",
+			permanent: true
+			},
+			{ source: '/boosters',
+				destination: "https://jaybotsboosters.org/sponsor",
+				permanent: true
+			},
+			{ source: '/future',
+				destination: "https://docs.google.com/forms/d/e/1FAIpQLScvvh-qjktMwAG-kV_bLgKI9k7hHXBpkBfAvVAdLLx2Yh6LNA/viewform",
+				permanent: true
+			},
+			{ source: '/3dprint',
+				destination: "https://tally.so/r/wa4Xgv",
+				permanent: true
+			},
+			{ source: '/3dprints',
+				destination: "https://tally.so/r/wa4Xgv",
+				permanent: true
+			},
+			{ source: '/3dprinting',
+				destination: "https://tally.so/r/wa4Xgv",
+				permanent: true
+			},
+			{ source: '/3dprint',
+				destination: "https://forms.gle/tJgxdwDsrFKtVXTh9",
+				permanent: true
+			},
+			{ source: '/3dprints',
+				destination: "https://forms.gle/tJgxdwDsrFKtVXTh9",
+				permanent: true
+			},
+			{ source: '/3dprinting',
+				destination: "https://forms.gle/tJgxdwDsrFKtVXTh9",
+				permanent: true
+			},
+		]
   }
 }

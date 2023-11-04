@@ -1,15 +1,9 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import clsx from 'clsx'
 import {
-  motion,
-  useAnimationFrame,
   useInView,
-  useMotionValue,
-  useSpring,
-  useTransform,
 } from 'framer-motion'
 
-import { Container } from '@/components/Container'
 import Image from 'next/image'
 
 function Review({ image, caption }) {

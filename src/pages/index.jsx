@@ -2,13 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
-import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { Reviews } from '@/components/Photos'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import clsx from 'clsx'
 
 import { ReviewColumn } from '@/components/Photos'
 
@@ -18,17 +12,16 @@ import { Header } from '@/components/Header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faInstagram,
-  faTwitter,
+  faXTwitter,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faCommentsDollar,
-  faBullhorn,
-} from '@fortawesome/free-solid-svg-icons'
+  } from '@fortawesome/free-solid-svg-icons'
 import { linkStyle, allImages } from '@/config.jsx'
+
 import Colors from '@/components/Colors'
 
-const buttonStyle = "h-12 w-30 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-white/5 ring-1 ring-white/10 hover:bg-white/20 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] transition-color duration-500"
 
 export default function Home() {
   return (
@@ -38,7 +31,7 @@ export default function Home() {
       </Head>
       <Nav current="Home" />
       <main>
-        <div className='flex flex-col lg:ml-64 animate-all duration-1000 h-screen overflow-y-auto overflow-x-hidden [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+        <div className='flex flex-col lg:ml-64 animate-all h-screen overflow-y-auto overflow-x-hidden [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
           <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
           <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72 sm:mt-52 md:mt-60'>
@@ -59,23 +52,23 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             <JoinToday />
 
             <div className=' relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:p-12 pt-0 mb-24 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
-              <Link href="https://www.instagram.com/johnjayroboticsclub/" className={buttonStyle} target='_blank'>
-                <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2" />
-                <p>@JohnJayRoboticsClub</p>
+              <Link href="https://www.instagram.com/johnjayroboticsclub/" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 overflow-hidden group"} target='_blank'>
+                <div className='bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 justify-center items-center w-full h-full opacity-0 group-hover:opacity-100 duration-500 absolute'/>
+                <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2 z-10" />
+                <p className='z-10'>@JohnJayRoboticsClub</p>
               </Link>
-              <Link href="https://www.youtube.com/@jaybots16700" className={buttonStyle} target='_blank'>
+              <Link href="https://www.youtube.com/@jaybots16700" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 hover:bg-red-800"} target='_blank'>
                 <FontAwesomeIcon icon={faYoutube} className="h-8 mr-2" />
                 <p>Jaybots #16700</p>
               </Link>
-              <Link href="https://twitter.com/RoboticsJay" className={buttonStyle} target='_blank'>
-                <FontAwesomeIcon icon={faTwitter} className="h-8 mr-2" />
+              <Link href="https://twitter.com/RoboticsJay" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 hover:bg-black"} target='_blank'>
+                <FontAwesomeIcon icon={faXTwitter} className="h-8 mr-2" />
                 <p>@RoboticsJay</p>
               </Link>
-              <Link href="https://jaybotsboosters.org/sponsors" className={buttonStyle} target='_blank'>
+              <Link href="https://jaybotsboosters.org/sponsors" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 hover:bg-blue-600"} target='_blank'>
               <FontAwesomeIcon icon={faCommentsDollar} className="h-8 mr-2" />
                 <p>Our Sponsors!</p>
               </Link>

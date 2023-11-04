@@ -1,13 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
-
-
-const linkStyle = "ml-2 font-bold text-blue-600 hover:text-blue-500"
-const buttonStyle = "h-12 w-30 rounded-lg flex justify-center items-center "
 
 export default function Home() {
   return (

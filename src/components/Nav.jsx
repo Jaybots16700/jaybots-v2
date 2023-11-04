@@ -7,23 +7,9 @@ import {
   faBars,
   faX,
  } from '@fortawesome/free-solid-svg-icons'
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { NavLinks } from '@/components/NavLinks'
-import { useState } from 'react'
-import clsx from 'clsx'
 
-function MobileNavLink({ children, ...props }) {
-  return (
-    <Popover.Button
-      as={Link}
-      className="block text-base leading-7 tracking-tight text-gray-700"
-      {...props}
-    >
-      {children}
-    </Popover.Button>
-  )
-}
 
 function NavBar({current}) {
   return (        
