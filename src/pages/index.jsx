@@ -55,26 +55,26 @@ export default function Home() {
             <JoinToday />
 
             <div className=' relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:p-12 pt-0 mb-24 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
-              <Link href="https://www.instagram.com/johnjayroboticsclub/" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 overflow-hidden group"} target='_blank'>
+              <Link href="https://www.instagram.com/johnjayroboticsclub/" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 overflow-hidden group"} target='_blank'>
                 <div className='bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 justify-center items-center w-full h-full opacity-0 group-hover:opacity-100 duration-500 absolute'/>
                 <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2 z-10" />
                 <p className='z-10'>@JohnJayRoboticsClub</p>
               </Link>
-              <Link href="https://www.youtube.com/@jaybots16700" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 hover:bg-red-800"} target='_blank'>
+              <Link href="https://www.youtube.com/@jaybots16700" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-red-800"} target='_blank'>
                 <FontAwesomeIcon icon={faYoutube} className="h-8 mr-2" />
                 <p>Jaybots #16700</p>
               </Link>
-              <Link href="https://twitter.com/RoboticsJay" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 hover:bg-black"} target='_blank'>
+              <Link href="https://twitter.com/RoboticsJay" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-black"} target='_blank'>
                 <FontAwesomeIcon icon={faXTwitter} className="h-8 mr-2" />
                 <p>@RoboticsJay</p>
               </Link>
-              <Link href="https://jaybotsboosters.org/sponsors" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] duration-500 hover:bg-blue-600"} target='_blank'>
+              <Link href="https://jaybotsboosters.org/sponsors" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-blue-600"} target='_blank'>
               <FontAwesomeIcon icon={faCommentsDollar} className="h-8 mr-2" />
                 <p>Our Sponsors!</p>
               </Link>
             </div>
 
-            <div className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 justify-center relative isolate'>
+            <div className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 relative grid grid-cols-2 isolate justify-between'>
               <div className="w-full sm:w-min h-fit sm:h-full sm:flex items-center">
                 <div className="h-fit bg-white/5 p-12 w-full sm:w-min sm:rounded-r-4xl ring-1 ring-white/10">
                   <h2 className='text-gray-100 text-5xl sm:text-6xl md:text-7xl xl:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white md:mr-20'>Media</h2>
@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='relative pl-4 rounded-2xl sm:rounded-r-none overflow-hidden pr-4 sm:pr-8 sm:h-full h-[32rem] mx-8 sm:mx-0'>
+              <div className='relative pl-4 rounded-2xl sm:rounded-r-none overflow-hidden pr-4 sm:pr-8 sm:h-full h-[32rem] mx-8 sm:mx-0 bg-blue-600/50'>
                 <ReviewColumn reviews={allImages} msPerPixel={10} caption={false} />
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-gray-700" />
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-gray-700" />
@@ -109,19 +109,19 @@ export default function Home() {
                   Join Today!
                 </Link>
                 <b> </b>
-                Feel free to contact us at <Link href="mailto:interest.jaybots.org?subject=Question" className={linkStyle} target='_blank'>
+                Feel free to contact us at <Link href="mailto:interest@jaybots.org?subject=Question" className={linkStyle} target='_blank'>
                   interest@jaybots.org
                 </Link>
               </p>
               <p>Interested in becoming a <Link href="https://jaybotsboosters.org/sponsors" className={linkStyle} target='_blank'>
-                  sponser
+                  sponsor
                 </Link>
-                ? You can reach us at <Link href="mailto:joanna@jaybots.org?subject=Sponsership Question" className={linkStyle} target='_blank'>
+                ? You can reach us at <Link href="mailto:joanna@jaybots.org?subject=Sponsorship Question" className={linkStyle} target='_blank'>
                   joanna@jaybots.org
                 </Link>
               </p>
-              <p>If there&apos;s anything else that you would like to discuss, send us an email at <Link href="mailto:hi.jaybots.org" className={linkStyle} target='_blank'>
-                  hi@jaybots.org
+              <p>If there&apos;s anything else that you would like to discuss, send us an email at <Link href="mailto:hello@jaybots.org" className={linkStyle} target='_blank'>
+                  hello@jaybots.org
                 </Link>
               </p>
             </div>
