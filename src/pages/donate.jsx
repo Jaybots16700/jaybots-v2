@@ -18,7 +18,7 @@ export default function Donate() {
       </Head>
       <Nav current="Donate" />
       <main>
-        <div className='lg:pl-64 animate-all duration-1000 h-screen overflow-y-auto overflow-x-hidden [perspective:10px] bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+        <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-auto bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
           <Header title="Donate" beforeBold="Part are " bold="expensive" afterBold=" consider donating!" />
 
           <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
