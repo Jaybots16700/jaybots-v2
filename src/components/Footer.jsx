@@ -41,7 +41,7 @@ export function Footer() {
           </div>
         </div>
         <div className='flex flex-col items-center border-t border-gray-400 pt-4 pb-2 md:justify-between'>
-          <p className='text-md text-gray-400'>Meet our <Link href='https://jaybotsboosters.org/sponsors' className='text-gray-200 font-semibold hover:font-bold'>Sponsers</Link></p>
+          <p className='text-md text-gray-400'>Meet our <Link href='https://jaybotsboosters.org/sponsors' className='text-gray-200 font-semibold hover:font-bold'>Sponsors</Link></p>
           <div className='grid grid-cols-3 sm:flex space-x-8'>
             {Sponsers.map((item) => (
               <Link key={item.name} href={item.link} className='flex items-center hover:brightness-125'>
