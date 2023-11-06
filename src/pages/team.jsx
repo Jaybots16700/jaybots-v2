@@ -167,7 +167,7 @@ function Members({committee, members}) {
   }
 
   return (
-    <div className="mt-12 sm:mt-24">
+    <div className="mt-12 sm:mt-24" id={committeeCall}>
       <div className="mx-auto max-w-7xl px-6 lg:px-">
         <div className="mx-auto max-w-4xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Meet our {committeeCall}</h2>
@@ -180,9 +180,9 @@ function Members({committee, members}) {
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
         >
           {leader && (
-            <li className="flex flex-col gap-6 xl:flex-row sm:col-span-2">
+            <li className="flex flex-col gap-6 gap-x-10 md:flex-row sm:col-span-2">
               <Image
-                className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover bg-gradient-to-br from-gray-500 to-gray-500 via-gray-400"
+                className="aspect-[3/4] self-center w-52 flex-none rounded-2xl object-cover bg-gradient-to-br from-gray-500 to-gray-500 via-gray-400"
                 width={208}
                 height={260}
                 src={leader.image}
@@ -196,14 +196,16 @@ function Members({committee, members}) {
             </li>
           )}
           {committeeMembers.map((person) => (
-            <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
-              <Image
-                className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover bg-gradient-to-br from-gray-500 to-gray-500 via-gray-400"
-                width={208}
-                height={260}
-                src={person.image}
-                alt=""
-              />
+            <li key={person.name} className="flex flex-col gap-6 gap-x-10 2xl:flex-row">
+              {/* <div className='bg-red-500 w-full'> */}
+                <Image
+                  className="aspect-[3/4] self-start w-52 flex-none rounded-2xl object-cover bg-gradient-to-br from-gray-500 to-gray-500 via-gray-400"
+                  width={208}
+                  height={260}
+                  src={person.image}
+                  alt=""
+                />
+              {/* </div> */}
               <div className="flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-200">{person.name}</h3>
                 <p className="text-base leading-7">{person.title}</p>
