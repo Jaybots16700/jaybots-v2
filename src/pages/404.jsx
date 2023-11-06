@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
+import Colors from '@/components/Colors'
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
               <source src='/videos/404.mp4' type="video/mp4" />
               Video unavailable.
             </video>
+
+            <Colors />
           </div>
 
           <Footer />
