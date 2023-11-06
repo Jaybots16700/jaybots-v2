@@ -36,8 +36,8 @@ export default function Media() {
       </Head>
       <Nav current='Media' />
       <main>
-        <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-auto bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
-          <Header title="Media" bold="Our pics and vids" afterBold=" - Check out what we've been up to!" />
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+        <Header title="Media" bold="Our pics and vids" afterBold=" - Check out what we've been up to!" />
 
           <div className='w-full p-12 lg:pb-24 text-gray-400 mt-72'>
            

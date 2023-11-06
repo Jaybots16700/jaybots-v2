@@ -113,18 +113,18 @@ module.exports = {
 				destination: "https://tally.so/r/wa4Xgv",
 				permanent: true
 			},
-			{ source: '/3dprint',
+			{ source: '/3dprinter',
 				destination: "https://forms.gle/tJgxdwDsrFKtVXTh9",
 				permanent: true
 			},
-			{ source: '/3dprints',
-				destination: "https://forms.gle/tJgxdwDsrFKtVXTh9",
+			{ source: '/competition',
+				destination: "/host",
 				permanent: true
 			},
-			{ source: '/3dprinting',
-				destination: "https://forms.gle/tJgxdwDsrFKtVXTh9",
-				permanent: true
-			},
+      { source: '/competitions',
+        destination: "/host",
+        permanent: true
+      },
 		]
   }
 }

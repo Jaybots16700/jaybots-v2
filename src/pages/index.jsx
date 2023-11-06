@@ -31,8 +31,8 @@ export default function Home() {
       </Head>
       <Nav current="Home" />
       <main>
-        <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-auto bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
-          <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+        <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
           <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72 sm:mt-52 md:mt-60'>
 
@@ -106,10 +106,9 @@ export default function Home() {
 
             <div id="contact" className='relative w-full text-center space-y-4 sm:text-xl mt-8 font-light px-4 text:base'>
               <h2 className='text-4xl font-bold text-gray-200'>Contact Us!</h2>
-              <p>Like What you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
+              <p>Like what you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
                   Join Today!
                 </Link>
-                <b> </b>
                 Feel free to contact us at <Link href="mailto:interest@jaybots.org?subject=Question" className={linkStyle} target='_blank'>
                   interest@jaybots.org
                 </Link>
@@ -117,8 +116,8 @@ export default function Home() {
               <p>Interested in becoming a <Link href="https://jaybotsboosters.org/sponsors" className={linkStyle} target='_blank'>
                   sponsor
                 </Link>
-                ? You can reach us at <Link href="mailto:joanna@jaybots.org?subject=Sponsorship Question" className={linkStyle} target='_blank'>
-                  joanna@jaybots.org
+                ? You can reach us at <Link href="mailto:joe@jaybots.org?subject=Sponsorship Question" className={linkStyle} target='_blank'>
+                  joe@jaybots.org
                 </Link>
               </p>
               <p>If there&apos;s anything else that you would like to discuss, send us an email at <Link href="mailto:hello@jaybots.org" className={linkStyle} target='_blank'>

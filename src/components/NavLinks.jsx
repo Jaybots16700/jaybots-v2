@@ -26,7 +26,7 @@ const links = [
   ['Calendar', '/events', faCalendarWeek],
   ['Media', '/media', faPhotoFilm],
   ['Alumni', '/alumni', faGraduationCap],
-  ['Competition Host', '/host', faRobot],
+  ['Competition Hosting', '/host', faRobot],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
   ['Contact Us', '/#contact', faEnvelopeOpenText],
 ]
