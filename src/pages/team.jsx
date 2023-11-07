@@ -88,7 +88,7 @@ export default function Team() {
                           <Popover.Button
                             className={(open ? "brightness-125 motion-safe:scale-110 "
                               : "group-hover:brightness-125 motion-safe:group-hover:scale-105 ") + clsx({
-                                'h-fit py-4 my-2 w-40 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105 z-50 absolute flex space-x-2 justify-center items-center': true,
+                                'h-fit py-4 my-2 w-40 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105 z-40 absolute flex space-x-2 justify-center items-center': true,
                                 'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-110 text-white': (committeeNames.find(element => element === selectedCommittee) === undefined),
                                 'xl:motion-safe:rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 == 0),
                                 'xl:motion-safe:-rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 != 0),
@@ -106,7 +106,7 @@ export default function Team() {
                                     static
                                     as={motion.div}
                                     initial={{ opacity: 1, y: -64 }}
-                                    animate={{ opacity: 1, y: 0 }}
+                                    animate={{ opacity: 1, y: 8 }}
                                     exit={{
                                       opacity: 1,
                                       y: -64,

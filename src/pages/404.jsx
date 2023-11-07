@@ -5,7 +5,7 @@ import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 import Colors from '@/components/Colors'
 
-export default function Home() {
+export default function _404() {
   return (
     <>
       <Head>

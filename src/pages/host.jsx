@@ -9,11 +9,11 @@ import { Header } from '@/components/Header'
 import Colors from '@/components/Colors'
 
 
-export default function Home() {
+export default function Host() {
   return (
     <>
       <Head>
-        <title>Competion Hosting | John Jay Robotics</title>
+        <title>Jaybots | Competition Hosting</title>
       </Head>
       <Nav current="Competition Hosting" />
       <main>

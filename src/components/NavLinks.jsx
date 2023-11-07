@@ -55,7 +55,7 @@ export function NavLinks({current}) {
 
 
 export const Socials = [
-  {name: "Twitter", link: "https://twitter.com/RoboticsJay", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553", width: 35},
+  {name: "X", link: "https://twitter.com/RoboticsJay", image: "https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png", width: 35},
   {name: "Instagram", link: "https://www.instagram.com/johnjayroboticsclub/", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png", width: 35},
   {name: "YouTube", link: "https://www.youtube.com/@jaybots16700", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png", width: 35},
   {name: "School", link: "https://www.wappingersschools.org/Domain/1118", image: "https://thecommencementgroup.com/wp-content/uploads/2016/09/NEW-JJHS-LOGO.gif", width: 45},
