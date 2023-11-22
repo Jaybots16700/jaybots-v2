@@ -121,9 +121,13 @@ module.exports = {
 				destination: "/host",
 				permanent: true
 			},
-      { source: '/competitions',
+      { source: '/tournament',
         destination: "/host",
         permanent: true
+      },
+      { source: '/host',
+        destination: "https://sites.google.com/wcsdny.org/jjjhs-ftc-tournament?usp=sharing",
+        permanent: false
       },
 		]
   }
