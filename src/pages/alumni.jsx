@@ -16,7 +16,7 @@ export default function Alumni() {
       </Head>
       <Nav current="Alumni" />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+      <div className='flex flex-col lg:pl-64 animate-all overflow-x-hidden h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
         <Header title="Alumni" beforeBold="Meet our " bold="distinguished" afterBold=" alumni." />
 
           <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72 flex justify-center'>
