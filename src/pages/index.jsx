@@ -36,7 +36,7 @@ export default function Home() {
       <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
         <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72 sm:mt-52 md:mt-60'>
+          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72 sm:mt-52 md:mt-60 z-0'>
 
             <div className='relative w-full text-center space-y-6 text-xl p-6 sm:p-12 pt-0 flex flex-col'>
               <h2 className='text-5xl xl:text-6xl font-bold text-gray-200'>Who are we?</h2>
