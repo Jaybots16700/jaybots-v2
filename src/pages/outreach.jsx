@@ -2,138 +2,183 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import clsx from 'clsx'
-
-import { ReviewColumn } from '@/components/Photos'
-
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
-import { JoinToday } from '@/components/JoinToday'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faInstagram,
-  faXTwitter,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons'
-import {
-  faCommentsDollar,
-  } from '@fortawesome/free-solid-svg-icons'
-import { linkStyle, allImages } from '@/config.jsx'
 
 import Colors from '@/components/Colors'
+import { useState, useEffect } from 'react'
+import clsx from 'clsx'
 
+import { Popover } from '@headlessui/react'
+import { Fragment, useRef } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export default function Outreach() {
+
+  const [outreach, setOutreach] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const response = await fetch("/api/outreach", {
+          method: "GET",
+        });
+
+        if (!response.ok) {
+          throw new Error(`Request failed with status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        setOutreach(data.reverse());
+
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    getData();
+  }, []);
+
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  
   return (
     <>
       <Head>
         <title>Jaybots | Outreach</title>
       </Head>
-      <Nav current="Home" />
+      <Nav current='Outreach' />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
-        <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll overflow-x-hidden bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+        <Header title="Outreach" beforeBold="Outreaching " bold="all over" afterBold=" the community." />
 
-          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72 sm:mt-52 md:mt-60'>
-
-            <div className='relative w-full text-center space-y-6 text-xl p-6 sm:p-12 pt-0 flex flex-col'>
-              <h2 className='text-5xl xl:text-6xl font-bold text-gray-200'>Who are we?</h2>
-              <div className='w-full flex justify-center'>
-                <p className='max-w-4xl leading-8'>We are the Jaybots - This is our fifth year competing in <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
-                  FTC
-                </Link>
-                . After making it to the regional competition three years in a row, we are aiming to make it even further next year. We have completed our 2023 Game Season: <Link href="https://www.youtube.com/watch?v=HsitvZ0JaDc" className={linkStyle} target='_blank'>
-                  Power Play
-                </Link>
-                , and are preparing for the 2024 Game Season, <Link href="https://www.youtube.com/watch?v=6e-5Uo1dRic" className={linkStyle} target='_blank'>
-                  Center Stage
-                </Link>
-                . Join us on our journey!
-                </p>
-              </div>
-            </div>
-            <JoinToday />
-
-            <div className=' relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:p-12 pt-0 mb-24 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
-              <Link href="https://www.instagram.com/johnjayroboticsclub/" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 overflow-hidden group"} target='_blank'>
-                <div className='bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 justify-center items-center w-full h-full opacity-0 group-hover:opacity-100 duration-500 absolute'/>
-                <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2 z-10" />
-                <p className='z-10'>@JohnJayRoboticsClub</p>
-              </Link>
-              <Link href="https://www.youtube.com/@jaybots16700" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-red-800"} target='_blank'>
-                <FontAwesomeIcon icon={faYoutube} className="h-8 mr-2" />
-                <p>Jaybots #16700</p>
-              </Link>
-              <Link href="https://twitter.com/RoboticsJay" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-black"} target='_blank'>
-                <FontAwesomeIcon icon={faXTwitter} className="h-8 mr-2" />
-                <p>@RoboticsJay</p>
-              </Link>
-              <Link href="https://jaybotsboosters.org/sponsors" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-blue-600"} target='_blank'>
-              <FontAwesomeIcon icon={faCommentsDollar} className="h-8 mr-2" />
-                <p>Our Sponsors!</p>
-              </Link>
-            </div>
-
-            <div className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 relative isolate sm:justify-between'>
-
-              <div className="w-full sm:w-min h-fit sm:h-full sm:flex items-center">
-                <div className="h-fit bg-white/5 p-12 w-full sm:w-min sm:rounded-r-4xl ring-1 ring-white/10">
-                  <h2 className='text-gray-100 text-5xl sm:text-6xl md:text-7xl xl:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white md:mr-20'>Media</h2>
-                  <p className='text-gray-300 text-base md:text-lg font-light mt-4'>A visual tapestry that showcases the remarkable moments of triumph, camaraderie, and innovation captured through captivating photos, immortalizing the unwavering dedication, creativity, and teamwork that defines our exceptional robotics team.</p>
-                  <div className="mt-4 flex">
-                <Link href="/media" target="_blank" className="group text-sm font-semibold leading-6 text-indigo-400 hover:font-bold">
-                  View all Media <span aria-hidden="true" className=''>&rarr;</span>
-                </Link>
-              </div>
+          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
+            
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
+              {outreach.map((outreach, index) => (
+                <div key={outreach.year} className='w-full flex justify-center'>
+                    <button className={clsx({
+                      'h-fit my-2 py-2 w-40 text-lg rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
+                      'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105': index === selectedIndex,
+                      // 'xl:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
+                      // 'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
+                      'bg-gray-800 border-blue-700': !(index === selectedIndex)
+                    })} onClick={() =>  setSelectedIndex(index)}>
+                      <p>{outreach.year}</p>
+                    </button>
                 </div>
+              ))}
+            </div>
+
+            {outreach.map((outreach, index) => (
+              <div key={outreach.year}>
+              {index === selectedIndex && (
+                <div className='w-full mt-8 relative flex justify-center'>
+                  <div className='grid grid-cols-1 w-96 sm:grid-cols-2 sm:w-[40rem] xl:grid-cols-3 xl:w-[60rem] 2xl:grid-cols-4 2xl:w-[80rem] justify-center px-10 gap-12'>
+                    {outreach.events.map((event) => (
+                      <Event event={event} key={event.name}/>
+                    ))}
+                  </div>
+                  <Colors />
+                </div>
+
+              )}
               </div>
-
-              <div className='relative pl-4 rounded-2xl sm:rounded-r-none overflow-hidden pr-4 sm:pr-8 sm:h-full h-[32rem] mx-8 sm:mx-0'>
-                <ReviewColumn reviews={allImages} msPerPixel={10} caption={false} />
-                <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-gray-700" />
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-gray-700" />
-              </div>
-
-              <Colors />
-            </div>
-
-            <div className='w-full px-12 mt-20'>
-              <video controls className='w-full'>
-                <source src='/videos/home.mp4' type="video/mp4" />
-                Video unavailable.
-              </video>
-            </div>
-
-            <div id="contact" className='relative w-full text-center space-y-4 sm:text-xl mt-8 font-light px-4 text:base'>
-              <h2 className='text-4xl font-bold text-gray-200'>Contact Us!</h2>
-              <p>Like what you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
-                  Join Today!
-                </Link>
-                Feel free to contact us at <Link href="mailto:interest@jaybots.org?subject=Question" className={linkStyle} target='_blank'>
-                  interest@jaybots.org
-                </Link>
-              </p>
-              <p>Interested in becoming a <Link href="https://jaybotsboosters.org/sponsors" className={linkStyle} target='_blank'>
-                  sponsor
-                </Link>
-                ? You can reach us at <Link href="mailto:joe@jaybots.org?subject=Sponsorship Question" className={linkStyle} target='_blank'>
-                  joe@jaybots.org
-                </Link>
-              </p>
-              <p>If there&apos;s anything else that you would like to discuss, send us an email at <Link href="mailto:hello@jaybots.org" className={linkStyle} target='_blank'>
-                  hello@jaybots.org
-                </Link>
-              </p>
-            </div>
+            ))}
 
           </div>
 
           <Footer />
-
         </div>
       </main>
     </>
+  )
+}
+
+ 
+function Event({event}){
+  const [open, setOpen] = useState(false)
+
+  const cancelButtonRef = useRef(null)
+
+
+  return(
+    <div key={event.name} className='bg-slate-900/50 w-full rounded-2xl overflow-hidden ring-2 ring-blue-950 flex flex-col'>
+      <Image
+        src={event.img}
+        width={300}
+        height={400}
+        className='w-full aspect-square object-cover'
+      />
+      <div className='w-full px-2'>
+        <div className='text-gray-200 font-semibold text-lg text-center p-2 leading-6 whitespace-nowrap h-fit overflow-hidden mx-3 rounded-full'>
+          <p className={clsx({'animate-slide-infinite': event.name.length >= 30})}>{event.name}</p>
+        </div>
+        <p className='text-center'>{event.date}</p>
+        <p className='text-center text-gray-300 pt-2'>{event.blurb}</p>
+        <div className='w-full flex items-center justify-center p-2'>
+          <button className='bg-blue-600/60 self-center px-5 text-lg text-gray-200 hover:text-white ring-1 ring-slate-900 rounded-lg hover:bg-blue-600 duration-150' onClick={() => {setOpen(true)}}>View</button>
+        </div>
+      </div>
+      <Transition.Root show={open} as={Fragment}>
+        <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
+                <Dialog.Panel className="bg-slate-900 relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                  <div className="px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div className="sm:flex sm:items-start">
+                      <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                        <Dialog.Title as="h3" className="text-base text-center font-semibold leading-6 text-gray-100">
+                          {event.name}
+                        </Dialog.Title>
+                        <div className="mt-2">
+                          <p className="text-sm text-gray-400">
+                            {event.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-white/5 px-4 py-3 sm:flex sm:flex-row justify-center sm:px-6">
+                    <button
+                      type="button"
+                      className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 sm:ml-3 sm:w-auto duration-100"
+                      onClick={() => setOpen(false)}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition.Root>
+    </div>
   )
 }

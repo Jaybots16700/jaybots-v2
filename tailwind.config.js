@@ -21,7 +21,7 @@ module.exports = {
     },
     extend: {
       animation: {
-        'slide-infinite': 'slide 20s linear infinite',
+        'slide-infinite': 'slide 15s linear infinite',
         'gallery': 'gallery 10s linear infinite',
         'fade-in': 'fade-in 0.5s linear forwards',
         marquee: 'marquee var(--marquee-duration) linear infinite',
@@ -58,8 +58,8 @@ module.exports = {
           },
         },
         'slide': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)'},
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-150%)'},
         },
         'fade-in': {
           from: {

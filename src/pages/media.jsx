@@ -46,9 +46,9 @@ export default function Media() {
                 <div key={tab.name} className='w-full flex justify-center'>
                     <button className={clsx({
                       'h-fit py-2 my-2 w-36 text-lg font-semibold rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
-                      'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-110': index === selectedIndex,
-                      'xl:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
-                      'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
+                      'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105': index === selectedIndex,
+                      // 'xl:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
+                      // 'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
                       'bg-gray-800 border-blue-700': !(index === selectedIndex)
                     })} onClick={() =>  setSelectedIndex(index)}>
                       <p>{tab.name}</p>

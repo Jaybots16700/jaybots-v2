@@ -73,9 +73,9 @@ export default function Team() {
                   {committee != "Other" && (
                     <button className={clsx({
                       'h-fit py-4 my-2 w-40 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
-                      'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-110 text-white': committee === selectedCommittee,
-                      'xl:motion-safe:rotate-12': (committee === selectedCommittee) && (index%2 == 0),
-                      'xl:motion-safe:-rotate-12': (committee === selectedCommittee) && (index%2 != 0),
+                      'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105 text-white': committee === selectedCommittee,
+                      // 'xl:motion-safe:rotate-12': (committee === selectedCommittee) && (index%2 == 0),
+                      // 'xl:motion-safe:-rotate-12': (committee === selectedCommittee) && (index%2 != 0),
                       'bg-gray-800 border-blue-700': committee !== selectedCommittee
                     })} onClick={() =>  setSelectedCommittee(committee)}>
                       <p>{committee}</p>
