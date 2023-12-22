@@ -18,18 +18,18 @@ export default function Donate() {
       </Head>
       <Nav current="Donate" />
       <main>
-      <div className='flex flex-col lg:pl-64 overflow-x-hidden animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
-        <Header title="Donate" beforeBold="Part are " bold="expensive" afterBold=" consider donating!" />
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
+        <Header title="Donate" beforeBold="Part are " bold="expensive" afterBold=". consider donating!" />
 
-          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
+          <div className='w-full lg:pb-24 text-gray-400'>
             
             <div className='grid grid-cols-1 xl:grid-cols-2 space-x-16 w-full h-full p-12 bg-gray-900 text-gray-400 text-center text-lg font-semibold space-y-6'>
               
-              <div className='space-y-4 w-full'>
+              <div className='space-y-4 w-full font-normal'>
                 <h1 className='text-3xl sm:text-5xl md:text-6xl font-bold text-gray-200'>How Can You Help?</h1>
                 <p>As a robotics team, we are consistently improving our robot for the best result in competitive matches and looking for new ways to spread STEM in our community. Broken parts, registration fees, and transportation fees all take bites out of the team coffers, and we need your support to continue to improve as a <Link href="https://www.firstinspires.org/" className={linkStyle}>FIRST</Link> robotics team.</p>
                 <p>Having a larger pool of funds will help our team in lots of ways. We will put your donations towards:</p>
-                <ul className='list-disc font-light text-start space-y-4 text-gray-300'>
+                <ul className='list-disc text-start space-y-4 text-gray-300'>
                   <li>Getting better equipment and parts for the team so that we can build better robots and perform better in competitions.</li>
                   <li>Paying for transportation, registration, and other fees needed for the team to compete.</li>
                   <li>Organizing STEM activities for community outreach</li>
@@ -50,8 +50,8 @@ export default function Donate() {
                   </p>
                   <Link
                     href="https://jaybotsboosters.org/sponsor">
-                      <div className='bg-blue-400 rounded-full h-16 text-xl flex items-center justify-center mt-4 hover:bg-blue-300 transition-colors duration-500'>
-                        <p className='text-blue-900 font-normal'>Learn more at <b className='font-bold'>JaybotsBoosters.org</b></p>
+                      <div className='bg-blue-800 hover:bg-blue-700 rounded-full h-16 text-xl flex items-center justify-center mt-6 duration-150'>
+                        <p className='text-white font-normal'>Learn more at <b className='font-bold'>JaybotsBoosters.org</b></p>
                       </div>
                   </Link>
                 </div>
@@ -60,9 +60,9 @@ export default function Donate() {
                   <p>Donations accepted via <b className='font-bold  text-gray-200'>PayPal</b>. (Account not required!)</p>
                   <Link
                     href="https://www.paypal.com/donate/?hosted_button_id=9ZWAFZYN8NTCS">
-                      <div className='bg-blue-400 rounded-full h-16 text-xl flex items-center justify-center my-6 hover:bg-blue-300 transition-colors duration-500'>
+                      <div className='bg-blue-800 hover:bg-blue-700 rounded-full h-16 text-xl flex items-center justify-center my-6 duration-150'>
                         <Image 
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png"
+                          src="https://upload.wikimedia.org/wikipedia/donate/thumb/0/02/Paypal-logo-white.svg/2560px-Paypal-logo-white.svg.png"
                           height={200}
                           width={130}
                           alt="PayPal"

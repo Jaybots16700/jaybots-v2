@@ -62,10 +62,10 @@ export default function Team() {
       </Head>
       <Nav current="Meet the Team" />
       <main>
-      <div className='flex flex-col lg:pl-64 overflow-x-hidden animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
         <Header title="Meet The Team" beforeBold="Just " bold={friends} afterBold=" working on a robot." />
 
-          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
+          <div className='w-full px-12 pb-12 text-gray-400 mt-12'>
             
             <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {committeeNames.map((committee, index) => (
@@ -82,16 +82,16 @@ export default function Team() {
                     </button>
                   )}
                   {committee == "Other" && (
-                    <Popover className="flex justify-center h-0">
+                    <Popover className="flex justify-center h-0 relative">
                       {({ open }) => (
                         <>
                           <Popover.Button
                             className={(open ? "brightness-125 motion-safe:scale-110 "
                               : "group-hover:brightness-125 motion-safe:group-hover:scale-105 ") + clsx({
                                 'h-fit py-4 my-2 w-40 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105 z-40 absolute flex space-x-2 justify-center items-center': true,
-                                'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-110 text-white': (committeeNames.find(element => element === selectedCommittee) === undefined),
-                                'xl:motion-safe:rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 == 0),
-                                'xl:motion-safe:-rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 != 0),
+                                'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105 text-white': (committeeNames.find(element => element === selectedCommittee) === undefined),
+                                // 'xl:motion-safe:rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 == 0),
+                                // 'xl:motion-safe:-rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 != 0),
                                 'bg-gray-800 border-blue-700': (committeeNames.find(element => element === selectedCommittee) !== undefined)
                               })}
                           >
@@ -167,8 +167,8 @@ function Members({committee, members}) {
   }
 
   return (
-    <div className="mt-12 sm:mt-24" id={committeeCall}>
-      <div className="mx-auto max-w-7xl px-6 lg:px-">
+    <div className="mt-12" id={committeeCall}>
+      <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-4xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Meet our {committeeCall}</h2>
           <p className="mt-6 text-lg leading-8">

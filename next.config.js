@@ -37,7 +37,7 @@ module.exports = {
         protocol: 'https',
         hostname: 'upload.wikimedia.org',
         port: '',
-        pathname: '/wikipedia/commons/**',
+        pathname: '/wikipedia/**',
       },
       {
         protocol: 'https',

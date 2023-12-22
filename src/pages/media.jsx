@@ -36,16 +36,16 @@ export default function Media() {
       </Head>
       <Nav current='Media' />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
         <Header title="Media" bold="Our pics and vids" afterBold=" - Check out what we've been up to!" />
 
-          <div className='w-full p-12 lg:pb-24 text-gray-400 mt-72'>
+          <div className='w-full p-12 lg:pb-24 text-gray-400'>
            
           <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {tabs.map((tab, index) => (
                 <div key={tab.name} className='w-full flex justify-center'>
                     <button className={clsx({
-                      'h-fit py-2 my-2 w-36 text-lg font-semibold rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
+                      'h-fit py-4 my-2 w-40 text-xl font-semibold rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
                       'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105': index === selectedIndex,
                       // 'xl:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
                       // 'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),

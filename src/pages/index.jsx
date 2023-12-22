@@ -33,12 +33,12 @@ export default function Home() {
       </Head>
       <Nav current="Home" />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
           <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
-          <div className='relative isolate w-full py-12 lg:pb-24 text-gray-400 mt-80 sm:mt-52 md:mt-60 opacity-95 [transform:translate3d(0,0,0)]'>
+          <div className='w-full py-12 lg:pb-24 text-gray-400'>
 
-            <div className='relative w-full text-center space-y-6 text-xl p-6 sm:p-12 pt-0 flex flex-col'>
+            <div className='w-full text-center space-y-6 text-xl p-6 sm:px-12 flex flex-col'>
               <h2 className='text-5xl xl:text-6xl font-bold text-gray-200'>Who are we?</h2>
               <div className='w-full flex justify-center'>
                 <p className='max-w-4xl leading-8'>We are the Jaybots - This is our fifth year competing in <Link href="https://www.firstinspires.org/robotics/ftc/" className={linkStyle} target='_blank'>
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <JoinToday />
 
-            <div className=' relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:p-12 pt-0 mb-24 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
+            <div className='relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:px-12 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
               <Link href="https://www.instagram.com/johnjayroboticsclub/" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 overflow-hidden group"} target='_blank'>
                 <div className='bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 justify-center items-center w-full h-full opacity-0 group-hover:opacity-100 duration-500 absolute'/>
                 <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2 z-10" />
@@ -110,8 +110,7 @@ export default function Home() {
               <h2 className='text-4xl font-bold text-gray-200'>Contact Us!</h2>
               <p>Like what you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
                   Join Today!
-                </Link>
-                Feel free to contact us at <Link href="mailto:interest@jaybots.org?subject=Question" className={linkStyle} target='_blank'>
+                </Link> Feel free to contact us at <Link href="mailto:interest@jaybots.org?subject=Question" className={linkStyle} target='_blank'>
                   interest@jaybots.org
                 </Link>
               </p>
