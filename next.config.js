@@ -113,10 +113,6 @@ module.exports = {
 				destination: "https://tally.so/r/wa4Xgv",
 				permanent: true
 			},
-			{ source: '/3dprinter',
-				destination: "https://forms.gle/tJgxdwDsrFKtVXTh9",
-				permanent: true
-			},
 			{ source: '/competition',
 				destination: "/host",
 				permanent: true
@@ -124,11 +120,7 @@ module.exports = {
       { source: '/tournament',
         destination: "/host",
         permanent: true
-      },
-      { source: '/host',
-        destination: "https://sites.google.com/wcsdny.org/jjjhs-ftc-tournament?usp=sharing",
-        permanent: false
-      },
+      }
 		]
   }
 }
