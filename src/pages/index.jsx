@@ -124,12 +124,12 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 relative isolate sm:justify-between'>
+            <div ref={mediaRef} className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 relative isolate sm:justify-between'>
 
               <div className={clsx({"w-full sm:w-min h-fit sm:h-full sm:flex items-center duration-500": true,
                   "-translate-x-full": !mediaVis
                 })}>
-                <div ref={mediaRef} className="h-fit bg-white/5 p-12 w-full sm:w-min sm:rounded-r-4xl ring-1 ring-white/10">
+                <div className="h-fit bg-white/5 p-12 w-full sm:w-min sm:rounded-r-4xl ring-1 ring-white/10">
                   <h2 className='text-gray-100 text-5xl sm:text-6xl md:text-7xl xl:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white md:mr-20'>Media</h2>
                   <p className='text-gray-300 text-base md:text-lg font-light mt-4'>A visual tapestry that showcases the remarkable moments of triumph, camaraderie, and innovation captured through captivating photos, immortalizing the unwavering dedication, creativity, and teamwork that defines our exceptional robotics team.</p>
                   <div className="mt-4 flex">
