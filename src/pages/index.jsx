@@ -66,12 +66,6 @@ export default function Home() {
     detectScroll(mediaRef, setMediaVis);
   }, [])
 
-  const [galleryVis, setGalleryVis] = useState();
-  const galleryRef = useRef();
-  useEffect(() => {
-    detectScroll(galleryRef, setGalleryVis);
-  }, [])
-
   return (
     <>
       <Head>
@@ -132,10 +126,10 @@ export default function Home() {
 
             <div className='w-full sm:flex h-fit sm:h-[42rem] xl:h-[50rem] sm:space-x-12 space-y-8 relative isolate sm:justify-between'>
 
-              <div ref={mediaRef} className={clsx({"w-full sm:w-min h-fit sm:h-full sm:flex items-center duration-1000": true,
+              <div className={clsx({"w-full sm:w-min h-fit sm:h-full sm:flex items-center duration-500": true,
                   "-translate-x-full": !mediaVis
                 })}>
-                <div className="h-fit bg-white/5 p-12 w-full sm:w-min sm:rounded-r-4xl ring-1 ring-white/10">
+                <div ref={mediaRef} className="h-fit bg-white/5 p-12 w-full sm:w-min sm:rounded-r-4xl ring-1 ring-white/10">
                   <h2 className='text-gray-100 text-5xl sm:text-6xl md:text-7xl xl:text-8xl pb-3 font-bold w-fit pr-16 border-b-8 border-white md:mr-20'>Media</h2>
                   <p className='text-gray-300 text-base md:text-lg font-light mt-4'>A visual tapestry that showcases the remarkable moments of triumph, camaraderie, and innovation captured through captivating photos, immortalizing the unwavering dedication, creativity, and teamwork that defines our exceptional robotics team.</p>
                   <div className="mt-4 flex">
@@ -146,8 +140,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div ref={galleryRef} className={clsx({'relative pl-4 rounded-2xl sm:rounded-r-none overflow-hidden pr-4 sm:pr-8 sm:h-full h-[32rem] mx-8 sm:mx-0 duration-1000': true,
-                  'translate-x-full': !galleryVis
+              <div className={clsx({'relative pl-4 rounded-2xl sm:rounded-r-none overflow-hidden pr-4 sm:pr-8 sm:h-full h-[32rem] mx-8 sm:mx-0 duration-500': true,
+                  'translate-x-full': !mediaVis
                 })}>
                 <ReviewColumn reviews={allImages} msPerPixel={10} caption={false} />
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-gray-700" />
