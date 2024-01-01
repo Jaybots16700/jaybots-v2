@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 
 import clsx from 'clsx'
 
@@ -23,9 +22,44 @@ import {
 import { linkStyle, allImages } from '@/config.jsx'
 
 import Colors from '@/components/Colors'
+import { useEffect, useRef, useState } from 'react'
+import { TURBO_TRACE_DEFAULT_MEMORY_LIMIT } from 'next/dist/shared/lib/constants'
+
+const detectScroll = (ref, setVisible) => {
+  const observer = new IntersectionObserver((entries) => {
+    const entry = entries[0];
+    setVisible(entry.isIntersecting);
+  })
+  observer.observe(ref.current);
+}
 
 
 export default function Home() {
+
+  const [sponsorBtnVis, setSponsorBtnVis] = useState();
+  const sponsorBtnRef = useRef();
+  useEffect(() => {
+    detectScroll(sponsorBtnRef, setSponsorBtnVis);
+  }, [])
+
+  const [ytBtnVis, setYtBtnVis] = useState();
+  const ytBtnRef = useRef();
+  useEffect(() => {
+    detectScroll(ytBtnRef, setYtBtnVis);
+  }, [])
+
+  const [instaBtnVis, setInstaBtnVis] = useState();
+  const instaBtnRef = useRef();
+  useEffect(() => {
+    detectScroll(instaBtnRef, setInstaBtnVis);
+  }, [])
+
+  const [xBtnVis, setXBtnVis] = useState();
+  const xBtnRef = useRef();
+  useEffect(() => {
+    detectScroll(xBtnRef, setXBtnVis);
+  }, [])
+
   return (
     <>
       <Head>
@@ -57,21 +91,29 @@ export default function Home() {
             <JoinToday />
 
             <div className='relative isolate grid sm:grid-cols-2 grid-cols-1 w-full p-6 sm:px-12 gap-4 text-center text-lg sm:text-sm font-semibold md:text-xl'>
-              <Link href="https://www.instagram.com/johnjayroboticsclub/" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 overflow-hidden group"} target='_blank'>
+              <Link ref={instaBtnRef} href="https://www.instagram.com/johnjayroboticsclub/" className={clsx({"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 overflow-hidden group": true,
+                '-translate-x-64 opacity-0': !instaBtnVis
+              })} target='_blank'>
                 <div className='bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 justify-center items-center w-full h-full opacity-0 group-hover:opacity-100 duration-500 absolute'/>
                 <FontAwesomeIcon icon={faInstagram} className="h-8 mr-2 z-10" />
                 <p className='z-10'>@JohnJayRoboticsClub</p>
               </Link>
-              <Link href="https://www.youtube.com/@jaybots16700" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-red-800"} target='_blank'>
+              <Link ref={ytBtnRef} href="https://www.youtube.com/@jaybots16700" className={clsx({"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-red-600": true,
+                  "translate-x-64 opacity-0": !ytBtnVis
+              })} target='_blank'>
                 <FontAwesomeIcon icon={faYoutube} className="h-8 mr-2" />
                 <p>Jaybots #16700</p>
               </Link>
-              <Link href="https://twitter.com/RoboticsJay" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-black"} target='_blank'>
+              <Link ref={xBtnRef} href="https://twitter.com/RoboticsJay" className={clsx({"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-black": true,
+                'opacity-0 -translate-x-64': !xBtnVis
+              })} target='_blank'>
                 <FontAwesomeIcon icon={faXTwitter} className="h-8 mr-2" />
                 <p>@RoboticsJay</p>
               </Link>
-              <Link href="https://jaybotsboosters.org/sponsors" className={"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-blue-600"} target='_blank'>
-              <FontAwesomeIcon icon={faCommentsDollar} className="h-8 mr-2" />
+              <Link ref={sponsorBtnRef} href="https://jaybotsboosters.org/sponsors" className={clsx({"h-12 rounded-lg flex justify-center items-center hover:text-white hover:font-bold bg-gray-800 ring-1 ring-white/10 hover:ring-white/25 hover:scale-y-110 hover:scale-x-[103%] xl:hover:scale-x-[101%] duration-500 hover:bg-blue-600": true,
+                  "translate-x-64 opacity-0": !sponsorBtnVis
+              })} target='_blank'>
+                <FontAwesomeIcon icon={faCommentsDollar} className="h-8 mr-2" />
                 <p>Our Sponsors!</p>
               </Link>
             </div>

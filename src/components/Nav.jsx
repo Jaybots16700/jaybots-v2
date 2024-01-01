@@ -35,7 +35,7 @@ export function Nav({current}) {
     <header>
       <nav>
         <Container className="relative z-50 flex justify-between">
-          <div className='fixed p-4 z-0 justify-center w-64 -left-64 lg:left-0 h-full bg-slate-950 transition-translation duration-1000 overflow-auto scrollbar-thin scrollbar-thumb-blue-900 hover:scrollbar-thumb-blue-800 scrollbar-track-slate-950'>
+          <div className='fixed p-4 z-0 justify-center w-64 -left-64 lg:left-0 h-full bg-slate-950 transition duration-1000 overflow-auto scrollbar-thin scrollbar-thumb-blue-900/30 hover:scrollbar-thumb-blue-900/50 scrollbar-track-slate-950'>
             <NavBar current={current} />
           </div>
           <div className="flex items-center gap-6">
