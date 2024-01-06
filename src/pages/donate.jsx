@@ -37,7 +37,7 @@ export default function Donate() {
                 <p>If you are interested in helping us do the best we can as both a robotics team and as a part of our community, please consider donating to the Jaybots!</p>
               </div>
 
-              <div className='space-y-8 relative'>
+              <div className='space-y-8 relative isolate'>
                 <div className='w-full bg-white/5 ring-1 ring-white/10 rounded-5xl p-8 font-light space-y-4'>
                   <p>Corporations should check out our <Link
                     href="https://jaybotsboosters.org/sponsor"
@@ -75,6 +75,8 @@ export default function Donate() {
                       Jaybots Booster Club
                     </Link>, which is a <b className='font-bold  text-gray-200'>501(c)3 organization</b>. All donations are <b className='font-bold text-gray-200'>tax deducatble</b>.</p>
                 </div>
+                
+                <Colors />
 
               </div>
               <div className=' top-12'>
