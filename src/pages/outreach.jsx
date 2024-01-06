@@ -53,7 +53,7 @@ export default function Outreach() {
       </Head>
       <Nav current='Outreach' />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
         <Header title="Outreach" beforeBold="Outreaching " bold="all over" afterBold=" the community." />
 
           <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>

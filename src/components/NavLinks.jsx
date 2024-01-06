@@ -35,7 +35,7 @@ export function NavLinks({current}) {
 
   return (
   
-  <div className='space-y-1'>
+  <div className=''>
   {links.map(([label, href, icon], index) => (
       <Link
         key={label}

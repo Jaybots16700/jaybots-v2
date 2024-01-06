@@ -18,12 +18,12 @@ export default function Donate() {
       </Head>
       <Nav current="Donate" />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
         <Header title="Donate" beforeBold="Part are " bold="expensive" afterBold=". consider donating!" />
 
           <div className='w-full lg:pb-24 text-gray-400'>
             
-            <div className='grid grid-cols-1 xl:grid-cols-2 space-x-16 w-full h-full p-12 bg-gray-900 text-gray-400 text-center text-lg font-semibold space-y-6'>
+            <div className='isolate relative grid grid-cols-1 xl:grid-cols-2 space-x-16 w-full h-full p-12 text-gray-400 text-center text-lg font-semibold space-y-6'>
               
               <div className='space-y-4 w-full font-normal'>
                 <h1 className='text-3xl sm:text-5xl md:text-6xl font-bold text-gray-200'>How Can You Help?</h1>
@@ -37,7 +37,7 @@ export default function Donate() {
                 <p>If you are interested in helping us do the best we can as both a robotics team and as a part of our community, please consider donating to the Jaybots!</p>
               </div>
 
-              <div className='space-y-8 relative isolate'>
+              <div className='space-y-8 relative'>
                 <div className='w-full bg-white/5 ring-1 ring-white/10 rounded-5xl p-8 font-light space-y-4'>
                   <p>Corporations should check out our <Link
                     href="https://jaybotsboosters.org/sponsor"
@@ -76,6 +76,8 @@ export default function Donate() {
                     </Link>, which is a <b className='font-bold  text-gray-200'>501(c)3 organization</b>. All donations are <b className='font-bold text-gray-200'>tax deducatble</b>.</p>
                 </div>
 
+              </div>
+              <div className=' top-12'>
                 <Colors />
               </div>
             </div>

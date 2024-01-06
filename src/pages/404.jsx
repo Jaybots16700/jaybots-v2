@@ -13,17 +13,17 @@ export default function _404() {
       </Head>
       <Nav />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-black scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
         <Header title="Page Not Found" beforeBold="We couldn't find this page. Don't fret, we're " bold='never gonna give you up!' />
           
-          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
+          <div className='w-full pt-12 lg:pb-24 text-gray-400 isolate'>
             
-            <video autoPlay playsInline muted className='w-full my-4'>
+            <video autoPlay playsInline muted className='w-full'>
               <source src='/videos/404.mp4' type="video/mp4" />
               Video unavailable.
             </video>
 
-            <Colors />
+            {/* <Colors /> */}
           </div>
 
           <Footer />

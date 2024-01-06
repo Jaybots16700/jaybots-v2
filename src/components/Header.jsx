@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function Header({title, beforeBold, bold, afterBold}){
   return (
-        <div className="[transform-style:preserve-3d] lg:-left-4 origin-top-right sm:flex items-center w-full py-3 px-12 sm:py-12 lg:py-12 text-white text-center bg-slate-950 z-10">
+        <div className="[transform-style:preserve-3d] lg:-left-4 origin-top-right sm:flex items-center w-full pt-3 pb-20 lg:pb-16 px-12 sm:py-12 lg:pt-12 text-white text-center bg-gradient-to-b from-blue-950 via-blue-950 via-70% z-10">
           <div className='lg:hidden flex justify-center'>
             <Image
               src='https://cdn.jaybots.org/logo/logo.png'

@@ -17,7 +17,7 @@ export default function Host() {
       </Head>
       <Nav current="Competition Hosting" />
       <main>
-        <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-gray-900 scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
+        <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50'>
         
           <Header title="Calendar" beforeBold="Veiw our " bold="upcoming events"/>
 
