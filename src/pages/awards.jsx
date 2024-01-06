@@ -52,7 +52,7 @@ export default function Awards() {
       </Head>
       <Nav current='Awards' />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 z-50'>
         <Header title="Awards" beforeBold="View our " bold="prestigious" afterBold=" awards" />
 
           <div className='w-full lg:pb-24 text-gray-400 mt-12'>

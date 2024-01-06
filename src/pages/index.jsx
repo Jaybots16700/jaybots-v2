@@ -72,7 +72,7 @@ export default function Home() {
       </Head>
       <Nav current="Home" />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 z-50'>
           <Header title="John Jay Robotics Team" bold="Jaybots" afterBold=" - FTC Robotics Team #16700" />
 
           <div className='w-full pb-12 lg:pb-24 text-gray-400'>

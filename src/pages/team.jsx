@@ -62,7 +62,7 @@ export default function Team() {
       </Head>
       <Nav current="Meet the Team" />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-gray-950 scrollbar-thumb-blue-800/50 z-50'>
+      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 z-50'>
         <Header title="Meet The Team" beforeBold="Just " bold={friends} afterBold=" working on a robot." />
 
           <div className='w-full px-12 pb-12 text-gray-400 mt-12'>
