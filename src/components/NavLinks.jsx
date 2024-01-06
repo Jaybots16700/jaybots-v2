@@ -41,7 +41,7 @@ export function NavLinks({current}) {
         key={label}
         href={href}
         className={clsx({
-          "flex items-center relative rounded-lg py-3 px-2 text-base text-gray-300 transition-all duration-200 delay-100 hover:delay-0 hover:text-white hover:bg-blue-900/70 hover:font-bold": true,
+          "flex items-center relative rounded-xl py-3 px-2 text-base text-gray-300 transition-all duration-200 delay-100 hover:delay-0 hover:text-white hover:bg-blue-900/70 hover:font-bold": true,
           "bg-blue-800 text-white font-semibold": current == label,
         })}
       >
