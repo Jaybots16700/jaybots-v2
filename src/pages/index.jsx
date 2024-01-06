@@ -165,7 +165,7 @@ export default function Home() {
                   interest@jaybots.org
                 </Link>
               </p>
-              <p>Interested in becoming a <Link href="https://jaybotsboosters.org/sponsors" className={linkStyle} target='_blank'>
+              <p>Interested in becoming a <Link href="https://jaybotsboosters.org/sponsor" className={linkStyle} target='_blank'>
                   sponsor
                 </Link>
                 ? You can reach us at <Link href="mailto:joe@jaybots.org?subject=Sponsorship Question" className={linkStyle} target='_blank'>
