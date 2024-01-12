@@ -56,7 +56,7 @@ export function Footer() {
           </div>
         </div> */}
         <div className="flex flex-col items-center border-t border-gray-400 py-6 md:flex-row-reverse md:justify-between md:pt-6">
-          <form className="flex w-full justify-center md:w-auto">
+          {/* <form className="flex w-full justify-center md:w-auto">
             <TextField
               type="email"
               aria-label="Email address"
@@ -69,7 +69,7 @@ export function Footer() {
               <span className="hidden lg:inline">Join our newsletter</span>
               <span className="lg:hidden">Join newsletter</span>
             </button>
-          </form>
+          </form> */}
           <p className=" text-center md:text-start md:mr-2 mt-4 text-sm text-gray-400 md:mt-0">
             &copy; <span className='hidden sm:inline'>Copyright </span>2024 <Link href="/" className='text-gray-200 font-semibold hover:font-bold'>Jaybots</Link>. Created by Matthew. All rights reserved.
           </p>
