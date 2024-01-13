@@ -56,7 +56,7 @@ export default function Outreach() {
       <div className='flex flex-col lg:pl-64 animate-all h-screen w-full overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 z-50'>
         <Header title="Outreach" beforeBold="Outreaching " bold="all over" afterBold=" the community." />
 
-          <div className='w-full py-12 lg:pb-24 text-gray-400 mt-72'>
+          <div className='w-full py-12 lg:pb-24 text-gray-400'>
             
             <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {outreach.map((outreach, index) => (
