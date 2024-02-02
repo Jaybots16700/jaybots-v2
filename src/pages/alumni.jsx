@@ -41,7 +41,7 @@ export default function Alumni() {
                       <div className='text-2xl font-bold border-b-2 border-gray-500 pb-1 mb-2 text-white'>
                         {alum.name}
                       </div>
-                      <div className='text-xl font-semibold whitespace-nowrap text-center overflow-hidden space-y-1'>
+                      <div className='text-xl font-semibold whitespace-nowrap text-center space-y-1'>
                         {alum.year && (
                           <div>
                             Class of {alum.year}
@@ -49,7 +49,7 @@ export default function Alumni() {
                         )}
                         {alum.motion &&
                           <div className='motion-safe:rounded-full overflow-hidden'>
-                            <p className='w-fit pl-64 animate-slide-infinite motion-reduce:hidden'>
+                            <p className='w-fit px-0 animate-alumni-slide-infinite motion-reduce:hidden'>
                               <Titles titles={alum.title} />
                             </p>
                             <p className='motion-safe:hidden'>

@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       animation: {
         'slide-infinite': 'slide 15s linear infinite',
+        'alumni-slide-infinite': 'alumni-slide 8s linear infinite',
         'gallery': 'gallery 10s linear infinite',
         'fade-in': 'fade-in 0.5s linear forwards',
         marquee: 'marquee var(--marquee-duration) linear infinite',
@@ -60,6 +61,10 @@ module.exports = {
         'slide': {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-150%)'},
+        },
+        'alumni-slide': {
+          '0%': { transform: 'translateX(18rem)' },
+          '100%': { transform: 'translateX(-100%)'},
         },
         'fade-in': {
           from: {
