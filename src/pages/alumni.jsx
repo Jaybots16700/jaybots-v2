@@ -69,7 +69,7 @@ export default function Alumni() {
                       <p className='text-2xl font-bold border-b-2 border-gray-500 pb-1 m-4 mb-0'>
                         {alum.name}
                       </p>
-                      <div className='p-4 w-full font-light text-md overflow-y-auto bg-slate-900 pt-2 h-[450px] scrollbar-thin scrollbar-thumb-blue-900/70 scrollbar-track-slate-950 hover:scrollbar-thumb-blue-600'>
+                      <div className='p-4 w-full font-light text-md overflow-y-auto bg-slate-900 pt-2 h-[450px] scrollbar-thin scrollbar-thumb-blue-900/70 hover:scrollbar-thumb-blue-600'>
                         {alum.bio}
                       </div>
                     </div>
