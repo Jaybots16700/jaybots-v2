@@ -67,7 +67,7 @@ export default function Team() {
 
           <div className='w-full px-12 pb-12 text-gray-400 mt-12'>
             
-            <div className='grid grid-cols-2 md:grid-cols-3 xl:flex gap-6'>
+            <div className='grid grid-cols-2 sm:grid-cols-4 xl:flex gap-6'>
               {committeeNames.map((committee, index) => (
                 <div key={committee} className='w-full flex justify-center'>
                   {committee != "Other" && (
@@ -160,7 +160,7 @@ function Members({committee, members}) {
   const description = committeeDescript.find(comm => comm.name === committee).description 
 
   return (
-    <div className="mt-12" id={committee}>
+    <div className="mt-24 md:mt-12" id={committee}>
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-4xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Meet {committee === 'Everyone' ? "the Team" : `our ${committee}${committee === 'Advisors' || committee === 'Officers' ? "" : " Committee"}`}</h2>
