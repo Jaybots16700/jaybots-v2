@@ -53,7 +53,7 @@ export default function Team() {
   }
   const friends = (members.length - advisorCount + " friends")
 
-  const [selectedCommittee, setSelectedCommittee] = useState("Officers");
+  const [selectedCommittee, setSelectedCommittee] = useState("Everyone");
 
   return (
     <>
@@ -67,18 +67,18 @@ export default function Team() {
 
           <div className='w-full px-12 pb-12 text-gray-400 mt-12'>
             
-            <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:flex gap-6'>
               {committeeNames.map((committee, index) => (
                 <div key={committee} className='w-full flex justify-center'>
                   {committee != "Other" && (
                     <button className={clsx({
-                      'h-fit py-4 my-2 w-40 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
+                      'h-fit py-4 my-2 w-32 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
                       'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105 text-white': committee === selectedCommittee,
                       // 'xl:motion-safe:rotate-12': (committee === selectedCommittee) && (index%2 == 0),
                       // 'xl:motion-safe:-rotate-12': (committee === selectedCommittee) && (index%2 != 0),
                       'bg-gray-800 border-blue-700': committee !== selectedCommittee
                     })} onClick={() =>  setSelectedCommittee(committee)}>
-                      <p>{committee}</p>
+                      {committee}
                     </button>
                   )}
                   {committee == "Other" && (
@@ -88,14 +88,14 @@ export default function Team() {
                           <Popover.Button
                             className={(open ? "brightness-125 motion-safe:scale-110 "
                               : "group-hover:brightness-125 motion-safe:group-hover:scale-105 ") + clsx({
-                                'h-fit py-4 my-2 w-40 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105 z-40 absolute flex space-x-2 justify-center items-center': true,
+                                'h-fit py-4 my-2 w-32 text-xl font-semibold rounded-full text-gray-200 hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105 z-40 absolute flex space-x-2 justify-center items-center': true,
                                 'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105 text-white': (committeeNames.find(element => element === selectedCommittee) === undefined),
                                 // 'xl:motion-safe:rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 == 0),
                                 // 'xl:motion-safe:-rotate-12': (committeeNames.find(element => element === selectedCommittee) === undefined) && (index%2 != 0),
                                 'bg-gray-800 border-blue-700': (committeeNames.find(element => element === selectedCommittee) !== undefined)
                               })}
                           >
-                            <p>Other</p>
+                            More
                             <FontAwesomeIcon icon={faCaretDown} className='h-6 w-6' />
                           </Popover.Button>
                           <AnimatePresence initial={false}>
@@ -112,9 +112,9 @@ export default function Team() {
                                       y: -64,
                                       transition: { duration: 1 },
                                     }}
-                                    className='p-4 rounded-4xl bg-gray-800 border-blue-700 border-2 relative z-40 top-16 grid grid-flow-row gap-1'
+                                    className='p-4 rounded-4xl bg-gray-800 border-blue-700 border-2 absolute -left-24 z-40 top-16 grid grid-flow-row gap-1'
                                   >
-                                    {otherCommittees.map((committee, index) => (
+                                    {otherCommittees.map((committee) => (
                                       <button
                                       key={committee}
                                         className={clsx({
@@ -153,24 +153,17 @@ export default function Team() {
 }
 
 function Members({committee, members}) {
-  const committeeMembers = members.filter(member => member.committees.find(comm => comm == committee))
+  const committeeMembers = committee === "Everyone" ? members : members.filter(member => member.committees.find(comm => comm == committee))
   const leader = members.find(member => member.leader === committee)
 
 
-  const description = committeeDescript.find(comm => comm.name === committee).description
-
-  var committeeCall = "Committee"
-  if(committee === "Officers" || committee === "Advisors"){
-    committeeCall = committee
-  } else{
-    committeeCall = (committee + " Committee")
-  }
+  const description = committeeDescript.find(comm => comm.name === committee).description 
 
   return (
-    <div className="mt-12" id={committeeCall}>
+    <div className="mt-12" id={committee}>
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-4xl sm:text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Meet our {committeeCall}</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Meet {committee === 'Everyone' ? "the Team" : `our ${committee}${committee === 'Advisors' || committee === 'Officers' ? "" : " Committee"}`}</h2>
           <p className="mt-6 text-lg leading-8">
             {description}
           </p>

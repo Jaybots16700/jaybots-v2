@@ -1,4 +1,5 @@
 export const committeeNames = [
+  "Everyone",
   "Officers",
   "Advisors",
   "Build",
@@ -20,6 +21,7 @@ export const otherCommittees = [
 ]
 
 export const committeeDescript = [
+  {name: "Everyone", description: "The extraordinary individuals comprising our high school robotics team form an impassioned cohort of tech-savvy enthusiasts, driving the gears of our team's triumph with unwavering dedication."},
   {name: "Officers", description: "The exceptional officers of our high school robotics team, a dynamic group of visionary leaders who fuel the engine of our team's success, meticulously planning, strategizing, and inspiring their fellow teammates to embrace innovation, collaboration, and excellence, as they boldly navigate the exciting frontiers of technology and robotics."},
   {name: "Advisors", description: "Our esteemed advisors and mentors, the guiding lights behind our team, whose wealth of knowledge, unwavering support, and invaluable expertise provide a steady compass for our growth and development, as we navigate the thrilling realm of robotics, empowering us to push boundaries, embrace challenges, and unlock our full potential."},
   {name: "Build", description: "Our skilled builders, the master craftsmen behind the scenes, who bring designs to life through their meticulous craftsmanship, precision engineering, and unwavering dedication to constructing our formidable robots."},
