@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 
-import { committeeNames, otherCommittees, committeeDescript } from '@/config'
+import { committeeNames, otherCommittees, committeeDescript, members } from '@/config'
 
 import clsx from 'clsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,31 +19,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 
 export default function Team() {
-
-  const [members, setData] = useState([]);
-
-  useEffect(() => {
-    async function getData() {
-      try {
-        const response = await fetch("/api/members", {
-          method: "GET",
-        });
-
-        if (!response.ok) {
-          throw new Error(`Request failed with status: ${response.status}`);
-        }
-
-        const data = await response.json();
-
-        setData(data.reverse());
-
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-
-    getData();
-  }, []);
 
   var advisorCount = 0;
   for(var i = 0; i<members.length; i++){

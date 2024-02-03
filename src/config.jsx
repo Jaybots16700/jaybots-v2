@@ -198,10 +198,385 @@ export const miscImages = [
   { source: "https://cdn.jaybots.org/overview/anish%20and%20silvia%20working.jpeg", caption: "Anish and Silvia working." },
   { source: "https://file.coffee/u/mR49GXL2YmqMnB.jpg", caption: "Anish and Arnav experimenting with LEDs." },
   { source: "https://cdn.jaybots.org/overview/ordering%20parts.jpeg", caption: "Matt and Mr. A ordering parts." },
-] 
+]
+
+export const games = [
+  {
+    "name": "Center Stage",
+    "year": "2023-2024",
+    "logo": "https://file.coffee/u/c1YWvZwc6GcR4e2J1qXko.png",
+    "logowidth": 500,
+    "allComps": [
+      {
+        "team": "Jaybots",
+        "images": "https://file.coffee/u/jm_Bzu18hIjCIHJYHHxiU.png",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "January 13, 2024",
+            "awards": {
+              "second": [
+                "Connect"
+              ],
+              "third": [
+                "Think"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "January 28, 2024",
+            "awards": {},
+            "upcoming": true
+          },
+          {
+            "type": "Qualifier",
+            "date": "February 10, 2024",
+            "awards": {},
+            "upcoming": true
+          }
+        ]
+      },
+      {
+        "team": "Phoenix",
+        "images": "",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "December 2, 2023",
+            "awards": {}
+          },
+          {
+            "type": "Qualifier",
+            "date": "January 13, 2024",
+            "awards": {}
+          },
+          {
+            "type": "Qualifier",
+            "date": "February 10, 2024",
+            "awards": {},
+            "upcoming": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Power Play",
+    "year": "2022-2023",
+    "logo": "/images/PowerplayWhite.png",
+    "logowidth": 700,
+    "allComps": [
+      {
+        "team": "Jaybots",
+        "images": "https://cdn.jaybots.org/bot/2023-snow2-crop.jpeg",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "January 14, 2023",
+            "awards": {
+              "advanced": true,
+              "first": [
+                "Inspire",
+                "Control"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "January 29, 2023",
+            "awards": {
+              "first": [
+                "Motivate"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "February 18, 2023",
+            "awards": {
+              "second": [
+                "Innovate"
+              ]
+            }
+          },
+          {
+            "type": "Regional",
+            "date": "March 5, 2023",
+            "awards": {
+              "deansList": "Finalist",
+              "third": [
+                "Innovate"
+              ]
+            }
+          },
+          {
+            "type": "Invitational",
+            "date": "June 17, 2023",
+            "awards": []
+          }
+        ]
+      },
+      {
+        "team": "Phoenix",
+        "images": "https://cdn.jaybots.org/bot/p-2023.jpeg",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "January 14, 2023",
+            "awards": {
+              "second": [
+                "Connect"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "January 14, 2023",
+            "awards": {
+              "judgesChoice": true
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "February 18, 2023",
+            "awards": {
+              "second": [
+                "Motivate"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Freight Frenzy",
+    "year": "2021-2022",
+    "logo": "/images/freight-frenzy.png",
+    "logowidth": 1000,
+    "allComps": [
+      {
+        "team": "Jaybots",
+        "images": "https://cdn.jaybots.org/bot/2022.jpeg",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "January 23 - 29, 2022",
+            "awards": {
+              "first": [
+                "Connect"
+              ],
+              "third": [
+                "Motivate"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "January 13, 2023",
+            "awards": {
+              "third": [
+                "Think"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "February 18, 2023",
+            "awards": {
+              "advanced": true,
+              "first": [
+                "Inspire"
+              ],
+              "otherGold": [
+                "Highest Scoring Team"
+              ]
+            }
+          },
+          {
+            "type": "Regional",
+            "date": "March 6, 2022",
+            "awards": {
+              "judgesChoice": true,
+              "deansList": "Finalist",
+              "third": [
+                "Innovate"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "team": "Bluebirds",
+        "images": "https://cdn.jaybots.org/bot/b-2022.jpeg",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "January 23 - 29, 2022",
+            "awards": {
+              "second": [
+                "Connect"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "February 13, 2022",
+            "awards": {
+              "advanced": true,
+              "first": [
+                "Inspire"
+              ],
+              "winningAlliance": "Captain",
+              "second": [
+                "Connect",
+                "Design"
+              ]
+            }
+          },
+          {
+            "type": "Regional",
+            "date": "March 6, 2022",
+            "awards": {
+              "first": [
+                "Promote"
+              ],
+              "promotehref": "https://drive.google.com/file/d/1Llqi59oZkiCmdPhwEei0jK7LW5Rhygec/view"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ultimate Goal",
+    "year": "2020-2021",
+    "logo": "https://hightechkids.org/wp-content/uploads/Graphics/ChallengeLogos/FTCChallengeLogos/2020_UltimateGoal.2_web.png",
+    "logowidth": 400,
+    "allComps": [
+      {
+        "team": "Jaybots",
+        "images": "https://cdn.jaybots.org/bot/2021.jpg",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "March 21 - 27, 2021",
+            "awards": {
+              "first": [
+                "Connect"
+              ],
+              "third": [
+                "Think",
+                "Innovate"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "May 2 - 8, 2021",
+            "awards": {
+              "advanced": true,
+              "first": [
+                "Inspire"
+              ],
+              "second": [
+                "Innovate"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "May 16 - 2, 2021",
+            "awards": {
+              "first": [
+                "Connect"
+              ]
+            }
+          },
+          {
+            "type": "Regional",
+            "date": "May 30 - June 5, 2021",
+            "awards": {
+              "third": [
+                "Collins Aerospace Innovate",
+                "Think",
+                "Promote"
+              ],
+              "promotehref": "https://drive.google.com/file/d/1-Sj8PRzw3ZmBM-9o7yxLt1U1e0T1QiO4/view"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SkyStone",
+    "year": "2019-2020",
+    "logo": "https://i.redd.it/iblf4hi92vt21.png",
+    "logowidth": 400,
+    "allComps": [
+      {
+        "team": "Jaybots",
+        "images": "https://cdn.jaybots.org/bot/2020.jpg",
+        "comps": [
+          {
+            "type": "Qualifier",
+            "date": "December 14, 2019",
+            "awards": {
+              "third": [
+                "Collins Aerospace Innovate"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "January 11, 2020",
+            "awards": {
+              "second": [
+                "Control"
+              ]
+            }
+          },
+          {
+            "type": "Qualifier",
+            "date": "January 25, 2020",
+            "awards": {
+              "third": [
+                "Motivate"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+  "name": "Rover Ruckus",
+  "year": "2019",
+  "logo": "https://static.wixstatic.com/media/774e05_217a89f68e9a4d7abcdd136187700655~mv2.png/v1/crop/x_37,y_29,w_436,h_438/fill/w_440,h_444,al_c,lg_1,q_85,enc_auto/roverruckus_first_w.png",
+  "logowidth": 300,
+  "allComps": [
+    {
+      "team": "Jaybots",
+      "images": "https://cdn.jaybots.org/bot/2019.jpg",
+      "comps": [
+        {
+          "type": "Scrimmage",
+          "date": "June 15, 2019",
+          "awards": {
+            "otherBronze": "Finalist"
+          }
+        }
+      ]
+    }
+  ]
+},
+]
+
+export const members = [{"name":"Mr. Amodio","title":"Mentor & Coach","committees":["Advisors"],"bio":"James Amodio teaches Regents Physics and PLTW: Principles of Engineering at John Jay High School. While this is only his 5th year in the Wappingers Central School District, he has been an FTC Coach at Blind Brook High School as well as Roosevelt and Riverside High Schools in Yonkers, NY. He has also been coaching several Jr. FLL teams in the Arlington School District for the past 3 years. Mr. Amodio is very excited to be working with such a dedicated team as the JAYBOTS!","image":"https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg"},{"name":"Ms. Ingalls","title":"Mentor & Coach","committees":["Advisors"],"bio":"Ms. Amanda Ingalls is a School Library Media Specialist with 12 years of experience and has been a part of the John Jay High School family since 2019. She loves reading and research and is passionate about working with students and technology. She has assisted the JayBots in the past with 3D Printing projects, but this is her first year as an Assistant Coach on the team, and is very excited to be helping out."},{"name":"Anish","title":"President","committees":["Code","Officers"],"bio":"Anish is a senior in his fourth year at the Robotics club. He plans to attend college after high school, majoring in computer science. He enjoys math & science in school and is part of other clubs like Science Olympiad & Computer Science Honor Society. In his free time, he enjoys playing tennis & working on other programming projects. He hopes to learn and work with the new, growing team. Anish is currently the president. Previously, he was the Programming Leader, managing an ever-growing group of recruits and teaching them valuable skills like Kotlin and Computer Vision. Two years ago, he was one of the Excelsior Region's Deans' List Finalists and went to the World Championship.","image":"https://cdn.jaybots.org/team/anish2.jpg"},{"name":"Arnav","title":"Vice President","committees":["SITCOM","Officers"],"bio":"Arnav is a senior at John Jay currently making light pink titrations. He spends a majority of his time on robotics, boxing and singing. He plans to go into the medical field. Arnav is excited to see the future of the Jaybots and how light pink his titrations can get.","image":"https://cdn.jaybots.org/team/arnav.jpeg"},{"name":"Anaya","title":"Secretary","committees":["Game Master","Officers"],"leader":"Documentation","bio":"","image":"https://cdn.jaybots.org/team/anaya/anaya.png"},{"name":"Anthony","title":"Treasurer","committees":["Fundraising","Officers"],"bio":"Anthony Giron (Treasurer) is a junior at John Jay High School. This is his second year in robotics, and his first year on the Jaybots. He was the programming leader for the JV team while he was in his first year, and is now the treasurer as a part of the Jaybots. From robotics he has learned valuable skills of engineering and teamwork. Anthony plans to go to college into either the computer science or engineering field after high school. he enjoys to program games in his free time.","image":"https://file.coffee/u/fjf2M5N-lxl9qHah53M4P.png"},{"name":"Jason","title":"Foreman","committees":["CAD"],"leader":"Build","bio":"Jason Bukofsky (Build Team, Design Team)  is a senior who is in his third year at the club. He wants to go into Aerospace engineering and is infatuated with ​​computers but is married to his 3d printer right now. He loves to sleep and play games with friends and is very competitive. His favorite class is design and drawing for production, where he learned to CAD. Currently, he is the foreman and part of the CAD team. ","image":"https://cdn.jaybots.org/team/jason.jpeg"},{"name":"Hiro","title":"Architect","committees":["Manufacturing"],"leader":"CAD","bio":"Hiroyuki is a junior at John Jay High school and this is his third year on the team. Hiro is the Architect (CAD Leader) and primarily designs and builds the robot while helping the sister team with their designs as well. Hiroyuki plans to go to college after high school in the medical field. Outside of robotics, he learns Karate and attends a Japanese language school. He currently enjoys math and science and is a part of Science Olympiad, Math Honor Society, and Math Team after school. From robotics, Hiro hopes to continue making friends and learn valuable stem and leadership skills.","image":"https://cdn.jaybots.org/team/hiroyuki/hiroyuki.png"},{"name":"Nash","title":"Programming Leader","committees":["Game Master"],"leader":"Code","bio":"Nash Pillai (Code Leader) is a 11th grader at John Jay High School. This is his third year in the club. Nash enjoys tinkering with his linux computer in his free time as well as learning higher-level math. He is taking 9 APs this year, of which Micro/Macro are his favorite. In addition to Robotics, he is part of the Science Olympiad, Math Team, History Honor Society, Computer Science Honor Society, and the morning announcements. Nash is planning on pursuing a career in pen testing.","image":"https://cdn.jaybots.org/team/nash.png"},{"name":"Matthew","title":"Manufacturer","committees":["Code"],"leader":"Manufacturing","bio":"Matthew is a sophomore in his second year at the Robotics club. He enjoys math & science in school and is part of other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Manufacturer, so he runs all of the custom part fabrication such as 3d printing. He is also on the Code Committee and runs the website.","image":"https://file.coffee/u/fjf2M5N-lxl9qHah53M4P.png"},{"name":"Joey","title":"SITCOM","committees":["Build"],"leader":"SITCOM","bio":"Joe is a junior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.","image":"https://file.coffee/u/y5YWMK-vGscr00h1iU3Z1.jpg"},{"name":"Edwin","title":"Fundraising Leader","committees":["CAD"],"leader":"Fundraising","bio":"Edwin Keefer is a junior, who started in the Jaybots team at the beginning of this season. His current favorite subjects in school are computer science and math. He hopes to eventually major in Computer Science in college. Despite not having any previous experience before joining robotics, he has the team's architect to attest to his skill in CAD. Outside of robotics he loves to play games, listen to music, and sleep. He hopes to have a productive year on the team. ","image":"https://file.coffee/u/fjf2M5N-lxl9qHah53M4P.png"},{"name":"Kate","title":"Outreach Coordinater","committees":["Build"],"leader":"Outreach","bio":"Kate is a Senior at John Jay and is in her 3rd year in Robotics. She is the Outreach Coordinator and a member of the Build Team. What Kate enjoys most about Robotics is the opportunities for community outreach and planning such activites with her team. She likes baking, reading, and crocheting in her free time. She is currently working towards her Girl Scout Gold Award which involves informing and encouraging girls to pursue careers in STEM. After High School, Kate hopes to become an Aerospace Engineer.","image":"https://cdn.jaybots.org/team/kate.jpeg"},{"name":"Hailey","title":"Equipment Manager","committees":["Build"],"leader":"Equipment","bio":"Hailey Kim (Equipment Manager) is a sophomore at John Jay High School, and has been a part of the Robotics club for 2 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.Bio","image":"https://file.coffee/u/fjf2M5N-lxl9qHah53M4P.png"},{"name":"Joanna","title":"Branding Leader","committees":["Media"],"leader":"Branding","bio":"Joanna George is in 11th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Graphics Team Leader Position. She designs promotional material for the club, while coordinating with other officers. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, probably majoring in biology.","image":"https://file.coffee/u/NMsKQERaXeW7Mamlntk6K.jpg"},{"name":"Pallavi","title":"Media Manager","committees":["Branding"],"leader":"Media","bio":"Pallavi is a Junior on the team. She is in charge of managing social media, and branding for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ","image":"https://cdn.jaybots.org/team/pallavi.jpg"},{"name":"Alex","title":"Game Master","committees":["Equipment"],"leader":"Game Master","bio":"","image":"https://cdn.jaybots.org/team/alex/alexFULL.png"},{"name":"Areej","committees":["Documentation","Branding"],"bio":"Areej Omar is a junior at John Jay High School. This is her third year on the robotics team. She plans to go to college after high school and major in chemical engineering, robotics or computer science. Before joining this team, she was part of an FLL Explore team (through DCC) and an FLL Challenge team in middle school. She is a 2nd degree Black-Belt in taekwondo and an Acrobatic Gymnast. Her hobbies are painting, drawing, roller-skating, making music, playing the violin and playing outside with her neighbors. She is involved in 3 other clubs in the school: Science Olympiads, Math Team, and Math Honor Society. She joined the John Jay Robotics Club because she wanted to explore her passion for coding, and she wanted to learn many new skills that could help her in the future. Her goal is to help everyone to feel helpful and welcomed on the team.","image":"https://cdn.jaybots.org/team/areej.jpg"},{"name":"Silvia","committees":["Build"],"bio":"Silvia  is a senior at John Jay High School. This is her fourth year on the Jaybots. Her plans after High School are to go to college and study in the medical or engineering field. In school, she enjoys math and science classes along with participating in clubs like Science Olympiad. She is also in the Math Honor Society. She is interested in learning and trying new things out. In her free time, she swims competitively, plays the cello, and enjoys exploring the world. She decided to join FTC because she enjoys building things, soldering, and sharing her ideas with others. In robotics, she hopes to learn CAD, make new friends, achieve better leadership skills, and build a robot.","image":"https://cdn.jaybots.org/team/silvia2.jpg"}]
 
 export const allImages = miscImages.concat(buildImages, codeImages, outreachImages, compImages)
-
 
 export const linkStyle = "font-bold text-blue-600 hover:text-blue-500"
 
