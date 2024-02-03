@@ -57,7 +57,7 @@ export default function Awards() {
 
           <div className='w-full lg:pb-24 text-gray-400 mt-12'>
             
-            <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
+            {/* <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {games.map((game, index) => (
                 <div key={game.name} className='w-full flex justify-center'>
                     <button className={clsx({
@@ -72,13 +72,13 @@ export default function Awards() {
                     </button>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {games.map((game, index) => (
               <div key={game.name}>
-              {index === selectedIndex && (
+              {/* {index === selectedIndex && ( */}
                 <Game game={game} />
-              )}
+              {/* )} */}
               </div>
             ))}
 
@@ -96,7 +96,7 @@ function Game({game}){
   const [selectedTeamIndex, setSelectedTeamIndex] = useState(0);
 
   return(
-    <div className='w-full mt-8'>
+    <div className='w-full mt-8' id={game.name.toLowerCase().replace(" ","_")}>
       <div className='flex justify-center w-full'>
         <Image
           src={game.logo}
