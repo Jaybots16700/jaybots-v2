@@ -16,7 +16,7 @@ import { faAward, faTrophy } from '@fortawesome/free-solid-svg-icons'
 
 export default function Awards() {
 
-  // const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   
   return (
@@ -31,11 +31,13 @@ export default function Awards() {
 
           <div className='w-full lg:pb-24 text-gray-400 mt-12'>
             
-            {/* <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
               {games.map((game, index) => (
                 <div key={game.name} className='w-full flex justify-center'>
-                    <button className={clsx({
-                      'h-fit my-2 w-40 text-lg rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
+                    <Link 
+                    href={`/awards#${game.name.toLowerCase().replace(" ","_")}`}
+                    className={clsx({
+                      'h-fit my-2 w-40 text-lg rounded-full text-white text-center hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
                       'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105': index === selectedIndex,
                       // 'xl:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
                       // 'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
@@ -43,10 +45,10 @@ export default function Awards() {
                     })} onClick={() =>  setSelectedIndex(index)}>
                       <p>{game.name}</p>
                       <p>{game.year}</p>
-                    </button>
+                    </Link>
                 </div>
               ))}
-            </div> */}
+            </div>
 
             {games.map((game, index) => (
               <div key={game.name}>
@@ -84,12 +86,12 @@ function Game({game}){
       <div className='flex justify center'>
         {game.allComps.map((comp, index) => (
           <div key={comp.team} className='w-full flex justify-center'>
-            <button className={(
-              'w-48 text-white p-4 rounded-full text-lg transition-all duration-500 border-4 font-semibold hover:font-bold motion-safe:hover:scale-105'
-              + teamColors(comp.team, false, false)
-              + teamColors(comp.team, true, false)
-              + teamColors(comp.team, false, true)
-              + teamColors(comp.team, true, true))}
+            <button className={
+              `w-48 text-white p-4 rounded-full text-lg transition-all duration-500 border-4 font-semibold hover:font-bold motion-safe:hover:scale-105
+                ${selectedTeamIndex == index ? teamColors(comp.team, false, true) : (teamColors(comp.team, false, false, true)
+                  + teamColors(comp.team, true, false, true)
+                  + teamColors(comp.team, true, true) )
+              }`}
               onClick={() => setSelectedTeamIndex(index)}>
                 {comp.team}
             </button>
@@ -99,7 +101,7 @@ function Game({game}){
     )}
 
     <div className='xl:grid grid-cols-2 mt-12 m-2 sm:m-12 p-4 gap-8 relative isolate'>
-      <div className={"rounded-5xl mb-12 xl:mb-0 sm:px-12 border-4 bg-white/5"+teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
+      <div className={"rounded-5xl mb-12 xl:mb-0 sm:px-12 border-4 bg-white/5 " + teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
         <TeamStats teamComps={game.allComps[selectedTeamIndex]} />
       </div>
       <Gallery photo={game.allComps[selectedTeamIndex].images} />
@@ -112,9 +114,9 @@ function Game({game}){
 function TeamStats({teamComps}){
   return(
     <div className='text-white font-bold text-center text-4xl py-4'>
-      <h1 className=''>
+      {/* <h1 className=''>
         {teamComps.team}
-      </h1>
+      </h1> */}
       {teamComps.comps.map((comp) => (
         <CompStats key={comp} comp={comp} />
       ))}

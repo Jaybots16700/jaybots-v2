@@ -584,7 +584,7 @@ export const teamColors = (team, hover, border, justborder) => {
   if (hover){
     if(border){
       if (team == "Jaybots") {
-        return(" hover:border-blue-900 ")
+        return(" hover:border-blue-800 ")
       } else if (team == "Bluebirds"){
         return(" hover:border-blue-800 ")
       } else if (team == "Phoenix"){
@@ -603,17 +603,17 @@ export const teamColors = (team, hover, border, justborder) => {
 
   if(border){
     if (team == "Jaybots") {
-      return(" border-blue-950 ")
+      return(" border-blue-800 bg-blue-700 ")
     } else if (team == "Bluebirds"){
-      return(" border-blue-700 ")
+      return(" border-blue-600 bg-blue-500 ")
     } else if (team == "Phoenix"){
-      return(" border-red-800 ")
+      return(" border-red-800 bg-red-700 ")
     }
   }
 
   if(justborder){
     if (team == "Jaybots") {
-      return(" border-blue-700/80 ")
+      return(" border-blue-700 ")
     } else if (team == "Bluebirds"){
       return(" border-blue-500 ")
     } else if (team == "Phoenix"){
@@ -622,7 +622,7 @@ export const teamColors = (team, hover, border, justborder) => {
   }
 
   if (team == "Jaybots") {
-    return(" bg-blue-700/80 ")
+    return(" bg-blue-700 ")
   } else if (team == "Bluebirds"){
     return(" bg-blue-500 ")
   } else if (team == "Phoenix"){
