@@ -53,7 +53,7 @@ export default function Awards() {
             {games.map((game, index) => (
               <div key={game.name}>
               {/* {index === selectedIndex && ( */}
-                <Game game={game} />
+                <Game game={game} index={index} />
               {/* )} */}
               </div>
             ))}
@@ -67,7 +67,7 @@ export default function Awards() {
   )
 }
 
-function Game({game}){
+function Game({game, index}){
 
   const [selectedTeamIndex, setSelectedTeamIndex] = useState(0);
 
@@ -82,31 +82,39 @@ function Game({game}){
         />
       </div>
       <div className='w-full text-center text-white text-3xl font-semibold'>{game.year}</div>
-    {game.allComps.length > 1 && (
-      <div className='flex justify center'>
-        {game.allComps.map((comp, index) => (
-          <div key={comp.team} className='w-full flex justify-center'>
-            <button className={
-              `w-48 text-white p-4 rounded-full text-lg transition-all duration-500 border-4 font-semibold hover:font-bold motion-safe:hover:scale-105
-                ${selectedTeamIndex == index ? teamColors(comp.team, false, true) : (teamColors(comp.team, false, false, true)
-                  + teamColors(comp.team, true, false, true)
-                  + teamColors(comp.team, true, true) )
-              }`}
-              onClick={() => setSelectedTeamIndex(index)}>
-                {comp.team}
-            </button>
-          </div>
-        ))}
-      </div>
-    )}
+      {game.allComps.length > 1 && (
+        <div className='flex justify center'>
+          {game.allComps.map((comp, index) => (
+            <div key={comp.team} className='w-full flex justify-center'>
+              <button className={
+                `w-48 text-white p-4 rounded-full text-lg transition-all duration-500 border-4 font-semibold hover:font-bold motion-safe:hover:scale-105
+                  ${selectedTeamIndex == index ? teamColors(comp.team, false, true) : (teamColors(comp.team, false, false, true)
+                    + teamColors(comp.team, true, false, true)
+                    + teamColors(comp.team, true, true) )
+                }`}
+                onClick={() => setSelectedTeamIndex(index)}>
+                  {comp.team}
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
 
-    <div className='xl:grid grid-cols-2 mt-12 m-2 sm:m-12 p-4 gap-8 relative isolate'>
-      <div className={"rounded-5xl mb-12 xl:mb-0 sm:px-12 border-4 bg-white/5 " + teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
-        <TeamStats teamComps={game.allComps[selectedTeamIndex]} />
+      <div className='xl:grid grid-cols-2 mt-12 m-2 sm:m-12 p-4 gap-8 relative isolate'>
+        {game.allComps[selectedTeamIndex].team !== "Jaybots" &&
+          <Gallery photo={game.allComps[selectedTeamIndex].images} />
+        }
+
+        <div className={"rounded-5xl mb-12 xl:mb-0 sm:px-12 border-4 bg-white/5 " + teamColors(game.allComps[selectedTeamIndex].team, false, false, true)}>
+          <TeamStats teamComps={game.allComps[selectedTeamIndex]} />
+        </div>
+
+        {game.allComps[selectedTeamIndex].team === "Jaybots" &&
+          <Gallery photo={game.allComps[selectedTeamIndex].images} />
+        }
+
+        <Colors />
       </div>
-      <Gallery photo={game.allComps[selectedTeamIndex].images} />
-      <Colors />
-    </div>
     </div>
   )
 }
