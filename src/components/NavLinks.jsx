@@ -23,10 +23,10 @@ const links = [
   ['Outreach', '/outreach', faComments, ''],
   ['Awards', '/awards', faAward, ''],
   ['Donate', '/donate', faCircleDollarToSlot, ''],
-  ['Calendar', '/events', faCalendarWeek, ''],
+  // ['Calendar', '/events', faCalendarWeek, ''],
   ['Media', '/media', faPhotoFilm, ''],
   ['Alumni', '/alumni', faGraduationCap, ''],
-  ['Competition Hosting', '/host', faRobot, ''],
+  // ['Competition Hosting', '/host', faRobot, ''],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar, '_blank'],
   ['Contact Us', '/#contact', faEnvelopeOpenText, ''],
 ]
