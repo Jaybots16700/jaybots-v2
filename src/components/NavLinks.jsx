@@ -17,18 +17,18 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 const links = [
-  ['Home', '/', faHouse],
-  ['Meet the Team', '/team', faPeopleGroup],
-  ['Join', 'https://interest.jaybots.org', faBullhorn],
-  ['Outreach', '/outreach', faComments],
-  ['Awards', '/awards', faAward],
-  ['Donate', '/donate', faCircleDollarToSlot],
-  ['Calendar', '/events', faCalendarWeek],
-  ['Media', '/media', faPhotoFilm],
-  ['Alumni', '/alumni', faGraduationCap],
-  ['Competition Hosting', '/host', faRobot],
-  ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
-  ['Contact Us', '/#contact', faEnvelopeOpenText],
+  ['Home', '/', faHouse, ''],
+  ['Meet the Team', '/team', faPeopleGroup, ''],
+  ['Join', 'https://interest.jaybots.org', faBullhorn, '_blank'],
+  ['Outreach', '/outreach', faComments, ''],
+  ['Awards', '/awards', faAward, ''],
+  ['Donate', '/donate', faCircleDollarToSlot, ''],
+  ['Calendar', '/events', faCalendarWeek, ''],
+  ['Media', '/media', faPhotoFilm, ''],
+  ['Alumni', '/alumni', faGraduationCap, ''],
+  ['Competition Hosting', '/host', faRobot, ''],
+  ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar, '_blank'],
+  ['Contact Us', '/#contact', faEnvelopeOpenText, ''],
 ]
 
 export function NavLinks({current}) {
@@ -36,10 +36,11 @@ export function NavLinks({current}) {
   return (
   
   <div className=''>
-  {links.map(([label, href, icon], index) => (
+  {links.map(([label, href, icon, target], index) => (
       <Link
         key={label}
         href={href}
+        target={target}
         className={clsx({
           "flex items-center relative rounded-xl py-3 px-2 text-base text-gray-300 transition-all duration-200 delay-100 hover:delay-0 hover:text-white hover:bg-blue-900/70 hover:font-bold": true,
           "bg-blue-800 text-white font-semibold": current == label,
