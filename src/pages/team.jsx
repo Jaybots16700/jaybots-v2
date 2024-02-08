@@ -22,7 +22,7 @@ export default function Team() {
 
   var advisorCount = 0;
   for(var i = 0; i<members.length; i++){
-    if(members[i].committees[0] == "Advisors"){
+    if(members[i].committees[0] === "Advisors"){
       advisorCount++;
     }
   }
