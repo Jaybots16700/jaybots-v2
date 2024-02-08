@@ -69,14 +69,14 @@ export function Nav({current}) {
                           <Popover.Panel
                             static
                             as={motion.div}
-                            initial={{ opacity: 1, x: -64 }}
+                            initial={{ opacity: 1, x: -256 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{
-                              opacity: 1,
-                              x: -64,
-                              transition: { duration: 0.1},
-                            }}
-                            className='fixed p-4 z-20 justify-center w-64 h-full bg-slate-950 transition-translation duration-1000 overflow-auto scrollbar-thin scrollbar-thumb-blue-900 hover:scrollbar-thumb-blue-800 scrollbar-track-slate-950'
+                            // exit={{
+                            //   opacity: 1,
+                            //   x: -64,
+                            //   transition: { duration: 0.1},
+                            // }}
+                            className='fixed p-4 z-20 justify-center w-64 h-full bg-slate-950 ease-linear transition-translation duration-200 overflow-auto scrollbar-thin scrollbar-thumb-blue-900 hover:scrollbar-thumb-blue-800 scrollbar-track-slate-950'
                           >
                             <NavBar current={current} />
                           </Popover.Panel>
