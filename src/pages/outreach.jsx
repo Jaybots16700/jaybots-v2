@@ -72,7 +72,7 @@ export default function Outreach() {
               {catergories.map((catergory, index) => (
                 <div key={catergory} className='w-full flex justify-center'>
                     <button className={clsx({
-                      'h-fit my-2 py-2 w-40 text-lg rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
+                      'h-fit my-2 py-2 px-3 text-lg rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
                       'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105': index === selectedIndex,
                       // 'xl:motion-safe:rotate-12': (index === selectedIndex) && (index%2 == 0),
                       // 'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
@@ -84,14 +84,14 @@ export default function Outreach() {
               ))}
             </div>
 
-            <div className='w-full mt-8 relative flex justify-center'>
+            {/* <div className='w-full mt-8 relative flex justify-center'>
               <div className='grid grid-cols-1 w-96 sm:grid-cols-2 sm:w-[40rem] xl:grid-cols-3 xl:w-[60rem] 2xl:grid-cols-4 2xl:w-[80rem] justify-center px-10 gap-12'>
                 {outreach.filter((e) => e.seasonString === catergories[selectedIndex]).map((outreach, index) => (
                   <Event event={outreach} key={outreach.title}/>
                 ))}
                 </div>
               <Colors />
-            </div>
+            </div> */}
 
           </div>
 
