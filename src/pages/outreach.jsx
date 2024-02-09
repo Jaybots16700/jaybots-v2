@@ -84,14 +84,14 @@ export default function Outreach() {
               ))}
             </div>
 
-            {/* <div className='w-full mt-8 relative flex justify-center'>
+            <div className='w-full mt-8 relative flex justify-center'>
               <div className='grid grid-cols-1 w-96 sm:grid-cols-2 sm:w-[40rem] xl:grid-cols-3 xl:w-[60rem] 2xl:grid-cols-4 2xl:w-[80rem] justify-center px-10 gap-12'>
                 {outreach.filter((e) => e.seasonString === catergories[selectedIndex]).map((outreach, index) => (
                   <Event event={outreach} key={outreach.title}/>
                 ))}
                 </div>
               <Colors />
-            </div> */}
+            </div>
 
           </div>
 
