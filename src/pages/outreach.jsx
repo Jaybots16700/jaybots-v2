@@ -32,7 +32,8 @@ export default function Outreach() {
 
         const data = await response.json();
 
-        setOutreach(data.reverse());
+        setOutreach(data);
+        console.log(data)
 
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -41,6 +42,8 @@ export default function Outreach() {
 
     getData();
   }, []);
+
+  console.log(outreach)
 
 
   const [selectedIndex, setSelectedIndex] = useState(0);
