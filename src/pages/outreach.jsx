@@ -19,6 +19,13 @@ export default function Outreach() {
 
   const [outreach, setOutreach] = useState([]);
 
+  const catergories = [
+    "Year 4 (2022-2023)",
+    "Year 3 (2021-2022)",
+    "Year 2 (2020-2021)",
+    "Year 1 (2019-2020)",
+  ]
+
   useEffect(() => {
     async function getData() {
       try {
@@ -62,8 +69,8 @@ export default function Outreach() {
           <div className='w-full py-12 lg:pb-24 text-gray-400'>
             
             <div className='grid grid-cols-2 md:grid-cols-3 xl:flex'>
-              {outreach.map((outreach, index) => (
-                <div key={outreach.year} className='w-full flex justify-center'>
+              {catergories.map((catergory, index) => (
+                <div key={catergory} className='w-full flex justify-center'>
                     <button className={clsx({
                       'h-fit my-2 py-2 w-40 text-lg rounded-full text-white hover:brightness-125 border-2 transition-all duration-1000 motion-safe:hover:scale-105': true,
                       'bg-blue-900 border-blue-600 brightness-110 motion-safe:scale-105': index === selectedIndex,
@@ -71,27 +78,20 @@ export default function Outreach() {
                       // 'xl:motion-safe:-rotate-12': (index === selectedIndex) && (index%2 != 0),
                       'bg-gray-800 border-blue-700': !(index === selectedIndex)
                     })} onClick={() =>  setSelectedIndex(index)}>
-                      <p>{outreach.year}</p>
+                      <p>{catergory}</p>
                     </button>
                 </div>
               ))}
             </div>
 
-            {outreach.map((outreach, index) => (
-              <div key={outreach.year}>
-              {index === selectedIndex && (
-                <div className='w-full mt-8 relative flex justify-center'>
-                  <div className='grid grid-cols-1 w-96 sm:grid-cols-2 sm:w-[40rem] xl:grid-cols-3 xl:w-[60rem] 2xl:grid-cols-4 2xl:w-[80rem] justify-center px-10 gap-12'>
-                    {outreach.events.map((event) => (
-                      <Event event={event} key={event.name}/>
-                    ))}
-                  </div>
-                  <Colors />
+            <div className='w-full mt-8 relative flex justify-center'>
+              <div className='grid grid-cols-1 w-96 sm:grid-cols-2 sm:w-[40rem] xl:grid-cols-3 xl:w-[60rem] 2xl:grid-cols-4 2xl:w-[80rem] justify-center px-10 gap-12'>
+                {outreach.filter((e) => e.seasonString === catergories[selectedIndex]).map((outreach, index) => (
+                  <Event event={outreach} key={outreach.title}/>
+                ))}
                 </div>
-
-              )}
-              </div>
-            ))}
+              <Colors />
+            </div>
 
           </div>
 
@@ -110,19 +110,19 @@ function Event({event}){
 
 
   return(
-    <div key={event.name} className='bg-slate-900/50 w-full rounded-2xl overflow-hidden ring-2 ring-blue-950 flex flex-col'>
+    <div key={event.title} className='bg-slate-900/50 w-full rounded-2xl overflow-hidden ring-2 ring-blue-950 flex flex-col'>
       <Image
-        src={event.img}
+        src={event.image}
         width={300}
         height={400}
         className='w-full aspect-square object-cover'
       />
       <div className='w-full px-2'>
         <div className='text-gray-200 font-semibold text-lg text-center p-2 leading-6 whitespace-nowrap h-fit overflow-hidden mx-3 rounded-full'>
-          <p className={clsx({'animate-slide-infinite': event.name.length >= 30})}>{event.name}</p>
+          <p className={clsx({'animate-slide-infinite': event.title.length >= 30})}>{event.title}</p>
         </div>
         <p className='text-center'>{event.date}</p>
-        <p className='text-center text-gray-300 pt-2'>{event.blurb}</p>
+        <p className='text-center text-gray-300 pt-2'>{event.short}</p>
         <div className='w-full flex items-center justify-center p-2'>
           <button className='bg-blue-600/60 self-center px-5 text-lg text-gray-200 hover:text-white ring-1 ring-slate-900 rounded-lg hover:bg-blue-600 duration-150' onClick={() => {setOpen(true)}}>View</button>
         </div>
@@ -157,11 +157,11 @@ function Event({event}){
                     <div className="sm:flex sm:items-start">
                       <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                         <Dialog.Title as="h3" className="text-base text-center font-semibold leading-6 text-gray-100">
-                          {event.name}
+                          {event.title}
                         </Dialog.Title>
                         <div className="mt-2">
                           <p className="text-sm text-gray-400">
-                            {event.description}
+                            {event.long}
                           </p>
                         </div>
                       </div>
