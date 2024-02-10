@@ -20,7 +20,7 @@ export function JoinToday() {
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/10 px-6 py-16 ring-1 ring-white/20 sm:rounded-3xl sm:p-8 xl:mx-0 xl:max-w-none xl:flex-row xl:items-center xl:py-20 xl:gap-x-20 xl:px-20">
             <Image
               className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl xl:aspect-square xl:h-auto xl:max-w-sm"
-              src="https://file.coffee/u/9eBeiWCI4QcCuo.jpg"
+              src="/images/Team.jpg"
               alt="team photo"
               width={500}
               height={384}
