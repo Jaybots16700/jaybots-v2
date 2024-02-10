@@ -40,7 +40,7 @@ export const committeeDescript = [
 
 export const alumni = [
   { name: "David", 
-    title: ["Member"],
+    title: ["Student at Columbia"],
     bio: "David has been on the Jaybots for the first time this year. Last year, he was part of the JV team and part of the DTC project group before moving up to Jaybots this year. He is currently a Senior, and this will be his second year as part of the robotics club at John Jay Senior High School. He’s a Hispanic student who plans to major in Civil engineering at Columbia University. David participates in various STEM-based clubs offered at the school. Other than being the President of the Spanish Honor Society, he enjoys being a part of and helping out with our robotics team.",
     image: "https://cdn.jaybots.org/team/david.png",
     year: 2023,
