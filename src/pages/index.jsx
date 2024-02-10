@@ -159,7 +159,7 @@ export default function Home() {
 
             <div id="contact" className='relative w-full text-center space-y-4 sm:text-xl mt-8 font-light px-4 text:base'>
               <h2 className='text-4xl font-bold text-gray-200'>Contact Us!</h2>
-              <p>Like what you see? <Link href="https://www.interest.jaybots.org" className={linkStyle} target='_blank'>
+              <p>Like what you see? <Link href="https://interest.jaybots.org" className={linkStyle} target='_blank'>
                   Join Today!
                 </Link> Feel free to contact us at <Link href="mailto:interest@jaybots.org?subject=Question" className={linkStyle} target='_blank'>
                   interest@jaybots.org
