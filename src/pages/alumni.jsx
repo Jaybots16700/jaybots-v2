@@ -110,7 +110,6 @@ export default function Alumni() {
 function Titles({titles}){
   return(
     <p>
-      <b className=' font-semibold'>Former </b>
       {titles.map((title, index) => (
         <b key={title} className=' font-semibold'> {title}
         {titles.length == index+2 && 

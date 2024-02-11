@@ -17,18 +17,16 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 const links = [
-  ['Home', '/', faHouse, ''],
-  ['Meet the Team', '/team', faPeopleGroup, ''],
-  ['Join', 'https://interest.jaybots.org', faBullhorn, '_blank'],
-  ['Outreach', '/outreach', faComments, ''],
-  ['Awards', '/awards', faAward, ''],
-  ['Donate', '/donate', faCircleDollarToSlot, ''],
-  // ['Calendar', '/events', faCalendarWeek, ''],
-  ['Media', '/media', faPhotoFilm, ''],
-  ['Alumni', '/alumni', faGraduationCap, ''],
-  // ['Competition Hosting', '/host', faRobot, ''],
-  ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar, '_blank'],
-  ['Contact Us', '/#contact', faEnvelopeOpenText, ''],
+  ['Home', '/', faHouse],
+  ['Meet the Team', '/team', faPeopleGroup],
+  ['Join', 'https://interest.jaybots.org', faBullhorn],
+  ['Outreach', '/outreach', faComments],
+  ['Awards', '/awards', faAward],
+  ['Donate', '/donate', faCircleDollarToSlot],
+  ['Media', '/media', faPhotoFilm],
+  ['Alumni', '/alumni', faGraduationCap],
+  ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
+  ['Contact Us', '/#contact', faEnvelopeOpenText],
 ]
 
 export function NavLinks({current}) {
