@@ -519,10 +519,8 @@ export const games = [
           {
             type: 'Regionals',
             date: 'March 3, 2024',
-            awards: {
-              awards: {},
-              upcoming: true,
-            },
+            awards: {},
+            upcoming: true,
           },
         ],
       },
