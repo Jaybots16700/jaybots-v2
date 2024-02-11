@@ -510,8 +510,11 @@ export const games = [
           {
             type: 'Qualifier',
             date: 'February 11, 2024',
-            awards: {},
-            upcoming: true,
+            awards: {
+              advanced: true,
+              first: ['Inspire'],
+              winningAlliance: 'Second Pick',
+            },
           },
         ],
       },
