@@ -117,10 +117,18 @@ module.exports = {
 				destination: "/host",
 				permanent: true
 			},
-      { source: '/tournament',
-        destination: "/host",
-        permanent: true
-      }
+			{ source: '/tournament',
+				destination: "/host",
+				permanent: true
+			},
+			{ source: '/lego',
+				destination: "https://docs.google.com/forms/d/e/1FAIpQLSc38Idif0bpSJ2vGeJwxYUH2s9LaTcrx-L1rHa1-cY1dEaJNQ/viewform",
+				permanent: false
+			},
+			{ source: '/legoworkshop',
+				destination: "https://docs.google.com/forms/d/e/1FAIpQLSc38Idif0bpSJ2vGeJwxYUH2s9LaTcrx-L1rHa1-cY1dEaJNQ/viewform",
+				permanent: false
+			}
 		]
   }
 }
