@@ -218,10 +218,10 @@ export default function Home() {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/IkMCntCRsLE?si=jN2frnBaT_ovuywc&amp;clip=UgkxQFFDhOqml9jQqJzNyPtE9tClnhFLQ7JG&amp;clipt=EMGgsgcYh46zBw"
-                title="YouTube video player"
+                title="Jaybot's Plane is Something Else"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                // allowfullscreen
               ></iframe>
             </div>
 
