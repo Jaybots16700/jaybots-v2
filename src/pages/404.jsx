@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 import Colors from '@/components/Colors'
+import Image from 'next/image'
 
 export default function _404() {
   return (
@@ -13,15 +14,20 @@ export default function _404() {
       </Head>
       <Nav />
       <main>
-      <div className='flex flex-col lg:pl-64 animate-all h-screen w-full [perspective:10px] [perspective-origin:top_right] overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900'>
-        <Header title="Page Not Found" beforeBold="We couldn't find this page. Don't fret, we're " bold='never gonna give you up!' />
-          
-          <div className='w-full pt-12 lg:pb-24 text-gray-400 isolate'>
-            
-            <video autoPlay playsInline muted className='w-full'>
-              <source src='/videos/404.mp4' type="video/mp4" />
-              Video unavailable.
-            </video>
+        <div className="animate-all flex h-screen w-full flex-col overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 [perspective-origin:top_right] [perspective:10px] lg:pl-64">
+          <Header
+            title="Page Not Found"
+            beforeBold="We couldn't find this page."
+          />
+
+          <div className="w-full px-12 pt-12 text-gray-400 lg:pb-24">
+            <Image
+              className="w-full rounded-3xl ring-2 ring-blue-800"
+              src="/images/Corning.jpg"
+              alt="team photo"
+              width={500}
+              height={384}
+            />
 
             {/* <Colors /> */}
           </div>
