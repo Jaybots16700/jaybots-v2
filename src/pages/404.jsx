@@ -23,7 +23,7 @@ export default function _404() {
           <div className="w-full px-12 pt-12 text-gray-400 lg:pb-24">
             <Image
               className="w-full rounded-3xl ring-2 ring-blue-800"
-              src="/images/Corning.jpg"
+              src="/images/O.jpg"
               alt=""
               width={500}
               height={384}

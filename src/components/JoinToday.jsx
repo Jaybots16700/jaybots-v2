@@ -29,7 +29,7 @@ export function JoinToday() {
               />
               <Image
                 className="h-full w-full object-cover"
-                src="/images/Corning.jpg"
+                src="/images/O.jpg"
                 alt="team photo"
                 width={500}
                 height={384}
