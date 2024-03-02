@@ -24,7 +24,7 @@ export default function _404() {
             <Image
               className="w-full rounded-3xl ring-2 ring-blue-800"
               src="/images/Corning.jpg"
-              alt="team photo"
+              alt=""
               width={500}
               height={384}
             />
