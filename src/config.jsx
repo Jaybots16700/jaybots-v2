@@ -519,8 +519,11 @@ export const games = [
           {
             type: 'Regionals',
             date: 'March 3, 2024',
-            awards: {},
-            upcoming: true,
+            awards: {
+              first: ['Control'],
+              second: ['Connect'],
+              deansList: 'Finalist',
+            },
           },
         ],
       },
