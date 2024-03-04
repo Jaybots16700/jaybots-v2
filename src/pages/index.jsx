@@ -91,16 +91,8 @@ export default function Home() {
                     FTC
                   </Link>
                   . After making it to the regional competition four years in a
-                  row, we are aiming to make it even further this year. We have
-                  made it to Regionals again in the 2024 Game Season,{' '}
-                  <Link
-                    href="https://www.youtube.com/watch?v=6e-5Uo1dRic"
-                    className={linkStyle}
-                    target="_blank"
-                  >
-                    Center Stage
-                  </Link>
-                  . Join us on our journey!
+                  row, we are aiming to make it even further next year . Join us
+                  on our journey!
                 </p>
               </div>
             </div>
