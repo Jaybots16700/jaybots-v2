@@ -145,6 +145,12 @@ module.exports = {
           'https://docs.google.com/forms/d/e/1FAIpQLSdStHvgd5wBllZKnoWk_kAttguYY7xHoSkyNBG73hrEMRqy-w/viewform',
         permanent: false,
       },
+      {
+        source: '/ml',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSdnTfWP-WFXK-8F2BWYq7G8aUL3aVyfA7jWXySrYUhaz-MJDg/viewform',
+        permanent: false,
+      },
     ]
   },
 }
