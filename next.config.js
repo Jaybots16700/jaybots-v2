@@ -156,6 +156,11 @@ module.exports = {
         destination:'https://colab.research.google.com/drive/1idq8-Cv_sTv4H1s3rFB5EYWEKjLohN5y',
         permanent: false,
       },
+      {
+        source: '/python',
+        destination:'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart',
+        permanent: false,
+      },
     ]
   },
 }
