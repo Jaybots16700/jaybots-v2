@@ -139,28 +139,34 @@ module.exports = {
         destination: 'https://stanford.edu/~anishan',
         permanent: true,
       },
+      // {
+      //   source: '/circuit',
+      //   destination:
+      //     'https://docs.google.com/forms/d/e/1FAIpQLSdStHvgd5wBllZKnoWk_kAttguYY7xHoSkyNBG73hrEMRqy-w/viewform',
+      //   permanent: false,
+      // },
+      // {
+      //   source: '/ml',
+      //   destination:
+      //     'https://docs.google.com/forms/d/e/1FAIpQLSdnTfWP-WFXK-8F2BWYq7G8aUL3aVyfA7jWXySrYUhaz-MJDg/viewform',
+      //   permanent: false,
+      // },
+      // {
+      //   source: '/mlcode',
+      //   destination:
+      //     'https://colab.research.google.com/drive/1idq8-Cv_sTv4H1s3rFB5EYWEKjLohN5y',
+      //   permanent: false,
+      // },
+      // {
+      //   source: '/python',
+      //   destination:
+      //     'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart',
+      //   permanent: false,
+      // },
       {
-        source: '/circuit',
+        source: '/ai',
         destination:
-          'https://docs.google.com/forms/d/e/1FAIpQLSdStHvgd5wBllZKnoWk_kAttguYY7xHoSkyNBG73hrEMRqy-w/viewform',
-        permanent: false,
-      },
-      {
-        source: '/ml',
-        destination:
-          'https://docs.google.com/forms/d/e/1FAIpQLSdnTfWP-WFXK-8F2BWYq7G8aUL3aVyfA7jWXySrYUhaz-MJDg/viewform',
-        permanent: false,
-      },
-      {
-        source: '/mlcode',
-        destination:
-          'https://colab.research.google.com/drive/1idq8-Cv_sTv4H1s3rFB5EYWEKjLohN5y',
-        permanent: false,
-      },
-      {
-        source: '/python',
-        destination:
-          'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart',
+          'https://docs.google.com/forms/d/e/1FAIpQLSce18Y72e4g5--vn51WZDdzWLYFc-OGYgOAUQRmHDGCyTBQ8w/viewform',
         permanent: false,
       },
     ]
