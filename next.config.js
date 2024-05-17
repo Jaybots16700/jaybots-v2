@@ -169,6 +169,12 @@ module.exports = {
           'https://docs.google.com/forms/d/e/1FAIpQLSce18Y72e4g5--vn51WZDdzWLYFc-OGYgOAUQRmHDGCyTBQ8w/viewform',
         permanent: false,
       },
+      {
+        source: '/llama2',
+        destination:
+          'https://colab.research.google.com/github/MuhammadMoinFaisal/LargeLanguageModelsProjects/blob/main/Run%20Llama2%20Google%20Colab/Llama_2_updated.ipynb',
+        permanent: false,
+      },
     ]
   },
 }
