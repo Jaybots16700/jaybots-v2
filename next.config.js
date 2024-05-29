@@ -176,7 +176,7 @@ module.exports = {
       },
       {
         source: '/live2',
-        destination: 'https://youtube.com/live/kcvMfcIc8VU?feature=share',
+        destination: 'https://youtube.com/live/Hp6LtIeRqfo?feature=share',
         permanent: true,
       },
     ]
