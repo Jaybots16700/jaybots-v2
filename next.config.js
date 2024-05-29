@@ -122,6 +122,21 @@ module.exports = {
       },
       { source: '/competition', destination: '/host', permanent: true },
       { source: '/tournament', destination: '/host', permanent: true },
+      {
+        source: '/anish',
+        destination: 'https://stanford.edu/~anishan',
+        permanent: true,
+      },
+      {
+        source: '/live1',
+        destination: 'https://youtube.com/live/20iDhOJ9JfU?feature=share',
+        permanent: true,
+      },
+      {
+        source: '/live2',
+        destination: 'https://youtube.com/live/Hp6LtIeRqfo?feature=share',
+        permanent: true,
+      },
     ]
   },
 }
