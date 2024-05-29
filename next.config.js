@@ -122,63 +122,6 @@ module.exports = {
       },
       { source: '/competition', destination: '/host', permanent: true },
       { source: '/tournament', destination: '/host', permanent: true },
-      // {
-      //   source: '/lego',
-      //   destination:
-      //     'https://docs.google.com/forms/d/e/1FAIpQLSc38Idif0bpSJ2vGeJwxYUH2s9LaTcrx-L1rHa1-cY1dEaJNQ/viewform',
-      //   permanent: false,
-      // },
-      // {
-      //   source: '/legoworkshop',
-      //   destination:
-      //     'https://docs.google.com/forms/d/e/1FAIpQLSc38Idif0bpSJ2vGeJwxYUH2s9LaTcrx-L1rHa1-cY1dEaJNQ/viewform',
-      //   permanent: false,
-      // },
-      {
-        source: '/anish',
-        destination: 'https://stanford.edu/~anishan',
-        permanent: true,
-      },
-      // {
-      //   source: '/circuit',
-      //   destination:
-      //     'https://docs.google.com/forms/d/e/1FAIpQLSdStHvgd5wBllZKnoWk_kAttguYY7xHoSkyNBG73hrEMRqy-w/viewform',
-      //   permanent: false,
-      // },
-      // {
-      //   source: '/ml',
-      //   destination:
-      //     'https://docs.google.com/forms/d/e/1FAIpQLSdnTfWP-WFXK-8F2BWYq7G8aUL3aVyfA7jWXySrYUhaz-MJDg/viewform',
-      //   permanent: false,
-      // },
-      // {
-      //   source: '/mlcode',
-      //   destination:
-      //     'https://colab.research.google.com/drive/1idq8-Cv_sTv4H1s3rFB5EYWEKjLohN5y',
-      //   permanent: false,
-      // },
-      // {
-      //   source: '/python',
-      //   destination:
-      //     'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart',
-      //   permanent: false,
-      // },
-      {
-        source: '/ai',
-        destination:
-          'https://docs.google.com/forms/d/e/1FAIpQLSce18Y72e4g5--vn51WZDdzWLYFc-OGYgOAUQRmHDGCyTBQ8w/viewform',
-        permanent: false,
-      },
-      {
-        source: '/live1',
-        destination: 'https://youtube.com/live/Lq6qK_Kg2mY?feature=share',
-        permanent: true,
-      },
-      {
-        source: '/live2',
-        destination: 'https://youtube.com/live/Hp6LtIeRqfo?feature=share',
-        permanent: true,
-      },
     ]
   },
 }
