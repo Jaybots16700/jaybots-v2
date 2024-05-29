@@ -170,10 +170,14 @@ module.exports = {
         permanent: false,
       },
       {
-        source: '/llama2',
-        destination:
-          'https://colab.research.google.com/github/MuhammadMoinFaisal/LargeLanguageModelsProjects/blob/main/Run%20Llama2%20Google%20Colab/Llama_2_updated.ipynb',
-        permanent: false,
+        source: '/live1',
+        destination: 'https://youtube.com/live/Lq6qK_Kg2mY?feature=share',
+        permanent: true,
+      },
+      {
+        source: '/live1',
+        destination: 'https://youtube.com/live/kcvMfcIc8VU?feature=share',
+        permanent: true,
       },
     ]
   },
