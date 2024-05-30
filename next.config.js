@@ -129,7 +129,7 @@ module.exports = {
       },
       {
         source: '/live1',
-        destination: 'https://youtube.com/live/20iDhOJ9JfU?feature=share',
+        destination: 'https://youtube.com/live/_CGLcrJBpoU?feature=share',
         permanent: true,
       },
       {
