@@ -22,6 +22,7 @@ export function Footer() {
             <div className="ml-4">
               <p className="text-base font-semibold text-gray-200">Jaybots</p>
               <p className="mt-1 text-sm  text-gray-400 xl:w-32">John Jay Robotics</p>
+			  <a href="https://posthog.com?utm_source=badge" rel="noreferrer" title="Built with PostHog analytics + more" target="_blank" aria-label="Built with PostHog analytics + more"><img src="https://d1hovhsvet4m1p.cloudfront.net/badges/posthog-badge-transparent-bg-white-text.svg" /></a>
             </div>
           </Link>
           <div className='grid grid-cols-2 sm:flex space-x-2 items-center w-full justify-center lg:justify-end'>
