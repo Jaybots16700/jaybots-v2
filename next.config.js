@@ -137,6 +137,11 @@ module.exports = {
         destination: 'https://youtube.com/live/Hp6LtIeRqfo?feature=share',
         permanent: true,
       },
+      {
+        source: '/workshops',
+        destination: 'https://tally.so/r/wa0xLy',
+        permanent: true,
+      },
     ]
   },
 }
