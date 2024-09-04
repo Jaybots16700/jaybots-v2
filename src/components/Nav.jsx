@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
 import { Container } from '@/components/Container'
 import { NavLinks } from '@/components/NavLinks'
+import { usePathname } from 'next/navigation'
 
-function NavBar({ current }) {
+function NavBar({ page }) {
   return (
     <div className="">
       <Link href="/" aria-label="Home" className="flex justify-center py-2">
@@ -20,19 +21,21 @@ function NavBar({ current }) {
         />
       </Link>
       <span className="mt-2 grid grid-cols-1">
-        <NavLinks current={current} />
+        <NavLinks current={page} />
       </span>
     </div>
   )
 }
 
-export function Nav({ current }) {
+export function Nav() {
+  const path = usePathname()
+
   return (
     <header>
       <nav>
         <Container className="relative z-50 flex justify-between">
           <div className="fixed -left-64 z-0 h-full w-64 justify-center overflow-auto bg-blue-950/60 p-4 transition duration-1000 scrollbar-thin scrollbar-thumb-blue-900 lg:left-0">
-            <NavBar current={current} />
+            <NavBar page={path} />
           </div>
           <div className="flex items-center gap-6">
             <Popover className="lg:hidden">
@@ -77,7 +80,7 @@ export function Nav({ current }) {
                             // }}
                             className="transition-translation fixed z-20 h-full w-64 justify-center overflow-auto bg-slate-950 p-4 duration-200 ease-linear scrollbar-thin scrollbar-track-slate-950 scrollbar-thumb-blue-900 hover:scrollbar-thumb-blue-800"
                           >
-                            <NavBar current={current} />
+                            <NavBar page={path} />
                           </Popover.Panel>
                         </Popover.Overlay>
                       </>

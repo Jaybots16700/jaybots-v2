@@ -15,7 +15,7 @@ export default function Alumni() {
       <Head>
         <title>Jaybots | Alumni</title>
       </Head>
-      <Nav current="Alumni" />
+      <Nav />
       <main>
         <div className="animate-all z-50 flex h-screen w-full flex-col overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 lg:pl-64">
           <Header

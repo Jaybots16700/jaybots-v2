@@ -15,6 +15,7 @@ import {
   faBullhorn,
   faCommentsDollar,
 } from '@fortawesome/free-solid-svg-icons'
+import { usePathname } from 'next/navigation'
 
 const links = [
   ['Home', '/', faHouse],
@@ -30,17 +31,30 @@ const links = [
   ['Contact Us', '/#contact', faEnvelopeOpenText],
 ]
 
+const dashboardLinks = [
+  ['Home', '/dashboard', faHouse],
+  ['Bio', '/dashboard/team', faPeopleGroup],
+  ['Outreach', '/dashboard/outreach', faComments],
+  ['Awards', '/dashboard/awards', faAward],
+  ['Media', '/dashboard/media', faPhotoFilm],
+  ['Alumni', '/dashboard/alumni', faGraduationCap],
+]
+
 export function NavLinks({ current }) {
+  const linksToUse = usePathname().startsWith('/dashboard')
+    ? dashboardLinks
+    : links
+
   return (
     <div>
-      {links.map(([label, href, icon, target], index) => (
+      {linksToUse.map(([label, href, icon, target], index) => (
         <Link
           key={label}
           href={href}
           target={target}
           className={clsx({
             'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0': true,
-            'bg-blue-800 font-semibold text-white': current == label,
+            'bg-blue-800 font-semibold text-white': current == href,
           })}
         >
           {label === '3D Printing' ? (

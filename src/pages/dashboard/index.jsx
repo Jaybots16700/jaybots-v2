@@ -1,66 +1,9 @@
-import Head from 'next/head'
-import Link from 'next/link'
-
-import clsx from 'clsx'
-
-import { ReviewColumn } from '@/components/Photos'
-
 import { Footer } from '@/components/Footer'
-import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
-import { JoinToday } from '@/components/JoinToday'
+import { Nav } from '@/components/Nav'
+import Head from 'next/head'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faInstagram,
-  faXTwitter,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons'
-import { faCommentsDollar } from '@fortawesome/free-solid-svg-icons'
-import { linkStyle, allImages } from '@/config.jsx'
-
-import Colors from '@/components/Colors'
-import { useEffect, useRef, useState } from 'react'
-
-const detectScroll = (ref, setVisible) => {
-  const observer = new IntersectionObserver((entries) => {
-    const entry = entries[0]
-    setVisible(entry.isIntersecting)
-  })
-  observer.observe(ref.current)
-}
-
-export default function Home() {
-  const [sponsorBtnVis, setSponsorBtnVis] = useState()
-  const sponsorBtnRef = useRef()
-  useEffect(() => {
-    detectScroll(sponsorBtnRef, setSponsorBtnVis)
-  }, [])
-
-  const [ytBtnVis, setYtBtnVis] = useState()
-  const ytBtnRef = useRef()
-  useEffect(() => {
-    detectScroll(ytBtnRef, setYtBtnVis)
-  }, [])
-
-  const [instaBtnVis, setInstaBtnVis] = useState()
-  const instaBtnRef = useRef()
-  useEffect(() => {
-    detectScroll(instaBtnRef, setInstaBtnVis)
-  }, [])
-
-  const [xBtnVis, setXBtnVis] = useState()
-  const xBtnRef = useRef()
-  useEffect(() => {
-    detectScroll(xBtnRef, setXBtnVis)
-  }, [])
-
-  const [mediaVis, setMediaVis] = useState()
-  const mediaRef = useRef()
-  useEffect(() => {
-    detectScroll(mediaRef, setMediaVis)
-  }, [])
-
+export default function Dashboard() {
   return (
     <>
       <Head>
@@ -70,12 +13,12 @@ export default function Home() {
       <main>
         <div className="animate-all z-50 flex h-screen w-full flex-col overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 lg:pl-64">
           <Header
-            title="John Jay Robotics Team"
+            title="Team Member Dashboard"
             bold="Jaybots"
             afterBold=" - FTC Robotics Team #16700"
           />
 
-          <div className="w-full pb-12 text-gray-400 lg:pb-24">
+          {/* <div className="w-full pb-12 text-gray-400 lg:pb-24">
             <div className="flex w-full flex-col space-y-6 p-6 text-center text-xl sm:px-12">
               <h2 className="text-5xl font-bold text-gray-200 xl:text-6xl">
                 Who are we?
@@ -269,7 +212,7 @@ export default function Home() {
                 </Link>
               </p>
             </div>
-          </div>
+          </div> */}
 
           <Footer />
         </div>
