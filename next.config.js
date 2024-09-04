@@ -68,6 +68,11 @@ module.exports = {
         hostname: 'file.coffee',
         port: '',
       },
+      {
+        protocol: 'http',
+        hostname: 'via.placeholder.com',
+        port: '',
+      },
     ],
   },
   async redirects() {

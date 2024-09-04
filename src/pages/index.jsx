@@ -108,7 +108,7 @@ export default function Home() {
                 })}
                 target="_blank"
               >
-                <div className="absolute h-full w-full items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 opacity-0 duration-500 group-hover:opacity-100" />
+                <span className="absolute h-full w-full items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 opacity-0 duration-500 group-hover:opacity-100" />
                 <FontAwesomeIcon icon={faInstagram} className="z-10 mr-2 h-8" />
                 <p className="z-10">@JohnJayRoboticsClub</p>
               </Link>
@@ -211,7 +211,6 @@ export default function Home() {
                 height="315"
                 src="https://www.youtube.com/embed/IkMCntCRsLE?si=jN2frnBaT_ovuywc&amp;clip=UgkxQFFDhOqml9jQqJzNyPtE9tClnhFLQ7JG&amp;clipt=EMGgsgcYh46zBw"
                 title="Jaybot's Plane is Something Else"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                 // allowfullscreen
               ></iframe>

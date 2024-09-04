@@ -3,39 +3,35 @@ import Image from 'next/image'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faBars,
-  faX,
- } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
 import { Container } from '@/components/Container'
 import { NavLinks } from '@/components/NavLinks'
 
-
-function NavBar({current}) {
-  return (        
-    <div className=''>
-      <Link href="/" aria-label="Home"  className="flex justify-center py-2">
+function NavBar({ current }) {
+  return (
+    <div className="">
+      <Link href="/" aria-label="Home" className="flex justify-center py-2">
         <Image
-          src='https://cdn.jaybots.org/logo/logo.png'
+          src="https://cdn.jaybots.org/logo/logo.png"
           width={175}
           height={175}
-          className='rounded-full'
-          alt='logo'
-          />
+          className="rounded-full"
+          alt="logo"
+        />
       </Link>
-      <div className="grid grid-cols-1 mt-2">
+      <span className="mt-2 grid grid-cols-1">
         <NavLinks current={current} />
-      </div>
+      </span>
     </div>
   )
 }
 
-export function Nav({current}) {
+export function Nav({ current }) {
   return (
     <header>
       <nav>
         <Container className="relative z-50 flex justify-between">
-          <div className='fixed p-4 z-0 justify-center w-64 -left-64 lg:left-0 h-full bg-blue-950/60 transition duration-1000 overflow-auto scrollbar-thin scrollbar-thumb-blue-900'>
+          <div className="fixed -left-64 z-0 h-full w-64 justify-center overflow-auto bg-blue-950/60 p-4 transition duration-1000 scrollbar-thin scrollbar-thumb-blue-900 lg:left-0">
             <NavBar current={current} />
           </div>
           <div className="flex items-center gap-6">
@@ -43,13 +39,16 @@ export function Nav({current}) {
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className={open ? "z-50 fixed flex rounded-br-lg left-0 items-center justify-center w-12 h-10 bg-slate-950 text-gray-400 hover:text-white transition-all duration-300"
-                      : "z-50 fixed flex rounded-br-lg left-0 items-center justify-center w-12 h-10 bg-slate-950 text-gray-400 hover:text-white hover:bg-blue-950 transition-all duration-300 border-r-2 border-b-2 border-blue-800 hover:border-blue-600"}
+                    className={
+                      open
+                        ? 'fixed left-0 z-50 flex h-10 w-12 items-center justify-center rounded-br-lg bg-slate-950 text-gray-400 transition-all duration-300 hover:text-white'
+                        : 'fixed left-0 z-50 flex h-10 w-12 items-center justify-center rounded-br-lg border-b-2 border-r-2 border-blue-800 bg-slate-950 text-gray-400 transition-all duration-300 hover:border-blue-600 hover:bg-blue-950 hover:text-white'
+                    }
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>
                       open ? (
-                        <FontAwesomeIcon icon={faX} className='h-6 w-6' />
+                        <FontAwesomeIcon icon={faX} className="h-6 w-6" />
                       ) : (
                         <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
                       )
@@ -76,7 +75,7 @@ export function Nav({current}) {
                             //   x: -64,
                             //   transition: { duration: 0.1},
                             // }}
-                            className='fixed p-4 z-20 justify-center w-64 h-full bg-slate-950 ease-linear transition-translation duration-200 overflow-auto scrollbar-thin scrollbar-thumb-blue-900 hover:scrollbar-thumb-blue-800 scrollbar-track-slate-950'
+                            className="transition-translation fixed z-20 h-full w-64 justify-center overflow-auto bg-slate-950 p-4 duration-200 ease-linear scrollbar-thin scrollbar-track-slate-950 scrollbar-thumb-blue-900 hover:scrollbar-thumb-blue-800"
                           >
                             <NavBar current={current} />
                           </Popover.Panel>
