@@ -868,7 +868,7 @@ export const members = [
   },
   {
     name: 'Nash',
-    title: 'Programming Leader',
+    title: 'Cool Leader',
     committees: ['Game Master'],
     leader: 'Code',
     bio: 'Nash Pillai (Code Leader) is a 11th grader at John Jay High School. This is his third year in the club. Nash enjoys tinkering with his linux computer in his free time as well as learning higher-level math. He is taking 9 APs this year, of which Micro/Macro are his favorite. In addition to Robotics, he is part of the Science Olympiad, Math Team, History Honor Society, Computer Science Honor Society, and the morning announcements. Nash is planning on pursuing a career in pen testing.',
