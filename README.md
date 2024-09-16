@@ -27,7 +27,7 @@ Everything is in the 'src' folder. Pages are in `src/pages`, and components to b
 ## Team Page
 
 To add, remove, or update member cards on the [team page](https://jaybots.org/team), edit the `members` array in `src/config.jsx`.
-Team member photos should be in 3:4 aspect ratio (Portrait). Remove `title` from members without an elected position. Do not remove `committees`; if a member is not in any committes, leave the array empty. Do not add members to more than 2 committees, only the first 2 will be shown. If the title is too long to fit on the card, add `motion: true` in the member array. Also add an `altTitle: string,` to be displayed if the user opted for reduced motion. An example of a team member is below:
+Team member photos should be in 3:4 aspect ratio (Portrait). Remove `title` from members without an elected position. Do not remove `committees`; if a member is not in any committes, leave the array empty. Do not add members to more than 2 committees, only the first 2 will be shown. If the title is too long to fit on the card, add `motion: true` in the member array. Also add an `altTitle: string, ` to be displayed if the user opted for reduced motion. An example of a team member is below:
 
 ```jsx
 { name: "Name",
