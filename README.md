@@ -30,7 +30,7 @@ To add, remove, or update member cards on the [team page](https://jaybots.org/te
 Team member photos should be in 3:4 aspect ratio (Portrait). Remove `title` from members without an elected position. Do not remove `committees`; if a member is not in any committes, leave the array empty. Do not add members to more than 2 committees, only the first 2 will be shown. If the title is too long to fit on the card, add `motion: true` in the member array. Also add an `altTitle: string,` to be displayed if the user opted for reduced motion. An example of a team member is below:
 
 ```jsx
-{ name: "Name", 
+{ name: "Name",
   title: "President",
   committees: ["committee name",],
   bio: "Bio",
@@ -42,6 +42,7 @@ Team member photos should be in 3:4 aspect ratio (Portrait). Remove `title` from
 
 To edit awards and competitions on the [awards page](https://jaybots.org/awards), edit the `games` array in `src/config.jsx`.
 Each game should be an object with the following properties:
+
 - `name: string` the name of the game
 - `year: string` the year the game was held (format: yyyy-yyyy)
 - `logo: string` the image source for the offical FTC logo of that season (transparent png prefered)
@@ -51,6 +52,7 @@ Each game should be an object with the following properties:
 - `comps: array` the competitions that the team in question attended
 
 Within each `comps` array are objects for each competition. They should have the following properties:
+
 - `type: string` the type, or level of competition this could be:
   - `'Scrimmage'`
   - `'Qualifier'`
@@ -87,56 +89,75 @@ Here is an example of the Power Play Game Season:
 
 ```jsx
 export const games = [
-  {name: "Power Play",
-    year: "2022-2023",
+  {
+    name: 'Power Play',
+    year: '2022-2023',
     images: [],
-    logo: "/images/powerplay.png",
+    logo: '/images/powerplay.png',
     logowidth: 500,
     allComps: [
-      {team: "Jaybots",
+      {
+        team: 'Jaybots',
         comps: [
-      {type: "Qualifier",
-        date: "January 14, 2023",
-        awards: {
-          advanced: true,
-          first: ["Inspire", "Control"],
-        }},
-      {type: "Qualifier",
-        date: "January 29, 2023",
-        awards: {
-          first: ["Motivate"],
-        }},
-      {type: "Qualifier",
-        date: "February 18, 2023",
-        awards: {
-          second: ["Innovate"],
-        }},
-      {type: "Regional",
-        date: "March 5, 2023",
-        awards: {
-          deansList: "Finalist",
-          second: ["Innovate"],
-        }},
-      ]},
-      {team: "Phoenix",
+          {
+            type: 'Qualifier',
+            date: 'January 14, 2023',
+            awards: {
+              advanced: true,
+              first: ['Inspire', 'Control'],
+            },
+          },
+          {
+            type: 'Qualifier',
+            date: 'January 29, 2023',
+            awards: {
+              first: ['Motivate'],
+            },
+          },
+          {
+            type: 'Qualifier',
+            date: 'February 18, 2023',
+            awards: {
+              second: ['Innovate'],
+            },
+          },
+          {
+            type: 'Regional',
+            date: 'March 5, 2023',
+            awards: {
+              deansList: 'Finalist',
+              second: ['Innovate'],
+            },
+          },
+        ],
+      },
+      {
+        team: 'Phoenix',
         comps: [
-      {type: "Qualifier",
-        date: "January 14, 2023",
-        awards: {
-          second: ["Connect"],
-        }},
-      {type: "Qualifier",
-        date: "January 14, 2023",
-        awards: {
-          judgesChoice: true,
-        }},
-      {type: "Qualifier",
-        date: "February 18, 2023",
-        awards: {
-          second: ["Motivate"]
-        }}
-      ]},
-    ]
+          {
+            type: 'Qualifier',
+            date: 'January 14, 2023',
+            awards: {
+              second: ['Connect'],
+            },
+          },
+          {
+            type: 'Qualifier',
+            date: 'January 14, 2023',
+            awards: {
+              judgesChoice: true,
+            },
+          },
+          {
+            type: 'Qualifier',
+            date: 'February 18, 2023',
+            awards: {
+              second: ['Motivate'],
+            },
+          },
+        ],
+      },
+    ],
   },
 ]
 ```
