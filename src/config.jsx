@@ -57,11 +57,6 @@ export const committeeDescript = [
       'Our meticulous documentation committee, entrusted with the crucial task of capturing every step of our journey in the meticulous pages of our engineering notebook and portfolio, ensuring a comprehensive record of our progress, challenges, and triumphs throughout the robotics season.',
   },
   {
-    name: 'SITCOM',
-    description:
-      "Our dynamic Sponsorship, Industry, Technology, & Corporate Outreach Manager, and their dedicated team, tirelessly forging connections with sponsors and securing professional mentors to fuel our team's success, bridging the gap between academia and industry to empower our students with real-world experience and opportunities.",
-  },
-  {
     name: 'Equipment',
     description:
       'Our efficient Equipment Management, the backbone of our robotics operations, responsible for organizing, maintaining, and optimizing our array of tools, machinery, and resources, ensuring seamless functionality and enabling our team to thrive in the workshop and beyond.',
@@ -807,28 +802,28 @@ export const games = [
 ]
 
 export const members = [
-  {
-    name: 'Anish',
-    title: 'President',
-    committees: ['Code', 'Officers'],
-    bio: "Anish is a senior in his fourth year at the Robotics club. He plans to attend college after high school, majoring in computer science. He enjoys math & science in school and is part of other clubs like Science Olympiad & Computer Science Honor Society. In his free time, he enjoys playing tennis & working on other programming projects. He hopes to learn and work with the new, growing team. Anish is currently the president. Previously, he was the Programming Leader, managing an ever-growing group of recruits and teaching them valuable skills like Kotlin and Computer Vision. Two years ago, he was one of the Excelsior Region's Deans' List Finalists and went to the World Championship.",
-    image: 'https://cdn.jaybots.org/team/anish2.jpg',
-  },
-  {
-    name: 'Arnav',
-    title: 'Vice President',
-    committees: ['SITCOM', 'Officers'],
-    bio: 'Arnav is a senior at John Jay currently making light pink titrations. He spends a majority of his time on robotics, boxing and singing. He plans to go into the medical field. Arnav is excited to see the future of the Jaybots and how light pink his titrations can get.',
-    image: 'https://cdn.jaybots.org/team/arnav.jpeg',
-  },
-  {
-    name: 'Anaya',
-    title: 'Secretary',
-    committees: ['Game Master', 'Officers'],
-    leader: 'Documentation',
-    bio: 'Anaya is a Junior at John Jay Senior High School. This is her third year in the John Jay Robotics Club. She wants to attend college and go into the field of medicine after high school. She enjoys playing the Violin and tennis. She enjoys both math and science and takes part in the Math Honor Society as well as the competitive tennis team. She helps with build and has given herself the team photographer role(most of the pictures/videos you see on this website were 99% likely to be taken by her). She also helps out with the video production as well and wants to expand her communication skills to other FTC Teams as well as other important figures.',
-    image: 'https://cdn.jaybots.org/team/anaya/anaya.png',
-  },
+  // {
+  //   name: 'Anish',
+  //   title: 'President',
+  //   committees: ['Code', 'Officers'],
+  //   bio: "Anish is a senior in his fourth year at the Robotics club. He plans to attend college after high school, majoring in computer science. He enjoys math & science in school and is part of other clubs like Science Olympiad & Computer Science Honor Society. In his free time, he enjoys playing tennis & working on other programming projects. He hopes to learn and work with the new, growing team. Anish is currently the president. Previously, he was the Programming Leader, managing an ever-growing group of recruits and teaching them valuable skills like Kotlin and Computer Vision. Two years ago, he was one of the Excelsior Region's Deans' List Finalists and went to the World Championship.",
+  //   image: 'https://cdn.jaybots.org/team/anish2.jpg',
+  // },
+  // {
+  //   name: 'Arnav',
+  //   title: 'Vice President',
+  //   committees: ['SITCOM', 'Officers'],
+  //   bio: 'Arnav is a senior at John Jay currently making light pink titrations. He spends a majority of his time on robotics, boxing and singing. He plans to go into the medical field. Arnav is excited to see the future of the Jaybots and how light pink his titrations can get.',
+  //   image: 'https://cdn.jaybots.org/team/arnav.jpeg',
+  // },
+  // {
+  //   name: 'Anaya',
+  //   title: 'Secretary',
+  //   committees: ['Game Master', 'Officers'],
+  //   leader: 'Documentation',
+  //   bio: 'Anaya is a Junior at John Jay Senior High School. This is her third year in the John Jay Robotics Club. She wants to attend college and go into the field of medicine after high school. She enjoys playing the Violin and tennis. She enjoys both math and science and takes part in the Math Honor Society as well as the competitive tennis team. She helps with build and has given herself the team photographer role(most of the pictures/videos you see on this website were 99% likely to be taken by her). She also helps out with the video production as well and wants to expand her communication skills to other FTC Teams as well as other important figures.',
+  //   image: 'https://cdn.jaybots.org/team/anaya/anaya.png',
+  // },
   {
     name: 'Anthony',
     title: 'Treasurer',
@@ -850,17 +845,17 @@ export const members = [
     bio: 'Ms. Amanda Ingalls is a School Library Media Specialist with 12 years of experience and has been a part of the John Jay High School family since 2019. She loves reading and research and is passionate about working with students and technology. She has assisted the JayBots in the past with 3D Printing projects, but this is her first year as an Assistant Coach on the team, and is very excited to be helping out.',
     image: '/images/Ingalls.jpg',
   },
-  {
-    name: 'Jason',
-    title: 'Foreman',
-    committees: ['CAD'],
-    leader: 'Build',
-    bio: 'Jason Bukofsky (Build Team, Design Team)  is a senior who is in his third year at the club. He wants to go into Aerospace engineering and is infatuated with ​​computers but is married to his 3d printer right now. He loves to sleep and play games with friends and is very competitive. His favorite class is design and drawing for production, where he learned to CAD. Currently, he is the foreman and part of the CAD team. ',
-    image: 'https://cdn.jaybots.org/team/jason.jpeg',
-  },
+  // {
+  //   name: 'Jason',
+  //   title: 'Foreman',
+  //   committees: ['CAD'],
+  //   leader: 'Build',
+  //   bio: 'Jason Bukofsky (Build Team, Design Team)  is a senior who is in his third year at the club. He wants to go into Aerospace engineering and is infatuated with ​​computers but is married to his 3d printer right now. He loves to sleep and play games with friends and is very competitive. His favorite class is design and drawing for production, where he learned to CAD. Currently, he is the foreman and part of the CAD team. ',
+  //   image: 'https://cdn.jaybots.org/team/jason.jpeg',
+  // },
   {
     name: 'Hiro',
-    title: 'Architect',
+    title: 'Vice President',
     committees: ['Manufacturing'],
     leader: 'CAD',
     bio: 'Hiroyuki is a junior at John Jay High school and this is his third year on the team. Hiro is the Architect (CAD Leader) and primarily designs and builds the robot while helping the sister team with their designs as well. Hiroyuki plans to go to college after high school in the medical field. Outside of robotics, he learns Karate and attends a Japanese language school. He currently enjoys math and science and is a part of Science Olympiad, Math Honor Society, and Math Team after school. From robotics, Hiro hopes to continue making friends and learn valuable stem and leadership skills.',
@@ -868,7 +863,7 @@ export const members = [
   },
   {
     name: 'Nash',
-    title: 'Cool Leader',
+    title: 'President',
     committees: ['Game Master'],
     leader: 'Code',
     bio: 'Nash Pillai (Code Leader) is a 11th grader at John Jay High School. This is his third year in the club. Nash enjoys tinkering with his linux computer in his free time as well as learning higher-level math. He is taking 9 APs this year, of which Micro/Macro are his favorite. In addition to Robotics, he is part of the Science Olympiad, Math Team, History Honor Society, Computer Science Honor Society, and the morning announcements. Nash is planning on pursuing a career in pen testing.',
@@ -930,32 +925,26 @@ export const members = [
     bio: 'Pallavi is a Junior on the team. She is in charge of managing social media, and branding for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
     image: 'https://cdn.jaybots.org/team/pallavi.jpg',
   },
-  {
-    name: 'Alex',
-    title: 'Game Master',
-    committees: ['Equipment'],
-    leader: 'Game Master',
-    bio: 'Alex Zhu (Game Master) is a junior on the team and it is his first year with the Jaybots. From robotics, he has learned valuable skills that apply to both engineering and physics. He is currently undecided but planning on pursuing a STEM field. His favorite subjects in school are Calculus and Physics. He participates in clubs such as Science Olympiad & Math Team, as well as numerous honor societies. He joined FTC because he loves robotics and being part of such a dedicated and hardworking team, as well as working with his friends. Currently the Game Master, or Scouting/Strategy leader, he hopes to have a fun year building, designing, and working with his fellow teammates.',
-    image: 'https://cdn.jaybots.org/team/alex/alexFULL.png',
-  },
-  {
-    name: 'Caden',
-    committees: [],
-    bio: 'Caden is a senior at John Jay High School. He joined Phoenix Robotics in his junior year, and the JAYBOTS this year. In school, he enjoys STEM classes, particularly courses with plenty of hands-on experience. Over the course of his membership with the Phoenixes and JAYBOTS, Caden has filled a variety of roles from outreach to building to dreaming up solutions to problems. He has experience designing assemblies with Onshape and coding with Scratch. Caden enjoys nature, puzzles, games, music and being involved with the wider FIRST community. He plans on going to a four-year college after high school. His favorite color is purple. ',
-    image: '/images/Caden.jpg',
-  },
-  {
-    name: 'Areej',
-    committees: ['Documentation', 'Branding'],
-    bio: 'Areej Omar is a junior at John Jay High School. This is her third year on the robotics team. She plans to go to college after high school and major in chemical engineering, robotics or computer science. Before joining this team, she was part of an FLL Explore team (through DCC) and an FLL Challenge team in middle school. She is a 2nd degree Black-Belt in taekwondo and an Acrobatic Gymnast. Her hobbies are painting, drawing, roller-skating, making music, playing the violin and playing outside with her neighbors. She is involved in 3 other clubs in the school: Science Olympiads, Math Team, and Math Honor Society. She joined the John Jay Robotics Club because she wanted to explore her passion for coding, and she wanted to learn many new skills that could help her in the future. Her goal is to help everyone to feel helpful and welcomed on the team.',
-    image: 'https://cdn.jaybots.org/team/areej.jpg',
-  },
-  {
-    name: 'Silvia',
-    committees: ['Build'],
-    bio: 'Silvia  is a senior at John Jay High School. This is her fourth year on the Jaybots. Her plans after High School are to go to college and study in the medical or engineering field. In school, she enjoys math and science classes along with participating in clubs like Science Olympiad. She is also in the Math Honor Society. She is interested in learning and trying new things out. In her free time, she swims competitively, plays the cello, and enjoys exploring the world. She decided to join FTC because she enjoys building things, soldering, and sharing her ideas with others. In robotics, she hopes to learn CAD, make new friends, achieve better leadership skills, and build a robot.',
-    image: 'https://cdn.jaybots.org/team/silvia2.jpg',
-  },
+  // {
+  //   name: 'Alex',
+  //   title: 'Game Master',
+  //   committees: ['Equipment'],
+  //   leader: 'Game Master',
+  //   bio: 'Alex Zhu (Game Master) is a junior on the team and it is his first year with the Jaybots. From robotics, he has learned valuable skills that apply to both engineering and physics. He is currently undecided but planning on pursuing a STEM field. His favorite subjects in school are Calculus and Physics. He participates in clubs such as Science Olympiad & Math Team, as well as numerous honor societies. He joined FTC because he loves robotics and being part of such a dedicated and hardworking team, as well as working with his friends. Currently the Game Master, or Scouting/Strategy leader, he hopes to have a fun year building, designing, and working with his fellow teammates.',
+  //   image: 'https://cdn.jaybots.org/team/alex/alexFULL.png',
+  // },
+  // {
+  //   name: 'Caden',
+  //   committees: [],
+  //   bio: 'Caden is a senior at John Jay High School. He joined Phoenix Robotics in his junior year, and the JAYBOTS this year. In school, he enjoys STEM classes, particularly courses with plenty of hands-on experience. Over the course of his membership with the Phoenixes and JAYBOTS, Caden has filled a variety of roles from outreach to building to dreaming up solutions to problems. He has experience designing assemblies with Onshape and coding with Scratch. Caden enjoys nature, puzzles, games, music and being involved with the wider FIRST community. He plans on going to a four-year college after high school. His favorite color is purple. ',
+  //   image: '/images/Caden.jpg',
+  // },
+  // {
+  //   name: 'Silvia',
+  //   committees: ['Build'],
+  //   bio: 'Silvia  is a senior at John Jay High School. This is her fourth year on the Jaybots. Her plans after High School are to go to college and study in the medical or engineering field. In school, she enjoys math and science classes along with participating in clubs like Science Olympiad. She is also in the Math Honor Society. She is interested in learning and trying new things out. In her free time, she swims competitively, plays the cello, and enjoys exploring the world. She decided to join FTC because she enjoys building things, soldering, and sharing her ideas with others. In robotics, she hopes to learn CAD, make new friends, achieve better leadership skills, and build a robot.',
+  //   image: 'https://cdn.jaybots.org/team/silvia2.jpg',
+  // },
 ]
 
 export const allImages = miscImages.concat(
