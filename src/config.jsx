@@ -807,7 +807,7 @@ export const members = [
     title: 'President',
     committees: ['Game Master'],
     leader: 'Code',
-    bio: 'Nash Pillai (Code Leader) is a 11th grader at John Jay High School. This is his third year in the club. Nash enjoys tinkering with his linux computer in his free time as well as learning higher-level math. He is taking 9 APs this year, of which Micro/Macro are his favorite. In addition to Robotics, he is part of the Science Olympiad, Math Team, History Honor Society, Computer Science Honor Society, and the morning announcements. Nash is planning on pursuing a career in pen testing.',
+    bio: 'Nash Pillai (President) is a senior at John Jay High School. This is his fourth year in the club. Nash enjoys tinkering with his linux computer in his free time as well as learning higher-level math. He is taking 9 APs this year, of which Micro/Macro are his favorite. In addition to Robotics, he is part of the Science Olympiad, Math Team, History Honor Society, Computer Science Honor Society, and the morning announcements. Nash is planning on pursuing a career in pen testing.',
     image: 'https://cdn.jaybots.org/team/nash.png',
   },
   // {
@@ -837,7 +837,7 @@ export const members = [
     title: 'Vice President',
     committees: ['Manufacturing'],
     leader: 'CAD',
-    bio: 'Hiroyuki is a junior at John Jay High school and this is his third year on the team. Hiro is the Architect (CAD Leader) and primarily designs and builds the robot while helping the sister team with their designs as well. Hiroyuki plans to go to college after high school in the medical field. Outside of robotics, he learns Karate and attends a Japanese language school. He currently enjoys math and science and is a part of Science Olympiad, Math Honor Society, and Math Team after school. From robotics, Hiro hopes to continue making friends and learn valuable stem and leadership skills.',
+    bio: 'Hiroyuki is a senior at John Jay High school and this is his fourth year on the team. Hiro is the Architect (CAD Leader) and primarily designs and builds the robot while helping the sister team with their designs as well. Hiroyuki plans to go to college after high school in the medical field. Outside of robotics, he learns Karate and attends a Japanese language school. He currently enjoys math and science and is a part of Science Olympiad, Math Honor Society, and Math Team after school. From robotics, Hiro hopes to continue making friends and learn valuable stem and leadership skills.',
     image: 'https://cdn.jaybots.org/team/hiroyuki/hiroyuki.png',
   },
   {
@@ -845,7 +845,7 @@ export const members = [
     title: 'Secretary',
     committees: ['Branding'],
     leader: 'Media',
-    bio: 'Pallavi is a Junior on the team. She is in charge of managing social media, and branding for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
+    bio: 'Pallavi is a senior on the team. She is in charge of managing social media, and branding for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
     image: 'https://cdn.jaybots.org/team/pallavi.jpg',
   },
   {
@@ -873,7 +873,7 @@ export const members = [
     name: 'Anthony',
     title: 'Compiler',
     committees: ['Fundraising', 'Officers'],
-    bio: 'Anthony Giron (Compiler) is a junior at John Jay High School. This is his second year in robotics, and his first year on the Jaybots. He was the programming leader for the JV team while he was in his first year, and is now the treasurer as a part of the Jaybots. From robotics he has learned valuable skills of engineering and teamwork. Anthony plans to go to college into either the computer science or engineering field after high school. he enjoys to program games in his free time.',
+    bio: 'Anthony Giron (Compiler) is a senior at John Jay High School. This is his third year in robotics, and his first year on the Jaybots. He was the programming leader for the JV team while he was in his first year, and is now the treasurer as a part of the Jaybots. From robotics he has learned valuable skills of engineering and teamwork. Anthony plans to go to college into either the computer science or engineering field after high school. he enjoys to program games in his free time.',
     image: '/images/Anthony.jpg',
   },
   // {
@@ -889,7 +889,7 @@ export const members = [
     title: 'Architect',
     committees: ['Code'],
     leader: 'Manufacturing',
-    bio: 'Matthew is a sophomore in his second year at the Robotics club. He enjoys math & science in school and is part of other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Manufacturer, so he runs all of the custom part fabrication such as 3d printing. He is also on the Code Committee and runs the website.',
+    bio: 'Matthew is a junior in his third year at the Robotics club. He enjoys math & science in school and is part of other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Manufacturer, so he runs all of the custom part fabrication such as 3d printing. He is also on the Code Committee and runs the website.',
     image: '/images/Matthew.jpg',
   },
   {
@@ -897,7 +897,7 @@ export const members = [
     title: 'Foreman',
     committees: ['Build'],
     leader: 'SITCOM',
-    bio: "Joe is a junior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.",
+    bio: "Joe is a senior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.",
     image: '/images/JoeMoney.jpg',
   },
   {
@@ -905,7 +905,7 @@ export const members = [
     title: 'Team member',
     committees: ['CAD'],
     leader: 'Fundraising',
-    bio: "Edwin Keefer is a junior, who started in the Jaybots team at the beginning of this season. His current favorite subjects in school are computer science and math. He hopes to eventually major in Computer Science in college. Despite not having any previous experience before joining robotics, he has the team's architect to attest to his skill in CAD. Outside of robotics he loves to play games, listen to music, and sleep. He hopes to have a productive year on the team. ",
+    bio: "Edwin Keefer is a senior, who started in the Jaybots team at the beginning of 11th grade. His current favorite subjects in school are computer science and math. He hopes to eventually major in Computer Science in college. Despite not having any previous experience before joining robotics, he has the team's architect to attest to his skill in CAD. Outside of robotics he loves to play games, listen to music, and sleep. He hopes to have a productive year on the team. ",
     image: '/images/Edwin.jpg',
   },
   // {
@@ -921,7 +921,7 @@ export const members = [
     title: 'Gamemaster',
     committees: ['Build'],
     leader: 'Equipment',
-    bio: 'Hailey Kim (Equipment Manager) is a sophomore at John Jay High School, and has been a part of the Robotics club for 2 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.Bio',
+    bio: 'Hailey Kim (Equipment Manager) is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.Bio',
     image: '/images/Hailey.jpg',
   },
   {
@@ -929,7 +929,7 @@ export const members = [
     title: 'Media Manager',
     committees: ['Media'],
     leader: 'Branding',
-    bio: 'Joanna George is in 11th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Graphics Team Leader Position. She designs promotional material for the club, while coordinating with other officers. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, probably majoring in biology.',
+    bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Graphics Team Leader Position. She designs promotional material for the club, while coordinating with other officers. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, probably majoring in biology.',
     image: '/images/Joanna.jpg',
   },
   // {
