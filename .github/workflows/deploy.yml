@@ -14,9 +14,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    outputs:
-      skip_step: ${{ steps.check_user.outputs.skip }}
     steps:
       - name: Call Webhook
-        if: steps.check_user.outputs.skip != 'true'
         run: curl "https://api.vercel.com/v1/integrations/deploy/prj_pxiOpnzRLHUFhFgJGFvueLWwIp7T/I25lumcOHq"
