@@ -82,7 +82,7 @@ export default function Home() {
               </h2>
               <div className="flex w-full justify-center">
                 <p className="max-w-4xl leading-8">
-                  We are the Jaybots - This is our fifth year competing in{' '}
+                  We are the Jaybots - This is our sixth year competing in{' '}
                   <Link
                     href="https://www.firstinspires.org/robotics/ftc/"
                     className={linkStyle}
@@ -91,7 +91,7 @@ export default function Home() {
                     FTC
                   </Link>
                   . After making it to the regional competition four years in a
-                  row, we are aiming to make it even further next year . Join us
+                  row, we are aiming to make it even further next year. Join us
                   on our journey!
                 </p>
               </div>
