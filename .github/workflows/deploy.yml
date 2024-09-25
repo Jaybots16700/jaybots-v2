@@ -2,10 +2,10 @@ name: Deploy to vercel
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   pull_request:
     types: [opened, reopened]
-    branches: ["main"]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
