@@ -805,9 +805,9 @@ export const members = [
   {
     name: 'Nash',
     title: 'President',
-    committees: ['Game Master'],
-    leader: 'Code',
-    bio: 'Nash Pillai (President) is a senior at John Jay High School. This is his fourth year in the club. Nash enjoys tinkering with his linux computer in his free time as well as learning higher-level math. He is taking 9 APs this year, of which Micro/Macro are his favorite. In addition to Robotics, he is part of the Science Olympiad, Math Team, History Honor Society, Computer Science Honor Society, and the morning announcements. Nash is planning on pursuing a career in pen testing.',
+    committees: [''],
+    leader: '',
+    bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He is now the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
     image: 'https://cdn.jaybots.org/team/nash.png',
   },
   // {
@@ -833,12 +833,12 @@ export const members = [
   //   image: 'https://cdn.jaybots.org/team/anaya/anaya.png',
   // },
   {
-    name: 'Hiro',
+    name: 'Hiroyuki',
     title: 'Vice President',
-    committees: ['Manufacturing'],
-    leader: 'CAD',
-    bio: 'Hiroyuki is a senior at John Jay High school and this is his fourth year on the team. Hiro is the Architect (CAD Leader) and primarily designs and builds the robot while helping the sister team with their designs as well. Hiroyuki plans to go to college after high school in the medical field. Outside of robotics, he learns Karate and attends a Japanese language school. He currently enjoys math and science and is a part of Science Olympiad, Math Honor Society, and Math Team after school. From robotics, Hiro hopes to continue making friends and learn valuable stem and leadership skills.',
-    image: 'https://cdn.jaybots.org/team/hiroyuki/hiroyuki.png',
+    committees: [''],
+    leader: '',
+    bio: 'Hiro is a senior at John Jay High School and is the Vice-President of the club. He has been in robotics since his freshman year and was formerly the Architect/CAD Leader and unofficially the CIO for his sophomore and junior years. He now coaches the Phoenix Team and helps out with CAD for the Jaybots. After high school, Hiro plans on attending university for computer science or mechanical engineering.',
+    image: 'https://res.cloudinary.com/mozzarella-tedi/image/upload//q_auto/v1/TEDI%20Bio/rainbow-hiro?_a=BAVFB+DW0',
   },
   {
     name: 'Pallavi',
@@ -887,9 +887,9 @@ export const members = [
   {
     name: 'Matthew',
     title: 'Architect',
-    committees: ['Code'],
-    leader: 'Manufacturing',
-    bio: 'Matthew is a junior in his third year at the Robotics club. He enjoys math & science in school and is part of other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Manufacturer, so he runs all of the custom part fabrication such as 3d printing. He is also on the Code Committee and runs the website.',
+    committees: [''],
+    leader: '',
+    bio: 'Matthew is a junior in his third year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Architect (CAD Leader).',
     image: '/images/Matthew.jpg',
   },
   {
@@ -927,10 +927,10 @@ export const members = [
   {
     name: 'Joanna',
     title: 'Media Manager',
-    committees: ['Media'],
-    leader: 'Branding',
-    bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Graphics Team Leader Position. She designs promotional material for the club, while coordinating with other officers. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, probably majoring in biology.',
-    image: '/images/Joanna.jpg',
+    committees: [''],
+    leader: '',
+    bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
+    image: 'https://drive.google.com/file/d/1mMiYrQKvDn664VXJwDsVCkj8XzL8Gb-R/view',
   },
   // {
   //   name: 'Alex',
