@@ -637,7 +637,7 @@ export const games = [
           },
           {
             type: 'Qualifier',
-            date: 'January 13, 2023',
+            date: 'February 13, 2023',
             awards: {
               third: ['Think'],
             },
