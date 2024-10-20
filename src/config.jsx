@@ -852,7 +852,7 @@ export const members = [
     name: 'Joe Lopez',
     title: 'Treasurer',
     committees: ['Fundraising', 'Officers'],
-    bio: "Joe is a senior at John Jay, and this is his second year in robotics. As the Treasurer, he plans to raise as much money as possible for the team's success. Outside of robotics, Joe works for Bouquets by Christine, is a soon to be Eagle Scout, and enjoys cooking, fishing, coin collecting, spending time with friends, and contemplating the mysteries of life. His favorite dish is butter chicken. After high school, Joe aspires to major in mechanical engineering.",
+    bio: 'Joe is a senior at John Jay, and this is his second year in robotics. As the Treasurer, he plans to raise as much money as possible for the teams success. Outside of robotics, Joe works for Bouquets by Christine, is a soon to be Eagle Scout, and enjoys cooking, fishing, coin collecting, spending time with friends, and contemplating the mysteries of life. His favorite dish is butter chicken. After high school, Joe aspires to major in mechanical engineering.',
     image: 'drive.google.com/file/d/1hublM1HPmVghYFUEAcc62S4l-DeHIzSw/view?usp=sharing',
   },
   {
