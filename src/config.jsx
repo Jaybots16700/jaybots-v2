@@ -805,7 +805,7 @@ export const members = [
   {
     name: 'Nash',
     title: 'President',
-    committees: [''],
+    committees: ['Code'],
     leader: '',
     bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He is now the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
     image: 'https://cdn.jaybots.org/team/nash.png',
@@ -872,7 +872,7 @@ export const members = [
   {
     name: 'Anthony',
     title: 'Compiler',
-    committees: ['Fundraising', 'Officers'],
+    committees: ['Fundraising', 'Officers','Code'],
     bio: 'Anthony Giron (Compiler) is a senior at John Jay High School. This is his third year in robotics, and his first year on the Jaybots. He was the programming leader for the JV team while he was in his first year, and is now the treasurer as a part of the Jaybots. From robotics he has learned valuable skills of engineering and teamwork. Anthony plans to go to college into either the computer science or engineering field after high school. he enjoys to program games in his free time.',
     image: '/images/Anthony.jpg',
   },
