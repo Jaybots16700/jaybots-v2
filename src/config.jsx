@@ -838,7 +838,7 @@ export const members = [
     committees: [''],
     leader: '',
     bio: 'Hiro is a senior at John Jay High School and is the Vice-President of the club. He has been in robotics since his freshman year and was formerly the Architect/CAD Leader and unofficially the CIO for his sophomore and junior years. He now coaches the Phoenix Team and helps out with CAD for the Jaybots. After high school, Hiro plans on attending university for computer science or mechanical engineering.',
-    image: 'https://res.cloudinary.com/mozzarella-tedi/image/upload//q_auto/v1/TEDI%20Bio/rainbow-hiro?_a=BAVFB+DW0',
+    image: '/images/Hiro.jpg',
   },
   {
     name: 'Pallavi',
@@ -853,7 +853,7 @@ export const members = [
     title: 'Treasurer',
     committees: ['Fundraising', 'Officers'],
     bio: 'Joe is a senior at John Jay, and this is his second year in robotics. As the Treasurer, he plans to raise as much money as possible for the teams success. Outside of robotics, Joe works for Bouquets by Christine, is a soon to be Eagle Scout, and enjoys cooking, fishing, coin collecting, spending time with friends, and contemplating the mysteries of life. His favorite dish is butter chicken. After high school, Joe aspires to major in mechanical engineering.',
-    image: 'drive.google.com/file/d/1hublM1HPmVghYFUEAcc62S4l-DeHIzSw/view?usp=sharing',
+    image: '/images/Joelopez.jpg',
   },
   {
     name: 'Mr. Amodio',
@@ -930,7 +930,7 @@ export const members = [
     committees: [''],
     leader: '',
     bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
-    image: 'https://drive.google.com/file/d/1mMiYrQKvDn664VXJwDsVCkj8XzL8Gb-R/view',
+    image: '/images/Joanna.jpg',
   },
   // {
   //   name: 'Alex',
