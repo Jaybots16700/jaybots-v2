@@ -805,7 +805,7 @@ export const members = [
   {
     name: 'Nash',
     title: 'President',
-    committees: ['Code'],
+    committees: ['Code','Officers'],
     leader: '',
     bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He is now the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
     image: 'https://cdn.jaybots.org/team/nash.png',
@@ -835,7 +835,7 @@ export const members = [
   {
     name: 'Hiroyuki',
     title: 'Vice President',
-    committees: [''],
+    committees: ['Officers'],
     leader: '',
     bio: 'Hiro is a senior at John Jay High School and is the Vice-President of the club. He has been in robotics since his freshman year and was formerly the Architect/CAD Leader and unofficially the CIO for his sophomore and junior years. He now coaches the Phoenix Team and helps out with CAD for the Jaybots. After high school, Hiro plans on attending university for computer science or mechanical engineering.',
     image: '/images/Hiro.jpg',
@@ -843,7 +843,7 @@ export const members = [
   {
     name: 'Pallavi',
     title: 'Secretary',
-    committees: ['Branding'],
+    committees: ['Branding','Officers'],
     leader: 'Media',
     bio: 'Pallavi is a senior on the team. She is in charge of managing social media, and branding for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
     image: 'https://cdn.jaybots.org/team/pallavi.jpg',
@@ -887,7 +887,7 @@ export const members = [
   {
     name: 'Matthew',
     title: 'Architect',
-    committees: [''],
+    committees: ['CAD','Officers'],
     leader: '',
     bio: 'Matthew is a junior in his third year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Architect (CAD Leader).',
     image: '/images/Matthew.jpg',
@@ -895,7 +895,7 @@ export const members = [
   {
     name: 'Joey',
     title: 'Foreman',
-    committees: ['Build'],
+    committees: ['Build','Officers'],
     leader: 'SITCOM',
     bio: "Joe is a senior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.",
     image: '/images/JoeMoney.jpg',
@@ -919,7 +919,7 @@ export const members = [
   {
     name: 'Hailey',
     title: 'Gamemaster',
-    committees: ['Build'],
+    committees: ['Build','Officers'],
     leader: 'Equipment',
     bio: 'Hailey Kim (Equipment Manager) is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
     image: '/images/Hailey.jpg',
