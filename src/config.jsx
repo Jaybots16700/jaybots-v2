@@ -908,6 +908,14 @@ export const members = [
     bio: "Edwin Keefer is a senior, who started in the Jaybots team at the beginning of 11th grade. His current favorite subjects in school are computer science and math. He hopes to eventually major in Computer Science in college. Despite not having any previous experience before joining robotics, he has the team's architect to attest to his skill in CAD. Outside of robotics he loves to play games, listen to music, and sleep. He hopes to have a productive year on the team. ",
     image: '/images/Edwin.jpg',
   },
+  {
+    name: 'Anika',
+    title: 'Manufacter',
+    committees: ['CAD'],
+    leader: '',
+    bio: 'Anika is a freshman at John Jay High School and plays on the JV volleyball team. Her favorite dish is naan with paneer tikka masala. Anika loves exploring tech specs for Apple products and is obsessed with them, even though she currently uses an iPhone 5. She is also an Indian classical dancer and enjoys playing the piano in her free time. Anika wishes to major in Engineering.',
+    image: '/images/Anika.jpg',
+  },
   // {
   //   name: 'Kate',
   //   title: 'Outreach Coordinater',
@@ -932,6 +940,7 @@ export const members = [
     bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
     image: '/images/Joanna.jpg',
   },
+
   // {
   //   name: 'Alex',
   //   title: 'Game Master',
