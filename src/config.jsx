@@ -838,7 +838,8 @@ export const members = [
     committees: [''],
     leader: '',
     bio: 'Hiro is a senior at John Jay High School and is the Vice-President of the club. He has been in robotics since his freshman year and was formerly the Architect/CAD Leader and unofficially the CIO for his sophomore and junior years. He now coaches the Phoenix Team and helps out with CAD for the Jaybots. After high school, Hiro plans on attending university for computer science or mechanical engineering.',
-    image: 'https://res.cloudinary.com/mozzarella-tedi/image/upload//q_auto/v1/TEDI%20Bio/rainbow-hiro?_a=BAVFB+DW0',
+    image:
+      'https://res.cloudinary.com/mozzarella-tedi/image/upload/q_auto/v1/TEDI%20Bio/rainbow-hiro?_a=BAVFB+DW0',
   },
   {
     name: 'Pallavi',
@@ -853,14 +854,16 @@ export const members = [
     title: 'Treasurer',
     committees: [''],
     bio: 'Joe is a senior at John Jay, and this is his second year in robotics. As the Treasurer, he plans to raise as much money as possible for the teams success. Outside of robotics, Joe works for Bouquets by Christine, is a soon to be Eagle Scout, and enjoys cooking, fishing, coin collecting, spending time with friends, and contemplating the mysteries of life. His favorite dish is butter chicken. After high school, Joe aspires to major in mechanical engineering.',
-    image: 'https://drive.google.com/file/d/1hublM1HPmVghYFUEAcc62S4l-DeHIzSw/view?usp=sharing',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1730223688/bios/g42ztah0rrgynhnnu4me.jpg',
   },
   {
     name: 'Jamling Sherpa',
     title: 'CIO',
     committees: [''],
     bio: 'Funny, cool, and epic CIO.',
-    image: ' https://drive.google.com/file/d/14RTUvjgGSTdPAav7RIUgHhTWqU92uCRz/view?usp=drivesdk',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1730223737/bios/fpyyzorbpcbkfxxzbbfg.jpg',
   },
   {
     name: 'Mr. Amodio',
@@ -921,7 +924,7 @@ export const members = [
     committees: [''],
     leader: '',
     bio: 'Veda is a freshman on the Jaybots robotics team, and she is currently the webmaster. Veda loves playing the violin, drawing, playing volleyball, and singing carnatic music during her free time. She loves Indian food, especially jackfruit briyani. Veda has also been a member of science olympiad and math club for two years, and she still is. Veda hopes to major in business or biology.',
-    image: '',
+    image: '/images/O.jpg',
   },
   {
     name: 'Anika',
@@ -942,7 +945,7 @@ export const members = [
   {
     name: 'Hailey',
     title: 'Gamemaster',
-    committees: ['Build','Officers'],
+    committees: ['Build', 'Officers'],
     leader: 'Equipment',
     bio: 'Hailey Kim (Equipment Manager) is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
     image: '/images/Hailey.jpg',

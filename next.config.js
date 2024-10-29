@@ -73,6 +73,11 @@ module.exports = {
         hostname: 'via.placeholder.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+      },
     ],
   },
   async redirects() {
