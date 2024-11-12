@@ -130,8 +130,6 @@ module.exports = {
         destination: 'https://tally.so/r/wa4Xgv',
         permanent: true,
       },
-      { source: '/competition', destination: '/host', permanent: true },
-      { source: '/tournament', destination: '/host', permanent: true },
       {
         source: '/anish',
         destination: 'https://stanford.edu/~anishan',
@@ -150,6 +148,22 @@ module.exports = {
       {
         source: '/workshops',
         destination: 'https://tally.so/r/wa0xLy',
+        permanent: true,
+      },
+
+      { source: '/competition', destination: '/host', permanent: true },
+      { source: '/tournament', destination: '/host', permanent: true },
+      { source: '/qualifier', destination: '/host', permanent: true },
+      {
+        source: '/host',
+        destination:
+          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/volunteer-information',
+        permanent: true,
+      },
+      {
+        source: '/volunteer',
+        destination:
+          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/volunteer-information',
         permanent: true,
       },
     ]
