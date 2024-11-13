@@ -157,7 +157,7 @@ module.exports = {
       {
         source: '/host',
         destination:
-          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/volunteer-information',
+          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/home',
         permanent: true,
       },
       {
