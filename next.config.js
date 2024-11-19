@@ -151,6 +151,13 @@ module.exports = {
         permanent: true,
       },
 
+      {
+        source: '/cadworkshop',
+        destination:
+          'https://docs.google.com/forms/d/17Ix3rWJQmDbYFauEUhPRZVeRvbajg0zkUcozukiefak/edit',
+        permanent: false,
+      },
+
       { source: '/competition', destination: '/host', permanent: true },
       { source: '/tournament', destination: '/host', permanent: true },
       { source: '/qualifier', destination: '/host', permanent: true },
