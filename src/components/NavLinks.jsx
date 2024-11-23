@@ -28,6 +28,7 @@ const links = [
   ['Media', '/media', faPhotoFilm],
   ['Alumni', '/alumni', faGraduationCap],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
+  ['Tournament', 'https://jaybots.org/tournament', faRobot],
   ['Contact Us', '/#contact', faEnvelopeOpenText],
 ]
 
