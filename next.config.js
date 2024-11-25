@@ -48,36 +48,12 @@ module.exports = {
         pathname:
           '/cms/lib/NY01001463/Centricity/Template/GlobalAssets/images///logos/Wappingers_Logo_NEW_Blue_Red.png',
       },
-      {
-        protocol: 'https',
-        hostname: 'jaybotsboosters.org',
-        port: '',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.jaybots.org',
-        port: '',
-      },
-      {
-        protocol: 'https',
-        hostname: 'jaybots.org',
-        port: '',
-      },
-      {
-        protocol: 'https',
-        hostname: 'file.coffee',
-        port: '',
-      },
-      {
-        protocol: 'http',
-        hostname: 'via.placeholder.com',
-        port: '',
-      },
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        port: '',
-      },
+      { protocol: 'https', hostname: 'jaybotsboosters.org', port: '' },
+      { protocol: 'https', hostname: 'cdn.jaybots.org', port: '' },
+      { protocol: 'https', hostname: 'jaybots.org', port: '' },
+      { protocol: 'https', hostname: 'file.coffee', port: '' },
+      { protocol: 'http', hostname: 'via.placeholder.com', port: '' },
+      { protocol: 'https', hostname: 'res.cloudinary.com', port: '' },
     ],
   },
   async redirects() {
@@ -171,6 +147,11 @@ module.exports = {
         source: '/volunteer',
         destination:
           'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/volunteer-information',
+        permanent: true,
+      },
+      {
+        source: '/lunch-order',
+        destination: 'https://tally.so/r/3j0gL4',
         permanent: true,
       },
     ]
