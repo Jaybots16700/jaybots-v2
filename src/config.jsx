@@ -1060,6 +1060,15 @@ export const sponsors = [
     tierColor: 'bg-purple-500',
   },
   {
+    name: 'Gene Haas',
+    description:
+      'The Gene Haas Foundation supports education, community and competition programs that promote CNC technology.',
+    image: 'sponsors/oiovsrgfn6do5jaczkdd',
+    link: 'https://www.haascnc.com/',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+  {
     name: 'PC Construction',
     description:
       'PC Construction is a trusted national leader in general contracting, construction management, and design-build services.',
