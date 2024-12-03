@@ -17,10 +17,11 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import { faCommentsDollar } from '@fortawesome/free-solid-svg-icons'
-import { linkStyle, allImages } from '@/config.jsx'
+import { linkStyle, allImages, sponsors } from '@/config.jsx'
 
 import Colors from '@/components/Colors'
 import { useEffect, useRef, useState } from 'react'
+import { CldImage } from 'next-cloudinary'
 
 const detectScroll = (ref, setVisible) => {
   const observer = new IntersectionObserver((entries) => {
@@ -214,6 +215,39 @@ export default function Home() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                 // allowfullscreen
               ></iframe>
+            </div>
+
+            <div
+              id="sponsors"
+              className="text:base relative mt-8 w-full space-y-4 px-4 text-center font-light sm:text-xl"
+            >
+              <h2 className="text-4xl font-bold text-gray-200">
+                Featured Sponsors
+              </h2>
+              <p>
+                Check out the full list{' '}
+                <Link
+                  href="https://jaybotsboosters.org/sponsors"
+                  className={linkStyle}
+                  target="_blank"
+                >
+                  here!
+                </Link>
+              </p>
+              <div className="flex">
+                {sponsors.map((sponsor) => (
+                  <div key={sponsor.name}>
+                    <Link href={sponsor.link} className="">
+                      <CldImage
+                        src={sponsor.image}
+                        width={720}
+                        height={480}
+                        className="h-24 object-scale-down"
+                      />
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div

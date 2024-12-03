@@ -1039,3 +1039,33 @@ export const teamColors = (team, hover, border, justborder) => {
     return ' bg-red-700 '
   }
 }
+
+export const sponsors = [
+  {
+    name: 'Onsemi Giving Now',
+    description:
+      'Onsemi is an American semiconductor supplier company that specializes in delivering industry-leading intelligent power and intelligent sensing solutions  the automotive and industrial markets',
+    image: 'sponsors/lsnhfgzuztpynlolcuxg',
+    link: 'https://www.onsemi.com/company/environmental-social-and-governance/giving-now-program',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+  {
+    name: 'Cim Tech',
+    description:
+      'Cim Tech is a 100% American owned and staffed manufacturing software solution partner.',
+    image: 'sponsors/qondjqpzsoozapsbgwjf',
+    link: 'https://cim-tech.com/',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+  {
+    name: 'PC Construction',
+    description:
+      'PC Construction is a trusted national leader in general contracting, construction management, and design-build services.',
+    image: 'sponsors/atapspwkidluqqfrekb4',
+    link: 'https://pcconstruction.com/',
+    tier: 'Gold',
+    tierColor: 'bg-yellow-500',
+  },
+]
