@@ -931,7 +931,7 @@ export const members = [
     title: 'Manufacter',
     committees: [''],
     leader: '',
-    bio: 'Anika is a freshman at John Jay High School and plays on the JV volleyball team. Her favorite dish is naan with paneer tikka masala. Anika loves exploring tech specs for Apple products and is obsessed with them, even though she currently uses an iPhone 5. She is also an Indian classical dancer and enjoys playing the piano in her free time. Anika wishes to major in Engineering.',
+    bio: 'Anika is a freshman at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the \"brain of the court.\" Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
     image: '/images/Anika.jpg',
   },
   // {
