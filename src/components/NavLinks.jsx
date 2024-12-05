@@ -119,6 +119,7 @@ export function NavLinks({ current }) {
           <span className="relative z-10 col-span-5 pl-3">{label}</span>
         </Link>
       ))}
+      <button onClick={() => signIn("google")}></button>
     </div>
   )
 }
