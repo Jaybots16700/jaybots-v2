@@ -10,6 +10,7 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
+    "@auth/mongodb-adapter": "^3.7.4",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -23,6 +24,7 @@
     "framer-motion": "^10.12.16",
     "mongodb": "^6.0.0",
     "next": "^14.2.7",
+    "next-auth": "5.0.0-beta.25",
     "next-cloudinary": "^6.16.0",
     "next-videos": "^1.4.1",
     "postcss-focus-visible": "^8.0.2",
@@ -36,6 +38,7 @@
     "use-debounce": "^9.0.4"
   },
   "devDependencies": {
+    "@types/react": "18.3.13",
     "eslint": "8.41.0",
     "eslint-config-next": "^14.2.7",
     "prettier": "^2.8.8",
