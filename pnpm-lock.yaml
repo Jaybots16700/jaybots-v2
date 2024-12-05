@@ -11,9 +11,6 @@ importers:
       '@auth/mongodb-adapter':
         specifier: ^3.7.4
         version: 3.7.4(mongodb@6.0.0)
-      '@auth/neo4j-adapter':
-        specifier: ^2.7.4
-        version: 2.7.4(neo4j-driver@5.27.0)
       '@fortawesome/free-brands-svg-icons':
         specifier: ^6.4.2
         version: 6.4.2
@@ -50,12 +47,12 @@ importers:
       mongodb:
         specifier: ^6.0.0
         version: 6.0.0
-      neo4j-driver:
-        specifier: ^5.27.0
-        version: 5.27.0
       next:
         specifier: ^14.2.7
         version: 14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-auth:
+        specifier: 5.0.0-beta.25
+        version: 5.0.0-beta.25(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       next-cloudinary:
         specifier: ^6.16.0
         version: 6.16.0(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
@@ -119,6 +116,20 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
+  '@auth/core@0.37.2':
+    resolution: {integrity: sha512-kUvzyvkcd6h1vpeMAojK2y7+PAV5H+0Cc9+ZlKYDFhDY31AlvsB+GW5vNO4qE3Y07KeQgvNO9U0QUx/fN62kBw==}
+    peerDependencies:
+      '@simplewebauthn/browser': ^9.0.1
+      '@simplewebauthn/server': ^9.0.2
+      nodemailer: ^6.8.0
+    peerDependenciesMeta:
+      '@simplewebauthn/browser':
+        optional: true
+      '@simplewebauthn/server':
+        optional: true
+      nodemailer:
+        optional: true
+
   '@auth/core@0.37.4':
     resolution: {integrity: sha512-HOXJwXWXQRhbBDHlMU0K/6FT1v+wjtzdKhsNg0ZN7/gne6XPsIrjZ4daMcFnbq0Z/vsAbYBinQhhua0d77v7qw==}
     peerDependencies:
@@ -137,11 +148,6 @@ packages:
     resolution: {integrity: sha512-EZ7aSNnPWNVEtYRCmUbHtb3UxGNB52EJpVq0NDFdbxHypeqdUaz8ClHoKO/o99lQUT1BWCli819dlldWUKyEgw==}
     peerDependencies:
       mongodb: ^6
-
-  '@auth/neo4j-adapter@2.7.4':
-    resolution: {integrity: sha512-zez41tV7WL27Tr/pS6vTI7W91Xo5LLyWARdo3FbWCnILqGMCevOGJqY2PPe224f6fdxb52xyNn7p9u1ShDIPqQ==}
-    peerDependencies:
-      neo4j-driver: ^4.0.0 || ^5.7.0
 
   '@babel/runtime@7.24.0':
     resolution: {integrity: sha512-Chk32uHMg6TnQdvw2e9IlqPpFX/6NLuK0Ys2PqLb7/gL5uFn9mXvK715FGLlOLQrcO4qIkNHkvPGktzzXexsFw==}
@@ -369,6 +375,9 @@ packages:
     resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+
+  '@types/cookie@0.6.0':
+    resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
 
   '@types/json-schema@7.0.12':
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
@@ -780,9 +789,6 @@ packages:
   buffer@4.9.2:
     resolution: {integrity: sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==}
 
-  buffer@6.0.3:
-    resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
-
   builtin-status-codes@3.0.0:
     resolution: {integrity: sha512-HpGFw18DgFWlncDfjTa2rcQ4W88O1mC8e8yZ2AvQY5KDaktSTwo+KRf6nHK6FRI5FyRyb/5T6+TSxfP7QyGsmQ==}
 
@@ -889,6 +895,10 @@ packages:
 
   constants-browserify@1.0.0:
     resolution: {integrity: sha512-xFxOwqIzR/e1k1gLiWEophSCMqXcwVHIH7akf7b/vxcUeGunlj3hvZaaqxwHsTgn+IndtkQJgSztIDWeumWJDQ==}
+
+  cookie@0.7.1:
+    resolution: {integrity: sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==}
+    engines: {node: '>= 0.6'}
 
   copy-concurrently@1.0.5:
     resolution: {integrity: sha512-f2domd9fsVDFtaFcbaRZuYXwtdmnzqbADSwhSWYxYB/Q8zsdUUFMXVRwXGDMWmbEzAn1kdRrtI1T/KTFOL4X2A==}
@@ -2042,14 +2052,21 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  neo4j-driver-bolt-connection@5.27.0:
-    resolution: {integrity: sha512-TNKokHcZCkyeZbHLBB+CGciWvyLdAK6tBNFHg5zRMzheVFaJjjEhsHmjwhIA+wy+8ld4Oo0/qv/pyJNRpWAj3A==}
-
-  neo4j-driver-core@5.27.0:
-    resolution: {integrity: sha512-TXZLNjtLrySRyBPBiRkQ/Ewmt4PQG0rm/Q2ZPNPqxbq1S0UVd53PQ2N6jxKiWlkrlPfrVRd2DyE8M7X9MDXxZw==}
-
-  neo4j-driver@5.27.0:
-    resolution: {integrity: sha512-XCSGhQUxOzaJi+SBq/6kH9dpVZ6WTE9f8m2TxCKm2CySOSY21sZ/3n//FRWFM0X6a3sBFTOE2PNkZfxSj92G5w==}
+  next-auth@5.0.0-beta.25:
+    resolution: {integrity: sha512-2dJJw1sHQl2qxCrRk+KTQbeH+izFbGFPuJj5eGgBZFYyiYYtvlrBeUw1E/OJJxTRjuxbSYGnCTkUIRsIIW0bog==}
+    peerDependencies:
+      '@simplewebauthn/browser': ^9.0.1
+      '@simplewebauthn/server': ^9.0.2
+      next: ^14.0.0-0 || ^15.0.0-0
+      nodemailer: ^6.6.5
+      react: ^18.2.0 || ^19.0.0-0
+    peerDependenciesMeta:
+      '@simplewebauthn/browser':
+        optional: true
+      '@simplewebauthn/server':
+        optional: true
+      nodemailer:
+        optional: true
 
   next-cloudinary@6.16.0:
     resolution: {integrity: sha512-gbw/A1aBHJBC2thm4/veI77IkmbAQXuRUj8kNEuxf1zgjGkUWkShho/cXS4VsFhnHuDieqb30gMjZnZdBDrQ/Q==}
@@ -2331,10 +2348,18 @@ packages:
   posthog-js@1.136.7:
     resolution: {integrity: sha512-vu/oZ9JlISinghw416Gm7KnrsH8KKVGqWCCpGsxwgvrBnYofJ4VbmlKnz/0gPy5/QOo/z/H4PzobDX79dyyU7A==}
 
+  preact-render-to-string@5.2.3:
+    resolution: {integrity: sha512-aPDxUn5o3GhWdtJtW0svRC2SS/l8D9MAgo2+AWml+BhDImb27ALf04Q2d+AHqUUOc6RdSXFIBVa2gxzgMKgtZA==}
+    peerDependencies:
+      preact: '>=10'
+
   preact-render-to-string@6.5.11:
     resolution: {integrity: sha512-ubnauqoGczeGISiOh6RjX0/cdaF8v/oDXIjO85XALCQjwQP+SB4RDXXtvZ6yTYSjG+PC1QRP2AhPgCEsM2EvUw==}
     peerDependencies:
       preact: '>=10'
+
+  preact@10.11.3:
+    resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==}
 
   preact@10.22.0:
     resolution: {integrity: sha512-RRurnSjJPj4rp5K6XoP45Ui33ncb7e4H7WiOHVpjbkvqvA3U+N8Z6Qbo0AE6leGYBV66n8EhEaFixvIu3SkxFw==}
@@ -2402,6 +2427,9 @@ packages:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+
+  pretty-format@3.8.0:
+    resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
@@ -2581,9 +2609,6 @@ packages:
 
   run-queue@1.0.3:
     resolution: {integrity: sha512-ntymy489o0/QQplUDnpYAYUsO50K9SBrIVaKCWDOJzYJts0f9WH9RFJkyagebkw5+y1oi00R7ynNW/d12GBumg==}
-
-  rxjs@7.8.1:
-    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
 
   safe-array-concat@1.1.2:
     resolution: {integrity: sha512-vj6RsCsWBCf19jIeHEfkRMw8DPiBb+DMXklQ/1SGDHOMlHdPUkZXFQ2YdplS23zESTijAcurb1aSgJA3AgMu1Q==}
@@ -3126,6 +3151,16 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
+  '@auth/core@0.37.2':
+    dependencies:
+      '@panva/hkdf': 1.2.1
+      '@types/cookie': 0.6.0
+      cookie: 0.7.1
+      jose: 5.9.6
+      oauth4webapi: 3.1.4
+      preact: 10.11.3
+      preact-render-to-string: 5.2.3(preact@10.11.3)
+
   '@auth/core@0.37.4':
     dependencies:
       '@panva/hkdf': 1.2.1
@@ -3138,15 +3173,6 @@ snapshots:
     dependencies:
       '@auth/core': 0.37.4
       mongodb: 6.0.0
-    transitivePeerDependencies:
-      - '@simplewebauthn/browser'
-      - '@simplewebauthn/server'
-      - nodemailer
-
-  '@auth/neo4j-adapter@2.7.4(neo4j-driver@5.27.0)':
-    dependencies:
-      '@auth/core': 0.37.4
-      neo4j-driver: 5.27.0
     transitivePeerDependencies:
       - '@simplewebauthn/browser'
       - '@simplewebauthn/server'
@@ -3353,6 +3379,8 @@ snapshots:
     dependencies:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.3.2
+
+  '@types/cookie@0.6.0': {}
 
   '@types/json-schema@7.0.12': {}
 
@@ -3886,11 +3914,6 @@ snapshots:
       ieee754: 1.2.1
       isarray: 1.0.0
 
-  buffer@6.0.3:
-    dependencies:
-      base64-js: 1.5.1
-      ieee754: 1.2.1
-
   builtin-status-codes@3.0.0: {}
 
   busboy@1.6.0:
@@ -4042,6 +4065,8 @@ snapshots:
   console-browserify@1.2.0: {}
 
   constants-browserify@1.0.0: {}
+
+  cookie@0.7.1: {}
 
   copy-concurrently@1.0.5:
     dependencies:
@@ -4445,7 +4470,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 8.41.0
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.6.3)(eslint@8.41.0)
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-plugin-import@2.30.0)(eslint@8.41.0))(eslint@8.41.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -4458,7 +4483,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.6.3)(eslint@8.41.0):
+  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-plugin-import@2.30.0)(eslint@8.41.0))(eslint@8.41.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -4469,7 +4494,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.41.0):
+  eslint-module-utils@2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-plugin-import@2.30.0)(eslint@8.41.0))(eslint@8.41.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -4491,7 +4516,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.41.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.41.0)
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.41.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.7)(eslint-plugin-import@2.30.0)(eslint@8.41.0))(eslint@8.41.0)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -5480,19 +5505,11 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  neo4j-driver-bolt-connection@5.27.0:
+  next-auth@5.0.0-beta.25(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
-      buffer: 6.0.3
-      neo4j-driver-core: 5.27.0
-      string_decoder: 1.3.0
-
-  neo4j-driver-core@5.27.0: {}
-
-  neo4j-driver@5.27.0:
-    dependencies:
-      neo4j-driver-bolt-connection: 5.27.0
-      neo4j-driver-core: 5.27.0
-      rxjs: 7.8.1
+      '@auth/core': 0.37.2
+      next: 14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
 
   next-cloudinary@6.16.0(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -5802,9 +5819,16 @@ snapshots:
       fflate: 0.4.8
       preact: 10.22.0
 
+  preact-render-to-string@5.2.3(preact@10.11.3):
+    dependencies:
+      preact: 10.11.3
+      pretty-format: 3.8.0
+
   preact-render-to-string@6.5.11(preact@10.24.3):
     dependencies:
       preact: 10.24.3
+
+  preact@10.11.3: {}
 
   preact@10.22.0: {}
 
@@ -5817,6 +5841,8 @@ snapshots:
       prettier: 2.8.8
 
   prettier@2.8.8: {}
+
+  pretty-format@3.8.0: {}
 
   process-nextick-args@2.0.1: {}
 
@@ -6027,10 +6053,6 @@ snapshots:
   run-queue@1.0.3:
     dependencies:
       aproba: 1.2.0
-
-  rxjs@7.8.1:
-    dependencies:
-      tslib: 2.6.0
 
   safe-array-concat@1.1.2:
     dependencies:
