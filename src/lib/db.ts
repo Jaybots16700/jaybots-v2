@@ -1,36 +1,34 @@
-import { MongoClient, ServerApiVersion } from "mongodb"
- 
-if (!process.env.MONGODB_URI) {
+import type { Db } from 'mongodb'
+import { MongoClient } from 'mongodb'
+
+if (!process.env.MONGODB_URI)
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"')
-}
- 
-const uri = process.env.MONGODB_URI
-const options = {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  },
-}
- 
-let client: MongoClient
- 
-if (process.env.NODE_ENV === "development") {
-  // In development mode, use a global variable so that the value
-  // is preserved across module reloads caused by HMR (Hot Module Replacement).
-  let globalWithMongo = global as typeof globalThis & {
-    _mongoClient?: MongoClient
+
+export const clientPromise =
+  process.env.NODE_ENV === 'development' && globalThis.mongoClientPromise
+    ? globalThis.mongoClientPromise
+    : new MongoClient(process.env.MONGODB_URI, {}).connect()
+
+if (process.env.NODE_ENV === 'development' && !globalThis.mongoClientPromise)
+  globalThis.mongoClientPromise = clientPromise
+
+export async function connectToDatabase(
+  dbName: string = process.env.NODE_ENV === 'development'
+    ? 'dev-jaybots-v2'
+    : 'jaybots-v2'
+) {
+  const client = await clientPromise
+  const db = client.db(dbName) as Db
+
+  return {
+    client,
+    db,
+    usersDB: db.collection<{
+      name?: string
+      email: string
+      emailVerified: Date | null
+      image?: string
+      isAdmin?: boolean
+    }>('users'),
   }
- 
-  if (!globalWithMongo._mongoClient) {
-    globalWithMongo._mongoClient = new MongoClient(uri, options)
-  }
-  client = globalWithMongo._mongoClient
-} else {
-  // In production mode, it's best to not use a global variable.
-  client = new MongoClient(uri, options)
 }
- 
-// Export a module-scoped MongoClient. By doing this in a
-// separate module, the client can be shared across functions.
-export default client
