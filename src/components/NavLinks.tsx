@@ -20,7 +20,7 @@ import {
 import { usePathname } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
-import { GoogleIcon, printing3dIcon } from './icons'
+import { GoogleIcon, Printing3dIcon } from './icons'
 
 const links = [
   ['Home', '/', faHouse],
@@ -65,7 +65,7 @@ export function NavLinks({ current }) {
           })}
         >
           {label === '3D Printing' ? (
-            printing3dIcon
+            <Printing3dIcon className="h-6 w-6 place-self-center" />
           ) : (
             <FontAwesomeIcon
               icon={icon}
@@ -98,10 +98,12 @@ export function NavLinks({ current }) {
             'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0'
           }
         >
-          {GoogleIcon}
-          Sign in with Google
+          <GoogleIcon />
+          <span className="relative z-10 col-span-5 pl-3">
+            Sign in with Google
+          </span>
         </button>
-      )}{' '}
+      )}
     </div>
   )
 }

@@ -1,4 +1,4 @@
-export const printing3dIcon = (
+export const Printing3dIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     fill="#ffffff"
     height="24px"
@@ -9,7 +9,7 @@ export const printing3dIcon = (
     // xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 463 463"
     // xml:space="preserve"
-    className="h-6 w-6 place-self-center"
+    {...props}
   >
     <g>
       <path
@@ -52,11 +52,12 @@ c-4.687,0-8.5-3.813-8.5-8.5v-56c0-4.687,3.813-8.5,8.5-8.5h352c4.687,0,8.5,3.813,
   </svg>
 )
 
-export const GoogleIcon = (
+export const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
-    className="mr-3 h-6 w-6 shrink-0 fill-current"
+    className="h-6 w-6 shrink-0 fill-current"
     viewBox="0 0 48 48"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       fill="#EA4335"
