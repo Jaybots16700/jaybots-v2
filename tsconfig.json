@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-			"@/*": ["./src/*"]
-		},
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+      "@/*": ["./src/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -30,9 +26,8 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/components/NavLinks.jsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

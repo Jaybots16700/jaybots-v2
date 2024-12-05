@@ -35,7 +35,7 @@ const links = [
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
   ['Tournament', 'https://jaybots.org/tournament', faRobot],
   ['Contact Us', '/#contact', faEnvelopeOpenText],
-] as [string, string, IconDefinition][]
+]
 
 const dashboardLinks = [
   ['Home', '/dashboard', faHouse],
@@ -44,7 +44,7 @@ const dashboardLinks = [
   ['Awards', '/dashboard/awards', faAward],
   ['Media', '/dashboard/media', faPhotoFilm],
   ['Alumni', '/dashboard/alumni', faGraduationCap],
-] as [string, string, IconDefinition][]
+]
 
 export function NavLinks({ current }) {
   const session = useSession()
@@ -59,8 +59,7 @@ export function NavLinks({ current }) {
           key={label}
           href={href}
           className={clsx({
-            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0':
-              true,
+            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0': true,
             'bg-blue-800 font-semibold text-white': current === href,
           })}
         >
@@ -80,8 +79,7 @@ export function NavLinks({ current }) {
         <Link
           href={'/edit-media'}
           className={clsx({
-            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0':
-              true,
+            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0': true,
             'bg-blue-800 font-semibold text-white': current === '/edit-media',
           })}
         >
