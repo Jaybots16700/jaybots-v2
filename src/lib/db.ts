@@ -4,6 +4,11 @@ import { MongoClient } from 'mongodb'
 if (!process.env.MONGODB_URI)
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"')
 
+declare global {
+  // eslint-disable-next-line no-var, vars-on-top
+  var mongoClientPromise: Promise<MongoClient>
+}
+
 export const clientPromise =
   process.env.NODE_ENV === 'development' && globalThis.mongoClientPromise
     ? globalThis.mongoClientPromise
