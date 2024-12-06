@@ -107,6 +107,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/chocolate',
+        destination: 'https://tally.so/r/wa4Xgv',
+        permanent: true,
+      },
+      {
         source: '/anish',
         destination: 'https://stanford.edu/~anishan',
         permanent: true,
