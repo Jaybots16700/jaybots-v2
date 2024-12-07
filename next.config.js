@@ -159,6 +159,11 @@ module.exports = {
         destination: 'https://tally.so/r/3j0gL4',
         permanent: true,
       },
+      {
+        source: '/live',
+        destination: 'https://www.youtube.com/watch?v=lxqRUIm8SSQ',
+        permanent: false,
+      },
     ]
   },
 }
