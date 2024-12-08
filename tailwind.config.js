@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class'],
   content: ['./src/**/*.{js,jsx}'],
   theme: {
     fontSize: {
@@ -23,7 +24,7 @@ module.exports = {
       animation: {
         'slide-infinite': 'slide 15s linear infinite',
         'alumni-slide-infinite': 'alumni-slide 8s linear infinite',
-        'gallery': 'gallery 10s linear infinite',
+        gallery: 'gallery 10s linear infinite',
         'fade-in': 'fade-in 0.5s linear forwards',
         marquee: 'marquee var(--marquee-duration) linear infinite',
         marqueeX: 'marqueeX var(--marquee-duration) linear infinite',
@@ -36,42 +37,51 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem',
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
-      colors: ({ colors }) => ({
-        gray: colors.neutral,
-      }),
+      colors: {},
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
-        'gallery': {
+        gallery: {
           '0%': {
             transform: 'translateX(30%) scale(50%)',
-            opacity: 0,
+            opacity: '0',
           },
           '25%, 75%': {
             transform: 'translateX(0) scale(100%)',
-            opacity: 1,
+            opacity: '1',
           },
           '100%': {
             transform: 'translateX(-30%) scale(50%)',
-            opacity: 0,
+            opacity: '0',
           },
         },
-        'slide': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-150%)'},
+        slide: {
+          '0%': {
+            transform: 'translateX(100%)',
+          },
+          '100%': {
+            transform: 'translateX(-150%)',
+          },
         },
         'alumni-slide': {
-          '0%': { transform: 'translateX(18rem)' },
-          '100%': { transform: 'translateX(-100%)'},
+          '0%': {
+            transform: 'translateX(18rem)',
+          },
+          '100%': {
+            transform: 'translateX(-100%)',
+          },
         },
         'fade-in': {
           from: {
-            opacity: 0,
+            opacity: '0',
           },
           to: {
-            opacity: 1,
+            opacity: '1',
           },
         },
         marquee: {
@@ -95,5 +105,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('tailwind-scrollbar'),],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwind-scrollbar'),
+    require('tailwindcss-animate'),
+  ],
 }
