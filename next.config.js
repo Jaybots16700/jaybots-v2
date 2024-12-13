@@ -108,7 +108,7 @@ module.exports = {
       },
       {
         source: '/chocolate',
-        destination: 'https://tally.so/r/wa4Xgv',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSd7pikwAvxheTNUQPVHlbxPmSeLhZQ2tcXXFuD10gx_ldz9hg/viewform?usp=dialog',
         permanent: true,
       },
       {
