@@ -931,7 +931,7 @@ export const members = [
     title: 'Manufacter',
     committees: [''],
     leader: '',
-    bio: 'Anika is a freshman at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the \"brain of the court.\" Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
+    bio: 'Anika is a freshman at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
     image: '/images/Anika.jpg',
   },
   // {
@@ -1054,8 +1054,8 @@ export const sponsors = [
     name: 'Cim Tech',
     description:
       'Cim Tech is a 100% American owned and staffed manufacturing software solution partner.',
-    image: 'sponsors/qondjqpzsoozapsbgwjf',
-    link: 'https://cim-tech.com/',
+    image: 'sponsors/qondjqpzsoozapsbgaaa',
+    link: 'https://www.cim-techcorp.com/',
     tier: 'Platinum',
     tierColor: 'bg-purple-500',
   },
