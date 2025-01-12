@@ -162,7 +162,7 @@ module.exports = {
       {
         source: '/live',
         destination: 'https://excelsiorny.org/live',
-        permanent: true,
+        permanent: false,
       },
     ]
   },
