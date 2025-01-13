@@ -159,7 +159,7 @@ function CompStats({ comp }) {
   return (
     <div className="mt-12">
       <div className="border-y-2 border-gray-400 py-1 text-xl">
-        {comp.type} | {comp.date}
+        {comp.name || comp.type} | {comp.date}
       </div>
       <div className="flex flex-col space-y-4 pt-3 text-base font-light">
         {comp.upcoming && (
