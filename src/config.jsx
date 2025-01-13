@@ -1063,7 +1063,7 @@ export const sponsors = [
     name: 'Gene Haas',
     description:
       'The Gene Haas Foundation supports education, community and competition programs that promote CNC technology.',
-    image: 'sponsors/oiovsrgfn6do5jaczkdd',
+    image: 'sponsors/y0b0bb3sxcbhx4jvq15p',
     link: 'https://www.haascnc.com/',
     tier: 'Platinum',
     tierColor: 'bg-purple-500',
