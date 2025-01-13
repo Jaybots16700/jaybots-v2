@@ -478,6 +478,68 @@ export const miscImages = [
 
 export const games = [
   {
+    name: 'Into The Deep',
+    year: '2024-2025',
+    logo: '', // TODO: @Veda652 Add logo
+    logowidth: 500,
+    allComps: [
+      {
+        team: 'Jaybots',
+        images: '', // TODO: @Veda652 Add Image
+        comps: [
+          {
+            type: 'Qualifier',
+            name: 'Utica Qualifier',
+            date: 'January 12, 2024',
+            awards: {
+              advanced: true,
+              first: ['Inspire'],
+            },
+          },
+          {
+            type: 'Qualifier',
+            name: 'Albany Qualifier',
+            date: 'January 19, 2024',
+            awards: {},
+            upcoming: true,
+          },
+          {
+            type: 'Qualifier',
+            name: 'Broadalbin-Perth Qualifier',
+            date: 'January 26, 2024',
+            awards: {},
+            upcoming: true,
+          },
+        ],
+      },
+      {
+        team: 'Phoenix',
+        images: '',
+        comps: [
+          {
+            type: 'Qualifier',
+            name: 'John Jay Qualifier',
+            date: 'December 7, 2023',
+            awards: {},
+          },
+          {
+            type: 'Qualifier',
+            name: 'Utica Qualifier',
+            date: 'January 12, 2024',
+            awards: {},
+          },
+          {
+            type: 'Qualifier',
+            name: 'Albany Qualifier',
+            date: 'January 19, 2024',
+            awards: {},
+            upcoming: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
     name: 'Center Stage',
     year: '2023-2024',
     logo: 'https://file.coffee/u/c1YWvZwc6GcR4e2J1qXko.png',
@@ -540,7 +602,6 @@ export const games = [
             type: 'Qualifier',
             date: 'February 11, 2024',
             awards: {},
-            upcoming: true,
           },
         ],
       },
