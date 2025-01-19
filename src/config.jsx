@@ -480,7 +480,7 @@ export const games = [
   {
     name: 'Into The Deep',
     year: '2024-2025',
-    logo: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Finterest.jaybots.org%2F&psig=AOvVaw2RUYEeaBnWHFhs0uBTQQQ9&ust=1737341116581000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDgpZLigIsDFQAAAAAdAAAAABAE'
+    logo: 'JAYBOTSSS.psd.png'
     images: '',
     ,// TODO: @Veda652 Add logo
     logowidth: 500,
