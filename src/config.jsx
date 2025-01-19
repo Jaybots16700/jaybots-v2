@@ -480,7 +480,9 @@ export const games = [
   {
     name: 'Into The Deep',
     year: '2024-2025',
-    logo: 'https://drive.google.com/drive/u/1/my-drive', // TODO: @Veda652 Add logo
+    logo: 'image.psd-2.png',
+    images: '',
+    ,// TODO: @Veda652 Add logo
     logowidth: 500,
     allComps: [
       {
