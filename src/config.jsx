@@ -480,7 +480,7 @@ export const games = [
   {
     name: 'Into The Deep',
     year: '2024-2025',
-    logo: '', // TODO: @Veda652 Add logo
+    logo: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fjaybots.org%2F&psig=AOvVaw0Kqfzs6yqBZq_ilhFUsSj8&ust=1737331208422000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiihZ-9gIsDFQAAAAAdAAAAABAE', // TODO: @Veda652 Add logo
     logowidth: 500,
     allComps: [
       {
