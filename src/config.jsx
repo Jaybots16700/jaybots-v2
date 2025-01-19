@@ -480,7 +480,7 @@ export const games = [
   {
     name: 'Into The Deep',
     year: '2024-2025',
-    logo: 'https://lh3.googleusercontent.com/d/10pqamkKEG_t-zy5qyLZCJyybZNvKY0e-',
+    logo: 'https://drive.google.com/uc?export=download&id=10pqamkKEG_t-zy5qyLZCJyybZNvKY0e-',
     images: '',
     ,// TODO: @Veda652 Add logo
     logowidth: 500,
