@@ -481,7 +481,7 @@ export const games = [
     name: 'Into The Deep',
     year: '2024-2025',
     logo: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323150/image.psd-2_u7yeia.png',
-    images: '',// TODO: @Veda652 Add logo
+    images: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323490/48670_sfn5oc.jpg',//
     logowidth: 500,
     allComps: [
       {
