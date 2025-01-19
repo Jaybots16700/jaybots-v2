@@ -486,7 +486,7 @@ export const games = [
     allComps: [
       {
         team: 'Jaybots',
-        images: '', // TODO: @Veda652 Add Image
+        images: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323490/48670_sfn5oc.jpg', // TODO: @Veda652 Add Image
         comps: [
           {
             type: 'Qualifier',
