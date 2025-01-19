@@ -481,7 +481,7 @@ export const games = [
     name: 'Into The Deep',
     year: '2024-2025',
     logo: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323150/image.psd-2_u7yeia.png',
-    images: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323490/48670_sfn5oc.jpg',//
+    images: '',//
     logowidth: 500,
     allComps: [
       {
@@ -501,7 +501,9 @@ export const games = [
             type: 'Qualifier',
             name: 'Albany Qualifier',
             date: 'January 19, 2024',
-            awards: {},
+            awards: {
+              first: ['Control'],
+            },
             upcoming: true,
           },
           {
