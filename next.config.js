@@ -161,7 +161,7 @@ module.exports = {
       },
       {
         source: '/chocolate-workshop',
-        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSealF8yrFbl9zushCGLDbdX9IznqXDnRQbV72e0BaEMAKgNRg/viewform?usp=preview',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSealF8yrFbl9zushCGLDbdX9IznqXDnRQbV72e0BaEMAKgNRg/viewform?',
         permanent: false,
       },
       {
