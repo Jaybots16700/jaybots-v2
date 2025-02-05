@@ -160,13 +160,13 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/chocolate-workshop',
-        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSealF8yrFbl9zushCGLDbdX9IznqXDnRQbV72e0BaEMAKgNRg/viewform?',
+        source: '/live',
+        destination: 'https://excelsiorny.org/live',
         permanent: false,
       },
       {
-        source: '/live',
-        destination: 'https://excelsiorny.org/live',
+        source: '/valentines',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSdZMIad2OoW1l6yivsEPMrp1pvzasVhzguFHw1Qh4-sR8kpYw/viewform?usp=dialog',
         permanent: false,
       },
     ]
