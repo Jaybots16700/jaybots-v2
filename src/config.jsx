@@ -936,13 +936,13 @@ export const members = [
     bio: 'James Amodio teaches Regents Physics and PLTW: Principles of Engineering at John Jay High School. While this is only his 5th year in the Wappingers Central School District, he has been an FTC Coach at Blind Brook High School as well as Roosevelt and Riverside High Schools in Yonkers, NY. He has also been coaching several Jr. FLL teams in the Arlington School District for the past 3 years. Mr. Amodio is very excited to be working with such a dedicated team as the JAYBOTS!',
     image: 'https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg',
   },
-  {
-    name: 'Ms. Ingalls',
-    title: 'Mentor & Coach',
-    committees: [''],
-    bio: 'Ms. Amanda Ingalls is a School Library Media Specialist with 12 years of experience and has been a part of the John Jay High School family since 2019. She loves reading and research and is passionate about working with students and technology. She has assisted the JayBots in the past with 3D Printing projects, but this is her first year as an Assistant Coach on the team, and is very excited to be helping out.',
-    image: '/images/Ingalls.jpg',
-  },
+  // {
+  //   name: 'Ms. Ingalls',
+  //   title: 'Mentor & Coach',
+  //   committees: [''],
+  //   bio: 'Ms. Amanda Ingalls is a School Library Media Specialist with 12 years of experience and has been a part of the John Jay High School family since 2019. She loves reading and research and is passionate about working with students and technology. She has assisted the JayBots in the past with 3D Printing projects, but this is her first year as an Assistant Coach on the team, and is very excited to be helping out.',
+  //   image: '/images/Ingalls.jpg',
+  // },
   {
     name: 'Anthony',
     title: 'Compiler',
