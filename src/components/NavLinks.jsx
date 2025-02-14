@@ -33,7 +33,8 @@ const links = [
   ['Media', '/media', faPhotoFilm],
   ['Alumni', '/alumni', faGraduationCap],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
-  ['Tournament', 'https://jaybots.org/tournament', faRobot],
+  ['Upcoming Events', '/events', faCalendarWeek],
+  // ['Tournament', 'https://jaybots.org/tournament', faRobot],
   ['Contact Us', '/#contact', faEnvelopeOpenText],
 ]
 
@@ -59,7 +60,7 @@ export function NavLinks({ current }) {
           key={label}
           href={href}
           className={clsx({
-            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0': true,
+            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all duration-200 delay-100 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0': true,
             'bg-blue-800 font-semibold text-white': current === href,
           })}
         >
@@ -79,7 +80,7 @@ export function NavLinks({ current }) {
         <Link
           href={'/edit-media'}
           className={clsx({
-            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0': true,
+            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all duration-200 delay-100 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0': true,
             'bg-blue-800 font-semibold text-white': current === '/edit-media',
           })}
         >
@@ -93,7 +94,7 @@ export function NavLinks({ current }) {
         <button
           onClick={() => signIn('google')}
           className={
-            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0'
+            'relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all duration-200 delay-100 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0'
           }
         >
           <GoogleIcon />
