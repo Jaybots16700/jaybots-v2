@@ -5,6 +5,8 @@ import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import EditClientPage from './editClient'
+import { useState } from 'react'
 
 const cloudinaryDarkStyles = {
   palette: {
@@ -25,7 +27,8 @@ const cloudinaryDarkStyles = {
 }
 
 export default function EditMediaPage() {
-  const pages = ['Outreach', 'Media']
+  const pages = ['Outreach' /*, 'Media'*/] as const
+  const [tab, setTab] = useState('Outreach')
   return (
     <>
       <Head>
@@ -35,31 +38,17 @@ export default function EditMediaPage() {
       <main>
         <div className="animate-all z-50 flex h-screen w-full flex-col overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 lg:pl-64">
           <Header title="Edit Media" beforeBold="" bold="" afterBold="" />
-          <div className="h-72">
-            <Tabs defaultValue="outreach" className="w-[400px]">
-              <TabsList>
+          <div className="">
+            <Tabs value={tab} onValueChange={setTab} className="w-[400px]">
+              <TabsList className="mx-auto w-full">
                 {pages.map((page) => (
                   <TabsTrigger key={page} value={page}>
-                    {page}
+                    <h1 className="mx-auto text-lg font-semibold">{page}</h1>
                   </TabsTrigger>
                 ))}
               </TabsList>
               {pages.map((page) => (
-                <TabsContent key={page} value={page}>
-                  Make changes to your account here.
-                  <CldUploadButton
-                    className="rounded-md border-2 border-blue-400 px-4 py-2"
-                    uploadPreset="TEDI Blog"
-                    options={{ cropping: true, styles: cloudinaryDarkStyles }}
-                    onSuccess={(results) => {
-                      if (!results.info || typeof results.info === 'string')
-                        return
-                      // add_image(results.info.secure_url)
-                    }}
-                  >
-                    Upload {page} Image
-                  </CldUploadButton>
-                </TabsContent>
+                <EditClientPage page={page} />
               ))}
             </Tabs>
           </div>

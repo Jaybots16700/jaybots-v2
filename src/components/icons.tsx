@@ -78,3 +78,14 @@ export const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <path fill="none" d="M0 0h48v48H0z" />
   </svg>
 )
+
+export const LogoutIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    className="h-6 w-6 shrink-0 fill-current"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M10.7 17.707l1.414-1.414L7.828 13H20v-2H7.828l4.879-4.878L10.7 6.3 4.3 12.7l6.4 6.4zM19 3a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1h14z" />
+  </svg>
+)

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import clsx from 'clsx'
-import { signIn } from 'next-auth/react'
+import { signIn, signOut } from 'next-auth/react'
 import {
   faHouse,
   faPeopleGroup,
@@ -20,7 +20,7 @@ import {
 import { usePathname } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
-import { GoogleIcon, Printing3dIcon } from './icons'
+import { GoogleIcon, LogoutIcon, Printing3dIcon } from './icons'
 
 const links = [
   ['Home', '/', faHouse],
@@ -76,7 +76,9 @@ export function NavLinks({ current }) {
         </Link>
       ))}
       <hr className="my-2" />
-      {session.data?.user ? (
+      {['anikaanne2010pal@gmail.com', 'pillai.nash@gmail.com'].includes(
+        session.data?.user.email
+      ) ? (
         <Link
           href={'/edit-media'}
           className={clsx({
@@ -90,6 +92,16 @@ export function NavLinks({ current }) {
           />
           <span className="relative z-10 col-span-5 pl-3">Edit Media</span>
         </Link>
+      ) : session.data?.user ? (
+        <button
+          onClick={() => signOut()}
+          className={
+            'relative flex w-full items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all duration-200 delay-100 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0'
+          }
+        >
+          <LogoutIcon fill="white" />
+          <span className="relative z-10 col-span-5 pl-3">Sign Out</span>
+        </button>
       ) : (
         <button
           onClick={() => signIn('google')}
