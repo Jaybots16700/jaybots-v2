@@ -481,12 +481,13 @@ export const games = [
     name: 'Into The Deep',
     year: '2024-2025',
     logo: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323150/image.psd-2_u7yeia.png',
-    images: '',//
+    images: '', //
     logowidth: 500,
     allComps: [
       {
         team: 'Jaybots',
-        images: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323490/48670_sfn5oc.jpg',
+        images:
+          'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323490/48670_sfn5oc.jpg',
         comps: [
           {
             type: 'Qualifier',
@@ -1011,7 +1012,7 @@ export const members = [
     title: 'Gamemaster',
     committees: ['Build', 'Officers'],
     leader: 'Equipment',
-    bio: 'Hailey Kim (Equipment Manager) is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
+    bio: 'Hailey Kim (Gamemaster) is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
     image: '/images/Hailey.jpg',
   },
   {
