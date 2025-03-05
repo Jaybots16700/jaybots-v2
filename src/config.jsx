@@ -1011,8 +1011,8 @@ export const members = [
     name: 'Hailey',
     title: 'Gamemaster',
     committees: ['Build', 'Officers'],
-    leader: 'Equipment',
-    bio: 'Hailey Kim (Gamemaster) is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
+    leader: 'Gamemaster',
+    bio: 'Hailey Kim is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
     image: '/images/Hailey.jpg',
   },
   {
