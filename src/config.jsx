@@ -976,20 +976,12 @@ export const members = [
     image: '/images/JoeMoney.jpg',
   },
   {
-    name: 'Edwin',
-    title: 'Team member',
-    committees: [''],
-    leader: 'Fundraising',
-    bio: "Edwin Keefer is a senior, who started in the Jaybots team at the beginning of 11th grade. His current favorite subjects in school are computer science and math. He hopes to eventually major in Computer Science in college. Despite not having any previous experience before joining robotics, he has the team's architect to attest to his skill in CAD. Outside of robotics he loves to play games, listen to music, and sleep. He hopes to have a productive year on the team. ",
-    image: '/images/Edwin.jpg',
-  },
-  {
-    name: 'Veda',
-    title: 'Webmaster',
+    name: 'Joanna',
+    title: 'Media Manager',
     committees: [''],
     leader: '',
-    bio: 'Veda is a freshman on the Jaybots robotics team, and she is currently the webmaster. Veda loves playing the violin, drawing, playing volleyball, and singing carnatic music during her free time. She loves Indian food, especially jackfruit briyani. Veda has also been a member of science olympiad and math club for two years, and she still is. Veda hopes to major in business or biology.',
-    image: '/images/O.jpg',
+    bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
+    image: '/images/Joanna.jpg',
   },
   {
     name: 'Anika',
@@ -1016,12 +1008,22 @@ export const members = [
     image: '/images/Hailey.jpg',
   },
   {
-    name: 'Joanna',
-    title: 'Media Manager',
+    name: 'Ava',
+    title: 'Branding Leader',
+    committees: [],
+    leader: 'Branding Leader',
+    bio: "Ava is a sophomore at John Jay High School and is in her second year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments, including the viola, piano, violin, and guitar. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to collaborate with the team and contribute to their success this season, both on and off the field.",
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
+  },
+
+  {
+    name: 'Veda',
+    title: 'Webmaster',
     committees: [''],
     leader: '',
-    bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
-    image: '/images/Joanna.jpg',
+    bio: 'Veda is a freshman on the Jaybots robotics team, and she is currently the webmaster. Veda loves playing the violin, drawing, playing volleyball, and singing carnatic music during her free time. She loves Indian food, especially jackfruit briyani. Veda has also been a member of science olympiad and math club for two years, and she still is. Veda hopes to major in business or biology.',
+    image: '/images/O.jpg',
   },
 
   // {
