@@ -95,6 +95,12 @@ export const committeeDescript = [
 
 export const alumni = [
   {
+    name: 'Anish',
+    title: ['Member'],
+    bio: "Anish is a senior in his fourth year at the Robotics club. He plans to attend college after high school, majoring in computer science. He enjoys math & science in school and is part of other clubs like Science Olympiad & Computer Science Honor Society. In his free time, he enjoys playing tennis & working on other programming projects. He hopes to learn and work with the new, growing team. Anish is currently the president. Previously, he was the Programming Leader, managing an ever-growing group of recruits and teaching them valuable skills like Kotlin and Computer Vision. Two years ago, he was one of the Excelsior Region's Deans' List Finalists and went to the World Championship.",
+    image: 'https://cdn.jaybots.org/team/anish2.jpg',
+  },
+  {
     name: 'David',
     title: ['Member'],
     bio: 'David has been on the Jaybots for the first time this year. Last year, he was part of the JV team and part of the DTC project group before moving up to Jaybots this year. He is currently a Senior, and this will be his second year as part of the robotics club at John Jay Senior High School. He’s a Hispanic student who plans to major in Civil engineering at Columbia University. David participates in various STEM-based clubs offered at the school. Other than being the President of the Spanish Honor Society, he enjoys being a part of and helping out with our robotics team.',
@@ -193,10 +199,6 @@ export const buildImages = [
     caption: 'Anish & Silvia building the field.',
   },
   {
-    source: 'https://file.coffee/u/3foMurCrRKkPOI.jpg',
-    caption: 'Arnav fanboying over the bot <3',
-  },
-  {
     source: 'https://cdn.jaybots.org/build/matt%20-%20chassis.jpeg',
     caption: 'Matt working on the chassis.',
   },
@@ -219,10 +221,6 @@ export const buildImages = [
     caption: 'Paul cutting extrusions.',
   },
   {
-    source: 'https://file.coffee/u/1BBly-fNkpC5VEgomBLyF.png',
-    caption: 'Bluebirds Freight Frenzy CAD Model',
-  },
-  {
     source:
       'https://cdn.jaybots.org/build/Anaya%20cutting%20launcher%20screw.jpeg',
     caption: 'Anaya cutting a screw for the launcher.',
@@ -236,10 +234,6 @@ export const buildImages = [
     caption: 'Ashish working on an idea for the launcher.',
   },
   {
-    source: 'https://file.coffee/u/OAopZ-c9KkRntW.png',
-    caption: 'An autonomous car being built for DTC.',
-  },
-  {
     source: 'https://cdn.jaybots.org/build/taking%20inventory.jpeg',
     caption: 'Anish taking inventory.',
   },
@@ -247,14 +241,7 @@ export const buildImages = [
     source: 'https://cdn.jaybots.org/build/finishing%20launcher%20idea.jpeg',
     caption: 'Arnav and Ashish prototyping a launcher.',
   },
-  {
-    source: 'https://file.coffee/u/vxPWDQWSxdor7lFiztyvr.png',
-    caption: 'Jaybots Freight Frenzy CAD Model',
-  },
-  {
-    source: 'https://file.coffee/u/_qmzx7Xi22WiRr.png',
-    caption: 'Original wheel based intake prototype.',
-  },
+
   {
     source: 'https://cdn.jaybots.org/build/buildingintake1.jpg',
     caption: 'Silvia working on the intake.',
@@ -262,14 +249,6 @@ export const buildImages = [
   {
     source: 'https://cdn.jaybots.org/build/wiring1.jpg',
     caption: 'Arnav wiring the bot.',
-  },
-  {
-    source: 'https://file.coffee/u/Nqy-OfkQ3GgITx.jpg',
-    caption: 'Carousel testing during Robot in 3 Days.',
-  },
-  {
-    source: 'https://file.coffee/u/ARUxuEaSlQPRO6.png',
-    caption: 'Silvia building a lazy suzan prototype.',
   },
 ]
 
@@ -291,10 +270,6 @@ export const codeImages = [
     caption: "Ashish trying to fix Anish's code.",
   },
   {
-    source: 'https://file.coffee/u/d60jjga2QwSEJ_.jpg',
-    caption: 'Planning out some auto code.',
-  },
-  {
     source: 'https://cdn.jaybots.org/code/Robert%20%28online%29.jpeg',
     caption: 'Robert (online) working on the code.',
   },
@@ -311,10 +286,7 @@ export const outreachImages = [
       'https://cdn.jaybots.org/outreach/Collecting%20bags%20for%20a%20clothing%20drive.jpg',
     caption: 'Collecting bags for a clothing drive.',
   },
-  {
-    source: 'https://file.coffee/u/pRsFHjXckfpgCQ.jpg',
-    caption: 'Teaching students about Spike Primes.',
-  },
+
   {
     source: 'https://cdn.jaybots.org/overview/freshmanorientationcleanup.jpeg',
     caption: 'Cleaning up after an Outreach Event.',
@@ -329,10 +301,7 @@ export const outreachImages = [
       'https://cdn.jaybots.org/outreach/Silvia%20creating%20a%20google%20form%20for%20judging.jpg',
     caption: 'Silvia creating a google form for judging.',
   },
-  {
-    source: 'https://file.coffee/u/oib9rymL8Q_eRy.jpg',
-    caption: 'Ashish mentoring some Bluebirds.',
-  },
+
   {
     source: 'https://cdn.jaybots.org/outreach/planning%20outreach%20events.jpg',
     caption: 'Ashish and Mili planning outreach events.',
@@ -342,10 +311,7 @@ export const outreachImages = [
       'https://cdn.jaybots.org/outreach/Helping%20the%20Griffin%20Robotics%20team.jpeg',
     caption: 'Helping the Griffin Robotics team.',
   },
-  {
-    source: 'https://file.coffee/u/N5gLGvuHnYV822.png',
-    caption: 'Robot in 3 days presentation to Bluebirds.',
-  },
+
   {
     source: 'https://cdn.jaybots.org/outreach/arnavlistening1.jpg',
     caption: 'Arnav listening in to an outreach event',
@@ -357,34 +323,6 @@ export const outreachImages = [
 ]
 
 export const compImages = [
-  {
-    source: 'https://file.coffee/u/Th0pzWeqSxBd-Y.jpg',
-    caption: "Judge's Choice Award at Regionals.",
-  },
-  {
-    source: 'https://file.coffee/u/SUzq0BshQTpnWl.png',
-    caption: 'More testing before competition.',
-  },
-  {
-    source: 'https://file.coffee/u/0MUtmHlML1KR2m.jpg',
-    caption: 'Judging presentation at the Peekskill qualifier.',
-  },
-  {
-    source: 'https://file.coffee/u/CvGfERlWk5zQ1A.jpg',
-    caption: 'Group photo before our Judging Interview.',
-  },
-  {
-    source: 'https://file.coffee/u/HYKUVAtiJ-_tCS.jpg',
-    caption: 'Planning with our alliance partners.',
-  },
-  {
-    source: 'https://file.coffee/u/ywKS29rh3n4BQ1.jpg',
-    caption: 'Scouting in front of our booth at Regionals.',
-  },
-  {
-    source: 'https://file.coffee/u/xEzlDiwsdanKtS.jpg',
-    caption: 'Testing on the Practice Field.',
-  },
   {
     source: 'https://cdn.jaybots.org/code/anish1.jpg',
     caption: 'Anish & Robert coding competition day.',
@@ -413,46 +351,12 @@ export const miscImages = [
       'https://cdn.jaybots.org/overview/Silvia%20researching%20how%20to%20be%20productive.jpeg',
     caption: 'Silvia researching how to be productive.',
   },
-  {
-    source: 'https://file.coffee/u/rBsllVni1qJ0sE.jpg',
-    caption: 'Meditation; essential to our strategy.',
-  },
-  {
-    source: 'https://file.coffee/u/RZ423PmCn3aP5uK4C82qg.png',
-    caption: 'Utter is ready to take on Freight Frenzy',
-  },
-  {
-    source: 'https://file.coffee/u/BKAav4CTN0QGqW.png',
-    caption: 'Feight Frenzy - Inspire Award 1st Place!',
-  },
-  {
-    source: 'https://file.coffee/u/ux5jQ5GE11t2O8.jpg',
-    caption: 'Bowling during Robot in 3 Days.',
-  },
-  {
-    source: 'https://file.coffee/u/VsyviidRUvuy91.png',
-    caption: 'Protecting the bot from exploding.',
-  },
-  {
-    source: 'https://file.coffee/u/RNQgWDHVMKxOKQ.jpg',
-    caption: 'Scenic shot of the bot.',
-  },
-  {
-    source: 'https://file.coffee/u/PLJadgybKci6uo.png',
-    caption: 'Highest Scoring Robot!',
-  },
+
   {
     source: 'https://cdn.jaybots.org/overview/Arnav%20%26%20Darren.jpeg',
     caption: 'Arnav and Darren enjoying dinner.',
   },
-  {
-    source: 'https://file.coffee/u/GCxyacshvga1z167J2LGk.png',
-    caption: '"The King Without A Crown" is born',
-  },
-  {
-    source: 'https://file.coffee/u/9eBeiWCI4QcCuo.jpg',
-    caption: 'Jaybots Regionals 2022',
-  },
+
   {
     source: 'https://cdn.jaybots.org/overview/Lego%20REPLAY%20Donation.gif',
     caption: 'Lego REPLAY Donation',
@@ -466,10 +370,7 @@ export const miscImages = [
       'https://cdn.jaybots.org/overview/anish%20and%20silvia%20working.jpeg',
     caption: 'Anish and Silvia working.',
   },
-  {
-    source: 'https://file.coffee/u/mR49GXL2YmqMnB.jpg',
-    caption: 'Anish and Arnav experimenting with LEDs.',
-  },
+
   {
     source: 'https://cdn.jaybots.org/overview/ordering%20parts.jpeg',
     caption: 'Matt and Mr. A ordering parts.',
@@ -480,7 +381,7 @@ export const games = [
   {
     name: 'Into The Deep',
     year: '2024-2025',
-    logo: 'https://res.cloudinary.com/dvi97rvqe/image/upload/v1737323150/image.psd-2_u7yeia.png',
+    logo: 'https://res.cloudinary.com/jaybots/image/upload/v1741229447/Untitled_design_yjgutm.png',
     images: '', //
     logowidth: 500,
     allComps: [
@@ -551,7 +452,7 @@ export const games = [
   {
     name: 'Center Stage',
     year: '2023-2024',
-    logo: 'https://file.coffee/u/c1YWvZwc6GcR4e2J1qXko.png',
+    logo: 'https://res.cloudinary.com/jaybots/image/upload/v1741228571/2023-centerstage_rs4d4j.png',
     logowidth: 500,
     allComps: [
       {
@@ -875,7 +776,7 @@ export const members = [
   {
     name: 'Nash',
     title: 'President',
-    committees: [''],
+    committees: ['Officers'],
     leader: '',
     bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He is now the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
     image: 'https://cdn.jaybots.org/team/nash.png',
@@ -905,7 +806,7 @@ export const members = [
   {
     name: 'Hiroyuki',
     title: 'Vice President',
-    committees: [''],
+    committees: ['Officers'],
     leader: '',
     bio: 'Hiro is a senior at John Jay High School and is the Vice-President of the club. He has been in robotics since his freshman year and was formerly the Architect/CAD Leader and unofficially the CIO for his sophomore and junior years. He now coaches the Phoenix Team and helps out with CAD for the Jaybots. After high school, Hiro plans on attending university for computer science or mechanical engineering.',
     image:
@@ -914,7 +815,7 @@ export const members = [
   {
     name: 'Pallavi',
     title: 'Secretary',
-    committees: [''],
+    committees: ['Media'],
     leader: 'Media',
     bio: 'Pallavi is a senior on the team. She is in charge of managing social media, and branding for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
     image: 'https://cdn.jaybots.org/team/pallavi.jpg',
@@ -922,7 +823,7 @@ export const members = [
   {
     name: 'Joe Lopez',
     title: 'Treasurer',
-    committees: [''],
+    committees: ['Officers'],
     bio: 'Joe is a senior at John Jay, and this is his second year in robotics. As the Treasurer, he plans to raise as much money as possible for the teams success. Outside of robotics, Joe works for Bouquets by Christine, is a soon to be Eagle Scout, and enjoys cooking, fishing, coin collecting, spending time with friends, and contemplating the mysteries of life. His favorite dish is butter chicken. After high school, Joe aspires to major in mechanical engineering.',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1730223688/bios/g42ztah0rrgynhnnu4me.jpg',
@@ -952,7 +853,7 @@ export const members = [
   {
     name: 'Anthony',
     title: 'Compiler',
-    committees: [''],
+    committees: ['Code'],
     bio: 'Anthony Giron (Compiler) is a senior at John Jay High School. This is his third year in robotics, and his first year on the Jaybots. He was the programming leader for the JV team while he was in his first year, and is now the treasurer as a part of the Jaybots. From robotics he has learned valuable skills of engineering and teamwork. Anthony plans to go to college into either the computer science or engineering field after high school. he enjoys to program games in his free time.',
     image: '/images/Anthony.jpg',
   },
@@ -967,7 +868,7 @@ export const members = [
   {
     name: 'Matthew',
     title: 'Architect',
-    committees: [''],
+    committees: ['CAD'],
     leader: '',
     bio: 'Matthew is a junior in his third year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Architect (CAD Leader).',
     image: '/images/Matthew.jpg',
@@ -975,7 +876,7 @@ export const members = [
   {
     name: 'Joey',
     title: 'Foreman',
-    committees: [''],
+    committees: ['Build', 'SITCOM'],
     leader: 'SITCOM',
     bio: "Joe is a senior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.",
     image: '/images/JoeMoney.jpg',
@@ -983,7 +884,7 @@ export const members = [
   {
     name: 'Joanna',
     title: 'Media Manager',
-    committees: [''],
+    committees: ['Media'],
     leader: '',
     bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
     image: '/images/Joanna.jpg',
@@ -991,7 +892,7 @@ export const members = [
   {
     name: 'Anika',
     title: 'Manufacter',
-    committees: [''],
+    committees: ['CAD'],
     leader: '',
     bio: 'Anika is a freshman at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
     image: '/images/Anika.jpg',
@@ -1021,11 +922,19 @@ export const members = [
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
   },
-
+  {
+    name: 'Nhan ',
+    title: 'Equipment Manager',
+    committees: [''],
+    leader: 'Equipment Manager',
+    bio: 'Nhan Nguyen is currently a junior of John Jay. He’s in charge with organizing the parts and supplies for easy access for the team. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741232471/sigma-nhan_becnwe.jpg',
+  },
   {
     name: 'Veda',
     title: 'Webmaster',
-    committees: [''],
+    committees: ['Equipment'],
     leader: '',
     bio: 'Veda is a freshman on the Jaybots robotics team, and she is currently the webmaster. Veda loves playing the violin, drawing, playing volleyball, and singing carnatic music during her free time. She loves Indian food, especially jackfruit briyani. Veda has also been a member of science olympiad and math club for two years, and she still is. Veda hopes to major in business or biology.',
     image: '/images/O.jpg',

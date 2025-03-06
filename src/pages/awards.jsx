@@ -83,6 +83,7 @@ function Game({ game, index }) {
           src={game.logo}
           width={game.logowidth}
           height={200}
+          className="max-h-48 object-contain"
           alt="Game Season Logo"
         />
       </div>
