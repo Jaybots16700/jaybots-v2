@@ -205,7 +205,7 @@ export default function Home() {
               <Colors />
             </div>
 
-            <div className="mt-20 aspect-video w-full px-12">
+            {/* <div className="mt-20 aspect-video w-full px-12">
               <iframe
                 className=" h-full w-full"
                 width="560"
@@ -215,7 +215,7 @@ export default function Home() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                 // allowfullscreen
               ></iframe>
-            </div>
+            </div> */}
 
             <div
               id="sponsors"

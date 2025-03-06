@@ -492,7 +492,7 @@ export const games = [
           {
             type: 'Qualifier',
             name: 'Utica Qualifier',
-            date: 'January 12, 2024',
+            date: 'January 12, 2025',
             awards: {
               advanced: true,
               first: ['Inspire'],
@@ -501,16 +501,21 @@ export const games = [
           {
             type: 'Qualifier',
             name: 'Albany Qualifier',
-            date: 'January 19, 2024',
+            date: 'January 19, 2025',
             awards: {
               first: ['Control'],
             },
-            upcoming: true,
           },
           {
             type: 'Qualifier',
             name: 'Broadalbin-Perth Qualifier',
-            date: 'January 26, 2024',
+            date: 'January 26, 2025',
+            awards: { first: ['Think'] },
+          },
+          {
+            type: 'Regionals',
+            name: 'Utica Regionals',
+            date: 'March 8, 2025',
             awards: {},
             upcoming: true,
           },
