@@ -48,7 +48,7 @@ export default function EditMediaPage() {
                 ))}
               </TabsList>
               {pages.map((page) => (
-                <EditClientPage page={page} />
+                <EditClientPage page={page} key={page} />
               ))}
             </Tabs>
           </div>
