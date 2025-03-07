@@ -225,6 +225,11 @@ export const buildImages = [
   },
   {
     source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317528/AP1GczP7T-XGuK54xyJtBVFT1Ce5LTdVtxg9neIO2G1NpAQwPlHFJdkB5Q5aEuTRXZ-yBhOzYc9i86PwpkY7lifYxi_0-TlLYGybm-gMgVIYELF0h7Qau-cY_dJvBfzEGdZ__E05hKhGDZiuEmnDcEMhaebA_w2372-h1780-s-no-gm_pbzft1.jpg',
+    caption: 'Setting up the field',
+  },
+  {
+    source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741301956/AP1GczOngLetE_uS797X7fdyKxa8dwOBFofYA0kzMemNRlFI_SuAJsnySywkcOF4GnoH1Y38qa0HK5xx9mOa8d2DBr9kn-x3Ttu1uSzJ9zS0AZabN1Kk_z-w5TWYH3i9ajh3ebuKtrUtrAor9YwbpvYCRhbp_w1066-h1894-s-no-gm_rl4pre.jpg',
     caption: 'Matt Glasser figuring out how to use super glue',
   },
@@ -270,17 +275,24 @@ export const codeImages = [
     caption: 'Robert working on setting up Vuforia.',
   },
   {
-    source: 'https://cdn.jaybots.org/code/Ashish%20fix%20Anosh%20code.jpeg',
-    caption: "Ashish trying to fix Anish's code.",
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317944/AP1GczNawbG4d2WlAFtBnkZHdIFGJI3h9Mpa4fT1zlqx_1K6PJtOCnCOEGuBzCKzHVllIHVfX2v4QP9O9RR5kvJxeCBHEbZNNb4fWyXqjczd37OTnGm0TeML0coNF5ldHYJOzlCGasPwAx-v_flwhXdDX_smmA_w2372-h1786-s-no-gm_wp5eg2.jpg',
+    caption: 'Inspiring mascot inspiring others through Code',
   },
   {
-    source: 'https://cdn.jaybots.org/code/Robert%20%28online%29.jpeg',
-    caption: 'Robert (online) working on the code.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301828/AP1GczOUP7DDmrtdDoM3X0PS4PBE49RbNoOKkY8vo521xGdMRDUOybSOMfgMU128dkJdoYPdXIJ9zqzgmHQ4kaa0ALKuM6NB9ZNk1whI-wgtZD43DaAspgy1bhWzdI4fiuQI7pfU6PHwSJTIutwlHBdvSBrH_w1358-h764-s-no-gm_s7mrlj.jpg',
+    caption: 'Anika fixing website',
   },
   {
     source:
       'https://cdn.jaybots.org/code/Anish%20coding%20with%20Robert%20%28online%29.jpeg',
     caption: 'Anish coding with Robert (online).',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317543/AP1GczOPb0rT2JUMxgPCKMECZRphR0hVMN59SImsNwSiAawB6qiK1aOZj17NAQ0dkfyCmzoRk98vBQuZXBzY2P1UOiG1clHggGdoHoL6iGspATJociUY2t1XZwei4T-vjk7xRhRhE_EgUNbQhE_X6gEaeD_o_w2372-h1334-s-no-gm_sp7xnt.jpg',
+    caption: 'Working with OpenCV pipelines',
   },
 ]
 
@@ -297,58 +309,195 @@ export const outreachImages = [
   },
   {
     source:
-      'https://cdn.jaybots.org/outreach/discussing%20outreach%20events.jpeg',
-    caption: 'Mili discussing outreach events with Mr. A.',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741300647/AP1GczNXyC0KNs2sAHdVfx8GnkpIknvmIVWDOSaL4e9SGlEDl2wMW82kufs6pnJaa2269BanJ8SqCnIyzzZSknZ3IKxBnlrpGFmaJ1FtS_23Fto_EsE-VcjrRIjbHJKlwCptTeq-H-d9IotwBbaN0K0n9ZXOEg_w1358-h1022-s-no-gm_ebkfco.jpg',
+    caption: 'Teaching a Chocolate 3D printing workshop',
   },
   {
     source:
-      'https://cdn.jaybots.org/outreach/Silvia%20creating%20a%20google%20form%20for%20judging.jpg',
-    caption: 'Silvia creating a google form for judging.',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741300794/AP1GczM89qVmu9lYgzBB-8FLp2k_LB_q7ThWIL6nuJMgCZSdfzZkuCeX1QUht5-2mYXFaIAEHGuIscEeSPq0cz7ZlJWzu9KIZ0EA0J_C5AS0ewt_UibOLqU2h995SgPhlONCiW66q5zxJ0vl1WkNw5y48Vhf_w1358-h1018-s-no-gm_cll1np.jpg',
+    caption: 'Hiro getting a new haircuit',
   },
 
   {
-    source: 'https://cdn.jaybots.org/outreach/planning%20outreach%20events.jpg',
-    caption: 'Ashish and Mili planning outreach events.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301772/AP1GczM3_3oLODVANcPGx0oykn-GnTmWhBoTYDKvQuvTU5czbaPFReeyk6uUdgrbiEHovk-Mh5n23MtdzMoKQa1sNYqIDvsaH88N_Ac2AKDGMgAADXEpcF_8DtejzrIFKm-SAjkSlWUt96qHn8LFqIfdkhpS7A_w1358-h1022-s-no-gm_rtsoa2.jpg',
+    caption: 'Anthony helping students with FLL',
   },
   {
     source:
-      'https://cdn.jaybots.org/outreach/Helping%20the%20Griffin%20Robotics%20team.jpeg',
-    caption: 'Helping the Griffin Robotics team.',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741303902/AP1GczNXtTQ-J2Mlm-bY45uVUCNMARH8rTPd6Q9bj5hvkXWEa6MyV3C4TiHzCOl9fnbNbUOMP1_OOR29F6DA-cZuJVYw1aZC6QBIAC8dKBFfVMdwOte6Km7pm1-cO2X_GmPmn2uGfhQUU97gvrg-b07J0kLJ_w1358-h1810-s-no-gm_qzamgf.jpg',
+    caption: 'Anthony showing how to make an airplane.',
   },
 
   {
-    source: 'https://cdn.jaybots.org/outreach/arnavlistening1.jpg',
-    caption: 'Arnav listening in to an outreach event',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741303908/AP1GczObizrNVagysdm1b_7o_UxVU6P6Ky-gGUMzFJCco9oXRMTEEGjFw6BovJs186GuaxyucEZETBJ-sMlRyAX8plvqHo7A11UdVOaDSBRQWAxbvF--o7R70w-mnwHUgpdCzJSY18_MiODP--wh_7XgpYE-_w1358-h1810-s-no-gm_ptptmp.jpg',
+    caption: 'Joey working with Cub Scouts',
   },
   {
     source: 'https://cdn.jaybots.org/outreach/chemistry%20classes.jpeg',
     caption: 'Presenting our bot to chemistry classes',
   },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304022/AP1GczNyOrwgww-C442BGJRUA7OoPpdIuy5aI5CSKmyL8spjC35SffP3CShuJsKcx4hxJL82dL4wMwyo_Ap_zyDsvH3iPSPkaL2YM0jJdA4J4atglemni0l0SEj-yupUO1S4EwxYZJzt31XpYTvjUNqbN2wr_w836-h627-s-no-gm_ddlbvd.jpg',
+    caption: 'Nash showing the stars to younger students in the planetarium',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304036/AP1GczMuRLAlOWTjnymrTyC4cBuHYr4wPt_Y4VCYSO2TbhHxHJKM-MtlMLt1F7kX0qH0z2UzsjHs0sNuwFeUQHQ3SO04O3wjgH8JkFb50CluCH-AAGuyt85qv3bj9zpwrleTagSbVvuHH-wehoh_ZCArQqF3_w836-h627-s-no-gm_petqrs.jpg',
+    caption: 'Matt & Ant fixing 3D printer at a middle school',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304036/AP1GczMuRLAlOWTjnymrTyC4cBuHYr4wPt_Y4VCYSO2TbhHxHJKM-MtlMLt1F7kX0qH0z2UzsjHs0sNuwFeUQHQ3SO04O3wjgH8JkFb50CluCH-AAGuyt85qv3bj9zpwrleTagSbVvuHH-wehoh_ZCArQqF3_w836-h627-s-no-gm_petqrs.jpg',
+    caption: 'Matt teaching younger students how to drive a robot',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304083/AP1GczORLg9WhHII7Am5pnBfOMJWzsNaMr2rPJJUJ_hz6ZIqwJLlRKWdoYMsdG2DFSq367CMnAqrQmy3o2x7XzJ9_fr1RTaefEeM_obwWJWBBPwf0I9_n0TgHeGOSs3rWrjMxxcLssmW5TtcqywYUK4dfc9Hrw_w1358-h1022-s-no-gm_jkpn5a.jpg',
+    caption: 'Matt showing elementary students about Chocolate 3D printers.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304607/vw-teach-02_fq4bz1.png',
+    caption: 'Anika showing students how to CAD',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304763/AP1GczOXGer_IEfbW1FYTcvFzS1bw4bSC7a2a0iEV9ijTmhZcZkZRBnCFYbJ_dpTW1_OBhVZHuoTYvTWQ1ScRgZKlmyxNheJnnc95xgNMed6WBhnQeR04lBCRL6KCXhpfl8k5UwdPH5tQo79Zazk_wl1XAHNKg_w2372-h1786-s-no-gm_ykxdjs.jpg',
+    caption: 'Matt showing kids how Bambu Lab works',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317128/IMG_1858_nhodvm.jpg',
+    caption: 'Jason showing students a vieo',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317305/AP1GczNKSythdBR9rHCbeHyx5Wsb-rAPCQq01PcEoJkKKFWtA1GN1tDV39pRWqGW1Mj2j9mKNaFOp7oc4iBF-ujH1E_7ciBrXJxu5Z9dXxMlymJAGIBH51lfkkWiFHsj-pRmqlnGl_upj23m295dyecfGtqk4Q_w2372-h1786-s-no-gm_yh35vx.jpg',
+    caption: 'Matt mentoring FLL team',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317967/AP1GczNw_iR9cfN2ou-vG-W2IejtEr2418z7CaCM7-sJaNbbfOuSDiKTfHg9VQEUQ6IXAfv6B2LCGVprButWv7LUBPStte64Py32XDAMATqam0gEKvWH0QGzBgbOGuFB54Z2yV5qnY0pqvZHBGz17e92wxZecQ_w2372-h1780-s-no-gm_w6vpzo.jpg',
+    caption: 'Mascot taking part in CAD workshop',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741318020/AP1GczOtcnCdhIWoqqIjO6DHvWvawijlPCAJspcyCwH4VaYGVJ86QLkKb13kD2Y6njS0du4eOCnhy_HRuthLDoaGC1BgiG9LCX_p5M2qMJzdnw-XBDyB4kowkpN21XodRVCO_R6fMJBY2HkpZyvBrl-cbfu1Hw_w2372-h1334-s-no-gm_yyscwb.jpg',
+    caption: 'Anish, Jason, and Joe presenting at DTC',
+  },
 ]
 
 export const compImages = [
   {
-    source: 'https://cdn.jaybots.org/code/anish1.jpg',
-    caption: 'Anish & Robert coding competition day.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301493/AP1GczNYeGaHc4_cRTxbLWZp4dCc_g7InRKKnm7NvlAtDkahfDqde_kW688_LRtBq7_fxa6Slpe-R8jja48_eHlGplNTVhUAMvjUvShA8Pa-7NB7h8Bvs7Zyx7frna1MnJERXEZhSNTzpiKC2hBf0iSj-A8_sg_w1358-h1022-s-no-gm_pjyezq.jpg',
+    caption: 'Hosting first qualifier of the year',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301592/AP1GczM5HbF826lshlxOOYZHBWYIQSkBluLbPAoUm2OnfBDtysTNKowZhz4fBgt5QDvE6XQQ5KxDhBU3aAjfGKhVIagkaN0MomahX_R4-xBxxVOahXjIy30z_hsfqErnXoDF1wp7D9NnabW0SY1gR2zFrODZSw_w1358-h1022-s-no-gm_zf62gm.jpg',
+    caption: 'Scouting other teams',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301854/AP1GczP4F6yfVvtrZ-4xek_oXLBNTXqh3juanxUFrgGFeIawdy2PRHlbjmUMlKlo4oKHAWAICnDp-wDSVeflq5ln212XPVcrDo4hAAeqm4W1jHLyif7ArvYfHtc0Mzm8XZ7vI8l6C0_kflvES2q9bbgqhVpG_w1066-h1894-s-no-gm_gyzwvd.jpg',
+    caption: 'Helping another team 3D print part',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301609/AP1GczNxPPvtfw7Hr-wz4529hcwogT8uDL7JMa9BY_M36IuuDI_wrjtL79_fVgrqTIqos_UiBRD7_uJQGBQ8Ut0zAEIxgc4eOEjdIJj_7m6osiuDg2obt6WZf571UnxYEJfEI1HLEm69-KKbSR3NAMgLqR9_KA_w1358-h1022-s-no-gm_mtso3s.jpg',
+    caption: 'Last minute fix-ups',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301664/AP1GczOynpHxezA-1OhBizRNkqcrz-sqORF3Y0pXMb1pw0-vv1WZ6Wto1LeTYkgCFi_62-gXCvXQKmn697_HfGBhRIfA_2VX3ZRNdqmIYQMp5bt8qzpybzfa1NajUr4GGRn_ttvGmVkxRk4GuFEZ07Z-LcXR_w1358-h1018-s-no-gm_iskhpg.jpg',
+    caption: '1st Place Control @Albany Qualifier',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301864/AP1GczOE_ZH5F4-JgXa5f8c_rKXWu6HKrVYumKact5zZRsLRv08oE7biwtDtLCwMQ4DFRhhBpBNFUosHg4LZZUhX7-a3f6P9_38ecYLO4YMFhzDMTag-OKU2W6getH--bOOkggfFkLuafM_75n7XCj9PHz81_w1358-h764-s-no-gm_ugzdl4.jpg',
+    caption: 'Nash falling asleep while working',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301801/AP1GczPR42PJGNUSDKAxlXNr8XjIeyDwRRgPN_Rxif5XwqI4slK_IkRUeGDyMSA3HtmkSlVLhhZZa5lcPbPtH4QtDxed1uDD3CM86r4S1NClc6BwvpK0A8TFvQ7tk3PIQG177sl4_e1Y1opzRfOiTrqkjmE5_w1358-h764-s-no-gm_cbkvyn.jpg',
+    caption: "Matt fixing another team's robot",
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301864/AP1GczOE_ZH5F4-JgXa5f8c_rKXWu6HKrVYumKact5zZRsLRv08oE7biwtDtLCwMQ4DFRhhBpBNFUosHg4LZZUhX7-a3f6P9_38ecYLO4YMFhzDMTag-OKU2W6getH--bOOkggfFkLuafM_75n7XCj9PHz81_w1358-h764-s-no-gm_ugzdl4.jpg',
+    caption: 'Nash 3D penning a 3D printed part',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301889/AP1GczOx8f-r3YGrMAFZAeD_BRl2KV5obZBeoKTER0HokzKWq2zFjyrW0l0w04ONOm-63CKIQHJR-FqOv2i2D8MKArRdV-Ub0yxpIhLB2ifaEUqdNjoc_H0-TgrrAcBSWW-i3UAHIRG_n1GQX6LHSj9bYqzdrw_w1358-h1810-s-no-gm_g5lcm4.jpg',
+    caption: 'Hiro doing last minute changes',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301904/AP1GczNt7etKm7aaQigVkzDpuRyJl0V8y-8U7ddN7FrvS9PaPQaUBnpNi8BFgOYI8_yM0m3zQRBkLjGxVio4OltO3rmmWQ0E6RgdVabzh6HgojV_lwbNWpcSIfcUFPEjNrc20g-hkEHbpmqKglpOb63-Q28z-A_w1358-h1018-s-no-gm_lwegd8.jpg',
+    caption: 'Jaybots at the Albany Qualifier',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317401/AP1GczP2tuipfIbVdynO8wXf7p7qYhYevl0Vs9p9oTffc6PN-RR44wa-iE-czAgVhWUWCx6cJbKtvNvoHH7K7LdGeEvAZqXnwpqaV0z0pgclEtGiXagy_GEIHwo1miN167PMLjGlrhyUlxHMMQn7XzfU_Uer_w2372-h1780-s-no-gm_tnfzic.jpg',
+    caption: 'Hosting the first qualifier of the year',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317577/AP1GczMBUTe9Brt_Nt_Xbcdix1xk18My7taEFfTp1R0JtHjZxQQKz6X_62puYZVextRIEzztVJ_38-_x4Sw8-_iAz6jwWsjLiayEVr78D4us1fw-E5NYJSYVOjhDwYRXHec646ImXWFZGzrjMzdHGXHGY7ri_w1426-h1894-s-no-gm_z1zgr6.jpg',
+    caption: 'Matt Glasser held captive by the robot',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317597/AP1GczNXoa0Ws34dX5c8IAc1OIUo4W1dfNDZTe8SrKYAgL_H8emZbzNOPxZtluwinueEcMSMT8sxdtgd3RMTyDWvwop-vXL7sGwXPEjnHf0I9P0FTEEOspdeOyuLHB-ocjib6btK6kpAhg7CJCmZNtIz6Gl6dw_w2372-h1786-s-no-gm_nhr4ly.jpg',
+    caption: 'Locking in for the match',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317677/AP1GczMKHH6RY1F9aEW88S9NZM-xztyk2KjevPAP3o7BB43shXYTFeGWloz9vvRsE7PVCWV0dn9Y055GnoivPWSXWltQzS5l0_ZdceiJFoHxXZ5qkSWy7eQx7SebmhtpIBZbhio7eBvq73M7aH7xzC2-7c0r_w2372-h1786-s-no-gm_bmnyav.jpg',
+    caption: 'Heading into Judging',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317705/AP1GczMrHlnna9NdfUOLOeEoI56E5QEsGOLQhS2cPpcDtjd9ENxzaKqa8_Qfz22tN4gRTkWJO3MN05mxatfEa_E0RMolDPWBPKIxOZ7yCoJ_CD-69XfBRmCzlWgLZub4Sn8R0M7orDkom0RmdjSONk2QBEuFqQ_w1426-h1894-s-no-gm_nmtvih.jpg',
+    caption: 'Mascot checking instagram view',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741318136/AP1GczP4EJ1DFPh2mpSxu5vod0aX4s7i3yCrP9AOpUv7hmZpmXXYaTCFQybQ2s2y4U2lbgC186TjMoxabCa9VWo3jytXYgTmcACC9FbWYpkpFh8RwaOaeXLOzct6DYaVD6inIqIn4fE64meC3HfgNC9IaOEqUg_w2372-h1786-s-no-gm_goz0c4.jpg',
+    caption: 'Rethinking life decisions',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317739/AP1GczP4F6yfVvtrZ-4xek_oXLBNTXqh3juanxUFrgGFeIawdy2PRHlbjmUMlKlo4oKHAWAICnDp-wDSVeflq5ln212XPVcrDo4hAAeqm4W1jHLyif7ArvYfHtc0Mzm8XZ7vI8l6C0_kflvES2q9bbgqhVpG_w1066-h1894-s-no-gm_gek02t.jpg',
+    caption: 'Anika printing out a part for another teacher.',
   },
 ]
 
 export const miscImages = [
   {
-    source: 'https://cdn.jaybots.org/overview/silvia1.jpeg',
-    caption: 'Silvia at our first inperson meeting.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741297956/AP1GczO8WjqEKa1-rAP83CQMOvr3ELCZokmKPuxozNhxXkd_gIkXsKVwa9yYYwv_JNlnJHxOhdEiZuULr_ETmnYjrsLbOsn2Zj1BJQ6aNx2bNF7SfaGKdBqmCfIEOQJmvNzFyjfaEhtcQ3WtCAr6XY2NzAc6_w1358-h764-s-no-gm_ug7fkw.jpg',
+    caption: 'Joe showcasing the robot.',
   },
   {
-    source: 'https://cdn.jaybots.org/overview/dictator1.jpeg',
-    caption: 'Dictator Darren',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741320062/hailey_fcmpqd.jpg',
+    caption: 'Hailey Kim relaxing after a long day of work.',
   },
   {
-    source: 'https://cdn.jaybots.org/overview/oderna1.jpeg',
-    caption: 'Cleaning up after the Freshman Orientation.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741320057/hiroooo_ljvefc.jpg',
+    caption: 'Hiro showing off his math skills.',
   },
   {
-    source: 'https://cdn.jaybots.org/overview/unicorn%20darren.jpeg',
-    caption: 'Unicorn Darren',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741320053/backhome_izrf3d.jpg',
+    caption: 'Locking in for the next competition.',
   },
   {
     source:
@@ -357,27 +506,56 @@ export const miscImages = [
   },
 
   {
-    source: 'https://cdn.jaybots.org/overview/Arnav%20%26%20Darren.jpeg',
-    caption: 'Arnav and Darren enjoying dinner.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741319749/hiro-french_fires_chqydf.webp',
+    caption: 'Hiro enjoying his french fries.',
   },
 
   {
-    source: 'https://cdn.jaybots.org/overview/Lego%20REPLAY%20Donation.gif',
-    caption: 'Lego REPLAY Donation',
-  },
-  {
-    source: 'https://cdn.jaybots.org/overview/GoofingOff1.jpg',
-    caption: 'Doing chem homework late at night.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741318427/AP1GczNXR3v3SqPfgUOs8_puIYtMARX7t6ZrJ8efH47YeHEZFQRInTvuI8RTtNZAGEiwFl7Q31WzK24HoC35I1gFAxASRlptxFongFo2ClWVNp7-nlCH2ba28Vu-N9YFbK7nFC6izsxORGc4qM6j0yHkji95_w1420-h1894-s-no-gm_hldaby.jpg',
+    caption: 'Anthony sawing custom chassis.',
   },
   {
     source:
-      'https://cdn.jaybots.org/overview/anish%20and%20silvia%20working.jpeg',
-    caption: 'Anish and Silvia working.',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741318173/AP1GczMt-nESYUjHrslVwaIs2S8ncJ8jo-i6uL5pg2oiZA32rWxvrbrPGlKP5cVq997Xg5Aphs0UIPNHknrtwwQNYLJx432YARXfEViK1BwqPySkPyyHN8_96PCJatnKJApIPjcTqWy4kE66QRUn0DEj3GNE_w2372-h1786-s-no-gm_zgn19h.jpg',
+    caption: 'Working on assembling chocolate 3D pritner.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741318112/AP1GczPt7gzrpl1QbJhLitimp7TXQcUDEJRy5ryfBCpUwU7OovOtb3HLAJKIoUWMiFWN1JGqBAkMk-4N8QGjEk715hh5nHyrcD1iZupk1zGwkAjIpN3xzBgPSSRZoGw-hIbuU8ete0dQUMc5DmaK_J5P9Bg0_w1420-h1894-s-no-gm_yf0kns.jpg',
+    caption: 'Hiro taking advantage of the weather',
   },
 
   {
-    source: 'https://cdn.jaybots.org/overview/ordering%20parts.jpeg',
-    caption: 'Matt and Mr. A ordering parts.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317639/AP1GczO7K94qWQ48obm4HgWVySTnB6UkEVdSwpiD32WwPIRojGpAGLISSNO0U24Ol8Mx1WPdSvNWzZke5ltL69qhEZyXmTXTk4JC3_DUr7z-iTPM-3_5Y0BpdgD_2gRp4DJbrBn6qOy2e00KyxprCYsEkQ1B_w2372-h1334-s-no-gm_trqptu.jpg',
+    caption: 'Nash showing off mega new computer.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317649/AP1GczMykzZr0OA5CUXq2MZqsBuB5h5libM_ZPxhGLfxX6Y8lsT1-0Sx5n0nI36tJTrj15D-mOavTCrowICd5dxCfaTu6LIsVUGfQOeebWd6sZvT-P-yTtT7KN0Xn8xiPHaWieapSDT_eAmXEytKnlO2seFp_w2372-h1780-s-no-gm_dvg4tw.jpg',
+    caption: 'Jaybots & Phoenix united once again.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317228/AP1GczM89qVmu9lYgzBB-8FLp2k_LB_q7ThWIL6nuJMgCZSdfzZkuCeX1QUht5-2mYXFaIAEHGuIscEeSPq0cz7ZlJWzu9KIZ0EA0J_C5AS0ewt_UibOLqU2h995SgPhlONCiW66q5zxJ0vl1WkNw5y48Vhf_w2372-h1780-s-no-gm_facxkh.jpg',
+    caption: 'Hiro with his new haircut.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317152/AP1GczOEYUpwR_nUUGZbOQyApzgZKQwLsb4G4vn38fO6WLBTIIkqo-S2_86uVSR-MCiJWR4BOqOKs_JonsfIYvs4Hhxegc0gafH6jsK-vvPK1lNjIe6i4gXsTTD1t7Fj_-C5Gy_gupN9AnhKWnkcYVjEjnW7_w2372-h1786-s-no-gm_gggpk0.jpg',
+    caption: 'Hiro working on assembling chocolate 3D printer.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304834/AP1GczPkSvmkeEUL2QWVFZt5YhFIEka8SEg3Z2RrGmhhFJD64EETQI69AoYk1ytYC7m6n1UMC7EMNyzj30FVQhGnOtgsUwdeHF8p4ecJ6rwjWT0Uog3n7WMT9M1yLd7d5RWzlkGXOLiQ3ocW0Ymdnt3UmWy7_w2372-h1334-s-no-gm_pw4lcq.jpg',
+    caption: 'Joe spreading love.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304834/AP1GczPkSvmkeEUL2QWVFZt5YhFIEka8SEg3Z2RrGmhhFJD64EETQI69AoYk1ytYC7m6n1UMC7EMNyzj30FVQhGnOtgsUwdeHF8p4ecJ6rwjWT0Uog3n7WMT9M1yLd7d5RWzlkGXOLiQ3ocW0Ymdnt3UmWy7_w2372-h1334-s-no-gm_pw4lcq.jpg',
+    caption: 'Joe spreading love.',
   },
 ]
 
