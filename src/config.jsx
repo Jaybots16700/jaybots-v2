@@ -195,39 +195,43 @@ export const alumni = [
 
 export const buildImages = [
   {
-    source: 'https://cdn.jaybots.org/build/field1.jpg',
-    caption: 'Anish & Silvia building the field.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741300785/AP1GczORCh-C6bj9A2Pa-JF8ynq10qaZoABbW5zDoQj6hRi18hB9MAcErB_GbV0JkKMTaFUzJRkmMnOM-tvhbK5BIpgwe9Nwk2ZM1ks7S7mN6X_hWTGi2b_BufE8JB66Zg85tzcGCF2zS45YTwfgrNVxU-9l_w1358-h1018-s-no-gm_rmku49.jpg',
+    caption: 'Robot in 3 Days',
   },
   {
-    source: 'https://cdn.jaybots.org/build/matt%20-%20chassis.jpeg',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741317903/AP1GczP5jiFDD9aGtqvIzc5JJ6Cf6-EmQsi34kMk6tvSLX_vEhCZTNZi2EBvPJu0-ohCuW3hZZrGJ399d78mVFoJHp3deFCoszENSUBlACYtHu1Ro_hSfGtDaYMKaXlysQtmk7v-sYPKVzc20Zu16WOycJRH_w1066-h1894-s-no-gm_lajvuj.jpg',
     caption: 'Matt working on the chassis.',
   },
   {
     source: 'https://cdn.jaybots.org/build/bracket1.jpg',
-    caption: 'Matt assembling the 3d printed brackets.',
+    caption: 'Joey building the Robots base.',
   },
   {
     source:
-      'https://cdn.jaybots.org/build/anaya%20making%20gripper%20prongs.jpeg',
-    caption: 'Anaya making prongs for the gripper.',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304851/AP1GczO-jFeEiPm-7pxqxxpCrQFEsxOgAtLOMT5cFmXgyu6XBWfWS_dCu5Xfif4iTmCDsMVRLd-Qf2TTmBbtlb-MNyTw0BulOz-4itxbyfvxdiWAosinslu8WZT1DLzXL7viGTGsAei36ZIh7Cf18Xl89NVw_w2372-h1780-s-no-gm_lvodb2.jpg',
+    caption: 'Matt & Nash sanding Custom Chassis',
   },
   {
     source:
-      'https://cdn.jaybots.org/build/Mili%20organizing%20the%20tool%20chest.jpeg',
-    caption: 'Mili organizing the tool chest.',
-  },
-  {
-    source: 'https://cdn.jaybots.org/build/extrusioncut1.jpg',
-    caption: 'Paul cutting extrusions.',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741303922/AP1GczOTXwKEhqqnvTBGWdtF59je9-Riw25RY2Uy43d0eFZK_kwyAWGJkd2a4D-tRCHyPirSeZlcajSNCWEV9kL_ujTi8Kp4M5LFL8Kr_3rpUPMvxBrUrBcKqqDmlwl7MYHDb1wkk3gLYMQ4J1TD1qywuZdA_w1358-h1804-s-no-gm_uam2pb.jpg',
+    caption: 'Joey changing screw on CNC',
   },
   {
     source:
-      'https://cdn.jaybots.org/build/Anaya%20cutting%20launcher%20screw.jpeg',
-    caption: 'Anaya cutting a screw for the launcher.',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741303950/AP1GczPhMZBNeevsnVpMylDizDR4vqVZ564LSeruHLjW_eItgPagmHbw5_-FtAjDpc4MLbp_s_smw48ttW3K0-vequy8d-fBppdy32xMS67ddf0Ul45y_HEArV5JdmQ2AF7vvDRXg-Be85edS26OdSZUUia4_w1358-h764-s-no-gm_vkksan.jpg',
+    caption: 'Nash blowing off the dust from the chassis.',
   },
   {
-    source: 'https://cdn.jaybots.org/build/gripper1.jpg',
-    caption: 'Arnav working on the arm for the gripper.',
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301956/AP1GczOngLetE_uS797X7fdyKxa8dwOBFofYA0kzMemNRlFI_SuAJsnySywkcOF4GnoH1Y38qa0HK5xx9mOa8d2DBr9kn-x3Ttu1uSzJ9zS0AZabN1Kk_z-w5TWYH3i9ajh3ebuKtrUtrAor9YwbpvYCRhbp_w1066-h1894-s-no-gm_rl4pre.jpg',
+    caption: 'Matt Glasser figuring out how to use super glue',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301747/AP1GczPkH8mTzJSd5uQGZgWUA7vxqGu5yvxUiKCAA3rpsyRarIfBLgGenPPdqCYmCRC-dctNjqAXyrU79JpG1UznjGihsPvkegRcCaw-6aVBm8soeAv6Yo9PD7bjj8zM8Hfk7TRkb9tDV4cqXEWv9fE7pVdM_w1358-h1804-s-no-gm_ww1ill.jpg',
+    caption: 'Joey helping phoenix with their robot.',
   },
   {
     source: 'https://cdn.jaybots.org/build/ashish%27s%20launcher%20idea.jpeg',
