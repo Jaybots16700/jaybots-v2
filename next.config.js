@@ -174,6 +174,11 @@ module.exports = {
         destination: 'https://docs.google.com/forms/d/e/1FAIpQLSealF8yrFbl9zushCGLDbdX9IznqXDnRQbV72e0BaEMAKgNRg/viewform?',
         permanent: false,
       },
+      {
+        source: '/practice',
+        destination: 'https://youtube.com/shorts/U5X9nA4jx2Q?feature=share',
+        permanent: false,
+      },
     ]
   },
 }
