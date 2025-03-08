@@ -19,6 +19,8 @@ export default function Outreach() {
   const [outreach, setOutreach] = useState([])
 
   const catergories = [
+    'Year 6 (2024-2025)',
+    'Year 5 (2023-2024)',
     'Year 4 (2022-2023)',
     'Year 3 (2021-2022)',
     'Year 2 (2020-2021)',
