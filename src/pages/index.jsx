@@ -219,7 +219,7 @@ export default function Home() {
 
             <div
               id="sponsors"
-              className="text:base relative mt-8 w-full space-y-4 px-4 text-center font-light sm:text-xl"
+              className="text:base relative mt-16 w-full space-y-4 px-4 text-center font-light sm:text-xl"
             >
               <h2 className="text-4xl font-bold text-gray-200">
                 Featured Sponsors
