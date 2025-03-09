@@ -108,7 +108,8 @@ module.exports = {
       },
       {
         source: '/chocolate',
-        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSd7pikwAvxheTNUQPVHlbxPmSeLhZQ2tcXXFuD10gx_ldz9hg/viewform?usp=dialog',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSd7pikwAvxheTNUQPVHlbxPmSeLhZQ2tcXXFuD10gx_ldz9hg/viewform?usp=dialog',
         permanent: true,
       },
       {
@@ -166,12 +167,14 @@ module.exports = {
       },
       {
         source: '/valentines',
-        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSdZMIad2OoW1l6yivsEPMrp1pvzasVhzguFHw1Qh4-sR8kpYw/viewform?usp=dialog',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSdZMIad2OoW1l6yivsEPMrp1pvzasVhzguFHw1Qh4-sR8kpYw/viewform?usp=dialog',
         permanent: false,
       },
       {
         source: '/chocolate-workshop',
-        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSealF8yrFbl9zushCGLDbdX9IznqXDnRQbV72e0BaEMAKgNRg/viewform?',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSealF8yrFbl9zushCGLDbdX9IznqXDnRQbV72e0BaEMAKgNRg/viewform?',
         permanent: false,
       },
       {

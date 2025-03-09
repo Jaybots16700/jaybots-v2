@@ -178,7 +178,7 @@ function CompStats({ comp }) {
             {comp.type == 'Qualifier' && (
               <p>Advanced to Regional Competition</p>
             )}
-            {comp.type == 'Regional' && <p>Advanced to World Competition</p>}
+            {comp.type == 'Regionals' && <p>Advanced to World Competition</p>}
           </div>
         )}
         {comp.awards.first && (

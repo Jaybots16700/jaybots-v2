@@ -598,7 +598,17 @@ export const games = [
           {
             type: 'Regionals',
             name: 'Utica Regionals',
-            date: 'March 8, 2025',
+            date: 'March 8-9, 2025',
+            awards: {
+              advanced: true,
+              finalistAlliance: 'Partner',
+              third: ['Inspire'],
+            },
+          },
+          {
+            type: 'Worlds',
+            name: 'FTC World Championship',
+            date: 'April 16-19, 2025',
             awards: {},
             upcoming: true,
           },

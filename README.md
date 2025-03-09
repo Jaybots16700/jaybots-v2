@@ -56,8 +56,8 @@ Within each `comps` array are objects for each competition. They should have the
 - `type: string` the type, or level of competition this could be:
   - `'Scrimmage'`
   - `'Qualifier'`
-  - `'Regional'`
-  - `'World'`
+  - `'Regionals'`
+  - `'Worlds'`
 - `date: string` the date, or date range of the competition. Should be expressed as
   - FULL_MONTH_NAME DAY, YEAR for a single day
   - FULL_MONTH_NAME DAY - DAY, YEAR for a range of days within a month
