@@ -649,7 +649,7 @@ export const games = [
     allComps: [
       {
         team: 'Jaybots',
-        images: 'https://file.coffee/u/jm_Bzu18hIjCIHJYHHxiU.png',
+        images: '',
         comps: [
           {
             type: 'Qualifier',

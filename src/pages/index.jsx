@@ -81,9 +81,11 @@ export default function Home() {
               <h2 className="text-5xl font-bold text-gray-200 xl:text-6xl">
                 Who are we?
               </h2>
-              <div className="flex w-full justify-center">
+              <div className="mx-auto w-full max-w-3xl space-y-2">
                 <p className="max-w-4xl leading-8">
-                  We are the Jaybots - This is our sixth year competing in{' '}
+                  We are the
+                  <span className="font-bold text-slate-300"> Jaybots </span> -
+                  This is our sixth year competing in{' '}
                   <Link
                     href="https://www.firstinspires.org/robotics/ftc/"
                     className={linkStyle}
@@ -91,9 +93,15 @@ export default function Home() {
                   >
                     FTC
                   </Link>
-                  . After making it to the regional competition four years in a
-                  row, we are aiming to make it even further next year. Join us
-                  on our journey!
+                  .
+                </p>
+                <p>
+                  After making it to the regional competition five years in a
+                  row, we have qualified for the{' '}
+                  <span className="font-bold text-slate-300">
+                    World Championships
+                  </span>{' '}
+                  in Houston this year!
                 </p>
               </div>
             </div>

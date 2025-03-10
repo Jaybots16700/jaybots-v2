@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Colors from './Colors'
 import { BackgroundGradient } from './background-gradient'
-
+import { CldImage } from 'next-cloudinary'
 const benefits = [
   'Thrive in Competition',
   'Develop Cutting-edge Skills',
@@ -20,13 +20,14 @@ export function JoinToday() {
         <div className="mx-auto max-w-7xl sm:px-6 xl:px-8">
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/10 px-6 py-16 ring-1 ring-white/20 sm:rounded-3xl sm:p-8 xl:mx-0 xl:max-w-none xl:flex-row xl:items-center xl:gap-x-20 xl:px-20 xl:py-20">
             <BackgroundGradient className="group h-96 w-full flex-none overflow-hidden rounded-3xl object-cover shadow-xl xl:aspect-square xl:h-auto xl:max-w-sm">
-              <Image
+              <CldImage
                 className="h-full w-full object-cover group-hover:hidden"
-                src="/images/Team.jpg"
+                src="team"
                 alt="team photo"
                 width={500}
                 height={384}
               />
+
               <Image
                 className="h-full w-full object-cover"
                 src="/images/O.jpg"

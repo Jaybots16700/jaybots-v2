@@ -51,7 +51,6 @@ module.exports = {
       { protocol: 'https', hostname: 'jaybotsboosters.org', port: '' },
       { protocol: 'https', hostname: 'cdn.jaybots.org', port: '' },
       { protocol: 'https', hostname: 'jaybots.org', port: '' },
-      { protocol: 'https', hostname: 'file.coffee', port: '' },
       { protocol: 'http', hostname: 'via.placeholder.com', port: '' },
       { protocol: 'https', hostname: 'res.cloudinary.com', port: '' },
     ],
