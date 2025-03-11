@@ -211,7 +211,7 @@ export const buildImages = [
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741304851/AP1GczO-jFeEiPm-7pxqxxpCrQFEsxOgAtLOMT5cFmXgyu6XBWfWS_dCu5Xfif4iTmCDsMVRLd-Qf2TTmBbtlb-MNyTw0BulOz-4itxbyfvxdiWAosinslu8WZT1DLzXL7viGTGsAei36ZIh7Cf18Xl89NVw_w2372-h1780-s-no-gm_lvodb2.jpg',
-    caption: 'Matt & Nash sanding Custom Chassis',
+    caption: 'Matt & Nash using drill press for Custom Chassis',
   },
   {
     source:
@@ -277,7 +277,7 @@ export const codeImages = [
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741317944/AP1GczNawbG4d2WlAFtBnkZHdIFGJI3h9Mpa4fT1zlqx_1K6PJtOCnCOEGuBzCKzHVllIHVfX2v4QP9O9RR5kvJxeCBHEbZNNb4fWyXqjczd37OTnGm0TeML0coNF5ldHYJOzlCGasPwAx-v_flwhXdDX_smmA_w2372-h1786-s-no-gm_wp5eg2.jpg',
-    caption: 'Inspiring mascot inspiring others through Code',
+    caption: 'Jay inspiring others through Code',
   },
   {
     source:
@@ -381,7 +381,7 @@ export const outreachImages = [
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741317967/AP1GczNw_iR9cfN2ou-vG-W2IejtEr2418z7CaCM7-sJaNbbfOuSDiKTfHg9VQEUQ6IXAfv6B2LCGVprButWv7LUBPStte64Py32XDAMATqam0gEKvWH0QGzBgbOGuFB54Z2yV5qnY0pqvZHBGz17e92wxZecQ_w2372-h1780-s-no-gm_w6vpzo.jpg',
-    caption: 'Mascot taking part in CAD workshop',
+    caption: 'Jay taking part in CAD workshop',
   },
   {
     source:
@@ -393,8 +393,29 @@ export const outreachImages = [
 export const compImages = [
   {
     source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301864/AP1GczOE_ZH5F4-JgXa5f8c_rKXWu6HKrVYumKact5zZRsLRv08oE7biwtDtLCwMQ4DFRhhBpBNFUosHg4LZZUhX7-a3f6P9_38ecYLO4YMFhzDMTag-OKU2W6getH--bOOkggfFkLuafM_75n7XCj9PHz81_w1358-h764-s-no-gm_ugzdl4.jpg',
+    caption: 'Nash 3D penning a 3D printed part',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301801/AP1GczPR42PJGNUSDKAxlXNr8XjIeyDwRRgPN_Rxif5XwqI4slK_IkRUeGDyMSA3HtmkSlVLhhZZa5lcPbPtH4QtDxed1uDD3CM86r4S1NClc6BwvpK0A8TFvQ7tk3PIQG177sl4_e1Y1opzRfOiTrqkjmE5_w1358-h764-s-no-gm_cbkvyn.jpg',
+    caption: "Matt fixing another team's robot",
+  },
+
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741653148/AP1GczNQ22Np5zU-LCcjlZbGXP7ZuWYtfkqJ0QyBx6isMhJANU-ztNKqLqyAY2n1PWLU12JvAEsdtHJH70sYNdnIgSO-3w3rUajcwG1DxyOHINmT84x2QhHc_p_djSi9F1fN0HyzAbWc-2Jypv7AakHESrd8_w1542-h2056-s-no-gm_ck4udx.jpg',
+    caption: 'Waiting to see results of Championships',
+  },
+  {
+    source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741301493/AP1GczNYeGaHc4_cRTxbLWZp4dCc_g7InRKKnm7NvlAtDkahfDqde_kW688_LRtBq7_fxa6Slpe-R8jja48_eHlGplNTVhUAMvjUvShA8Pa-7NB7h8Bvs7Zyx7frna1MnJERXEZhSNTzpiKC2hBf0iSj-A8_sg_w1358-h1022-s-no-gm_pjyezq.jpg',
     caption: 'Hosting first qualifier of the year',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741654418/A8FA0F5D-4B5A-432E-A0D2-F0F8907AEA14_1_201_a_rh7jie.jpg',
+    caption: 'Finalist Alliance Partner, 3rd Place Inspire at Regionals',
   },
   {
     source:
@@ -403,13 +424,28 @@ export const compImages = [
   },
   {
     source:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741301854/AP1GczP4F6yfVvtrZ-4xek_oXLBNTXqh3juanxUFrgGFeIawdy2PRHlbjmUMlKlo4oKHAWAICnDp-wDSVeflq5ln212XPVcrDo4hAAeqm4W1jHLyif7ArvYfHtc0Mzm8XZ7vI8l6C0_kflvES2q9bbgqhVpG_w1066-h1894-s-no-gm_gyzwvd.jpg',
-    caption: 'Helping another team 3D print part',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741654046/AP1GczP-DhyEpNR92XUyEzFJ8j1Xsj2hbjq4llgjox3XqaKl0SZ-nl1ub_q89SRGJfzzmZU7nx2VO50UAH3ELcrtM83PqRGv7cGgq2D6_VllsaoyYjpddVD32UoCf7XrhdbCMjInNnIDCuLIRTY69_EaYF0K5w_w1172-h1562-s-no-gm_vufilg.jpg',
+    caption: 'Jay --> locked in',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741654807/AP1GczO7-Iz5gQjK4sNCnqQ5Y1z35Fncbx1acqYgN6w-VrC2_NUKZalqPU4pJnPa9gMRqkDkY1TbiU1IgtuK89RRqJfUiv87QSaqxXmRQJ0aYOQgzL3yWSuROLpVYUlrxw_MY1LzZzvupExte-jriyeiKGJ7_w1548-h2056-s-no-gm_ya7l5a.jpg',
+    caption: "We're heading to Worlds!",
   },
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741301609/AP1GczNxPPvtfw7Hr-wz4529hcwogT8uDL7JMa9BY_M36IuuDI_wrjtL79_fVgrqTIqos_UiBRD7_uJQGBQ8Ut0zAEIxgc4eOEjdIJj_7m6osiuDg2obt6WZf571UnxYEJfEI1HLEm69-KKbSR3NAMgLqR9_KA_w1358-h1022-s-no-gm_mtso3s.jpg',
     caption: 'Last minute fix-ups',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741654940/AP1GczOGE0e6csg7K1lSL3YxGsHhxSWuVmitUU7dFeGAyz6F8DmtzowxXNmlbqIDeayKZyRccqinHShLPXCAYtjOygiFwZs65_xZKWiSNf9mdASsa_ZEuGiHIoIxtnwsDEjFJ-5RpKzG4-__jf6aerVx2HH2_w1548-h2056-s-no-gm_nrk8bx.jpg',
+    caption: 'Next Stop: Worlds',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741655330/AP1GczNFIGTJlkogD4Z3XVP67xj-56VIG-GSJ7bOlr2PAR6JNCju1Jdsq3ZIjFGHIO1yKU7zNKBzLhKdpXSLl7g9EshUJo3VgH3JUT3NpKUNFEJNpa6uz843B1Ss6sXF9syI_AyvLOir5Vgjjv2bS0e9_bxu_w1952-h1464-s-no-gm_tvwjck.jpg',
+    caption: 'Cheering Squad',
   },
   {
     source:
@@ -421,16 +457,7 @@ export const compImages = [
       'https://res.cloudinary.com/jaybots/image/upload/v1741301864/AP1GczOE_ZH5F4-JgXa5f8c_rKXWu6HKrVYumKact5zZRsLRv08oE7biwtDtLCwMQ4DFRhhBpBNFUosHg4LZZUhX7-a3f6P9_38ecYLO4YMFhzDMTag-OKU2W6getH--bOOkggfFkLuafM_75n7XCj9PHz81_w1358-h764-s-no-gm_ugzdl4.jpg',
     caption: 'Nash falling asleep while working',
   },
-  {
-    source:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741301801/AP1GczPR42PJGNUSDKAxlXNr8XjIeyDwRRgPN_Rxif5XwqI4slK_IkRUeGDyMSA3HtmkSlVLhhZZa5lcPbPtH4QtDxed1uDD3CM86r4S1NClc6BwvpK0A8TFvQ7tk3PIQG177sl4_e1Y1opzRfOiTrqkjmE5_w1358-h764-s-no-gm_cbkvyn.jpg',
-    caption: "Matt fixing another team's robot",
-  },
-  {
-    source:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741301864/AP1GczOE_ZH5F4-JgXa5f8c_rKXWu6HKrVYumKact5zZRsLRv08oE7biwtDtLCwMQ4DFRhhBpBNFUosHg4LZZUhX7-a3f6P9_38ecYLO4YMFhzDMTag-OKU2W6getH--bOOkggfFkLuafM_75n7XCj9PHz81_w1358-h764-s-no-gm_ugzdl4.jpg',
-    caption: 'Nash 3D penning a 3D printed part',
-  },
+
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741301889/AP1GczOx8f-r3YGrMAFZAeD_BRl2KV5obZBeoKTER0HokzKWq2zFjyrW0l0w04ONOm-63CKIQHJR-FqOv2i2D8MKArRdV-Ub0yxpIhLB2ifaEUqdNjoc_H0-TgrrAcBSWW-i3UAHIRG_n1GQX6LHSj9bYqzdrw_w1358-h1810-s-no-gm_g5lcm4.jpg',
@@ -439,7 +466,7 @@ export const compImages = [
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741301904/AP1GczNt7etKm7aaQigVkzDpuRyJl0V8y-8U7ddN7FrvS9PaPQaUBnpNi8BFgOYI8_yM0m3zQRBkLjGxVio4OltO3rmmWQ0E6RgdVabzh6HgojV_lwbNWpcSIfcUFPEjNrc20g-hkEHbpmqKglpOb63-Q28z-A_w1358-h1018-s-no-gm_lwegd8.jpg',
-    caption: 'Jaybots at the Albany Qualifier',
+    caption: 'Jaybots at Broadalbin-Perth Qualifier',
   },
   {
     source:
@@ -454,7 +481,7 @@ export const compImages = [
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741317597/AP1GczNXoa0Ws34dX5c8IAc1OIUo4W1dfNDZTe8SrKYAgL_H8emZbzNOPxZtluwinueEcMSMT8sxdtgd3RMTyDWvwop-vXL7sGwXPEjnHf0I9P0FTEEOspdeOyuLHB-ocjib6btK6kpAhg7CJCmZNtIz6Gl6dw_w2372-h1786-s-no-gm_nhr4ly.jpg',
-    caption: 'Locking in for the match',
+    caption: 'Locking in for Qualifier',
   },
   {
     source:
@@ -464,7 +491,7 @@ export const compImages = [
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741317705/AP1GczMrHlnna9NdfUOLOeEoI56E5QEsGOLQhS2cPpcDtjd9ENxzaKqa8_Qfz22tN4gRTkWJO3MN05mxatfEa_E0RMolDPWBPKIxOZ7yCoJ_CD-69XfBRmCzlWgLZub4Sn8R0M7orDkom0RmdjSONk2QBEuFqQ_w1426-h1894-s-no-gm_nmtvih.jpg',
-    caption: 'Mascot checking instagram view',
+    caption: 'Jay checking instagram views',
   },
   {
     source:
@@ -473,7 +500,7 @@ export const compImages = [
   },
   {
     source:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741317739/AP1GczP4F6yfVvtrZ-4xek_oXLBNTXqh3juanxUFrgGFeIawdy2PRHlbjmUMlKlo4oKHAWAICnDp-wDSVeflq5ln212XPVcrDo4hAAeqm4W1jHLyif7ArvYfHtc0Mzm8XZ7vI8l6C0_kflvES2q9bbgqhVpG_w1066-h1894-s-no-gm_gek02t.jpg',
+      'https://res.cloudinary.com/jaybots/image/upload/v1741655637/30B51F49-F20F-4133-A3E0-1FE6562A34C5_1_201_a_l7v64i.jpg',
     caption: 'Anika printing out a part for another teacher.',
   },
 ]
@@ -1128,8 +1155,9 @@ export const members = [
     title: 'Outreach Manager',
     committees: ['Outreach'],
     leader: 'Outreach',
-    bio: '',
-    image: '',
+    bio: 'Nicole is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. Other clubs that she is a part of are Science Research Club (as the Outreach Manager), Math Honor Society, Computer Science Honor Society, Tri-M, and Science Olympiad, among a few others. She also plays the violin as a part of the John Jay String Orchestra and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
   },
   {
     name: 'Veda',
