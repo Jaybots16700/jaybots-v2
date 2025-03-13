@@ -31,19 +31,30 @@ export default function Modal({ open, setOpen }) {
               <div className="mt-3 text-center sm:mt-5">
                 <Dialog.Title
                   as="h3"
-                  className="text-3xl font-semibold text-blue-200"
+                  className="text-3xl font-light text-blue-400"
                 >
-                  Donate to the JAYBOTS!
+                  THE <span className="font-black ">JAYBOTS</span> ARE GOING TO{' '}
+                  <span className="font-black">WORLDS</span>!
                 </Dialog.Title>
                 <div className="mt-2">
                   <p className="text-base text-gray-100">
-                    On Marth 9th and 10th, we competed in our Regional
-                    Championship in Uitca, and walked away with the 3rd Place
-                    Inspire Award, qualifying us for the{' '}
-                    <span className="font-bold">WORLD CHAMPIONSHIP</span> in
-                    Houston in April. This trip is extremely expensive, and to
-                    ensure all members of our team are able to experience this
-                    amazing opportunity, we need your help. <br></br>
+                    On March 8th and 9th, we competed in our Regional
+                    Championship in Utica, and won the 3rd Place Inspire Award
+                    while competing in the finalist alliance, qualifying us for
+                    the{' '}
+                    <a
+                      href="https://www.firstchampionship.org/"
+                      target="_blank"
+                      className="font-bold text-indigo-400 underline hover:text-indigo-500"
+                    >
+                      WORLD CHAMPIONSHIP
+                    </a>{' '}
+                    in Houston in April. After this competition, we are ranked
+                    17th out of 300 teams in NYS, we hold 6 of the top top 25
+                    highest scoring matches, and are in the top 9% in the whole
+                    world. This trip is extremely expensive, and to ensure all
+                    members of our team are able to experience this amazing
+                    opportunity, we need your help. <br></br>
                     <br></br> Please consider donating to our GoFundMe page to
                     help us get to Houston! Thank you for your support!
                   </p>
