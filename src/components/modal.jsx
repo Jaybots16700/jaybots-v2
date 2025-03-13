@@ -18,14 +18,14 @@ export default function Modal({ open, setOpen }) {
       {/* Modal panel */}
       <div className="fixed inset-0 z-10 w-full overflow-y-auto">
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-          <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-gray-900 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-3/4  sm:p-6">
+          <Dialog.Panel className="relative transform overflow-hidden rounded-3xl bg-gray-900 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-3/4  sm:p-6">
             <div>
-              <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-green-100">
+              <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full">
                 <Image
                   src="https://cdn.jaybots.org/logo/logo.png"
-                  width={250}
-                  height={250}
-                  className="h-32 w-32 rounded-full sm:h-auto sm:w-auto"
+                  width={96}
+                  height={96}
+                  className="h-24 w-24 rounded-full sm:h-auto sm:w-auto"
                   alt="logo"
                 />
               </div>
@@ -46,7 +46,7 @@ export default function Modal({ open, setOpen }) {
                     <a
                       href="https://www.firstchampionship.org/"
                       target="_blank"
-                      className={linkStyle}
+                      className={`${linkStyle} outline-none`}
                     >
                       WORLD CHAMPIONSHIP
                     </a>{' '}

@@ -12,10 +12,9 @@ import {
   faPhotoFilm,
   faGraduationCap,
   faEnvelopeOpenText,
-  faRobot,
   faBullhorn,
   faCommentsDollar,
-  IconDefinition,
+  faEarthAmerica,
 } from '@fortawesome/free-solid-svg-icons'
 import { usePathname } from 'next/navigation'
 import { useSession } from 'next-auth/react'
@@ -24,6 +23,7 @@ import { GoogleIcon, LogoutIcon, Printing3dIcon } from './icons'
 
 const links = [
   ['Home', '/', faHouse],
+  ['Worlds', '/worlds', faEarthAmerica],
   ['3D Printing', '/3dprint'],
   ['Meet the Team', '/team', faPeopleGroup],
   ['Join', 'https://interest.jaybots.org', faBullhorn],
