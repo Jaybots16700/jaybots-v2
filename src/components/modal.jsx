@@ -5,7 +5,7 @@ import { CheckIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 import { linkStyle, allImages, sponsors } from '@/config.jsx'
-
+import { XMarkIcon } from '@heroicons/react/24/outline'
 export default function Modal({ open, setOpen }) {
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-50">
@@ -64,19 +64,26 @@ export default function Modal({ open, setOpen }) {
             </div>
             <div className="mt-5 flex space-x-8 sm:mt-6">
               <Link
+                href="/worlds"
+                className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+              >
+                Learn more about Worlds
+              </Link>
+              <Link
                 href="/donate"
                 className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
               >
                 Donate
               </Link>
-              <button
-                type="button"
-                onClick={() => setOpen(false)}
-                className="inline-flex w-full justify-center rounded-md border-2 border-white px-3  py-2 text-lg font-semibold text-white shadow-sm hover:border-gray-500  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
-              >
-                Continue
-              </button>
             </div>
+
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              className="absolute right-4 top-4"
+            >
+              <XMarkIcon className="h-6 w-6 text-gray-500" />
+            </button>
           </Dialog.Panel>
         </div>
       </div>
