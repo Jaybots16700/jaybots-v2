@@ -11,6 +11,8 @@
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@auth/mongodb-adapter": "^3.7.4",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -42,11 +44,13 @@
     "use-debounce": "^9.0.4"
   },
   "devDependencies": {
+    "@types/node": "22.13.10",
     "@types/react": "18.3.13",
     "eslint": "8.41.0",
     "eslint-config-next": "^14.2.7",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "tailwind-scrollbar": "^3.0.4"
+    "tailwind-scrollbar": "^3.0.4",
+    "typescript": "5.8.2"
   }
 }

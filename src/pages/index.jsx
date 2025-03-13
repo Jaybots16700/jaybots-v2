@@ -4,11 +4,13 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { ReviewColumn } from '@/components/Photos'
+import { Transition } from '@headlessui/react'
 
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 import { JoinToday } from '@/components/JoinToday'
+import Modal from '@/components/modal'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -33,6 +35,8 @@ const detectScroll = (ref, setVisible) => {
 
 export default function Home() {
   const [sponsorBtnVis, setSponsorBtnVis] = useState()
+  const [show, setShow] = useState(true)
+
   const sponsorBtnRef = useRef()
   useEffect(() => {
     detectScroll(sponsorBtnRef, setSponsorBtnVis)
@@ -62,6 +66,8 @@ export default function Home() {
     detectScroll(mediaRef, setMediaVis)
   }, [])
 
+  const [open, setOpen] = useState(true)
+
   return (
     <>
       <Head>
@@ -75,8 +81,9 @@ export default function Home() {
             bold="Jaybots"
             afterBold=" - FTC Robotics Team #16700"
           />
+          <Modal open={open} setOpen={setOpen} />
 
-          <div className="w-full pb-12 text-gray-400 lg:pb-24">
+          <div className="relative w-full pb-12 text-gray-400 lg:pb-24">
             <div className="flex w-full flex-col space-y-6 p-6 text-center text-xl sm:px-12">
               <h2 className="text-5xl font-bold text-gray-200 xl:text-6xl">
                 Who are we?
