@@ -4,6 +4,7 @@ import { Dialog } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
+import { linkStyle, allImages, sponsors } from '@/config.jsx'
 
 export default function Modal({ open, setOpen }) {
   return (
@@ -37,7 +38,7 @@ export default function Modal({ open, setOpen }) {
                   <span className="font-black">WORLDS</span>!
                 </Dialog.Title>
                 <div className="mt-2">
-                  <p className="text-base text-gray-100">
+                  <p className="mt-4 text-base font-light text-gray-300 md:text-lg">
                     On March 8th and 9th, we competed in our Regional
                     Championship in Utica, and won the 3rd Place Inspire Award
                     while competing in the finalist alliance, qualifying us for
@@ -45,7 +46,7 @@ export default function Modal({ open, setOpen }) {
                     <a
                       href="https://www.firstchampionship.org/"
                       target="_blank"
-                      className="font-bold text-indigo-400 underline hover:text-indigo-500"
+                      className={linkStyle}
                     >
                       WORLD CHAMPIONSHIP
                     </a>{' '}
