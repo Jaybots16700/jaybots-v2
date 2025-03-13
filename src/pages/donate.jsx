@@ -20,7 +20,7 @@ export default function Donate() {
         <div className="animate-all z-50 flex h-screen w-full flex-col overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 lg:pl-64">
           <Header
             title="Donate"
-            beforeBold="Part are "
+            beforeBold="Parts are "
             bold="expensive"
             afterBold=". consider donating!"
           />
@@ -69,7 +69,7 @@ export default function Donate() {
               </div>
 
               <div className="relative isolate space-y-8">
-                <div className="w-full space-y-4 rounded-5xl bg-white/5 p-8 font-light ring-1 ring-white/10">
+                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20">
                   <p>
                     Corporations should check out our{' '}
                     <Link
@@ -109,7 +109,7 @@ export default function Donate() {
                   </Link>
                 </div>
 
-                <div className="w-full rounded-5xl bg-white/5 p-8 pb-6 font-light ring-1 ring-white/10">
+                <div className="w-full rounded-5xl bg-white/10 p-8 pb-6 font-light ring-1 ring-white/20">
                   <p>
                     Donations accepted via{' '}
                     <b className="font-bold  text-gray-200">PayPal</b>. (Account
@@ -138,7 +138,7 @@ export default function Donate() {
                       501(c)3 organization
                     </b>
                     . All donations are{' '}
-                    <b className="font-bold text-gray-200">tax deducatble</b>.
+                    <b className="font-bold text-gray-200">tax deductible</b>.
                   </p>
                 </div>
 
@@ -153,21 +153,5 @@ export default function Donate() {
         </div>
       </main>
     </>
-  )
-}
-
-function Titles({ titles }) {
-  return (
-    <p>
-      <b className=" font-semibold">Former </b>
-      {titles.map((title, index) => (
-        <b key={title} className=" font-semibold">
-          {' '}
-          {title}
-          {titles.length == index + 2 && <> &</>}
-          {titles.length > index + 2 && <>,</>}
-        </b>
-      ))}
-    </p>
   )
 }
