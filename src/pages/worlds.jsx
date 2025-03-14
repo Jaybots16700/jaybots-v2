@@ -96,7 +96,7 @@ export default function Donate() {
                   With the cost of transportation to Houston, lodging, food,
                   registration fees, and improving our robot, we need your help!
                   Our goal is to raise{' '}
-                  <span className="font-bold text-gray-100">$60,000</span> to
+                  <span className="font-bold text-gray-100">$32,000</span> to
                   cover these expenses, and we need your help! Please consider
                   donating and spreading the word about our team!
                 </p>
@@ -108,7 +108,7 @@ export default function Donate() {
                     Donate to our{' '}
                     <b className="font-bold  text-gray-200">GoFundMe</b>!
                   </p>
-                  <Link href="/donate">
+                  <Link href="/fund-worlds">
                     <div className="my-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-3xl font-bold text-white duration-150 hover:bg-blue-700">
                       Donate
                     </div>
