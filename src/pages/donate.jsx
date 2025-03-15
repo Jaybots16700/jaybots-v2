@@ -78,7 +78,7 @@ export default function Donate() {
                     >
                       Corporate Sponsorship Plans
                     </Link>{' '}
-                    ranging from $100 to $5000.
+                    ranging from $500 to $10,000.
                   </p>
                   <p>
                     <b className="font-bold text-gray-200">Benefits Include:</b>{' '}
