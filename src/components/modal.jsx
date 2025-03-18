@@ -40,9 +40,9 @@ export default function Modal({ open, setOpen }) {
                 <div className="mt-2">
                   <p className="mt-4 text-base font-light text-gray-300 md:text-lg">
                     On March 8th and 9th, we competed in our Regional
-                    Championship in Utica, and won the 3rd Place Inspire Award
-                    while competing in the finalist alliance, qualifying us for
-                    the{' '}
+                    Championship in Utica where we won the 3rd Place Inspire
+                    Award and competed in the finalist alliance, qualifying us
+                    for the{' '}
                     <a
                       href="https://www.firstchampionship.org/"
                       target="_blank"
@@ -50,12 +50,13 @@ export default function Modal({ open, setOpen }) {
                     >
                       WORLD CHAMPIONSHIP
                     </a>{' '}
-                    in Houston in April. After this competition, we are ranked
-                    17th out of 300 teams in NYS, we hold 6 of the top top 25
-                    highest scoring matches, and are in the top 9% in the whole
-                    world. This trip is extremely expensive, and to ensure all
-                    members of our team are able to experience this amazing
-                    opportunity, we need your help. <br></br>
+                    in Houston in April. We are one of three teams in our region
+                    of over 100 to qualify for the World Championship, with only
+                    2.5% of teams worldwide qualifying. We also hold 6 of the
+                    top 25 highest scoring matches in the state. This trip is
+                    extremely expensive, and to ensure all members of our team
+                    are able to experience this amazing opportunity, we need
+                    your help. <br></br>
                     <br></br> Please consider donating to our GoFundMe page to
                     help us get to Houston! Thank you for your support!
                   </p>
