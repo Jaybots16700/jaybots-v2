@@ -206,7 +206,12 @@ export const buildImages = [
   },
   {
     source: 'https://cdn.jaybots.org/build/bracket1.jpg',
-    caption: 'Joey building the Robots base.',
+    caption: 'Joey building the Robots base',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1742419060/EE9D5FD7-2E27-4478-8581-0398A0595EC3_kspgyf.png',
+    caption: 'Joeys face says it all',
   },
   {
     source:
@@ -509,17 +514,22 @@ export const miscImages = [
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741297956/AP1GczO8WjqEKa1-rAP83CQMOvr3ELCZokmKPuxozNhxXkd_gIkXsKVwa9yYYwv_JNlnJHxOhdEiZuULr_ETmnYjrsLbOsn2Zj1BJQ6aNx2bNF7SfaGKdBqmCfIEOQJmvNzFyjfaEhtcQ3WtCAr6XY2NzAc6_w1358-h764-s-no-gm_ug7fkw.jpg',
-    caption: 'Joe showcasing the robot.',
+    caption: 'Joe showcasing the robot',
   },
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741320062/hailey_fcmpqd.jpg',
-    caption: 'Hailey Kim relaxing after a long day of work.',
+    caption: 'Hailey Kim chilling',
   },
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741320057/hiroooo_ljvefc.jpg',
     caption: 'Hiro showing off his math skills.',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1742419780/nashh_xhdrp3.jpg',
+    caption: 'Nash looking at a picture of himself',
   },
   {
     source:
