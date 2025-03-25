@@ -66,15 +66,15 @@ export default function Modal({ open, setOpen }) {
             <div className="mt-5 flex space-x-8 sm:mt-6">
               <Link
                 href="/worlds"
-                className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+                className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-center text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
               >
                 Learn more about Worlds
               </Link>
               <Link
                 href="https://www.gofundme.com/f/jaybots"
-                className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+                className="inline-flex w-full items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
-                Donate
+                <span className="text-center">Donate</span>
               </Link>
             </div>
 
