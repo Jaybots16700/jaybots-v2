@@ -138,6 +138,12 @@ module.exports = {
           'https://docs.google.com/forms/d/17Ix3rWJQmDbYFauEUhPRZVeRvbajg0zkUcozukiefak/edit',
         permanent: false,
       },
+      {
+        source: '/lego-workshop',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSdCgte7Pf1QtLCw-dXJ0EzrblBO0efNgBYD8ta5xvFewAL8Yg/viewform',
+        permanent: false,
+      },
 
       { source: '/competition', destination: '/host', permanent: true },
       { source: '/tournament', destination: '/host', permanent: true },
