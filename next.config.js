@@ -144,6 +144,12 @@ module.exports = {
           'https://docs.google.com/forms/d/e/1FAIpQLSdCgte7Pf1QtLCw-dXJ0EzrblBO0efNgBYD8ta5xvFewAL8Yg/viewform',
         permanent: false,
       },
+      {
+        source: '/easter',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSemoKYomIww-RSQqI2XTSENSCozCFOBpc-sn8ia2KsaN5UbwQ/viewform',
+        permanent: false,
+      },
 
       { source: '/competition', destination: '/host', permanent: true },
       { source: '/tournament', destination: '/host', permanent: true },
