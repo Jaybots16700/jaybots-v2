@@ -1057,7 +1057,7 @@ export const members = [
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1730223688/bios/g42ztah0rrgynhnnu4me.jpg',
   },
-  {
+  /*{
     name: 'Jamling Sherpa',
     title: 'CIO',
     committees: [''],
@@ -1065,6 +1065,7 @@ export const members = [
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1730223737/bios/fpyyzorbpcbkfxxzbbfg.jpg',
   },
+  */
   {
     name: 'Mr. Amodio',
     title: 'Mentor & Coach',
