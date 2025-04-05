@@ -307,6 +307,31 @@ export const outreachImages = [
       'https://cdn.jaybots.org/outreach/Collecting%20bags%20for%20a%20clothing%20drive.jpg',
     caption: 'Collecting bags for a clothing drive.',
   },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809295/AP1GczO4b5acLC-4MGTTpvWh4ORZd0niHQ3hc_BVjuayLEXesxjI7QvgRs6IDaYGlCWkskMfI_l0FGoqICdBXtPZPgRXKOI15oySUyh_zQMsRp_1EwoMyxhrxLhLsuEGDwl_1wzh77IZIPaV-XMy7Qu0cpdE0g_w440-h332-s-no-gm_ou2wku.jpg',
+    caption: 'Inspiring younger students in STEM',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809354/AP1GczPGXEl5trEAhd2n2mYSzImcHYHU6LMlVVd_Y3eJL5pIILioBX3JlS24EUASN5qezREzyDzgsdN0lP-fGHFS3Gj5K0_hAGTDq5z25b6YAURnWleDxvHu5jVwKXW6yxLP3y8F2Dtffb6JyFrF98iVQ_20FA_w440-h586-s-no-gm_pakmls.jpg',
+    caption: 'Hiro showing our engineering porfolio',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743811760/AP1GczOGkfaSQXcJAEWikeVzPcKbG4eky6wIq_P3dLgOVIwUw5HB2qZQ-rGfVtlBfSr5Yh6awjl04Wj-2qrpTgbYIB14VdLMp6KdZVrg3cW2qMOplBxd9z7pJ1uAM1ds0cdEHua3FpHv9w0vZgcZZ3cwqofdqg_w1550-h1160-s-no-gm_gl9vee.png',
+    caption: 'Anika demonstrating our robot at International Night',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809421/oioiioiiio_uvarrs.png',
+    caption: 'Raising money for worlds championship at Mall',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809554/AP1GczM6yzzr6OKoAYWm3f-Yvf7onAF-YvxLwZr4iWrIxSOixDsoT4BjQxwuzV3KkwQVombtPZEm-pdeSEmFcplIE4KZul0tLrhhljMCQNg4y-NICR4FhtVrVD7zGnyPseTgqZGYHbM9Il5txui-57QZJlX7MA_w940-h888-s-no-gm_wci36y.png',
+    caption: 'Learning about robotics',
+  },
 
   {
     source: 'https://cdn.jaybots.org/overview/freshmanorientationcleanup.jpeg',
@@ -365,6 +390,11 @@ export const outreachImages = [
   },
   {
     source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741304022/AP1GczNyOrwgww-C442BGJRUA7OoPpdIuy5aI5CSKmyL8spjC35SffP3CShuJsKcx4hxJL82dL4wMwyo_Ap_zyDsvH3iPSPkaL2YM0jJdA4J4atglemni0l0SEj-yupUO1S4EwxYZJzt31XpYTvjUNqbN2wr_w836-h627-s-no-gm_ddlbvd.jpg',
+    caption: 'Hiro showing our Robot in action ',
+  },
+  {
+    source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741304607/vw-teach-02_fq4bz1.png',
     caption: 'Anika showing students how to CAD',
   },
@@ -390,6 +420,11 @@ export const outreachImages = [
   },
   {
     source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743886610/AP1GczNTXl0TEKgxfAVPdHnj7Vc3-yUq8IXxA0DoorfNthoLkbicEwSdWnctdmKFP0MXqhSmijMYE8K7ljFJhQFi3rlUANKqtSufCnqRY98KoPsNZzQTBVohj2p6kBPI5rlQz0w7L9P19471nc2WEgagZ9-1_g_w1179-h874-s-no-gm_kufgmz.jpg',
+    caption: 'Raising funds st Bagel Shoppe',
+  },
+  {
+    source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741318020/AP1GczOtcnCdhIWoqqIjO6DHvWvawijlPCAJspcyCwH4VaYGVJ86QLkKb13kD2Y6njS0du4eOCnhy_HRuthLDoaGC1BgiG9LCX_p5M2qMJzdnw-XBDyB4kowkpN21XodRVCO_R6fMJBY2HkpZyvBrl-cbfu1Hw_w2372-h1334-s-no-gm_yyscwb.jpg',
     caption: 'Anish, Jason, and Joe presenting at DTC',
   },
@@ -405,6 +440,21 @@ export const compImages = [
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741301801/AP1GczPR42PJGNUSDKAxlXNr8XjIeyDwRRgPN_Rxif5XwqI4slK_IkRUeGDyMSA3HtmkSlVLhhZZa5lcPbPtH4QtDxed1uDD3CM86r4S1NClc6BwvpK0A8TFvQ7tk3PIQG177sl4_e1Y1opzRfOiTrqkjmE5_w1358-h764-s-no-gm_cbkvyn.jpg',
     caption: "Matt fixing another team's robot",
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741301592/AP1GczM5HbF826lshlxOOYZHBWYIQSkBluLbPAoUm2OnfBDtysTNKowZhz4fBgt5QDvE6XQQ5KxDhBU3aAjfGKhVIagkaN0MomahX_R4-xBxxVOahXjIy30z_hsfqErnXoDF1wp7D9NnabW0SY1gR2zFrODZSw_w1358-h1022-s-no-gm_zf62gm.jpg',
+    caption: 'Scouting other teams',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809581/AP1GczPYD2TRO-WQANWu35YFqiZw0SSJ-TS1Lnve2zWxDYRtmL75bWKEA-HfzRzyXX7nWeBg4l78g_BbByE3XrNg5vhjaWvng-NnJQJQLeMDiJbx_lcgkUnzdAbu4fKvympkgX_-GCniXTe1704OMODdiUxz2g_w1550-h1034-s-no-gm_rwkfft.jpg',
+    caption: "We're going to worlds!",
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809611/AP1GczOu_b00ekwK-dumFLY3RwU-3vBMqEca7IS5hIgDggN3JWOYHrhLjZiXRhx9XgiASiIMeuetj9leFGiEd_m0rais0TKcTcV_xwuCTrlDNzjPIR1-c-NAsH9BZuGT09UTQCNX1taZy9Q1ONYtNsyMMz2FLg_w1550-h1034-s-no-gm_l0qlql.jpg',
+    caption: 'Winning semi-championships at regionals',
   },
 
   {
@@ -422,11 +472,7 @@ export const compImages = [
       'https://res.cloudinary.com/jaybots/image/upload/v1741654418/A8FA0F5D-4B5A-432E-A0D2-F0F8907AEA14_1_201_a_rh7jie.jpg',
     caption: 'Finalist Alliance Partner, 3rd Place Inspire at Regionals',
   },
-  {
-    source:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741301592/AP1GczM5HbF826lshlxOOYZHBWYIQSkBluLbPAoUm2OnfBDtysTNKowZhz4fBgt5QDvE6XQQ5KxDhBU3aAjfGKhVIagkaN0MomahX_R4-xBxxVOahXjIy30z_hsfqErnXoDF1wp7D9NnabW0SY1gR2zFrODZSw_w1358-h1022-s-no-gm_zf62gm.jpg',
-    caption: 'Scouting other teams',
-  },
+
   {
     source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741654046/AP1GczP-DhyEpNR92XUyEzFJ8j1Xsj2hbjq4llgjox3XqaKl0SZ-nl1ub_q89SRGJfzzmZU7nx2VO50UAH3ELcrtM83PqRGv7cGgq2D6_VllsaoyYjpddVD32UoCf7XrhdbCMjInNnIDCuLIRTY69_EaYF0K5w_w1172-h1562-s-no-gm_vufilg.jpg',
@@ -518,8 +564,33 @@ export const miscImages = [
   },
   {
     source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809320/AP1GczMTkGXVYFQ21rC-rsHGl6yLhVgkeYrQr-wR30r8TdaKbtCyB9U91WqE1LBonnSW6KpnWAY8QcYPV46OUQtxve7_uSW2hzITNkLrlQDIpzZZ4s3rIOa3wXXXj9ZVWcsB5yzL3PPHKeSVOCSyaAu82Ms9_w440-h248-s-no-gm_o0xw5h.jpg',
+    caption: "Clowning Joey's Basement",
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809331/AP1GczOike9qvW5zpJOl_zOM3qAyaTSYHgjXta_JyYD545PwH1jK8p09g6evujI1e-8DhsvsxZ6AKVR8ZZM6clA91dPeRnDul4P00APmyc4xlBXv11O9V-cJTcPcm7V4jk99bHQDHTdmp2QQdWVjQpWdcir9Kw_w440-h586-s-no-gm_m78uzu.jpg',
+    caption: 'The "pumpkinator" posing with his new jaybot hat',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809435/AP1GczPJP11nMxshHh8Ynk4k-UsZyRPCKiqaJWuH8tnrfTFoK0HPe5C7xVFasQ1T_CFQin3JAh2j8XNPnR3NiMlOIvn8-uyuIpFbu7R42iYexeA-dlXso-M2FqsmIaZL8QgmcpQeusr7iggpnjQhAR9ptjLmxw_w1550-h1878-s-no-gm_wccxcj.jpg',
+    caption: 'Joe Lopez locked in',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809697/AP1GczNefWohxZexyDR6WLRDhTwoQE3Hj4l8CRxMrcH2WZy-IPPj801H05pyT4TwtK4hry0WtSixKeTcPRZsPOYyMHbrD7zZtA9jgC7vunla_p57UwRXh4_5g4M4XwM2i6BSVm1Td7LxytrIgB8uw_zMvIyjLQ_w1550-h1168-s-no-gm_tamn86.jpg',
+    caption: 'Nash showing new banners to visitors',
+  },
+  {
+    source:
       'https://res.cloudinary.com/jaybots/image/upload/v1741320062/hailey_fcmpqd.jpg',
     caption: 'Hailey Kim chilling',
+  },
+  {
+    source:
+      'https://res.cloudinary.com/jaybots/image/upload/v1743809314/AP1GczO6DchtSXrX5QVvYfWiSjaSK0ChtK4uiHDdffV3Drhlzpxa5_9S6aaWweXWw03BrxKX1P-YvUbHT0WL-9eW3e10XxqDcRyQpULurpAEg4txJWQq54qmNxDZrLnJ4vxQCTtRBK1DO1_5I-9BNDRqJoVO_w440-h248-s-no-gm_e5lkhy.jpg',
+    caption: 'New Bluebird Hat',
   },
   {
     source:
