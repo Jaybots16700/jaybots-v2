@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState } from 'react'
 
 import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
@@ -10,6 +11,17 @@ import { alumni } from '@/config'
 import Colors from '@/components/Colors'
 
 export default function Alumni() {
+  const [selectedClass, setSelectedClass] = useState('Everyone')
+
+  const classYears = Array.from(
+    new Set(alumni.map((a) => a.year).filter(Boolean))
+  ).sort((a, b) => b - a)
+
+  const filteredAlumni =
+    selectedClass === 'Everyone'
+      ? alumni
+      : alumni.filter((a) => a.year === parseInt(selectedClass))
+
   return (
     <>
       <Head>
@@ -25,14 +37,44 @@ export default function Alumni() {
             afterBold=" alumni."
           />
 
-          <div className="mt-24 flex w-full justify-center text-gray-400 lg:pb-24">
+          {/* CLASS FILTER BUTTONS */}
+          <div className="mt-12 w-full px-12 text-gray-400">
+            <div className="mb-12 flex flex-wrap justify-center gap-4">
+              <button
+                onClick={() => setSelectedClass('Everyone')}
+                className={`rounded-full border-2 px-6 py-2 text-lg font-semibold ${
+                  selectedClass === 'Everyone'
+                    ? 'border-blue-600 bg-blue-900 text-white'
+                    : 'border-blue-700 bg-gray-800 text-gray-300'
+                }`}
+              >
+                Everyone
+              </button>
+              {classYears.map((year) => (
+                <button
+                  key={year}
+                  onClick={() => setSelectedClass(year.toString())}
+                  className={`rounded-full border-2 px-6 py-2 text-lg font-semibold ${
+                    selectedClass === year.toString()
+                      ? 'border-blue-600 bg-blue-900 text-white'
+                      : 'border-blue-700 bg-gray-800 text-gray-300'
+                  }`}
+                >
+                  Class of {year}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* ALUMNI GRID */}
+          <div className="mt-6 flex w-full justify-center text-gray-400 lg:pb-24">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-              {alumni.map((alum) => (
+              {filteredAlumni.map((alum) => (
                 <div
                   key={alum.name}
                   className="group w-72 [perspective:5000px]"
                 >
-                  <div className="relative h-full w-full  text-gray-300 transition-all duration-1000 [backface-visibility:hidden] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] motion-reduce:duration-0">
+                  <div className="relative h-full w-full text-gray-300 transition-all duration-1000 [backface-visibility:hidden] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] motion-reduce:duration-0">
                     <div className="h-full w-full overflow-hidden rounded-xl bg-slate-900 ring-1 ring-blue-800 [backface-visibility:hidden]">
                       <div className="flex h-96 items-start justify-center">
                         <Image
@@ -49,7 +91,8 @@ export default function Alumni() {
                         </div>
                         <div className="space-y-1 whitespace-nowrap text-center text-xl font-semibold">
                           {alum.year && <div>Class of {alum.year}</div>}
-                          {alum.motion && (
+
+                          {alum.motion ? (
                             <div className="overflow-hidden motion-safe:rounded-full">
                               <span className="w-fit animate-alumni-slide-infinite px-0 motion-reduce:hidden">
                                 <Titles titles={alum.title} />
@@ -58,8 +101,24 @@ export default function Alumni() {
                                 <Titles titles={alum.altTitle} />
                               </span>
                             </div>
+                          ) : (
+                            <Titles titles={alum.title} />
                           )}
-                          {!alum.motion && <Titles titles={alum.title} />}
+
+                          {alum.college && (
+                            <div className="flex items-center justify-center gap-3 pt-1 text-base text-gray-300">
+                              {alum.collegeLogo && (
+                                <Image
+                                  src={alum.collegeLogo}
+                                  alt={`${alum.college} logo`}
+                                  width={40}
+                                  height={40}
+                                  className="rounded-sm"
+                                />
+                              )}
+                              <span>{alum.college}</span>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -110,14 +169,16 @@ export default function Alumni() {
 }
 
 function Titles({ titles }) {
+  const titleList = Array.isArray(titles) ? titles : [titles]
+
   return (
     <p>
-      {titles.map((title, index) => (
-        <strong key={title} className=" font-semibold">
+      {titleList.map((title, index) => (
+        <strong key={title} className="font-semibold">
           {' '}
           {title}
-          {titles.length == index + 2 && <> &</>}
-          {titles.length > index + 2 && <>,</>}
+          {titleList.length === index + 2 && <> &</>}
+          {titleList.length > index + 2 && <>,</>}
         </strong>
       ))}
     </p>

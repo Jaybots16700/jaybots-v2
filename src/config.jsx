@@ -96,23 +96,99 @@ export const committeeDescript = [
 export const alumni = [
   {
     name: 'Anish',
-    title: ['Member'],
-    bio: "Anish is a senior in his fourth year at the Robotics club. He plans to attend college after high school, majoring in computer science. He enjoys math & science in school and is part of other clubs like Science Olympiad & Computer Science Honor Society. In his free time, he enjoys playing tennis & working on other programming projects. He hopes to learn and work with the new, growing team. Anish is currently the president. Previously, he was the Programming Leader, managing an ever-growing group of recruits and teaching them valuable skills like Kotlin and Computer Vision. Two years ago, he was one of the Excelsior Region's Deans' List Finalists and went to the World Championship.",
+    title: ['President'],
+    bio: "Anish Anne was a senior who took part in the robotics for four years. He currently attends Stanford University, majoring in computer science. He enjoys math & science in school and was part of other clubs like Science Olympiad & Computer Science Honor Society. In his free time, he enjoys playing tennis & working on other programming projects. He hopes to learn and work with the new, growing team. Anish is currently the president. Previously, he was the Programming Leader, managing an ever-growing group of recruits and teaching them valuable skills like Kotlin and Computer Vision. Two years ago, he was one of the Excelsior Region's Deans' List Finalists and went to the World Championship.",
     image: 'https://cdn.jaybots.org/team/anish2.jpg',
+    year: 2024,
+    college: 'Stanford University',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744119802/Untitled_design_1_pfwllg.svg',
+  },
+  {
+    name: 'Arnav',
+    title: 'Vice President',
+    bio: 'Arnav Mishra was a senior at John Jay currently making light pink titrations. He spent a majority of his time on robotics, boxing and singing. He is currently a student of UC Berekely, majoring in medicine. Arnav is excited to see the future of the Jaybots and how light pink his titrations can get.',
+    image: 'https://cdn.jaybots.org/team/arnav.jpeg',
+    year: 2024,
+    college: 'UC Berkeley',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120107/Untitled_design_2_fd9rjn.svg',
+  },
+  {
+    name: 'Jason',
+    title: 'Foreman',
+    committees: ['CAD'],
+    bio: 'Jason Bukofsky was a senior who took part of robotics for three years. He currently attends Georgia Tech, majoring in Aerospace engineering and is infatuated with ​​computers but is married to his 3d printer right now. He loves to sleep and play games with friends and is very competitive. His favorite class is design and drawing for production, where he learned to CAD.',
+    image: 'https://cdn.jaybots.org/team/jason.jpeg',
+    college: 'Georgia Tech',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120871/Copy_of_Untitled_usbeel.svg',
+    year: 2024,
+  },
+  {
+    name: 'Anaya',
+    title: 'Secretary',
+    committees: ['Game Master', 'Officers'],
+    leader: 'Documentation',
+    bio: 'Anaya is a Junior at John Jay Senior High School. This is her third year in the John Jay Robotics Club. She wants to attend college and go into the field of medicine after high school. She enjoys playing the Violin and tennis. She enjoys both math and science and takes part in the Math Honor Society as well as the competitive tennis team. She helps with build and has given herself the team photographer role(most of the pictures/videos you see on this website were 99% likely to be taken by her). She also helps out with the video production as well and wants to expand her communication skills to other FTC Teams as well as other important figures.',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744154211/Copy_of_Untitled_3_zwsf5d.svg',
+    college: 'Cornell University',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744154067/Untitled_design_12_bcqubz.svg',
+    year: 2024,
+  },
+  {
+    name: 'Alex',
+    title: 'Game Master',
+    committees: ['Equipment'],
+    bio: 'Alex Zhu joined robotics in 2022. From robotics, he has learned valuable skills that apply to both engineering and physics. His favorite subjects in school are Calculus and Physics. He participate in clubs such as Science Olympiad & Math Team, as well as numerous honor societies. He joined FTC because he loves robotics and being part of such a dedicated and hardworking team, as well as working with his friends. As the Game Master, he had a fun year building, designing, and working with his fellow teammates.',
+    image: 'https://cdn.jaybots.org/team/alex/alexFULL.png',
+    college: 'Carnegie Mellon',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744153057/Untitled_design_10_g9s2et.svg',
+    year: 2024,
+  },
+  {
+    name: 'Silvia',
+    committees: ['Build'],
+    bio: 'Silvia  is a senior at John Jay High School. This is her fourth year on the Jaybots. Her plans after High School are to go to college and study in the medical or engineering field. In school, she enjoys math and science classes along with participating in clubs like Science Olympiad. She is also in the Math Honor Society. She is interested in learning and trying new things out. In her free time, she swims competitively, plays the cello, and enjoys exploring the world. She decided to join FTC because she enjoys building things, soldering, and sharing her ideas with others. In robotics, she hopes to learn CAD, make new friends, achieve better leadership skills, and build a robot.',
+    image: 'https://cdn.jaybots.org/team/silvia2.jpg',
+    college: 'UNC',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744153808/Untitled_design_11_uovefw.svg',
+    year: 2024,
+  },
+  {
+    name: 'Kate',
+    title: 'Outreach Coordinater',
+    committees: ['Build'],
+    bio: 'Kate was a Senior at John Jay and spent three years in Robotics. She was the Outreach Coordinator and a member of the Build Team. What Kate enjoys most about Robotics is the opportunities for community outreach and planning such activites with her team. She likes baking, reading, and crocheting in her free time. She worked towards her Girl Scout Gold Award which involves informing and encouraging girls to pursue careers in STEM. Kate is currently an Aerospace Engineer.',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744153352/Copy_of_Untitled_2_qm1104.svg',
+    college: 'WPI',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744152561/Copy_of_Untitled_1_rwnmpe.svg',
+    year: 2024,
   },
   {
     name: 'David',
     title: ['Member'],
-    bio: 'David has been on the Jaybots for the first time this year. Last year, he was part of the JV team and part of the DTC project group before moving up to Jaybots this year. He is currently a Senior, and this will be his second year as part of the robotics club at John Jay Senior High School. He’s a Hispanic student who plans to major in Civil engineering at Columbia University. David participates in various STEM-based clubs offered at the school. Other than being the President of the Spanish Honor Society, he enjoys being a part of and helping out with our robotics team.',
+    bio: 'David was on the Jaybots for the first time in his senior year. In 2023, he was part of the JV team and part of the DTC project group before moving up to Jaybots this year. He is currently a Senior, and this will be his second year as part of the robotics club at John Jay Senior High School. He’s a Hispanic student currently major in Civil engineering at Columbia University. David participates in various STEM-based clubs offered at the school. Other than being the President of the Spanish Honor Society, he enjoys being a part of and helping out with our robotics team.',
     image: 'https://cdn.jaybots.org/team/david.png',
+    college: 'Columbia University',
     year: 2023,
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744130421/Untitled_design_3_x5nt7c.svg',
   },
   {
     name: 'Matt',
     title: ['Member'],
-    bio: 'Matthew Laverde is a senior at John Jay High School. He has no experience regarding robotics other than this team, and has learned a lot in the past few years. Matt was the leader of the build team for 3 previous years, and still puts what time he can into helping the team.',
+    bio: 'Matthew Laverde has learned a lot while he was on the robotics team. Matt was the leader of the build team for the first 3 years, and put what time he can into helping the team.',
     image: '/images/Laverde.png',
     year: 2023,
+    college: '',
+    collegeLogo: '',
   },
   {
     name: 'Adriana',
@@ -120,22 +196,30 @@ export const alumni = [
     bio: 'Adriana was a senior at John Jay High School. She spent a year with the robotics team, helping out with documentation and wherever else she could. In her free time she enjoys learning about history and geography. She was part of Science Olympiad, FBLA, the National and Math Honor Societies, and was a co-captain of the Girls Varsity Swim Team. She now attends Dartmouth College.',
     image: 'https://cdn.jaybots.org/team/adriana2.png',
     year: 2022,
+    college: 'Dartmouth College',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744119689/Untitled_design_vbobas.svg',
   },
   {
     name: 'Ashish',
     title: ['Vice President', 'Documentation Leader'],
-    bio: 'Ashish is a senior at John Jay High School. He enjoys robotics and working through problems with his FTC team. This is his fourth year on the team, and he has been Vice President in 10th, 11th, and 12th grade. He works on different parts of the team as an officer: he helps out in CAD, code, and build. Outside of school he enjoys playing video games such as Apex Legends and Battlefront. He is part of the Math Honor Society, Symphonic Band, and Science Olympiad. He loves working with the team to solve problems through engineering and programming. He also serves the team as a driver during competitions and is the current head of the drive team. Ashish has committed to Northeastern University with a major in Computer Science for the 2022-2023 school year.',
+    bio: 'Ashish Thomas spent all four years on the team, he has been Vice President in 10th, 11th, and 12th grade. He enjoys robotics and working through problems with his FTC team. He works on different parts of the team as an officer: he helps out in CAD, code, and build. Outside of school he enjoys playing video games such as Apex Legends and Battlefront. He was part of the Math Honor Society, Symphonic Band, and Science Olympiad. He loved working with the team to solve problems through engineering and programming. He also served the team as a driver during competitions and is the current head of the drive team. Ashish has committed to Northeastern University with a major in Computer Science.',
     image: '/images/Ashish.jpeg',
-    motion: true,
     altTitle: ['VP', 'Doc Leader'],
     year: 2022,
+    college: 'Northeastern University',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744130798/Untitled_design_4_mjvgsg.svg',
   },
   {
     name: 'Darren',
     title: ['President'],
-    bio: 'Darren Wang is a senior at John Jay Senior High School. This is his fourth year on the robotics team. He plans to go to college for biology and mechanical engineering after high school. He enjoys cooking, reading, and sleeping in his spare time. Robotics is his only scholastic club, but outside of robotics, he attends a fiddle group, is part of a fencing team, and attends a research mentorship program. He joined the robotics team because he wants to help create a fun and welcoming place for people who enjoy tinkering and brainstorming. He aims to make everyone in the team feel like they belong and lead the team to success in the competition season.',
+    bio: 'Darren Wang was a senior at John Jay Senior High School. This is his fourth year on the robotics team. He plans to go to college for biology and mechanical engineering after high school. He enjoys cooking, reading, and sleeping in his spare time. Robotics is his only scholastic club, but outside of robotics, he attends a fiddle group, is part of a fencing team, and attends a research mentorship program. He joined the robotics team because he wants to help create a fun and welcoming place for people who enjoy tinkering and brainstorming. He aims to make everyone in the team feel like they belong and lead the team to success in the competition season.',
     image: '/images/Darren.jpeg',
     year: 2022,
+    college: 'Stoneybrook University',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744132494/Untitled_design_6_q8zlda.svg',
   },
   {
     name: 'Kevin',
@@ -143,6 +227,9 @@ export const alumni = [
     bio: 'Kevin Thomas is a senior at John Jay High School. This is his third year in FTC, and he is a member of the build team for Jaybots. He is also part of various other clubs and societies in school, such as the Math Honor Society, History Honor Society, National Honor Society and Interact Club. During his free time, Kevin enjoys playing video games on his Xbox and pc, such as FIFA, UFC, Valorant, and Minecraft. He also enjoys reading, riding his bicycle, and building small projects at home. After high school, Kevin plans to go to college and major in Mechanical Engineering, with interests in Aerospace/Aeronautical Engineering as well. Kevin joined FTC since he loves both building and robots, and he has loved every part of it since joining in his freshman year.',
     image: '/images/Kevin.jpeg',
     year: 2022,
+    college: 'RIT',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744133398/Untitled_design_9_o8ukry.svg',
   },
   {
     name: 'Mili',
@@ -152,6 +239,9 @@ export const alumni = [
     motion: true,
     altTitle: ['Sec.', 'Outreach'],
     year: 2022,
+    college: 'Stonybrook University',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744132494/Untitled_design_6_q8zlda.svg',
   },
   {
     name: 'Robert',
@@ -159,6 +249,9 @@ export const alumni = [
     bio: 'Robert is a Senior at John Jay High School. He has done LEGO robotics in middle school for 1 year and participated in both building and coding. Robert plans to go to college after high school and enjoys simply being at school, but definitely robotics. He is a member of the Math team, FBLA, and SciOly. Robert joined FTC 3 year to help new members learn. He hopes to learn and work with the new, growing team.',
     image: '/images/Robert.jpeg',
     year: 2022,
+    college: 'Georgia Tech',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120871/Copy_of_Untitled_usbeel.svg',
   },
   {
     name: 'Jared',
@@ -166,30 +259,42 @@ export const alumni = [
     bio: "Jared Yeung was a senior at John Jay High School. He has done Project Lead The Way Program (PLTW): Introduction to Engineering and Design, Principles of Engineering and now taking Digital Electronics. He plans to go to Rochester Institute of Technology (RIT) and go into a field of computer hardware engineering after high school. He enjoys playing video games in his free time such as Apex Legends and Overwatch. He has done Robotics for 3 years now, although the first season started in the offseason. He has done other clubs such as Science Olympiad, Interact Club, Math Team, and Proscenium, however could only do two of them (Science Olympiad and Math Team) due to the Pandemic. He also does 3 Honor Societies: Math Honor Society, History Honor Society, and National Honor Society. He originally joined FTC because he loves to be part of a team and hang out with friends while also building a cool robot. He was the club's secretary for 3 years. Jared is now at Rochester Institute of Technology.",
     image: 'https://cdn.jaybots.org/alumni/jared.png',
     year: 2021,
+    college: 'RIT',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744133398/Untitled_design_9_o8ukry.svg',
   },
   {
     name: 'Jian',
     title: ['Member'],
     bio: 'Jian was a senior at John Jay Senior High School when he was on the team. He prefered to be called Jason. Other than FTC, he was not in any other robotics team. Jason wanted to join the robotics club because he was very interested in building a robot and learning how to code. He aimed to learn leadership skills that he could bring with him to college. He was the treasurer of the club and in charge of fundraising. He also worked on the engineering notebook. He enjoys mathematics, statistics, economics and of course robotics. Other interests he has are basketball and League of Legends. After high school, he planned to go on to college, and was interested in majoring in biochemistry or biomedical engineering - he is now at Stony Brook University.',
     image: 'https://cdn.jaybots.org/alumni/jian.jpeg',
+    college: 'Stoneybrook University',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744132494/Untitled_design_6_q8zlda.svg',
   },
   {
     name: 'Youssef',
     title: ['Member'],
     bio: 'Youssef was a Junior and then Senior at John Jay High School when he was on the robotics team. This was his first involvement in a robotics team. He hadn’t set concrete plans for his life after high school, but was thinking about majoring in two different subjects and hadn’t decided yet on one. His interests included cooking, engineering, computers, and management. He joined FTC to learn more about engineering as well as to communicate.',
     image: 'https://cdn.jaybots.org/alumni/youssef.jpeg',
+    college: '',
+    collegeLogo: '',
   },
   {
     name: 'Eric',
     title: ['Build Leader'],
     bio: 'Eric was a junior and then senior at John Jay High School when he was on the robotics team. Prior to this, he had never been on a robotics team. On the team as a senior, he was the build leader, contributing much of his time to the robot’s construction and troubleshooting build problems. At school, he enjoyed science classes and math classes. Of course, he also loved robotics. Eric went to Binghamton University after high school and his time on the team.',
     image: 'https://cdn.jaybots.org/alumni/eric.jpg',
+    college: '',
+    collegeLogo: '',
   },
   {
     name: 'Maximus',
     title: ['Member'],
     bio: 'Maximus was a junior and then senior at John Jay High School when he was on the robotics team. He was known for his creativity and design for many things, machinery, sketches, art etc. Though he was the photographer of the group, he sketched and spent time with his group hoping to make use of robotics as a sport to “make a future for humanity.” Maximus has a creative mind and a talented perspective while noted to seek out knowledge of technological marvels, mathematics etc.',
     image: 'https://cdn.jaybots.org/alumni/max.jpeg',
+    college: '',
+    collegeLogo: '',
   },
 ]
 
