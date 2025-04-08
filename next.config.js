@@ -65,6 +65,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/interest-form',
+        destination: 'https://forms.gle/3oMMDQMRcBLNkHLS9',
+        permanent: true,
+      },
+      {
         source: '/map',
         destination: 'https://jjmap.jaybots.org?utm_source=map',
         permanent: true,
@@ -86,8 +91,7 @@ module.exports = {
       },
       {
         source: '/future',
-        destination:
-          'https://docs.google.com/forms/d/e/1FAIpQLScvvh-qjktMwAG-kV_bLgKI9k7hHXBpkBfAvVAdLLx2Yh6LNA/viewform',
+        destination: 'https://forms.gle/JGJ7nCrhmSZZGSpD7',
         permanent: true,
       },
       {
