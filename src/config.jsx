@@ -143,7 +143,8 @@ export const alumni = [
     title: 'Game Master',
     committees: ['Equipment'],
     bio: 'Alex Zhu joined robotics in 2022. From robotics, he has learned valuable skills that apply to both engineering and physics. His favorite subjects in school are Calculus and Physics. He participate in clubs such as Science Olympiad & Math Team, as well as numerous honor societies. He joined FTC because he loves robotics and being part of such a dedicated and hardworking team, as well as working with his friends. As the Game Master, he had a fun year building, designing, and working with his fellow teammates.',
-    image: 'https://cdn.jaybots.org/team/alex/alexFULL.png',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744154629/Copy_of_Untitled_4_iewlye.svg',
     college: 'Carnegie Mellon',
     collegeLogo:
       'https://res.cloudinary.com/jaybots/image/upload/v1744153057/Untitled_design_10_g9s2et.svg',
@@ -152,6 +153,7 @@ export const alumni = [
   {
     name: 'Silvia',
     committees: ['Build'],
+    title: 'Member',
     bio: 'Silvia  is a senior at John Jay High School. This is her fourth year on the Jaybots. Her plans after High School are to go to college and study in the medical or engineering field. In school, she enjoys math and science classes along with participating in clubs like Science Olympiad. She is also in the Math Honor Society. She is interested in learning and trying new things out. In her free time, she swims competitively, plays the cello, and enjoys exploring the world. She decided to join FTC because she enjoys building things, soldering, and sharing her ideas with others. In robotics, she hopes to learn CAD, make new friends, achieve better leadership skills, and build a robot.',
     image: 'https://cdn.jaybots.org/team/silvia2.jpg',
     college: 'UNC',
