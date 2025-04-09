@@ -1354,7 +1354,8 @@ export const members = [
     committees: [''],
     leader: '',
     bio: 'Veda is a freshman on the Jaybots robotics team, and she is currently the webmaster. Veda loves playing the violin, drawing, playing volleyball, and singing carnatic music during her free time. She loves Indian food, especially jackfruit briyani. Veda has also been a member of science olympiad and math club for two years, and she still is. Veda hopes to major in business or biology.',
-    image: '/images/O.jpg',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744162877/Copy_of_Untitled_6_pfbhdi.svg',
   },
 
   // {
