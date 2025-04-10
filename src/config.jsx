@@ -10,7 +10,7 @@ export const committeeNames = [
 
 export const otherCommittees = [
   'Documentation',
-  'SITCOM',
+  //'SITCOM',
   'Equipment',
   'Media',
   'Branding',
@@ -785,7 +785,7 @@ export const games = [
       {
         team: 'Jaybots',
         images:
-          'https://res.cloudinary.com/jaybots/image/upload/v1741302093/sigma-boi_vwby9m.png',
+          'https://res.cloudinary.com/jaybots/image/upload/v1744246506/robot_xifii2.jpg',
         comps: [
           {
             type: 'Qualifier',
@@ -864,7 +864,8 @@ export const games = [
     allComps: [
       {
         team: 'Jaybots',
-        images: '',
+        images:
+          'https://res.cloudinary.com/jaybots/image/upload/v1744247347/Untitled_design_d4jmyn.png',
         comps: [
           {
             type: 'Qualifier',
@@ -1223,7 +1224,6 @@ export const members = [
     name: 'Pallavi',
     title: 'Secretary',
     committees: ['Media', 'Officers', 'Documentation'],
-    leader: 'Media',
     bio: 'Pallavi is a senior on the team. She is in charge of managing social media, and documentation for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
     image: 'https://cdn.jaybots.org/team/pallavi.jpg',
   },
@@ -1284,7 +1284,7 @@ export const members = [
   {
     name: 'Joey',
     title: 'Foreman',
-    committees: ['Build', 'SITCOM', 'Officers'],
+    committees: ['Build', 'Officers'],
     leader: 'SITCOM',
     bio: "Joe is a senior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.",
     image: '/images/JoeMoney.jpg',
@@ -1343,8 +1343,7 @@ export const members = [
     name: 'Nicole',
     title: 'Outreach Manager',
     committees: ['Outreach'],
-    leader: 'Outreach',
-    bio: 'Nicole is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. Other clubs that she is a part of are Science Research Club (as the Outreach Manager), Math Honor Society, Computer Science Honor Society, Tri-M, and Science Olympiad, among a few others. She also plays the violin as a part of the John Jay String Orchestra and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
+    bio: 'Nicole is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Clu, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
   },
