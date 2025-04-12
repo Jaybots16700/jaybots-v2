@@ -1467,6 +1467,33 @@ export const sponsors = [
     tierColor: 'bg-purple-500',
   },
   {
+    name: 'Wappingers Central School District',
+    description:
+      'The mission of the Wappingers Central School District is to empower all of our students with the competencies and confidence to challenge themselves, to pursue their passions, and to realize their potential while growing as responsible members of their community.',
+    image: '44fe95ba-8b95-46d0-bd53-49aa4a95bb56',
+    link: 'https://www.wappingersschools.org/',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+  {
+    name: 'Lovingly',
+    description:
+      "Lovingly's mission is to transform how gifts are given and received by combining 'innovative technology' with over 15 years of floral industry expertise. They aim to make gifting personal, intentional, and truly representative of the sender's feelings.",
+    image: '/09b0c9c5-fbb1-4409-9da1-0e3b89821a7c_1_d9x79i.png',
+    link: 'https://www.lovingly.com',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+  {
+    name: 'Hudson Buffet',
+    description:
+      'The Buffet is dedicated to satisfying every palate, from the adventurous foodie to the comfort-food enthusiast. About creating lasting memories, Hudson Buffet is the destination of choice in Fishkill, New York.',
+    image: 'Copy_of_Untitled_4_dg6b5p.svg',
+    link: 'https://emteahouse.com/hudsonbuffetfishkill/',
+    tier: 'Diamond',
+    tierColor: 'bg-blue-500',
+  },
+  {
     name: 'PC Construction',
     description:
       'PC Construction is a trusted national leader in general contracting, construction management, and design-build services.',
