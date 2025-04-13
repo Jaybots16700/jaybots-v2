@@ -26,7 +26,7 @@ const links = [
   ['Worlds', '/worlds', faEarthAmerica],
   ['3D Printing', '/3dprint'],
   ['Meet the Team', '/team', faPeopleGroup],
-  ['Join', 'https://interest.jaybots.org', faBullhorn],
+  ['Join', '/interest', faBullhorn],
   ['Outreach', '/outreach', faComments],
   ['Awards', '/awards', faAward],
   ['Donate', '/donate', faCircleDollarToSlot],

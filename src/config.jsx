@@ -1449,24 +1449,6 @@ export const sponsors = [
     tierColor: 'bg-purple-500',
   },
   {
-    name: 'Cim Tech',
-    description:
-      'Cim Tech is a 100% American owned and staffed manufacturing software solution partner.',
-    image: 'sponsors/qondjqpzsoozapsbgaaa',
-    link: 'https://www.cim-techcorp.com/',
-    tier: 'Platinum',
-    tierColor: 'bg-purple-500',
-  },
-  {
-    name: 'Gene Haas',
-    description:
-      'The Gene Haas Foundation supports education, community and competition programs that promote CNC technology.',
-    image: 'sponsors/y0b0bb3sxcbhx4jvq15p',
-    link: 'https://www.haascnc.com/',
-    tier: 'Platinum',
-    tierColor: 'bg-purple-500',
-  },
-  {
     name: 'Wappingers Central School District',
     description:
       'The mission of the Wappingers Central School District is to empower all of our students with the competencies and confidence to challenge themselves, to pursue their passions, and to realize their potential while growing as responsible members of their community.',
@@ -1484,6 +1466,25 @@ export const sponsors = [
     tier: 'Platinum',
     tierColor: 'bg-purple-500',
   },
+  {
+    name: 'Cim Tech',
+    description:
+      'Cim Tech is a 100% American owned and staffed manufacturing software solution partner.',
+    image: 'sponsors/qondjqpzsoozapsbgaaa',
+    link: 'https://www.cim-techcorp.com/',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+  {
+    name: 'Gene Haas',
+    description:
+      'The Gene Haas Foundation supports education, community and competition programs that promote CNC technology.',
+    image: 'sponsors/y0b0bb3sxcbhx4jvq15p',
+    link: 'https://www.haascnc.com/',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+
   {
     name: 'Hudson Buffet',
     description:
