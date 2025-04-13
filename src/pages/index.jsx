@@ -251,8 +251,11 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap items-center gap-12">
                 {sponsors.map((sponsor) => (
-                  // <div key={sponsor.name}>
-                  <Link href={sponsor.link} className="m-auto">
+                  <Link
+                    key={sponsor.name}
+                    href={sponsor.link}
+                    className="m-auto"
+                  >
                     <CldImage
                       src={sponsor.image}
                       width={720}
@@ -260,7 +263,6 @@ export default function Home() {
                       className="h-24 w-56 object-scale-down"
                     />
                   </Link>
-                  // </div>
                 ))}
               </div>
             </div>
