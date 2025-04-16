@@ -177,7 +177,7 @@ module.exports = {
       },
       {
         source: '/live',
-        destination: 'https://excelsiorny.org/live',
+        destination: 'https://www.twitch.tv/firstinspires_ochoa',
         permanent: false,
       },
       {
