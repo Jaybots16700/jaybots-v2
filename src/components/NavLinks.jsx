@@ -15,6 +15,7 @@ import {
   faBullhorn,
   faCommentsDollar,
   faEarthAmerica,
+  faVideo,
 } from '@fortawesome/free-solid-svg-icons'
 import { usePathname } from 'next/navigation'
 import { useSession } from 'next-auth/react'
@@ -31,6 +32,7 @@ const links = [
   ['Awards', '/awards', faAward],
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
+  ['Live', '/livelink', faVideo],
   ['Alumni', '/alumni', faGraduationCap],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
   ['Upcoming Events', '/events', faCalendarWeek],
