@@ -126,6 +126,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/stream',
+        destination: 'https://www.twitch.tv/fuzion_panda1',
+        permanent: false,
+      },
+      {
         source: '/live2',
         destination: 'https://youtube.com/live/Hp6LtIeRqfo?feature=share',
         permanent: true,
