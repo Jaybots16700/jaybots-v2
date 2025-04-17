@@ -140,7 +140,6 @@ module.exports = {
         destination: 'https://tally.so/r/wa0xLy',
         permanent: true,
       },
-
       {
         source: '/cadworkshop',
         destination:
