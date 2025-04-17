@@ -51,7 +51,7 @@ export default function Donate() {
                 </p>
                 <div className="flex w-full flex-col items-center justify-center space-x-4 md:flex-row">
                   <iframe
-                    src="https://player.twitch.tv/?channel=firstinspires_ochoa&parent=localhost"
+                    src={`https://player.twitch.tv/?channel=firstinspires_ochoa&parent=${process.env.DOMAIN}`}
                     frameBorder="0"
                     allowFullScreen
                     scrolling="no"
@@ -60,7 +60,7 @@ export default function Donate() {
                     className="rounded-3xl"
                   ></iframe>
                   <iframe
-                    src="https://player.twitch.tv/?channel=fuzion_panda1&parent=localhost"
+                    src={`https://player.twitch.tv/?channel=fuzion_panda1&parent=${process.env.DOMAIN}`}
                     frameBorder="0"
                     allowFullScreen
                     scrolling="no"
