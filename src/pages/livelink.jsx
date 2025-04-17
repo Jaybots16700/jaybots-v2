@@ -40,7 +40,7 @@ export default function Donate() {
                     className={linkStyle}
                     target="_blank"
                   ></Link>{' '}
-                  It's a robotics competition where the top 256 teams from
+                  It&apos;s a robotics competition where the top 256 teams from
                   around the world come together to compete. It is held each
                   year in Houston, TX
                   <span className="font-bold text-gray-100"></span>, and is from{' '}
@@ -91,12 +91,9 @@ export default function Donate() {
 
                 <div className="h-full w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20">
                   <p>
-                    Check out our vlog to get a behind-the-scenes look at our
-                    adventures in Houston during the FTC World Championship!
-                    From exploring the city to bonding with the team and
-                    experiencing the excitement of the event, you'll see what
-                    life was like both on and off the field. It’s a fun way to
-                    relive the memories and see what the journey was all about.
+                    {
+                      "Check out our vlog to get a behind-the-scenes look at our adventures in Houston during the FTC World Championship! From exploring the city to bonding with the team and experiencing the excitement of the event, you'll see what life was like both on and off the field. It's a fun way to relive the memories and see what the journey was all about."
+                    }
                   </p>
 
                   <Link href="https://www.twitch.tv/fuzion_panda1">
