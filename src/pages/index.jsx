@@ -66,7 +66,7 @@ export default function Home() {
     detectScroll(mediaRef, setMediaVis)
   }, [])
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   return (
     <>
