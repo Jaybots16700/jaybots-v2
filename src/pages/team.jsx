@@ -160,9 +160,8 @@ function Members({ committee, members }) {
         )
   const leader = members.find((member) => member.leader === committee)
 
-  const description = committeeDescript.find(
-    (comm) => comm.name === committee
-  ).description
+  const committeeObj = committeeDescript.find((comm) => comm.name === committee)
+  const description = committeeObj ? committeeObj.description : ''
 
   return (
     <div className="mt-24 md:mt-12" id={committee}>

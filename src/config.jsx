@@ -9,14 +9,14 @@ export const committeeNames = [
 ]
 
 export const otherCommittees = [
-  'Documentation',
+  //'Documentation',
   //'SITCOM',
-  'Equipment',
+  //'Equipment',
   'Media',
   'Branding',
-  'Manufacturing',
+  //'Manufacturing',
   'Game Master',
-  'Fundraising',
+  //'Fundraising',
   'Outreach',
 ]
 
@@ -51,7 +51,7 @@ export const committeeDescript = [
     description:
       'The creative minds behind the scenes, whose imaginative designs and innovative ideas lay the foundation for our robots, utilizing cutting-edge software to bring their concepts to life in the virtual realm before they become tangible realities.',
   },
-  {
+  /*{
     name: 'Documentation',
     description:
       'Our meticulous documentation committee, entrusted with the crucial task of capturing every step of our journey in the meticulous pages of our engineering notebook and portfolio, ensuring a comprehensive record of our progress, challenges, and triumphs throughout the robotics season.',
@@ -66,26 +66,31 @@ export const committeeDescript = [
     description:
       "The visual storytellers and social media wizards who capture the essence of our robotics journey through captivating photos, compelling videos, and engaging social media content, keeping our community connected and inspired by our team's accomplishments.",
   },
+  */
   {
     name: 'Branding',
     description:
       "The artistic visionaries behind our team's distinctive identity, crafting captivating team colors, logos, branding elements, and design aesthetics that reflect our spirit of innovation, teamwork, and excellence, leaving a lasting impression wherever our team goes.",
   },
+  /*
   {
     name: 'Manufacturing',
     description:
       'The masters of precision and customization, who operate and maintain our 3D printers and CNC machines with expertise, harnessing the power of technology to manufacture bespoke parts, pushing the boundaries of engineering and ensuring our robots are equipped with cutting-edge components.',
   },
+*/
   {
     name: 'Game Master',
     description:
       'Our strategic Game Master and their astute committee, who immerse themselves in the rules of the game, analyze gameplay strategies, and scout out other teams, equipping us with crucial insights and tactical advantages, setting the stage for competitive success in the thrilling world of robotics competitions.',
   },
+  /*
   {
     name: 'Fundraising',
     description:
       'A passionate group of individuals who spearhead creative initiatives and collaborative efforts to secure vital financial support, forging meaningful connections within our community and beyond to ensure the sustainable growth and success of our robotics team.',
   },
+  */
   {
     name: 'Outreach',
     description:
@@ -94,6 +99,79 @@ export const committeeDescript = [
 ]
 
 export const alumni = [
+  {
+    name: 'Nash',
+    title: 'President',
+    bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He is now the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
+    image: 'https://cdn.jaybots.org/team/nash.png',
+    year: 2025,
+    college: 'Georgia Tech',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120871/Copy_of_Untitled_usbeel.svg',
+  },
+  {
+    name: 'Hiroyuki',
+    title: 'Vice President',
+    bio: 'Hiro is a senior at John Jay High School and is the Vice-President of the club. He has been in robotics since his freshman year and was formerly the Architect/CAD Leader and unofficially the CIO for his sophomore and junior years. He now coaches the Phoenix Team and helps out with CAD for the Jaybots. After high school, Hiro plans on attending university for computer science or mechanical engineering.',
+    image:
+      'https://res.cloudinary.com/mozzarella-tedi/image/upload/q_auto/v1/TEDI%20Bio/rainbow-hiro?_a=BAVFB+DW0',
+    class: 2025,
+    college: 'Georgia Tech',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120871/Copy_of_Untitled_usbeel.svg',
+  },
+  {
+    name: 'Joey',
+    title: 'Foreman',
+    bio: "Joe is a senior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.",
+    image: '/images/JoeMoney.jpg',
+    year: 2025,
+    college: 'Georgia Tech',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120871/Copy_of_Untitled_usbeel.svg',
+  },
+  {
+    name: 'Joe Lopez',
+    title: 'Treasurer',
+    bio: 'Joe is a senior at John Jay, and this is his second year in robotics. As the Treasurer, he plans to raise as much money as possible for the teams success. Outside of robotics, Joe works for Bouquets by Christine, is a soon to be Eagle Scout, and enjoys cooking, fishing, coin collecting, spending time with friends, and contemplating the mysteries of life. His favorite dish is butter chicken. After high school, Joe aspires to major in mechanical engineering.',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1730223688/bios/g42ztah0rrgynhnnu4me.jpg',
+    year: 2025,
+    college: 'DCC',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1747106486/Untitled_design_1_fo8nik.svg',
+  },
+  {
+    name: 'Anthony',
+    title: 'Compiler',
+    bio: 'Anthony Giron (Compiler) is a senior at John Jay High School. This is his third year in robotics, and his first year on the Jaybots. He was the programming leader for the JV team while he was in his first year, and is now the treasurer as a part of the Jaybots. From robotics he has learned valuable skills of engineering and teamwork. Anthony plans to go to college into either the computer science or engineering field after high school. he enjoys to program games in his free time.',
+    image: '/images/Anthony.jpg',
+    year: 2025,
+    college: 'New Paltz',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1747106174/Untitled_design_quh8wj.svg',
+  },
+  {
+    name: 'Joanna',
+    title: 'Media Manager',
+    bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
+    image: '/images/Joanna.jpg',
+    year: 2025,
+    college: 'Georgia Tech',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120871/Copy_of_Untitled_usbeel.svg',
+  },
+  {
+    name: 'Pallavi',
+    title: 'Secretary',
+    bio: 'Pallavi is a senior on the team. She is in charge of managing social media, and documentation for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1747255815/Untitled_design_3_zuqoz3.png',
+    year: 2025,
+    college: 'University of Florida',
+    collegeLogo:
+      'https://res.cloudinary.com/jaybots/image/upload/v1747254981/Untitled_design_1_zpbtsf.png',
+  },
   {
     name: 'Anish',
     title: ['President'],
@@ -824,7 +902,7 @@ export const games = [
             type: 'Worlds',
             name: 'FTC World Championship',
             date: 'April 16-19, 2025',
-            awards: {},
+            awards: { first: ['Judges Choice'] },
             upcoming: true,
           },
         ],
@@ -1182,201 +1260,81 @@ export const games = [
 
 export const members = [
   {
-    name: 'Nash',
-    title: 'President',
-    committees: ['Officers', 'Code'],
-    leader: '',
-    bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He is now the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
-    image: 'https://cdn.jaybots.org/team/nash.png',
-  },
-  // {
-  //   name: 'Anish',
-  //   title: 'President',
-  //   committees: ['Code', 'Officers'],
-  //   bio: "Anish is a senior in his fourth year at the Robotics club. He plans to attend college after high school, majoring in computer science. He enjoys math & science in school and is part of other clubs like Science Olympiad & Computer Science Honor Society. In his free time, he enjoys playing tennis & working on other programming projects. He hopes to learn and work with the new, growing team. Anish is currently the president. Previously, he was the Programming Leader, managing an ever-growing group of recruits and teaching them valuable skills like Kotlin and Computer Vision. Two years ago, he was one of the Excelsior Region's Deans' List Finalists and went to the World Championship.",
-  //   image: 'https://cdn.jaybots.org/team/anish2.jpg',
-  // },
-  // {
-  //   name: 'Arnav',
-  //   title: 'Vice President',
-  //   committees: ['SITCOM', 'Officers'],
-  //   bio: 'Arnav is a senior at John Jay currently making light pink titrations. He spends a majority of his time on robotics, boxing and singing. He plans to go into the medical field. Arnav is excited to see the future of the Jaybots and how light pink his titrations can get.',
-  //   image: 'https://cdn.jaybots.org/team/arnav.jpeg',
-  // },
-  // {
-  //   name: 'Anaya',
-  //   title: 'Secretary',
-  //   committees: ['Game Master', 'Officers'],
-  //   leader: 'Documentation',
-  //   bio: 'Anaya is a Junior at John Jay Senior High School. This is her third year in the John Jay Robotics Club. She wants to attend college and go into the field of medicine after high school. She enjoys playing the Violin and tennis. She enjoys both math and science and takes part in the Math Honor Society as well as the competitive tennis team. She helps with build and has given herself the team photographer role(most of the pictures/videos you see on this website were 99% likely to be taken by her). She also helps out with the video production as well and wants to expand her communication skills to other FTC Teams as well as other important figures.',
-  //   image: 'https://cdn.jaybots.org/team/anaya/anaya.png',
-  // },
-  {
-    name: 'Hiroyuki',
-    title: 'Vice President',
-    committees: ['Officers', 'CAD'],
-    leader: '',
-    bio: 'Hiro is a senior at John Jay High School and is the Vice-President of the club. He has been in robotics since his freshman year and was formerly the Architect/CAD Leader and unofficially the CIO for his sophomore and junior years. He now coaches the Phoenix Team and helps out with CAD for the Jaybots. After high school, Hiro plans on attending university for computer science or mechanical engineering.',
-    image:
-      'https://res.cloudinary.com/mozzarella-tedi/image/upload/q_auto/v1/TEDI%20Bio/rainbow-hiro?_a=BAVFB+DW0',
-  },
-  {
-    name: 'Pallavi',
-    title: 'Secretary',
-    committees: ['Media', 'Officers', 'Documentation'],
-    bio: 'Pallavi is a senior on the team. She is in charge of managing social media, and documentation for the Robotics team. Outside of robotics, she plays tennis, the violin, is in student government, and debate club! In the future, Pallavi hopes to go into the medical field. ',
-    image: 'https://cdn.jaybots.org/team/pallavi.jpg',
-  },
-  {
-    name: 'Joe Lopez',
-    title: 'Treasurer',
-    committees: ['Officers'],
-    bio: 'Joe is a senior at John Jay, and this is his second year in robotics. As the Treasurer, he plans to raise as much money as possible for the teams success. Outside of robotics, Joe works for Bouquets by Christine, is a soon to be Eagle Scout, and enjoys cooking, fishing, coin collecting, spending time with friends, and contemplating the mysteries of life. His favorite dish is butter chicken. After high school, Joe aspires to major in mechanical engineering.',
-    image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1730223688/bios/g42ztah0rrgynhnnu4me.jpg',
-  },
-  /*{
-    name: 'Jamling Sherpa',
-    title: 'CIO',
-    committees: [''],
-    bio: 'Funny, cool, and epic CIO.',
-    image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1730223737/bios/fpyyzorbpcbkfxxzbbfg.jpg',
-  },
-  */
-  {
-    name: 'Mr. Amodio',
-    title: 'Mentor & Coach',
-    committees: ['Advisor'],
-    bio: 'James Amodio teaches Regents Physics and PLTW: Principles of Engineering at John Jay High School. While this is only his 5th year in the Wappingers Central School District, he has been an FTC Coach at Blind Brook High School as well as Roosevelt and Riverside High Schools in Yonkers, NY. He has also been coaching several Jr. FLL teams in the Arlington School District for the past 3 years. Mr. Amodio is very excited to be working with such a dedicated team as the JAYBOTS!',
-    image: 'https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg',
-  },
-  // {
-  //   name: 'Ms. Ingalls',
-  //   title: 'Mentor & Coach',
-  //   committees: [''],
-  //   bio: 'Ms. Amanda Ingalls is a School Library Media Specialist with 12 years of experience and has been a part of the John Jay High School family since 2019. She loves reading and research and is passionate about working with students and technology. She has assisted the JayBots in the past with 3D Printing projects, but this is her first year as an Assistant Coach on the team, and is very excited to be helping out.',
-  //   image: '/images/Ingalls.jpg',
-  // },
-  {
-    name: 'Anthony',
-    title: 'Compiler',
-    committees: ['Code', 'Officers'],
-    bio: 'Anthony Giron (Compiler) is a senior at John Jay High School. This is his third year in robotics, and his first year on the Jaybots. He was the programming leader for the JV team while he was in his first year, and is now the treasurer as a part of the Jaybots. From robotics he has learned valuable skills of engineering and teamwork. Anthony plans to go to college into either the computer science or engineering field after high school. he enjoys to program games in his free time.',
-    image: '/images/Anthony.jpg',
-  },
-  // {
-  //   name: 'Jason',
-  //   title: 'Foreman',
-  //   committees: ['CAD'],
-  //   leader: 'Build',
-  //   bio: 'Jason Bukofsky (Build Team, Design Team)  is a senior who is in his third year at the club. He wants to go into Aerospace engineering and is infatuated with ​​computers but is married to his 3d printer right now. He loves to sleep and play games with friends and is very competitive. His favorite class is design and drawing for production, where he learned to CAD. Currently, he is the foreman and part of the CAD team. ',
-  //   image: 'https://cdn.jaybots.org/team/jason.jpeg',
-  // },
-  {
     name: 'Matthew',
-    title: 'Architect',
-    committees: ['CAD', 'Officers', 'Build'],
+    title: 'President',
+    committees: ['Officers'],
     leader: '',
     bio: 'Matthew is a junior in his third year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Architect (CAD Leader).',
     image: '/images/Matthew.jpg',
   },
   {
-    name: 'Joey',
-    title: 'Foreman',
-    committees: ['Build', 'Officers'],
-    leader: 'SITCOM',
-    bio: "Joe is a senior at John Jay who loves Nutella Biscuits. He enjoys spending most of his time coding, doing robotics, playing piano, and playing basketball. He hopes to major in computer science in college. Joe has been working very hard here on the Jaybots, and can't wait to buy himself some Nutella Biscuits.",
-    image: '/images/JoeMoney.jpg',
-  },
-  {
-    name: 'Joanna',
-    title: 'Media Manager',
-    committees: ['Media'],
-    leader: '',
-    bio: 'Joanna George is in 12th Grade and has been on the team since the middle of Freshman Year. In the Robotics Club, Joanna is an officer and holds the Media Manager Position. She is also in the school’s Music Honor Society, Tri-M, where she is the Secretary, as well as a member of many other honor societies. She loves to play tennis, play the violin, and play with her dog named Jack. In the future, she plans to go to college, majoring in biomedical engineering.',
-    image: '/images/Joanna.jpg',
-  },
-  {
-    name: 'Anika',
-    title: 'Manufacter',
-    committees: ['CAD', 'Manufacturing'],
-    leader: '',
-    bio: 'Anika is a freshman at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
-    image: '/images/Anika.jpg',
-  },
-  // {
-  //   name: 'Kate',
-  //   title: 'Outreach Coordinater',
-  //   committees: ['Build'],
-  //   leader: 'Outreach',
-  //   bio: 'Kate is a Senior at John Jay and is in her 3rd year in Robotics. She is the Outreach Coordinator and a member of the Build Team. What Kate enjoys most about Robotics is the opportunities for community outreach and planning such activites with her team. She likes baking, reading, and crocheting in her free time. She is currently working towards her Girl Scout Gold Award which involves informing and encouraging girls to pursue careers in STEM. After High School, Kate hopes to become an Aerospace Engineer.',
-  //   image: 'https://cdn.jaybots.org/team/kate.jpeg',
-  // },
-  {
     name: 'Hailey',
-    title: 'Gamemaster',
-    committees: ['Game Master'],
+    title: 'Vice President',
+    committees: ['Game Master', 'Officers'],
     leader: 'Gamemaster',
     bio: 'Hailey Kim is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
     image: '/images/Hailey.jpg',
   },
   {
     name: 'Ava',
-    title: 'Branding Leader',
-    committees: ['Branding'],
-    leader: 'Branding Leader',
+    title: 'Media Manager',
+    committees: ['Branding', 'Media', 'Officers'],
+    leader: 'Media',
     bio: "Ava is a sophomore at John Jay High School and is in her second year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
   },
   {
     name: 'Nhan ',
-    title: 'Equipment Manager',
-    committees: ['Equipment'],
-    leader: 'Equipment Manager',
+    title: 'Treasurer',
+    committees: ['Officers'],
+    leader: 'Treasurer',
     bio: 'Nhan Nguyen is currently a junior of John Jay. He’s in charge with organizing the parts and supplies for easy access for the team. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741232471/sigma-nhan_becnwe.jpg',
   },
   {
+    name: 'Anika',
+    title: 'CAD Leader',
+    committees: ['CAD', 'Manufacturing', 'Officers'],
+    leader: '',
+    bio: 'Anika is a freshman at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
+    image: '/images/Anika.jpg',
+  },
+  {
+    name: 'Anthony',
+    title: 'Code Leader',
+    committees: ['Progamming', 'Officers'],
+    leader: 'Code Leader',
+    bio: '',
+    //image:
+    //  'https://res.cloudinary.com/jaybots/image/upload/v1747107044/2F469F9F-0642-4243-9313-F13C6F45F4B8_1_105_c_dcua0z.jpg',
+  },
+  {
+    name: 'Nate',
+    title: 'Build Leader',
+    committees: ['Build', 'Officers'],
+    leader: 'Build Leader',
+    bio: '',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1747107416/72449C75-E8E0-4C2A-B1CE-DB5753B10BAB_4_5005_c_fij6sb.jpg',
+  },
+
+  {
     name: 'Nicole',
     title: 'Outreach Manager',
-    committees: ['Outreach'],
+    committees: ['Outreach', 'Officers'],
     bio: 'Nicole is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Clu, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
   },
   {
-    name: 'Veda',
-    title: 'Webmaster',
-    committees: [''],
-    leader: '',
-    bio: 'Veda is a freshman on the Jaybots robotics team, and she is currently the webmaster. Veda loves playing the violin, drawing, playing volleyball, and singing carnatic music during her free time. She loves Indian food, especially jackfruit briyani. Veda has also been a member of science olympiad and math club for two years, and she still is. Veda hopes to major in business or biology.',
-    image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1744162877/Copy_of_Untitled_6_pfbhdi.svg',
+    name: 'Mr. Amodio',
+    title: 'Mentor & Coach',
+    committees: ['Advisors'],
+    bio: 'James Amodio teaches Regents Physics and PLTW: Principles of Engineering at John Jay High School. While this is only his 5th year in the Wappingers Central School District, he has been an FTC Coach at Blind Brook High School as well as Roosevelt and Riverside High Schools in Yonkers, NY. He has also been coaching several Jr. FLL teams in the Arlington School District for the past 3 years. Mr. Amodio is very excited to be working with such a dedicated team as the JAYBOTS!',
+    image: 'https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg',
   },
-
-  // {
-  //   name: 'Alex',
-  //   title: 'Game Master',
-  //   committees: ['Equipment'],
-  //   leader: 'Game Master',
-  //   bio: 'Alex Zhu (Game Master) is a junior on the team and it is his first year with the Jaybots. From robotics, he has learned valuable skills that apply to both engineering and physics. He is currently undecided but planning on pursuing a STEM field. His favorite subjects in school are Calculus and Physics. He participates in clubs such as Science Olympiad & Math Team, as well as numerous honor societies. He joined FTC because he loves robotics and being part of such a dedicated and hardworking team, as well as working with his friends. Currently the Game Master, or Scouting/Strategy leader, he hopes to have a fun year building, designing, and working with his fellow teammates.',
-  //   image: 'https://cdn.jaybots.org/team/alex/alexFULL.png',
-  // },
-  // {
-  //   name: 'Caden',
-  //   committees: [],
-  //   bio: 'Caden is a senior at John Jay High School. He joined Phoenix Robotics in his junior year, and the JAYBOTS this year. In school, he enjoys STEM classes, particularly courses with plenty of hands-on experience. Over the course of his membership with the Phoenixes and JAYBOTS, Caden has filled a variety of roles from outreach to building to dreaming up solutions to problems. He has experience designing assemblies with Onshape and coding with Scratch. Caden enjoys nature, puzzles, games, music and being involved with the wider FIRST community. He plans on going to a four-year college after high school. His favorite color is purple. ',
-  //   image: '/images/Caden.jpg',
-  // },
-  // {
-  //   name: 'Silvia',
-  //   committees: ['Build'],
-  //   bio: 'Silvia  is a senior at John Jay High School. This is her fourth year on the Jaybots. Her plans after High School are to go to college and study in the medical or engineering field. In school, she enjoys math and science classes along with participating in clubs like Science Olympiad. She is also in the Math Honor Society. She is interested in learning and trying new things out. In her free time, she swims competitively, plays the cello, and enjoys exploring the world. She decided to join FTC because she enjoys building things, soldering, and sharing her ideas with others. In robotics, she hopes to learn CAD, make new friends, achieve better leadership skills, and build a robot.',
-  //   image: 'https://cdn.jaybots.org/team/silvia2.jpg',
-  // },
 ]
 
 export const allImages = miscImages.concat(

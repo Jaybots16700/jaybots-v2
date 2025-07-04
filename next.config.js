@@ -53,6 +53,7 @@ module.exports = {
       { protocol: 'https', hostname: 'jaybots.org', port: '' },
       { protocol: 'http', hostname: 'via.placeholder.com', port: '' },
       { protocol: 'https', hostname: 'res.cloudinary.com', port: '' },
+      { protocol: 'https', hostname: 'file.coffee', port: '' },
     ],
   },
   async redirects() {
@@ -125,23 +126,23 @@ module.exports = {
         destination: 'https://youtube.com/live/_CGLcrJBpoU?feature=share',
         permanent: true,
       },
-      {
+      /*{
         source: '/stream',
         destination: 'https://www.twitch.tv/fuzion_panda1',
         permanent: false,
-      },
+      },*/
       {
         source: '/live2',
         destination: 'https://youtube.com/live/Hp6LtIeRqfo?feature=share',
         permanent: true,
       },
       {
-        source: '/workshops',
-        destination: 'https://tally.so/r/wa0xLy',
+        source: '/live',
+        destination: 'nyexcelsior.org/live',
         permanent: true,
       },
       {
-        source: '/cadworkshop',
+        source: '/workshops',
         destination:
           'https://docs.google.com/forms/d/17Ix3rWJQmDbYFauEUhPRZVeRvbajg0zkUcozukiefak/edit',
         permanent: false,
@@ -178,11 +179,6 @@ module.exports = {
         source: '/lunch-order',
         destination: 'https://tally.so/r/3j0gL4',
         permanent: true,
-      },
-      {
-        source: '/live',
-        destination: 'https://www.twitch.tv/firstinspires_ochoa',
-        permanent: false,
       },
       {
         source: '/valentines',
