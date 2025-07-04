@@ -33,7 +33,12 @@ export function Footer() {
               target="_blank"
               aria-label="Built with PostHog analytics + more"
             >
-              <img src="https://d1hovhsvet4m1p.cloudfront.net/badges/posthog-badge-transparent-bg-white-text.svg" />
+              <Image
+                src="https://d1hovhsvet4m1p.cloudfront.net/badges/posthog-badge-transparent-bg-white-text.svg"
+                alt="Built with PostHog analytics"
+                width={120}
+                height={30}
+              />
             </a>
           </div>
           <div className="grid w-full grid-cols-2 items-center justify-center space-x-2 sm:flex lg:justify-end">

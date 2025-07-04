@@ -1,4 +1,3 @@
-/*
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -10,7 +9,7 @@ import Colors from '@/components/Colors'
 
 import { linkStyle } from '@/config'
 
-export default function Donate() {
+export default function Worlds() {
   return (
     <>
       <Head>
@@ -184,4 +183,3 @@ export default function Donate() {
     </>
   )
 }
-*/

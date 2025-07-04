@@ -46,6 +46,10 @@ export default function Outreach() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [undoStack, setUndoStack] = useState([])
   const [redoStack, setRedoStack] = useState([])
+  const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false)
+  const [pendingChanges, setPendingChanges] = useState([])
+  const [showSaveConfirm, setShowSaveConfirm] = useState(false)
+  const [ignoreSSE, setIgnoreSSE] = useState(false)
 
   const [allSeasons, setAllSeasons] = useState([
     'Year 6 (2024-2025)',
@@ -61,15 +65,21 @@ export default function Outreach() {
   const pastSeasons = categories.slice(MAX_INLINE_SEASONS)
 
   async function fetchData() {
-    const [outreachRes, historyRes] = await Promise.all([
-      fetch('/api/outreach'),
-      fetch('/api/outreach_history'),
-    ])
-    const outreachData = await outreachRes.json()
-    const historyData = await historyRes.json()
-    setOutreach(outreachData)
-    setHistory(historyData)
-    setCategories(allSeasons)
+    const res = await fetch('/api/outreach')
+    const data = await res.json()
+    setOutreach(data.outreach || [])
+    setCategories(
+      data.categories && data.categories.length > 0
+        ? data.categories
+        : [
+            'Year 6 (2024-2025)',
+            'Year 5 (2023-2024)',
+            'Year 4 (2022-2023)',
+            'Year 3 (2021-2022)',
+            'Year 2 (2020-2021)',
+            'Year 1 (2019-2020)',
+          ]
+    )
   }
 
   useEffect(() => {
@@ -77,7 +87,118 @@ export default function Outreach() {
     if (typeof window !== 'undefined') {
       setJaybotsOfficer(localStorage.getItem('jaybots_officer') || '')
     }
-  }, [])
+
+    // Set up real-time updates using Server-Sent Events
+    const eventSource = new EventSource('/api/outreach/stream')
+
+    eventSource.onmessage = (event) => {
+      if (hasUnsavedChanges || ignoreSSE) return // Ignore backend updates if you have local changes or just published
+      const data = JSON.parse(event.data)
+      if (data.type === 'outreach_updated') {
+        fetchData()
+      }
+    }
+
+    eventSource.onerror = (error) => {
+      console.error('SSE connection error:', error)
+      // Reconnect after 5 seconds
+      setTimeout(() => {
+        if (eventSource.readyState === EventSource.CLOSED) {
+          window.location.reload()
+        }
+      }, 5000)
+    }
+
+    return () => {
+      eventSource.close()
+    }
+  }, [hasUnsavedChanges, ignoreSSE]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Handle unsaved changes warning
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      if (hasUnsavedChanges) {
+        e.preventDefault()
+        e.returnValue =
+          'You have unsaved changes. Are you sure you want to leave?'
+        return e.returnValue
+      }
+    }
+
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+  }, [hasUnsavedChanges])
+
+  // Save all pending changes with confirmation
+  const saveAllChanges = async () => {
+    setShowSaveConfirm(false)
+    if (pendingChanges.length === 0) return
+    try {
+      const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
+      for (const change of pendingChanges) {
+        if (change.type === 'update') {
+          await fetch('/api/outreach', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              item: change.data,
+              user,
+              description: change.description,
+              categories,
+            }),
+          })
+        } else if (change.type === 'delete') {
+          await fetch('/api/outreach', {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              _id: change.data._id,
+              user,
+              description: change.description,
+              categories,
+            }),
+          })
+        } else if (change.type === 'add-season') {
+          const newCategories = [
+            change.data,
+            ...categories.filter((s) => s !== change.data),
+          ]
+          // Check if a 'New Event' already exists for this season
+          const alreadyExists = outreach.some(
+            (e) => e.seasonString === change.data && e.title === 'New Event'
+          )
+          if (!alreadyExists) {
+            const newEvent = {
+              title: 'New Event',
+              date: '',
+              short: '',
+              long: '',
+              image: '',
+              seasonString: change.data,
+            }
+            await fetch('/api/outreach', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                item: newEvent,
+                user,
+                description: change.description,
+                categories: newCategories,
+              }),
+            })
+          }
+        }
+      }
+      setIgnoreSSE(true)
+      setPendingChanges([])
+      setHasUnsavedChanges(false)
+      fetchData()
+      setTimeout(() => setIgnoreSSE(false), 1500)
+      alert('All changes published!')
+    } catch (error) {
+      alert('Failed to save some changes. Please try again.')
+    }
+  }
 
   async function saveOutreachToBackend(newOutreach, user, description) {
     await fetch('/api/outreach', {
@@ -93,84 +214,95 @@ export default function Outreach() {
     fetchData()
   }
 
+  function pushUndo() {
+    setUndoStack((prev) => [
+      { outreach: [...outreach], categories: [...categories] },
+      ...prev,
+    ])
+    setRedoStack([])
+  }
+
   const handleUndo = async () => {
     if (undoStack.length === 0) return
-    const prev = undoStack[undoStack.length - 1]
-    setUndoStack(undoStack.slice(0, -1))
-    setRedoStack([outreach, ...redoStack])
-    await saveOutreachToBackend(
-      prev,
-      session?.user?.name || jaybotsOfficer || 'Unknown User',
-      'Undo'
-    )
+    setRedoStack((prev) => [
+      { outreach: [...outreach], categories: [...categories] },
+      ...prev,
+    ])
+    const last = undoStack[0]
+    setOutreach(last.outreach)
+    setCategories(last.categories)
+    setUndoStack((prev) => prev.slice(1))
+    setHasUnsavedChanges(true)
+    // Log history and update backend
+    const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
+    await fetch('/api/outreach', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        all: last.outreach,
+        user,
+        description: 'Undo',
+        categories: last.categories,
+      }),
+    })
   }
+
   const handleRedo = async () => {
     if (redoStack.length === 0) return
+    setUndoStack((prev) => [
+      { outreach: [...outreach], categories: [...categories] },
+      ...prev,
+    ])
     const next = redoStack[0]
-    setRedoStack(redoStack.slice(1))
-    setUndoStack([...undoStack, outreach])
-    await saveOutreachToBackend(
-      next,
-      session?.user?.name || jaybotsOfficer || 'Unknown User',
-      'Redo'
-    )
+    setOutreach(next.outreach)
+    setCategories(next.categories)
+    setRedoStack((prev) => prev.slice(1))
+    setHasUnsavedChanges(true)
+    // Log history and update backend
+    const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
+    await fetch('/api/outreach', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        all: next.outreach,
+        user,
+        description: 'Redo',
+        categories: next.categories,
+      }),
+    })
   }
 
   function withUndo(action) {
     return async (...args) => {
-      setUndoStack([...undoStack, outreach])
-      setRedoStack([])
+      pushUndo()
       await action(...args)
     }
   }
 
-  const handleAddSeason = withUndo(async () => {
+  // Add new season locally, only publish on save
+  const handleAddSeason = async () => {
     if (!newSeasonName) return
-
-    const updatedCategories = [
+    setAllSeasons((prev) => [
       newSeasonName,
-      ...categories.filter((s) => s !== newSeasonName),
-    ]
-    const updatedAllSeasons = [
+      ...prev.filter((s) => s !== newSeasonName),
+    ])
+    setCategories((prev) => [
       newSeasonName,
-      ...allSeasons.filter((s) => s !== newSeasonName),
-    ]
-
-    setAllSeasons(updatedAllSeasons)
-    setCategories(updatedCategories)
-
-    const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
-    const newEvent = {
-      title: 'New Event',
-      date: '',
-      short: '',
-      long: '',
-      image: '',
-      seasonString: newSeasonName,
-    }
-
-    try {
-      await fetch('/api/outreach', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          item: newEvent,
-          user,
-          description: `Added new season "${newSeasonName}"`,
-          categories: updatedCategories,
-        }),
-      })
-
-      setAddSeasonDialogOpen(false)
-      setNewSeasonName('')
-
-      setOutreach((prev) => [...prev, newEvent])
-    } catch (error) {
-      setAllSeasons(allSeasons)
-      setCategories(categories)
-      console.error('Failed to add season:', error)
-    }
-  })
+      ...prev.filter((s) => s !== newSeasonName),
+    ])
+    setSelectedIndex(0)
+    setPendingChanges((prev) => [
+      ...prev,
+      {
+        type: 'add-season',
+        data: newSeasonName,
+        description: `Added new season "${newSeasonName}"`,
+      },
+    ])
+    setHasUnsavedChanges(true)
+    setAddSeasonDialogOpen(false)
+    setNewSeasonName('')
+  }
 
   const handleAddEvent = withUndo(async () => {
     if (
@@ -246,57 +378,84 @@ export default function Outreach() {
       </Head>
       <Nav />
       <main>
-        <div className="animate-all z-50 flex h-screen w-full flex-col overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 lg:pl-64">
-          <Header
-            title="Outreach"
-            beforeBold="Outreaching "
-            bold="all over"
-            afterBold=" the community."
-          />
+        <div className="animate-all z-50 flex min-h-screen w-full flex-col overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 lg:pl-64">
+          <Header title="Outreach" beforeBold="" bold="" afterBold="" />
+
+          {/* Admin Controls */}
+          {(session?.user?.email || jaybotsOfficer) && (
+            <div className="flex flex-row items-center justify-center gap-2 py-4">
+              <button
+                className="rounded bg-gray-700 px-4 py-2 text-white disabled:opacity-50"
+                onClick={handleUndo}
+                disabled={undoStack.length === 0}
+              >
+                Undo
+              </button>
+              <button
+                className="rounded bg-gray-700 px-4 py-2 text-white disabled:opacity-50"
+                onClick={handleRedo}
+                disabled={redoStack.length === 0}
+              >
+                Redo
+              </button>
+              <button
+                className="rounded bg-blue-700 px-4 py-2 text-white"
+                onClick={() => setShowHistory(true)}
+              >
+                View History
+              </button>
+              <button
+                className="rounded bg-blue-600 px-4 py-2 font-semibold text-white"
+                onClick={() => setAddPromptOpen(true)}
+              >
+                + Add New Season/Event
+              </button>
+            </div>
+          )}
+
+          {/* Save All Changes Button */}
+          {hasUnsavedChanges && (session?.user?.email || jaybotsOfficer) && (
+            <div className="mt-4 flex justify-center">
+              <button
+                className="rounded-lg bg-green-600 px-6 py-3 text-lg font-bold text-white shadow-lg hover:bg-green-700"
+                onClick={() => setShowSaveConfirm(true)}
+              >
+                Save All Changes
+              </button>
+              <Dialog
+                open={showSaveConfirm}
+                onClose={() => setShowSaveConfirm(false)}
+                className="fixed inset-0 z-50 flex items-center justify-center"
+              >
+                <div className="fixed inset-0 bg-black/60" aria-hidden="true" />
+                <Dialog.Panel className="relative w-full max-w-md rounded-2xl border border-blue-700 bg-gradient-to-br from-blue-900 via-slate-900 to-blue-800 p-8 shadow-2xl">
+                  <Dialog.Title className="mb-4 text-xl font-bold text-white">
+                    Publish Changes?
+                  </Dialog.Title>
+                  <p className="mb-6 text-blue-200">
+                    Are you sure you want to publish all your changes to the
+                    site? This will make them visible to everyone.
+                  </p>
+                  <div className="flex justify-end gap-4">
+                    <button
+                      className="rounded bg-gray-600 px-4 py-2 text-white"
+                      onClick={() => setShowSaveConfirm(false)}
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      className="rounded bg-green-600 px-4 py-2 font-bold text-white"
+                      onClick={saveAllChanges}
+                    >
+                      Publish
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Dialog>
+            </div>
+          )}
 
           <div className="w-full py-12 text-gray-400 lg:pb-24">
-            {(session?.user?.email || jaybotsOfficer) && (
-              <div className="mb-6 flex w-full justify-center gap-4">
-                <button
-                  onClick={handleUndo}
-                  className={`rounded bg-gray-700 px-3 py-1 text-white ${
-                    undoStack.length === 0
-                      ? 'cursor-not-allowed opacity-50'
-                      : ''
-                  }`}
-                  disabled={undoStack.length === 0}
-                >
-                  Undo
-                </button>
-                <button
-                  onClick={handleRedo}
-                  className={`rounded bg-gray-700 px-3 py-1 text-white ${
-                    redoStack.length === 0
-                      ? 'cursor-not-allowed opacity-50'
-                      : ''
-                  }`}
-                  disabled={redoStack.length === 0}
-                >
-                  Redo
-                </button>
-                <button
-                  onClick={() => setShowHistory(true)}
-                  className="rounded bg-blue-700 px-3 py-1 text-white"
-                >
-                  View History
-                </button>
-              </div>
-            )}
-            {(session?.user?.email || jaybotsOfficer) && (
-              <div className="mb-6 flex w-full justify-center">
-                <button
-                  className="rounded-full bg-gradient-to-r from-blue-700 to-blue-500 px-6 py-2 text-lg font-semibold text-white shadow-md transition hover:from-blue-800 hover:to-blue-600"
-                  onClick={() => setAddPromptOpen(true)}
-                >
-                  + Add New Season/Event
-                </button>
-              </div>
-            )}
             <HeadlessDialog
               open={addPromptOpen}
               onClose={() => setAddPromptOpen(false)}
@@ -457,9 +616,11 @@ export default function Outreach() {
                     </div>
                     <div className="flex w-full items-center justify-center gap-6">
                       {newEventData.image ? (
-                        <img
+                        <Image
                           src={newEventData.image}
                           alt="Preview"
+                          width={160}
+                          height={160}
                           className="aspect-square w-40 rounded-xl border-2 border-blue-700 object-cover shadow-lg"
                         />
                       ) : (
@@ -657,7 +818,6 @@ export default function Outreach() {
                 )}
               </div>
             </div>
-
             <div className="relative mt-8 flex w-full justify-center">
               <div className="grid w-96 grid-cols-1 justify-center gap-12 px-10 sm:w-[40rem] sm:grid-cols-2 xl:w-[60rem] xl:grid-cols-3 2xl:w-[80rem] 2xl:grid-cols-4">
                 {outreach
@@ -673,6 +833,9 @@ export default function Outreach() {
                       }
                       categories={categories}
                       setOutreach={setOutreach}
+                      setHasUnsavedChanges={setHasUnsavedChanges}
+                      setPendingChanges={setPendingChanges}
+                      pendingChanges={pendingChanges}
                     />
                   ))}
               </div>
@@ -729,7 +892,17 @@ export default function Outreach() {
   )
 }
 
-function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
+function Event({
+  event,
+  canEdit,
+  fetchData,
+  user,
+  categories,
+  setOutreach,
+  setHasUnsavedChanges,
+  setPendingChanges,
+  pendingChanges,
+}) {
   const [open, setOpen] = useState(false)
   const [editModal, setEditModal] = useState(false)
   const [editData, setEditData] = useState({
@@ -754,40 +927,40 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
   }
 
   const handleSave = async () => {
-    await fetch('/api/outreach', {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        item: { ...event, ...editData },
-        user,
+    const updatedEvent = { ...event, ...editData }
+    const changeId = Date.now()
+    setPendingChanges((prev) => [
+      ...prev,
+      {
+        id: changeId,
+        type: 'update',
+        data: updatedEvent,
         description: `Edited event "${editData.title}"`,
-        categories,
-      }),
-    })
+      },
+    ])
+    setHasUnsavedChanges(true)
+    setOutreach((prev) =>
+      prev.map((e) => (e._id === event._id ? updatedEvent : e))
+    )
     setEditModal(false)
-    fetchData()
   }
 
   const handleDelete = async () => {
+    const changeId = Date.now()
+    setPendingChanges((prev) => [
+      ...prev,
+      {
+        id: changeId,
+        type: 'delete',
+        data: event,
+        description: `Deleted event "${event.title}"`,
+      },
+    ])
+    setHasUnsavedChanges(true)
     setOutreach((prev) =>
       prev.filter((e) => e._id !== event._id && e.title !== event.title)
     )
     setEditModal(false)
-    try {
-      await fetch('/api/outreach', {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          _id: event._id,
-          user,
-          description: `Deleted event "${event.title}"`,
-          categories,
-        }),
-      })
-    } catch (error) {
-      setOutreach((prev) => [...prev, event])
-      console.error('Failed to delete event:', error)
-    }
   }
 
   return (
@@ -800,6 +973,7 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
         width={300}
         height={400}
         className="aspect-square w-full object-cover"
+        alt={event.title || 'Event image'}
       />
       <div className="w-full px-2">
         <div className="mx-3 h-fit overflow-hidden whitespace-nowrap rounded-full p-2 text-center text-lg font-semibold leading-6 text-gray-200">

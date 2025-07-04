@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/tailwind.css'
 import { Suspense } from 'react'
-import { SessionProvider } from 'next-auth/react'
+import Providers from './Providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +23,7 @@ export default function RootLayout({
         className={`${inter.className} min-h-screen bg-slate-800 text-white`}
       >
         <Suspense>
-          <SessionProvider>{children}</SessionProvider>
+          <Providers>{children}</Providers>
         </Suspense>
       </body>
     </html>

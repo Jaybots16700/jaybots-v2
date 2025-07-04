@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import clsx from 'clsx'
@@ -147,28 +149,18 @@ export function NavLinks({ current }) {
             Log out
           </button>
         </div>
-      ) : session.status === 'authenticated' ? (
+      ) : (
         <button
-          onClick={() => signOut()}
-          className="relative flex w-full items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0"
+          onClick={() => setShowModal(true)}
+          className="relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0"
         >
-          <LogoutIcon fill="white" />
-          <span className="relative z-10 col-span-5 pl-3">Sign Out</span>
+          <FontAwesomeIcon
+            icon={faLock}
+            className="h-6 w-6 place-self-center"
+          />
+          <span className="relative z-10 col-span-5 pl-3">Jaybots Login</span>
         </button>
-      ) : session.status === 'unauthenticated' ? (
-        <>
-          <button
-            onClick={() => setShowModal(true)}
-            className="relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0"
-          >
-            <FontAwesomeIcon
-              icon={faLock}
-              className="h-6 w-6 place-self-center"
-            />
-            <span className="relative z-10 col-span-5 pl-3">Jaybots Login</span>
-          </button>
-        </>
-      ) : null}
+      )}
 
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">

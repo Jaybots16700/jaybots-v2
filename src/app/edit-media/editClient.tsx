@@ -2,7 +2,6 @@
 
 'use client'
 import { CldImage, CldUploadButton } from 'next-cloudinary'
-import Head from 'next/head'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
@@ -11,7 +10,6 @@ import { useEffect, useState } from 'react'
 import Colors from '@/components/Colors'
 import Image from 'next/image'
 import clsx from 'clsx'
-import { setOutreachImage } from '@/lib/serverActions'
 
 const cloudinaryDarkStyles = {
   palette: {
@@ -202,8 +200,26 @@ export default function EditClientPage({
                     </CldUploadButton>
                     <button
                       className="self-center rounded-lg bg-blue-600/60 px-5 text-lg text-gray-200 ring-1 ring-slate-900 duration-150 hover:bg-blue-600 hover:text-white"
-                      onClick={() => {
-                        setOutreachImage(page, event._id, event)
+                      onClick={async () => {
+                        try {
+                          const response = await fetch('/api/outreach', {
+                            method: 'PUT',
+                            headers: {
+                              'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                              id: event._id,
+                              ...event,
+                            }),
+                          })
+                          if (response.ok) {
+                            console.log('Event updated successfully')
+                          } else {
+                            console.error('Failed to update event')
+                          }
+                        } catch (error) {
+                          console.error('Error updating event:', error)
+                        }
                       }}
                     >
                       Save

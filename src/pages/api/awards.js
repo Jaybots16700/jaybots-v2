@@ -1,7 +1,9 @@
 import { connectToDatabase } from '../../lib/db.ts'
 
-export default async (req, res) => {
+const handler = async (req, res) => {
   const { db } = await connectToDatabase()
 
   return res.json(await db.collection('awards').find({}).toArray())
 }
+
+export default handler

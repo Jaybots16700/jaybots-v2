@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Popover } from '@headlessui/react'
@@ -7,7 +8,7 @@ import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
 import { Container } from '@/components/Container'
 import { NavLinks } from '@/components/NavLinks'
 import { usePathname } from 'next/navigation'
-import { signIn } from "next-auth/react"
+import { signIn } from 'next-auth/react'
 
 function NavBar({ page }) {
   return (
