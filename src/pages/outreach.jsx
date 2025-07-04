@@ -88,11 +88,10 @@ export default function Outreach() {
       setJaybotsOfficer(localStorage.getItem('jaybots_officer') || '')
     }
 
-    // Set up real-time updates using Server-Sent Events
     const eventSource = new EventSource('/api/outreach/stream')
 
     eventSource.onmessage = (event) => {
-      if (hasUnsavedChanges || ignoreSSE) return // Ignore backend updates if you have local changes or just published
+      if (hasUnsavedChanges || ignoreSSE) return
       const data = JSON.parse(event.data)
       if (data.type === 'outreach_updated') {
         fetchData()
@@ -101,7 +100,7 @@ export default function Outreach() {
 
     eventSource.onerror = (error) => {
       console.error('SSE connection error:', error)
-      // Reconnect after 5 seconds
+
       setTimeout(() => {
         if (eventSource.readyState === EventSource.CLOSED) {
           window.location.reload()
@@ -112,9 +111,8 @@ export default function Outreach() {
     return () => {
       eventSource.close()
     }
-  }, [hasUnsavedChanges, ignoreSSE]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [hasUnsavedChanges, ignoreSSE])
 
-  // Handle unsaved changes warning
   useEffect(() => {
     const handleBeforeUnload = (e) => {
       if (hasUnsavedChanges) {
@@ -129,7 +127,6 @@ export default function Outreach() {
     return () => window.removeEventListener('beforeunload', handleBeforeUnload)
   }, [hasUnsavedChanges])
 
-  // Save all pending changes with confirmation
   const saveAllChanges = async () => {
     setShowSaveConfirm(false)
     if (pendingChanges.length === 0) return
@@ -163,7 +160,6 @@ export default function Outreach() {
             change.data,
             ...categories.filter((s) => s !== change.data),
           ]
-          // Check if a 'New Event' already exists for this season
           const alreadyExists = outreach.some(
             (e) => e.seasonString === change.data && e.title === 'New Event'
           )
@@ -233,7 +229,6 @@ export default function Outreach() {
     setCategories(last.categories)
     setUndoStack((prev) => prev.slice(1))
     setHasUnsavedChanges(true)
-    // Log history and update backend
     const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
     await fetch('/api/outreach', {
       method: 'PUT',
@@ -258,7 +253,6 @@ export default function Outreach() {
     setCategories(next.categories)
     setRedoStack((prev) => prev.slice(1))
     setHasUnsavedChanges(true)
-    // Log history and update backend
     const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
     await fetch('/api/outreach', {
       method: 'PUT',
@@ -279,7 +273,6 @@ export default function Outreach() {
     }
   }
 
-  // Add new season locally, only publish on save
   const handleAddSeason = async () => {
     if (!newSeasonName) return
     setAllSeasons((prev) => [

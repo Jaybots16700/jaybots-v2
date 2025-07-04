@@ -10,7 +10,6 @@ const DEFAULT_CATEGORIES = [
   'Year 1 (2019-2020)',
 ]
 
-// Helper to update categories in a dedicated collection
 async function updateCategories(db, categories) {
   const catCol = db.collection('outreach_categories')
   await catCol.updateOne(
@@ -38,11 +37,9 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     const outreach = await outreachCol.find({}).toArray()
-    // Also return categories
     let catDoc = await catCol.findOne({ _id: 'categories' })
     let categories = catDoc?.categories
     if (!categories || !Array.isArray(categories) || categories.length === 0) {
-      // Fallback to default if DB is empty
       categories = DEFAULT_CATEGORIES
       await updateCategories(db, categories)
     }
