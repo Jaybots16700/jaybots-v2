@@ -47,7 +47,6 @@ export default function Outreach() {
   const [undoStack, setUndoStack] = useState([])
   const [redoStack, setRedoStack] = useState([])
 
-  // Define all valid seasons
   const [allSeasons, setAllSeasons] = useState([
     'Year 6 (2024-2025)',
     'Year 5 (2023-2024)',
@@ -61,7 +60,6 @@ export default function Outreach() {
   const inlineSeasons = categories.slice(0, MAX_INLINE_SEASONS)
   const pastSeasons = categories.slice(MAX_INLINE_SEASONS)
 
-  // Fetch outreach and history from backend
   async function fetchData() {
     const [outreachRes, historyRes] = await Promise.all([
       fetch('/api/outreach'),
@@ -81,7 +79,6 @@ export default function Outreach() {
     }
   }, [])
 
-  // Helper to save outreach to backend (overwrite all)
   async function saveOutreachToBackend(newOutreach, user, description) {
     await fetch('/api/outreach', {
       method: 'PUT',
@@ -96,7 +93,6 @@ export default function Outreach() {
     fetchData()
   }
 
-  // Undo/Redo handlers
   const handleUndo = async () => {
     if (undoStack.length === 0) return
     const prev = undoStack[undoStack.length - 1]
@@ -120,7 +116,6 @@ export default function Outreach() {
     )
   }
 
-  // Wrap all outreach-changing actions to push to undoStack
   function withUndo(action) {
     return async (...args) => {
       setUndoStack([...undoStack, outreach])
@@ -129,11 +124,9 @@ export default function Outreach() {
     }
   }
 
-  // Add New Season
   const handleAddSeason = withUndo(async () => {
     if (!newSeasonName) return
 
-    // Update local state first
     const updatedCategories = [
       newSeasonName,
       ...categories.filter((s) => s !== newSeasonName),
@@ -146,7 +139,6 @@ export default function Outreach() {
     setAllSeasons(updatedAllSeasons)
     setCategories(updatedCategories)
 
-    // Add dummy event for new season
     const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
     const newEvent = {
       title: 'New Event',
@@ -172,17 +164,14 @@ export default function Outreach() {
       setAddSeasonDialogOpen(false)
       setNewSeasonName('')
 
-      // Update outreach data to include the new event
       setOutreach((prev) => [...prev, newEvent])
     } catch (error) {
-      // If the API call fails, revert the state changes
       setAllSeasons(allSeasons)
       setCategories(categories)
       console.error('Failed to add season:', error)
     }
   })
 
-  // Add New Event (wrap withUndo)
   const handleAddEvent = withUndo(async () => {
     if (
       !newEventData.title ||
@@ -214,27 +203,22 @@ export default function Outreach() {
     fetchData()
   })
 
-  // Delete Season
   const handleDeleteSeason = async (season) => {
     const user = session?.user?.name || jaybotsOfficer || 'Unknown User'
 
-    // Update local state first
     const updatedCategories = categories.filter((c) => c !== season)
     const updatedAllSeasons = allSeasons.filter((s) => s !== season)
     const eventsToDelete = outreach.filter((e) => e.seasonString === season)
 
-    // Update local state immediately
     setCategories(updatedCategories)
     setAllSeasons(updatedAllSeasons)
     setOutreach((prev) => prev.filter((e) => e.seasonString !== season))
 
-    // Reset selected index if the deleted season was selected
     if (categories.indexOf(season) === selectedIndex) {
       setSelectedIndex(0)
     }
 
     try {
-      // Delete all events with this seasonString
       for (const event of eventsToDelete) {
         await fetch('/api/outreach', {
           method: 'DELETE',
@@ -248,7 +232,6 @@ export default function Outreach() {
         })
       }
     } catch (error) {
-      // If the API call fails, revert the state changes
       setCategories(categories)
       setAllSeasons(allSeasons)
       setOutreach((prev) => [...prev, ...eventsToDelete])
@@ -272,7 +255,6 @@ export default function Outreach() {
           />
 
           <div className="w-full py-12 text-gray-400 lg:pb-24">
-            {/* Undo/Redo/History Buttons (officers only) */}
             {(session?.user?.email || jaybotsOfficer) && (
               <div className="mb-6 flex w-full justify-center gap-4">
                 <button
@@ -305,7 +287,6 @@ export default function Outreach() {
                 </button>
               </div>
             )}
-            {/* Add New Season/Event Button (officers only) */}
             {(session?.user?.email || jaybotsOfficer) && (
               <div className="mb-6 flex w-full justify-center">
                 <button
@@ -316,7 +297,6 @@ export default function Outreach() {
                 </button>
               </div>
             )}
-            {/* Add Prompt Dialog */}
             <HeadlessDialog
               open={addPromptOpen}
               onClose={() => setAddPromptOpen(false)}
@@ -414,7 +394,6 @@ export default function Outreach() {
                 </Transition>
               </div>
             </HeadlessDialog>
-            {/* Add Season Dialog */}
             <HeadlessDialog
               open={addSeasonDialogOpen}
               onClose={() => setAddSeasonDialogOpen(false)}
@@ -453,7 +432,6 @@ export default function Outreach() {
                 </HeadlessDialog.Panel>
               </div>
             </HeadlessDialog>
-            {/* Add Event Dialog */}
             <HeadlessDialog
               open={addEventDialogOpen}
               onClose={() => setAddEventDialogOpen(false)}
@@ -606,7 +584,6 @@ export default function Outreach() {
                 </HeadlessDialog.Panel>
               </div>
             </HeadlessDialog>
-            {/* Wrap season bar in a flex container for centering */}
             <div className="flex w-full flex-col items-center">
               <div className="flex flex-row items-center justify-center gap-2 md:gap-4 xl:gap-4">
                 {inlineSeasons.map((category, index) => (
@@ -706,7 +683,6 @@ export default function Outreach() {
           <Footer />
         </div>
       </main>
-      {/* History Modal */}
       {showHistory && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
           <div className="relative w-[32rem] max-w-full rounded-2xl border border-blue-700 bg-gradient-to-br from-blue-900 via-slate-900 to-blue-800 p-8 shadow-2xl">
@@ -766,7 +742,6 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
   })
   const cancelButtonRef = useRef(null)
 
-  // Handler for image upload
   const handleImageChange = (e) => {
     const file = e.target.files[0]
     if (file) {
@@ -778,7 +753,6 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
     }
   }
 
-  // Handler for save
   const handleSave = async () => {
     await fetch('/api/outreach', {
       method: 'PUT',
@@ -794,9 +768,7 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
     fetchData()
   }
 
-  // Handler for delete
   const handleDelete = async () => {
-    // Optimistically remove the event from the UI
     setOutreach((prev) =>
       prev.filter((e) => e._id !== event._id && e.title !== event.title)
     )
@@ -813,7 +785,6 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
         }),
       })
     } catch (error) {
-      // If the API call fails, revert the change
       setOutreach((prev) => [...prev, event])
       console.error('Failed to delete event:', error)
     }
@@ -868,7 +839,6 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
           )}
         </div>
       </div>
-      {/* Edit Modal */}
       <Transition.Root show={editModal} as={Fragment}>
         <Dialog
           as="div"
@@ -901,7 +871,6 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
               >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-2xl border border-blue-700 bg-gradient-to-br from-blue-900 via-slate-900 to-blue-800 text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="flex flex-col gap-6 px-6 pb-6 pt-8 sm:p-8 sm:pb-6">
-                    {/* Editable Title Box Above Image */}
                     <div className="mb-2 flex w-full justify-center">
                       <input
                         type="text"
@@ -916,7 +885,6 @@ function Event({ event, canEdit, fetchData, user, categories, setOutreach }) {
                         placeholder="Event Title"
                       />
                     </div>
-                    {/* Image and File Input Side by Side and Centered */}
                     <div className="flex w-full items-center justify-center gap-6">
                       <Image
                         src={editData.image}

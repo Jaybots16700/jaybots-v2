@@ -27,7 +27,6 @@ import { members } from '../config'
 
 const links = [
   ['Home', '/', faHouse],
-  //['Worlds', '/worlds', faEarthAmerica],
   ['3D Printing', '/3dprint'],
   ['Meet the Team', '/team', faPeopleGroup],
   ['Join', '/interest', faBullhorn],
@@ -38,7 +37,6 @@ const links = [
   ['Live', '/livelink', faVideo],
   ['Alumni', '/alumni', faGraduationCap],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
-  //['Newsletter', '/news', faNewspaper],
   ['Upcoming Events', '/events', faCalendarWeek],
   ['Contact Us', '/#contact', faEnvelopeOpenText],
 ]
@@ -57,7 +55,6 @@ export function NavLinks({ current }) {
   const pathname = usePathname()
   const linksToUse = pathname?.startsWith('/dashboard') ? dashboardLinks : links
 
-  // Jaybots Login modal state
   const [showModal, setShowModal] = useState(false)
   const [step, setStep] = useState(1)
   const [password, setPassword] = useState('')
@@ -72,7 +69,6 @@ export function NavLinks({ current }) {
     }
   }, [])
 
-  // Get current officers from members list
   const officers = members.filter(
     (m) =>
       m.title === 'President' ||
@@ -82,7 +78,6 @@ export function NavLinks({ current }) {
       m.name === 'Anika'
   )
 
-  // Handle login flow
   const handlePasswordSubmit = (e) => {
     e.preventDefault()
     if (password === 'Jaybots123!') {
@@ -136,7 +131,6 @@ export function NavLinks({ current }) {
       ))}
       <hr className="my-2" />
 
-      {/* AUTH BLOCK */}
       {session.status === 'loading' && (
         <div className="px-2 py-3 text-gray-400">Loading...</div>
       )}
@@ -163,17 +157,6 @@ export function NavLinks({ current }) {
         </button>
       ) : session.status === 'unauthenticated' ? (
         <>
-          {/*
-          <button
-            onClick={() => signIn('google')}
-            className="relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0"
-          >
-            <GoogleIcon />
-            <span className="relative z-10 col-span-5 pl-3">
-              Sign in with Google
-            </span>
-          </button>
-          */}
           <button
             onClick={() => setShowModal(true)}
             className="relative flex items-center rounded-xl px-2 py-3 text-base text-gray-300 transition-all delay-100 duration-200 hover:bg-blue-900/70 hover:font-bold hover:text-white hover:delay-0"
@@ -187,7 +170,6 @@ export function NavLinks({ current }) {
         </>
       ) : null}
 
-      {/* Jaybots Login Modal */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
           <div className="relative w-96 animate-fade-in rounded-2xl border border-blue-700 bg-gradient-to-br from-blue-900 via-slate-900 to-blue-800 p-8 shadow-2xl">
@@ -350,6 +332,4 @@ export const Socials = [
   },
 ]
 
-export const Sponsers = [
-  // Add sponsor data if needed
-]
+export const Sponsers = []
