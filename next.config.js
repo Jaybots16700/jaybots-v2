@@ -60,11 +60,11 @@ module.exports = {
     return [
       { source: '/calendar', destination: '/events', permanent: true },
       { source: '/contact', destination: '/#contact', permanent: true },
-      // {
-      //   source: '/interest',
-      //   destination: 'https://interest.jaybots.org',
-      //   permanent: true,
-      // },
+      {
+        source: '/interest',
+        destination: 'https://interest.jaybots.org',
+        permanent: true,
+      },
       {
         source: '/interest-form',
         destination: 'https://forms.gle/3oMMDQMRcBLNkHLS9',
