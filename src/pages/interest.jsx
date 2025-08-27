@@ -9,7 +9,7 @@ import Colors from '@/components/Colors'
 
 import { linkStyle } from '@/config'
 
-export default function Donate() {
+export default function Interest() {
   return (
     <>
       <Head>
