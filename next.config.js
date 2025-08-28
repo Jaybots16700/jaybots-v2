@@ -203,6 +203,11 @@ module.exports = {
           'https://www.gofundme.com/f/support-jaybots-journey-to-world-championships?qid=1e5af4b43383261eb074eaae1d40e1ee',
         permanent: true,
       },
+      {
+        source: '/join',
+        destination: 'https://tally.so/r/w4LZ5k',
+        permanent: true,
+      },
     ]
   },
 }
