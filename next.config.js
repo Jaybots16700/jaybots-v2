@@ -163,6 +163,7 @@ module.exports = {
       { source: '/competition', destination: '/host', permanent: true },
       { source: '/tournament', destination: '/host', permanent: true },
       { source: '/qualifier', destination: '/host', permanent: true },
+
       {
         source: '/host',
         destination:
