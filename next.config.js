@@ -208,6 +208,11 @@ module.exports = {
         destination: 'https://tally.so/r/w4LZ5k',
         permanent: true,
       },
+      {
+        source: '/highlights',
+        destination: 'https://www.youtube.com/watch?v=j7EjCXyEqos',
+        permanent: true,
+      },
     ]
   },
 }
