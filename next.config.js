@@ -139,7 +139,7 @@ module.exports = {
 
       {
         source: '/live',
-        destination: 'https://nyexcelsior.org/live',
+        destination: 'https://excelsiorny.org/live',
         permanent: true,
       },
       {
