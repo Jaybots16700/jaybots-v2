@@ -138,7 +138,7 @@ module.exports = {
       },
       {
         source: '/live',
-        destination: 'nyexcelsior.org/live',
+        destination: 'https://nyexcelsior.org/live',
         permanent: true,
       },
       {
