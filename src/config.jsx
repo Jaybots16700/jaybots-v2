@@ -1264,7 +1264,7 @@ export const members = [
     title: 'President',
     committees: ['Officers'],
     leader: '',
-    bio: 'Matthew is a junior in his third year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Architect (CAD Leader).',
+    bio: 'Matthew is a senior in his third year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Architect (CAD Leader).',
     image: '/images/Matthew.jpg',
   },
   {
@@ -1272,7 +1272,7 @@ export const members = [
     title: 'Vice President',
     committees: ['Game Master', 'Officers'],
     leader: 'Gamemaster',
-    bio: 'Hailey Kim is a junior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
+    bio: 'Hailey Kim is a senior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
     image: '/images/Hailey.jpg',
   },
   {
@@ -1280,7 +1280,7 @@ export const members = [
     title: 'Media Manager',
     committees: ['Branding', 'Media', 'Officers'],
     leader: 'Media',
-    bio: "Ava is a sophomore at John Jay High School and is in her second year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
+    bio: "Ava is a junior at John Jay High School and is in her second year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
   },
@@ -1289,7 +1289,7 @@ export const members = [
     title: 'Treasurer',
     committees: ['Officers'],
     leader: 'Treasurer',
-    bio: 'Nhan Nguyen is currently a junior of John Jay. He’s in charge with organizing the parts and supplies for easy access for the team. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
+    bio: 'Nhan Nguyen is currently a senior of John Jay. He’s in charge with organizing the parts and supplies for easy access for the team. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741232471/sigma-nhan_becnwe.jpg',
   },
@@ -1298,24 +1298,23 @@ export const members = [
     title: 'CAD Leader',
     committees: ['CAD', 'Manufacturing', 'Officers'],
     leader: '',
-    bio: 'Anika is a freshman at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
+    bio: 'Anika is a sophomore at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
     image: '/images/Anika.jpg',
   },
   {
     name: 'Anthony',
     title: 'Code Leader',
-    committees: ['Progamming', 'Officers'],
+    committees: ['Programming', 'Officers'],
     leader: 'Code Leader',
-    bio: '',
-    //image:
-    //  'https://res.cloudinary.com/jaybots/image/upload/v1747107044/2F469F9F-0642-4243-9313-F13C6F45F4B8_1_105_c_dcua0z.jpg',
+    bio: 'Anthony is currently a sophomore at John Jay High School. He enjoys robotics and programming. He is also a member of the Math Team and Science Olympiad. Other than his passion for robotics he is also an athlete, playing on the school varsity tennis team. He hopes to go to college for engineering in the future.',
+    image: '/images/AnthonyC.jpeg',
   },
   {
     name: 'Nate',
     title: 'Build Leader',
     committees: ['Build', 'Officers'],
     leader: 'Build Leader',
-    bio: '',
+    bio: 'Nate is a sophomore at John Jay High School. He enjoys building and designing robots. Outside of robotics he also enjoys playing chess and doing rock climbing,',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1747107416/72449C75-E8E0-4C2A-B1CE-DB5753B10BAB_4_5005_c_fij6sb.jpg',
   },
@@ -1324,7 +1323,7 @@ export const members = [
     name: 'Nicole',
     title: 'Outreach Manager',
     committees: ['Outreach', 'Officers'],
-    bio: 'Nicole is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Clu, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
+    bio: 'Nicole is a junior at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Clu, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
   },
