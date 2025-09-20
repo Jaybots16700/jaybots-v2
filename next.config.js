@@ -145,7 +145,7 @@ module.exports = {
       {
         source: '/workshops',
         destination:
-          'https://docs.google.com/forms/d/17Ix3rWJQmDbYFauEUhPRZVeRvbajg0zkUcozukiefak/edit',
+          'https://tally.so/r/wa0xLy',
         permanent: false,
       },
       {
