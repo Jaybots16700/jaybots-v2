@@ -144,8 +144,7 @@ module.exports = {
       },
       {
         source: '/workshops',
-        destination:
-          'https://tally.so/r/wa0xLy',
+        destination: 'https://tally.so/r/wa0xLy',
         permanent: false,
       },
       {
@@ -214,6 +213,12 @@ module.exports = {
         source: '/highlights',
         destination: 'https://www.youtube.com/watch?v=j7EjCXyEqos',
         permanent: true,
+      },
+      {
+        source: '/cadworkshop',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSdH1ivJsFfMjTW8a7HSxsQAz2DIqzE9wh076Pk8kaPdwRsgVQ/viewform',
+        permanent: false,
       },
     ]
   },
