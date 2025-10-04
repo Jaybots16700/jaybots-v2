@@ -1264,7 +1264,7 @@ export const members = [
     title: 'President',
     committees: ['Officers'],
     leader: '',
-    bio: 'Matthew is a senior in his third year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the Architect (CAD Leader).',
+    bio: 'Matthew is a senior in his 4th year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the President of the Robotics club.',
     image: '/images/Matthew.jpg',
   },
   {
@@ -1272,7 +1272,7 @@ export const members = [
     title: 'Vice President',
     committees: ['Game Master', 'Officers'],
     leader: 'Gamemaster',
-    bio: 'Hailey Kim is a senior at John Jay High School, and has been a part of the Robotics club for 3 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
+    bio: 'Hailey Kim is a senior at John Jay High School, and has been a part of the Robotics club for 4 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
     image: '/images/Hailey.jpg',
   },
   {
@@ -1280,7 +1280,7 @@ export const members = [
     title: 'Media Manager',
     committees: ['Branding', 'Officers'],
     leader: 'Media',
-    bio: "Ava is a junior at John Jay High School and is in her second year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
+    bio: "Ava is a junior at John Jay High School and is in her thirdyear on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
   },
@@ -1289,7 +1289,7 @@ export const members = [
     title: 'Treasurer',
     committees: ['Officers'],
     leader: 'Treasurer',
-    bio: 'Nhan Nguyen is currently a senior of John Jay. He’s in charge with organizing the parts and supplies for easy access for the team. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
+    bio: 'Nhan Nguyen is currently a senior of John Jay. He’s in charge with the clubs funds and sponsors. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
     image:
       '/images/Nhan2.jpeg',
   },
