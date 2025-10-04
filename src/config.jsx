@@ -1291,7 +1291,7 @@ export const members = [
     leader: 'Treasurer',
     bio: 'Nhan Nguyen is currently a senior of John Jay. He’s in charge with organizing the parts and supplies for easy access for the team. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
     image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741232471/sigma-nhan_becnwe.jpg',
+      '/images/Nhan2.jpeg',
   },
   {
     name: 'Anika',
@@ -1323,17 +1323,17 @@ export const members = [
     name: 'Nicole',
     title: 'Outreach Manager',
     committees: ['Outreach', 'Officers'],
-    bio: 'Nicole is a junior at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Clu, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
+    bio: 'Nicole is a junior at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Club, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
   },
   {
     name: 'Erika',
     title: 'Secretary',
-    committees: ['Officers'],
-    bio: 'Erika is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Secretary for the Jaybots team. She is also part of Science Olympiad. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
+    committees: ['Officers', 'Media'],
+    bio: 'Erika is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Secretary for the Jaybots team. She is also part of the Science Olympiad team and Computer Science Honor Society, fostering her love for science. She is excited to work with the other members of the Jaybots team this year!',
     image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
+      '/images/Erika.jpeg',
   },
   {
     name: 'Mr. Amodio',
