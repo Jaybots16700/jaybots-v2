@@ -105,28 +105,22 @@ export default function Interest() {
               <div className="relative isolate grid h-fit grid-cols-2 items-start justify-center space-x-8">
                 <div className="h-full w-full rounded-5xl bg-white/10 p-8 pb-6 font-light ring-1 ring-white/20">
                   <p>
-                    Donate to our{' '}
-                    <b className="font-bold  text-gray-200">GoFundMe</b>!
+                    Fill out our{' '}
+                    <b className="font-bold  text-gray-200">Interest Form</b>!
                   </p>
-                  <Link href="/fund-worlds">
+                  <Link href="https://docs.google.com/forms/d/1AGR_FZNmlev1sl2kBMSLAn5wS1NsLwnoopNnuqnTSEM/">
                     <div className="my-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-3xl font-bold text-white duration-150 hover:bg-blue-700">
-                      Donate
+                      Join
                     </div>
                   </Link>
                   <p className="text-sm">
-                    Your donation will be sent to the{' '}
-                    <Link
-                      href="https://jaybotsbooster.org"
-                      className={linkStyle}
-                    >
-                      Jaybots Booster Club
-                    </Link>
-                    , which is a{' '}
+                    Filling this out will allow you receive emails from us{''}
+                    {''}
                     <b className="font-bold  text-gray-200">
-                      501(c)3 organization
+
                     </b>
-                    . All donations are{' '}
-                    <b className="font-bold text-gray-200">tax deductible</b>.
+                    {''}
+                    <b className="font-bold text-gray-200"></b>.
                   </p>
                 </div>
 

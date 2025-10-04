@@ -102,8 +102,7 @@ export default function Home() {
                   </Link>
                   .
                 </p>
-                <p>
-                  After making it to the regional competition five years in a
+                <p>           to the regional competition five years in a
                   row, we have qualified for the{' '}
                   <span className="font-bold text-slate-300">
                     World Championships

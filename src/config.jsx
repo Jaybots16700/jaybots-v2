@@ -1304,7 +1304,7 @@ export const members = [
   {
     name: 'Anthony',
     title: 'Code Leader',
-    committees: ['Programming', 'Officers'],
+    committees: ['Code', 'Officers'],
     leader: 'Code Leader',
     bio: 'Anthony is currently a sophomore at John Jay High School. He enjoys robotics and programming. He is also a member of the Math Team and Science Olympiad. Other than his passion for robotics he is also an athlete, playing on the school varsity tennis team. He hopes to go to college for engineering in the future.',
     image: '/images/AnthonyC.jpeg',
@@ -1314,7 +1314,7 @@ export const members = [
     title: 'Build Leader',
     committees: ['Build', 'Officers'],
     leader: 'Build Leader',
-    bio: 'Nate is a sophomore at John Jay High School. He enjoys building and designing robots. Outside of robotics he also enjoys playing chess and doing rock climbing,',
+    bio: 'Nate is a sophomore at John Jay High School. He enjoys building and designing robots. Outside of robotics he also enjoys playing chess and rock climbing,',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1747107416/72449C75-E8E0-4C2A-B1CE-DB5753B10BAB_4_5005_c_fij6sb.jpg',
   },
@@ -1324,6 +1324,14 @@ export const members = [
     title: 'Outreach Manager',
     committees: ['Outreach', 'Officers'],
     bio: 'Nicole is a junior at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Clu, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
+  },
+  {
+    name: 'Erika',
+    title: 'Secretary',
+    committees: ['Officers'],
+    bio: 'Erika is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Secretary for the Jaybots team. She is also part of Science Olympiad. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
   },
