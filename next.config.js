@@ -201,7 +201,7 @@ module.exports = {
         source: '/fund-worlds',
         destination:
           'https://www.gofundme.com/f/support-jaybots-journey-to-world-championships?qid=1e5af4b43383261eb074eaae1d40e1ee',
-        permanent: true,
+        permanent: false,
       },
     ]
   },
