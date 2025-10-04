@@ -77,7 +77,8 @@ export function NavLinks({ current }) {
       m.title === 'Vice President' ||
       m.title === 'Media Manager' ||
       m.title === 'Outreach Manager' ||
-      m.name === 'Anika'
+      m.name === 'Anika' ||
+      m.name === 'Anthony'
   )
 
   const handlePasswordSubmit = (e) => {
