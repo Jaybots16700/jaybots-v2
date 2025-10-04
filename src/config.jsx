@@ -1278,7 +1278,7 @@ export const members = [
   {
     name: 'Ava',
     title: 'Media Manager',
-    committees: ['Branding', 'Media', 'Officers'],
+    committees: ['Branding', 'Officers'],
     leader: 'Media',
     bio: "Ava is a junior at John Jay High School and is in her second year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
     image:
