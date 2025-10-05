@@ -5,37 +5,38 @@ import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { Header } from '@/components/Header'
 import Colors from '@/components/Colors'
+import Link from 'next/link'
 
 const newsletters = [
   {
-    season: '2024-2025',
-    month: 'October',
-    title: 'yada yada',
-    description: 'yada yada ',
-    fullContent:
-      'yada yada yada yada yada yada yada yadayada yada yada yadayada yada yada yada',
-  },
-  {
-    season: '2024-2025',
-    month: 'April',
-    title: "We're going to Worlds!",
+    season: '2025-2026',
+    date: 'October 5, 2025',
+    title: "Jaybots Newsletter: October 2025",
     description:
-      'yada yada yada yada yada yada yada yadayada yada yada yadayada yada yada yada',
-    fullContent:
-      'yada yada yada yada yada yada yada yadayada yada yada yadayada yada yada yada',
+      "Welcome to the first 2025-26 season edition of the John Jay Robotics Team: Jaybots' monthly newsletter! Here we will share our robot progress, tournament details, and general team updates!",
+    link:
+      '/newsletters/october-2025.pdf',
   },
   {
-    season: '2023-2024',
-    month: 'March',
-    title: 'Regional Success',
-    description: 'A recap of our performance at the Regional competition.',
-    fullContent:
-      'We reached the semifinals, learned a lot from our matches, and are excited to build on this experience for next year.',
+    season: '2024-2025',
+    date: 'April 11, 2025',
+    title: "Hudson Valley Robot Builders to Battle in World Competition",
+    description:
+      'A group of impressive high school students is set to represent the Hudson Valley at the world championship of robotics, and they could use our help.',
+    link:
+      'https://wpdh.com/hudson-valley-robot-team/',
   },
+
+]
+
+const seasons = [
+  '2025-2026',
+  '2024-2025',
+
 ]
 
 export default function Newsletters() {
-  const [selectedSeason, setSelectedSeason] = useState('2024-2025')
+  const [selectedSeason, setSelectedSeason] = useState(seasons[0])
   const [expanded, setExpanded] = useState({})
 
   const toggleExpand = (key) => {
@@ -69,53 +70,41 @@ export default function Newsletters() {
           <div className="w-full text-gray-400 lg:pb-24">
             <div className="relative isolate h-full w-full space-y-6 p-12 text-center text-lg font-semibold text-gray-300">
               <div className="flex justify-center space-x-4">
-                {['2024-2025', '2023-2024'].map((season) => (
+                {seasons.map((season) => (
                   <button
                     key={season}
                     onClick={() => setSelectedSeason(season)}
-                    className={`rounded-full px-6 py-2 text-sm font-bold ${
-                      selectedSeason === season
-                        ? 'bg-blue-800 text-white'
-                        : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                    }`}
+                    className={`rounded-full px-6 py-2 text-sm font-bold ${selectedSeason === season
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                      }`}
                   >
                     {season}
                   </button>
                 ))}
               </div>
 
-              <div className="mt-8 space-y-6">
+              <div className="grid grid-cols-2 gap-4">
                 {filteredNewsletters.map((newsletter) => {
-                  const key = `${newsletter.season}-${newsletter.month}`
-                  const isExpanded = expanded[key] || showAllByDefault
+                  const key = newsletter.title
 
                   return (
-                    <div
+                    <Link
                       key={key}
-                      className="rounded-5xl bg-white/10 p-6 text-left ring-1 ring-white/20"
+                      className="bg-white/10 ring-1 ring-white/20 hover:ring-white/50 transition-all duration-300 p-4 rounded-3xl"
+                      href={newsletter.link}
+                      target="_blank"
                     >
-                      <h2 className="text-2xl font-bold text-white">
-                        {newsletter.month} - {newsletter.title}
+                      <h2 className="text-3xl font-bold text-white">
+                        {newsletter.title}
                       </h2>
-                      <p className="mt-2 text-gray-300">
+                      <h3 className="text-lg font-bold text-slate-200">
+                        {newsletter.date}
+                      </h3>
+                      <p className="mt-2 text-slate-400">
                         {newsletter.description}
                       </p>
-
-                      {isExpanded && (
-                        <p className="mt-4 text-gray-300">
-                          {newsletter.fullContent}
-                        </p>
-                      )}
-
-                      {!showAllByDefault && (
-                        <button
-                          onClick={() => toggleExpand(key)}
-                          className="mt-4 inline-block rounded-full bg-blue-800 px-6 py-2 text-sm font-bold text-white duration-150 hover:bg-blue-700"
-                        >
-                          {isExpanded ? 'Show Less' : 'Read More'}
-                        </button>
-                      )}
-                    </div>
+                    </Link>
                   )
                 })}
               </div>
@@ -125,7 +114,7 @@ export default function Newsletters() {
           </div>
           <Footer />
         </div>
-      </main>
+      </main >
     </>
   )
 }
