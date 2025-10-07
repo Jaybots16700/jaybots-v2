@@ -92,14 +92,14 @@ export function Footer() {
             </button>
           </form> */}
           <p className=" mt-4 text-center text-sm text-gray-400 md:mr-2 md:mt-0 md:text-start">
-            &copy; <span className="hidden sm:inline">Copyright </span>2024{' '}
+            &copy; <span className="hidden sm:inline">Copyright </span>2025{' '}
             <Link
               href="/"
               className="font-semibold text-gray-200 hover:font-bold"
             >
               Jaybots
             </Link>
-            . Created by Matthew. All rights reserved.
+            . Created by Anthony. All rights reserved.
           </p>
         </div>
       </Container>
