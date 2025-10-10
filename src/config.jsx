@@ -1416,9 +1416,9 @@ export const sponsors = [
   {
     name: 'Hatfield Metal Fabrication',
     description:
-      'PC Construction is a trusted national leader in general contracting, construction management, and design-build services.',
+      'One Source For All Metal Fabrication Needs. CNC Machine Shop Services. Mig and Tig Welding. Precision Sheet Metal Fabrication. Close Tolerance Laser Cutting. Dynamic Water Jet Cutting. Industrial Painting And Powder Coating. Certified ASME Manufacture And Repair. WBE Certified.',
     image: 'Hatfield_Logo',
-    link: 'https://pcconstruction.com/',
+    link: 'https://hatfieldmetal.com/',
     tierColor: 'bg-yellow-500',
   },
 ]
