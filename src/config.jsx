@@ -1405,15 +1405,6 @@ export const teamColors = (team, hover, border, justborder) => {
 
 export const sponsors = [
   {
-    name: 'Onsemi Giving Now',
-    description:
-      'Onsemi is an American semiconductor supplier company that specializes in delivering industry-leading intelligent power and intelligent sensing solutions  the automotive and industrial markets',
-    image: 'sponsors/lsnhfgzuztpynlolcuxg',
-    link: 'https://www.onsemi.com/company/environmental-social-and-governance/giving-now-program',
-    tier: 'Platinum',
-    tierColor: 'bg-purple-500',
-  },
-  {
     name: 'Wappingers Central School District',
     description:
       'The mission of the Wappingers Central School District is to empower all of our students with the competencies and confidence to challenge themselves, to pursue their passions, and to realize their potential while growing as responsible members of their community.',
@@ -1423,49 +1414,11 @@ export const sponsors = [
     tierColor: 'bg-purple-500',
   },
   {
-    name: 'Lovingly',
-    description:
-      "Lovingly's mission is to transform how gifts are given and received by combining 'innovative technology' with over 15 years of floral industry expertise. They aim to make gifting personal, intentional, and truly representative of the sender's feelings.",
-    image: '/09b0c9c5-fbb1-4409-9da1-0e3b89821a7c_1_d9x79i.png',
-    link: 'https://www.lovingly.com',
-    tier: 'Platinum',
-    tierColor: 'bg-purple-500',
-  },
-  {
-    name: 'Cim Tech',
-    description:
-      'Cim Tech is a 100% American owned and staffed manufacturing software solution partner.',
-    image: 'sponsors/qondjqpzsoozapsbgaaa',
-    link: 'https://www.cim-techcorp.com/',
-    tier: 'Platinum',
-    tierColor: 'bg-purple-500',
-  },
-  {
-    name: 'Gene Haas',
-    description:
-      'The Gene Haas Foundation supports education, community and competition programs that promote CNC technology.',
-    image: 'sponsors/y0b0bb3sxcbhx4jvq15p',
-    link: 'https://www.haascnc.com/',
-    tier: 'Platinum',
-    tierColor: 'bg-purple-500',
-  },
-
-  {
-    name: 'Hudson Buffet',
-    description:
-      'The Buffet is dedicated to satisfying every palate, from the adventurous foodie to the comfort-food enthusiast. About creating lasting memories, Hudson Buffet is the destination of choice in Fishkill, New York.',
-    image: 'Copy_of_Untitled_4_dg6b5p.svg',
-    link: 'https://emteahouse.com/hudsonbuffetfishkill/',
-    tier: 'Diamond',
-    tierColor: 'bg-blue-500',
-  },
-  {
-    name: 'PC Construction',
+    name: 'Hatfield Metal Fabrication',
     description:
       'PC Construction is a trusted national leader in general contracting, construction management, and design-build services.',
-    image: 'sponsors/atapspwkidluqqfrekb4',
+    image: 'Hatfield_Logo',
     link: 'https://pcconstruction.com/',
-    tier: 'Gold',
     tierColor: 'bg-yellow-500',
   },
 ]
