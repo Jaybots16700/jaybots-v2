@@ -173,7 +173,7 @@ module.exports = {
       {
         source: '/volunteer',
         destination:
-          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/volunteer-information',
+          'https://my.firstinspires.org/ExpressVolunteer/acknowledgements/2cabd8f1-9007-11f0-8745-00505699b848',
         permanent: true,
       },
       {
