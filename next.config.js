@@ -220,6 +220,11 @@ module.exports = {
           'https://docs.google.com/forms/d/e/1FAIpQLSdH1ivJsFfMjTW8a7HSxsQAz2DIqzE9wh076Pk8kaPdwRsgVQ/viewform',
         permanent: false,
       },
+      {
+        source: '/merit-badge',
+        destination: 'https://mycouncil.ghvscouting.org/Event/9937',
+        permanent: true,
+      },
     ]
   },
 }
