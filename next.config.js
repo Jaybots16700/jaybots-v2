@@ -225,6 +225,11 @@ module.exports = {
         destination: 'https://mycouncil.ghvscouting.org/Event/9937',
         permanent: true,
       },
+      {
+        source: '/game',
+        destination: 'https://www.youtube.com/watch?v=LCqWA6gSCXA',
+        permanent: false,
+      },
     ]
   },
 }
