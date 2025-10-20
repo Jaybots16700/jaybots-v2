@@ -160,14 +160,14 @@ module.exports = {
         permanent: false,
       },
 
-      { source: '/competition', destination: '/host', permanent: true },
-      { source: '/tournament', destination: '/host', permanent: true },
-      { source: '/qualifier', destination: '/host', permanent: true },
+      { source: '/competition', destination: '/tournament', permanent: true },
+      { source: '/host', destination: '/tournament', permanent: true },
+      { source: '/qualifier', destination: '/tournament', permanent: true },
 
       {
-        source: '/host',
+        source: '/tournament',
         destination:
-          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/home',
+          'https://sites.google.com/wcsdny.org/johnjayhighschoolroboticsquali',
         permanent: true,
       },
       {
