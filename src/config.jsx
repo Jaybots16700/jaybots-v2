@@ -1421,4 +1421,12 @@ export const sponsors = [
     link: 'https://hatfieldmetal.com/',
     tierColor: 'bg-yellow-500',
   },
+  {
+    name: 'Onshape',
+    description:
+      'Onshape is a cloud-based computer-aided design (CAD) and data management platform used for mechanical design. Its cloud-native architecture allows for real-time, simultaneous collaboration on a single design from any device with an internet connection, eliminating the need for software installation or updates.',
+    image: 'onshape_logo',
+    link: 'https://www.onshape.com/en/',
+    tierColor: 'bg-yellow-500',
+  },
 ]
