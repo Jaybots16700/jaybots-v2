@@ -136,15 +136,15 @@ module.exports = {
         destination: 'https://youtube.com/live/Hp6LtIeRqfo?feature=share',
         permanent: true,
       },
+
       {
         source: '/live',
-        destination: 'nyexcelsior.org/live',
+        destination: 'https://excelsiorny.org/live',
         permanent: true,
       },
       {
         source: '/workshops',
-        destination:
-          'https://docs.google.com/forms/d/17Ix3rWJQmDbYFauEUhPRZVeRvbajg0zkUcozukiefak/edit',
+        destination: 'https://tally.so/r/wa0xLy',
         permanent: false,
       },
       {
@@ -160,19 +160,20 @@ module.exports = {
         permanent: false,
       },
 
-      { source: '/competition', destination: '/host', permanent: true },
-      { source: '/tournament', destination: '/host', permanent: true },
-      { source: '/qualifier', destination: '/host', permanent: true },
+      { source: '/competition', destination: '/tournament', permanent: true },
+      { source: '/host', destination: '/tournament', permanent: true },
+      { source: '/qualifier', destination: '/tournament', permanent: true },
+
       {
-        source: '/host',
+        source: '/tournament',
         destination:
-          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/home',
+          'https://sites.google.com/wcsdny.org/johnjayhighschoolroboticsquali',
         permanent: true,
       },
       {
         source: '/volunteer',
         destination:
-          'https://sites.google.com/wcsdny.org/john-jay-high-school-robotics-/volunteer-information',
+          'https://my.firstinspires.org/ExpressVolunteer/acknowledgements/2cabd8f1-9007-11f0-8745-00505699b848',
         permanent: true,
       },
       {
@@ -201,6 +202,32 @@ module.exports = {
         source: '/fund-worlds',
         destination:
           'https://www.gofundme.com/f/support-jaybots-journey-to-world-championships?qid=1e5af4b43383261eb074eaae1d40e1ee',
+        permanent: false,
+      },
+      {
+        source: '/join',
+        destination: 'https://tally.so/r/w4LZ5k',
+        permanent: true,
+      },
+      {
+        source: '/highlights',
+        destination: 'https://www.youtube.com/watch?v=j7EjCXyEqos',
+        permanent: true,
+      },
+      {
+        source: '/cadworkshop',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSdH1ivJsFfMjTW8a7HSxsQAz2DIqzE9wh076Pk8kaPdwRsgVQ/viewform',
+        permanent: false,
+      },
+      {
+        source: '/merit-badge',
+        destination: 'https://mycouncil.ghvscouting.org/Event/9937',
+        permanent: true,
+      },
+      {
+        source: '/game',
+        destination: 'https://www.youtube.com/watch?v=LCqWA6gSCXA',
         permanent: false,
       },
     ]
