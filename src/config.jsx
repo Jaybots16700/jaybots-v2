@@ -1422,11 +1422,11 @@ export const sponsors = [
     tierColor: 'bg-yellow-500',
   },
   {
-    name: 'Onshape',
+    name: 'PTC',
     description:
-      'Onshape is a cloud-based computer-aided design (CAD) and data management platform used for mechanical design. Its cloud-native architecture allows for real-time, simultaneous collaboration on a single design from any device with an internet connection, eliminating the need for software installation or updates.',
-    image: 'onshape_logo',
-    link: 'https://www.onshape.com/en/',
+      'PTC Inc. is a tech company that makes software for designing and managing products. It owns tools like Creo and Onshape for 3D design, Windchill for product data, and ThingWorx for connecting devices, helping companies build smarter and faster.',
+    image: 'ptc_logo',
+    link: 'https://www.ptc.com/en',
     tierColor: 'bg-yellow-500',
   },
 ]

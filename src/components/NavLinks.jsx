@@ -21,6 +21,7 @@ import {
   faNewspaper,
   faEdit,
   faLock,
+  faTrophy,
 } from '@fortawesome/free-solid-svg-icons'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
@@ -34,6 +35,7 @@ const links = [
   ['Join', '/interest', faBullhorn],
   ['Outreach', '/outreach', faComments],
   ['Awards', '/awards', faAward],
+  ['Tournaments', '/tournaments', faTrophy],
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
   ['Newsletters', '/news', faNewspaper],
