@@ -117,7 +117,7 @@ export default function Tournaments() {
                                         We welcome volunteers to help with our tournaments and events!
                                         Volunteers can assist with setup, judging, refereeing, or general event support.
                                     </p>
-                                    <Link href="jaybots.org/volunteer" target="_blank">
+                                    <Link href="/volunteer">
                                         <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
                                             <p className="font-normal text-white">
                                                 Register to <b className="font-bold">Volunteer</b>
