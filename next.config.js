@@ -163,13 +163,6 @@ module.exports = {
       { source: '/competition', destination: '/tournament', permanent: true },
       { source: '/host', destination: '/tournament', permanent: true },
       { source: '/qualifier', destination: '/tournament', permanent: true },
-
-      {
-        source: '/tournament',
-        destination:
-          'https://sites.google.com/wcsdny.org/johnjayhighschoolroboticsquali',
-        permanent: true,
-      },
       {
         source: '/volunteer',
         destination:
