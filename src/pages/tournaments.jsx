@@ -91,10 +91,10 @@ export default function Tournaments() {
                                 {/* What is this year's game about? */}
                                 <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20">
                                     <h2 className="text-2xl font-bold text-blue-400">
-                                        What is this year's game about?
+                                        What is this years game about?
                                     </h2>
                                     <p className="text-gray-300 leading-relaxed">
-                                        This year's game is <b className="font-bold text-white">DECODE</b>!
+                                        This years game is <b className="font-bold text-white">DECODE</b>!
                                         In DECODE, teams must navigate their robots through a complex field to decode patterns,
                                         collect game pieces, and score points by placing them in specific zones.
                                         The game combines strategy, precision driving, and autonomous programming challenges.
