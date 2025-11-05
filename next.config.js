@@ -223,6 +223,12 @@ module.exports = {
         destination: 'https://www.youtube.com/watch?v=LCqWA6gSCXA',
         permanent: false,
       },
+      {
+        source: '/teamguide',
+        destination:
+          'https://docs.google.com/document/d/1RVD0smauz7QNTc9lzZnVfP4vPx35nIgV4rosNiQq3vo/edit?tab=t.0#heading=h.9ns5p8n0sxvs',
+        permanent: true,
+      },
     ]
   },
 }

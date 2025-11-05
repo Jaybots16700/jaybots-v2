@@ -71,7 +71,7 @@ export default function Tournaments() {
                             {/* FAQ Sections */}
                             <div className="space-y-8">
                                 {/* What is FIRST TECH CHALLENGE? */}
-                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20">
+                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
                                     <h2 className="text-2xl font-bold text-blue-400">
                                         What is FIRST TECH CHALLENGE?
                                     </h2>
@@ -80,7 +80,7 @@ export default function Tournaments() {
                                         Teams design, build, and program robots to compete in an alliance format against other teams.
                                     </p>
                                     <Link href="https://www.firstinspires.org/robotics/ftc" target="_blank">
-                                        <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
+                                        <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700 ">
                                             <p className="font-normal text-white">
                                                 Learn more about <b className="font-bold">FIRST Tech Challenge</b>
                                             </p>
@@ -89,7 +89,7 @@ export default function Tournaments() {
                                 </div>
 
                                 {/* What is this year's game about? */}
-                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20">
+                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
                                     <h2 className="text-2xl font-bold text-blue-400">
                                         What is this years game about?
                                     </h2>
@@ -109,7 +109,7 @@ export default function Tournaments() {
                                 </div>
 
                                 {/* How can I volunteer? */}
-                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20">
+                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
                                     <h2 className="text-2xl font-bold text-blue-400">
                                         HOW CAN I VOLUNTEER?
                                     </h2>
@@ -121,6 +121,24 @@ export default function Tournaments() {
                                         <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
                                             <p className="font-normal text-white">
                                                 Register to <b className="font-bold">Volunteer</b>
+                                            </p>
+                                        </div>
+                                    </Link>
+                                </div>
+
+                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
+                                    <h2 className="text-2xl font-bold text-blue-400">
+                                        Where is the TEAM GUIDE?
+                                    </h2>
+                                    <p className="text-gray-300 leading-relaxed">
+                                        The team guide contains all essential information for participating teams including
+                                        detailed tournament schedule, match times, pit assignments, venue layout, parking information,
+                                        safety protocols, inspection procedures, and important reminders for the day of the event.
+                                    </p>
+                                    <Link href="/teamguide">
+                                        <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
+                                            <p className="font-normal text-white">
+                                                View the <b className="font-bold">Team Guide</b>
                                             </p>
                                         </div>
                                     </Link>
