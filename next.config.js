@@ -214,6 +214,11 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/printfarm',
+        destination: 'https://tally.so/r/Y55yyJ',
+        permanent: true,
+      },
+      {
         source: '/merit-badge',
         destination: 'https://mycouncil.ghvscouting.org/Event/9937',
         permanent: true,
