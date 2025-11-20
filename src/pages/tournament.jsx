@@ -117,13 +117,22 @@ export default function Tournaments() {
                                         We welcome volunteers to help with our tournaments and events!
                                         Volunteers can assist with setup, judging, refereeing, or general event support.
                                     </p>
-                                    <Link href="/volunteer">
-                                        <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
-                                            <p className="font-normal text-white">
-                                                Register to <b className="font-bold">Volunteer</b>
-                                            </p>
-                                        </div>
-                                    </Link>
+                                    <div className="flex flex-col gap-4">
+                                        <Link href="/volunteer">
+                                            <div className="flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
+                                                <p className="font-normal text-white">
+                                                    Register to <b className="font-bold">Volunteer</b>
+                                                </p>
+                                            </div>
+                                        </Link>
+                                        <Link href="https://www.firstinspires.org/community/volunteers/roles#first_tech_challenge" target="_blank">
+                                            <div className="flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
+                                                <p className="font-normal text-white">
+                                                    View Volunteer <b className="font-bold">Role Descriptions</b>
+                                                </p>
+                                            </div>
+                                        </Link>
+                                    </div>
                                 </div>
 
                                 <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
