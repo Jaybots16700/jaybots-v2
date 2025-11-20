@@ -226,8 +226,8 @@ module.exports = {
       {
         source: '/teamguide',
         destination:
-          'https://docs.google.com/document/d/1RVD0smauz7QNTc9lzZnVfP4vPx35nIgV4rosNiQq3vo/edit?tab=t.0#heading=h.9ns5p8n0sxvs',
-        permanent: true,
+          'https://docs.google.com/document/d/1P4RiNdZgs2TBrm3c4mPYLu6QWD9-uddOUl5gdcuZPE8/edit?usp=drive_link',
+        permanent: false,
       },
     ]
   },
