@@ -41,7 +41,7 @@ export default function Tournaments() {
                                         </p>
                                         <p className="mt-2 text-gray-300">
                                             Opening Ceremonies: 10 AM<br />
-                                            Awards Ceremony: ~6 PM
+                                            Awards Ceremony: ~5 PM
                                         </p>
                                     </div>
                                     <div>
@@ -148,6 +148,23 @@ export default function Tournaments() {
                                         <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
                                             <p className="font-normal text-white">
                                                 View the <b className="font-bold">Team Guide</b>
+                                            </p>
+                                        </div>
+                                    </Link>
+                                </div>
+
+                                {/* Facebook Event Link */}
+                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
+                                    <h2 className="text-2xl font-bold text-blue-400">
+                                        Facebook Event Page
+                                    </h2>
+                                    <p className="text-gray-300 leading-relaxed">
+                                        Visit our Facebook event page for the latest tournament updates, announcements, and to stay connected with the event!
+                                    </p>
+                                    <Link href="https://www.facebook.com/events/818287127870931/" target="_blank">
+                                        <div className="mt-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
+                                            <p className="font-normal text-white">
+                                                View Tournament <b className="font-bold">Event Page</b>
                                             </p>
                                         </div>
                                     </Link>
