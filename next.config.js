@@ -71,6 +71,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/codingworkshop',
+        destination: 'https://forms.gle/FNGnjZ9LkjqZkxwGA',
+        permanent: true,
+      },
+      {
         source: '/map',
         destination: 'https://jjmap.jaybots.org?utm_source=map',
         permanent: true,
