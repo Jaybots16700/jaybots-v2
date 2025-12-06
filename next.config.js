@@ -71,7 +71,7 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/codingworkshop',
+        source: '/codeworkshop',
         destination: 'https://forms.gle/FNGnjZ9LkjqZkxwGA',
         permanent: true,
       },
