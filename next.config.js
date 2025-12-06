@@ -71,6 +71,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/codingworkshop',
+        destination: 'https://forms.gle/FNGnjZ9LkjqZkxwGA',
+        permanent: true,
+      },
+      {
         source: '/map',
         destination: 'https://jjmap.jaybots.org?utm_source=map',
         permanent: true,
@@ -212,6 +217,11 @@ module.exports = {
         destination:
           'https://docs.google.com/forms/d/e/1FAIpQLSdH1ivJsFfMjTW8a7HSxsQAz2DIqzE9wh076Pk8kaPdwRsgVQ/viewform',
         permanent: false,
+      },
+      {
+        source: '/printfarm',
+        destination: 'https://tally.so/r/Y55yyJ',
+        permanent: true,
       },
       {
         source: '/merit-badge',
