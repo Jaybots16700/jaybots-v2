@@ -96,12 +96,11 @@ function Game({ game, index }) {
             <div key={comp.team} className="flex w-full justify-center">
               <button
                 className={`w-48 rounded-full border-4 p-4 text-lg font-semibold text-white transition-all duration-500 hover:font-bold motion-safe:hover:scale-105
-                  ${
-                    selectedTeamIndex == index
-                      ? teamColors(comp.team, false, true)
-                      : teamColors(comp.team, false, false, true) +
-                        teamColors(comp.team, true, false, true) +
-                        teamColors(comp.team, true, true)
+                  ${selectedTeamIndex == index
+                    ? teamColors(comp.team, false, true)
+                    : teamColors(comp.team, false, false, true) +
+                    teamColors(comp.team, true, false, true) +
+                    teamColors(comp.team, true, true)
                   }`}
                 onClick={() => setSelectedTeamIndex(index)}
               >
@@ -163,7 +162,15 @@ function CompStats({ comp }) {
         {comp.name || comp.type} | {comp.date}
       </div>
       <div className="flex flex-col space-y-4 pt-3 text-base font-light">
-        {comp.upcoming && <p></p>}
+        {comp.upcoming && (
+          <p>
+            Upcoming Competition! You can find our full schedule{' '}
+            <Link href="/events" className={linkStyle}>
+              Here
+            </Link>
+            .
+          </p>
+        )}
         {comp.awards.advanced && (
           <div className={awardsStyle}>
             <Ribbon />

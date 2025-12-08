@@ -854,6 +854,80 @@ export const miscImages = [
 
 export const games = [
   {
+    name: 'Decode',
+    year: '2025-2026',
+    logo: 'https://res.cloudinary.com/jaybots/image/upload/v1765223564/decodeLogo.png',
+    images: '', //
+    logowidth: 700,
+    allComps: [
+      {
+        team: 'Jaybots',
+        images: '',
+        comps: [
+          {
+            type: 'Qualifier',
+            name: 'Utica Qualifier',
+            date: 'January 11, 2026',
+            upcoming: true,
+            awards: {},
+          },
+          {
+            type: 'Qualifier',
+            name: 'Albany Qualifier',
+            date: 'January 17, 2026',
+            upcoming: true,
+
+            awards: {
+
+            },
+          },
+          {
+            type: 'Qualifier',
+            name: 'Broadalbin-Perth Qualifier',
+            date: 'January 25, 2026',
+            upcoming: true,
+
+            awards: {
+
+            },
+          },
+        ],
+      },
+      {
+        team: 'Phoenix',
+        images: '',
+        comps: [
+          {
+            type: 'Qualifier',
+            name: 'John Jay Qualifier',
+            date: 'December 6, 2025',
+            awards: {},
+          },
+          {
+            type: 'Qualifier',
+            name: 'Utica Qualifier',
+            date: 'January 11, 2026',
+            upcoming: true,
+
+            awards: {
+
+            },
+          },
+          {
+            type: 'Qualifier',
+            name: 'Albany Qualifier',
+            date: 'January 17, 2026',
+            upcoming: true,
+
+            awards: {
+
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
     name: 'Into The Deep',
     year: '2024-2025',
     logo: 'https://res.cloudinary.com/jaybots/image/upload/v1741229447/Untitled_design_yjgutm.png',
@@ -928,7 +1002,6 @@ export const games = [
             name: 'Albany Qualifier',
             date: 'January 19, 2024',
             awards: {},
-            upcoming: true,
           },
         ],
       },
