@@ -91,7 +91,7 @@ export default function Tournaments() {
                                 {/* What is this year's game about? */}
                                 <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
                                     <h2 className="text-2xl font-bold text-blue-400">
-                                        What is this years game about?
+                                        What is this year&apos;s game about?
                                     </h2>
                                     <p className="text-gray-300 leading-relaxed">
                                         This years game is <b className="font-bold text-white">DECODE</b>!
@@ -154,7 +154,7 @@ export default function Tournaments() {
                                 </div>
 
                                 {/* Facebook Event Link */}
-                                <div className="w-full space-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
+                                <div className="w-full sçpace-y-4 rounded-5xl bg-white/10 p-8 font-light ring-1 ring-white/20 ">
                                     <h2 className="text-2xl font-bold text-blue-400">
                                         Facebook Event Page
                                     </h2>

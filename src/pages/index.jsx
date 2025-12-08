@@ -92,7 +92,7 @@ export default function Home() {
                 <p className="max-w-4xl leading-8">
                   We are the
                   <span className="font-bold text-slate-300"> Jaybots </span> -
-                  This is our sixth year competing in{' '}
+                  This is our seventh year competing in{' '}
                   <Link
                     href="https://www.firstinspires.org/robotics/ftc/"
                     className={linkStyle}

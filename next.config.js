@@ -144,7 +144,7 @@ module.exports = {
 
       {
         source: '/live',
-        destination: 'https://www.youtube.com/live/lwsnQGR_fsk',
+        destination: 'https://excelsiorny.org/live',
         permanent: true,
       },
       {

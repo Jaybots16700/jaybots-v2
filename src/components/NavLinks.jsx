@@ -39,7 +39,7 @@ const links = [
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
   ['Newsletters', '/news', faNewspaper],
-  ['Live', '/livelink', faVideo],
+  ['Live', '/live', faVideo],
   ['Alumni', '/alumni', faGraduationCap],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
   ['Upcoming Events', '/events', faCalendarWeek],
