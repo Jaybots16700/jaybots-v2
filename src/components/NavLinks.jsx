@@ -35,7 +35,7 @@ const links = [
   ['Join', '/interest', faBullhorn],
   ['Outreach', '/outreach', faComments],
   ['Awards', '/awards', faAward],
-  ['Tournament', '/tournament', faTrophy],
+  ['Tournament', '/highlights', faTrophy],
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
   ['Newsletters', '/news', faNewspaper],
