@@ -1502,4 +1502,13 @@ export const sponsors = [
     link: 'https://www.ptc.com/en',
     tierColor: 'bg-yellow-500',
   },
+  {
+    name: 'Onsemi Giving Now',
+    description:
+      'Onsemi is an American semiconductor supplier company that specializes in delivering industry-leading intelligent power and intelligent sensing solutions  the automotive and industrial markets',
+    image: '/onsemilogo',
+    link: 'https://www.onsemi.com/company/environmental-social-and-governance/giving-now-program',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
 ]
