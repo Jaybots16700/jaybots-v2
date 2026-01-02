@@ -99,7 +99,7 @@ export function Footer() {
             >
               Jaybots
             </Link>
-            . Created by Anthony. All rights reserved.
+            . Created by Anthony & Matthew. All rights reserved.
           </p>
         </div>
       </Container>
