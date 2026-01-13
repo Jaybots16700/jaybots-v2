@@ -862,14 +862,17 @@ export const games = [
     allComps: [
       {
         team: 'Jaybots',
-        images: '',
+        images: 'https://res.cloudinary.com/jaybots/image/upload/v1768267510/Decodepic.webp',
         comps: [
           {
             type: 'Qualifier',
             name: 'Utica Qualifier',
             date: 'January 11, 2026',
-            upcoming: true,
-            awards: {},
+            upcoming: false,
+            awards: {
+              advanced: true,
+              first: ['Inspire'],
+            },
           },
           {
             type: 'Qualifier',
