@@ -910,7 +910,7 @@ export const games = [
             type: 'Qualifier',
             name: 'Utica Qualifier',
             date: 'January 11, 2026',
-            upcoming: true,
+            upcoming: false,
 
             awards: {
 
@@ -980,7 +980,7 @@ export const games = [
             name: 'FTC World Championship',
             date: 'April 16-19, 2025',
             awards: { first: ['Judges Choice'] },
-            upcoming: true,
+            upcoming: false,
           },
         ],
       },
