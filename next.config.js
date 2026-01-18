@@ -118,8 +118,8 @@ module.exports = {
       {
         source: '/chocolate',
         destination:
-          'https://docs.google.com/forms/d/e/1FAIpQLSd7pikwAvxheTNUQPVHlbxPmSeLhZQ2tcXXFuD10gx_ldz9hg/viewform?usp=dialog',
-        permanent: true,
+          '/chocolate-workshop',
+        permanent: false,
       },
       {
         source: '/anish',
@@ -186,9 +186,15 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/chocolateworkshop',
+        destination:
+          '/chocolate-workshop',
+        permanent: false,
+      },
+      {
         source: '/chocolate-workshop',
         destination:
-          'https://docs.google.com/forms/d/e/1FAIpQLSealF8yrFbl9zushCGLDbdX9IznqXDnRQbV72e0BaEMAKgNRg/viewform?',
+          'https://docs.google.com/forms/d/e/1FAIpQLSf9NQFLjXDCh4r9J7mCPqenQ3727t6yZ2DyRzHO4ey1wYvj8w/viewform?usp=dialog',
         permanent: false,
       },
       {
