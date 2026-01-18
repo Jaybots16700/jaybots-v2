@@ -876,8 +876,8 @@ export const games = [
           },
           {
             type: 'Qualifier',
-            name: 'Albany Qualifier',
-            date: 'January 17, 2026',
+            name: 'Broadalbin-Perth Qualifier',
+            date: 'January 25, 2026',
             upcoming: true,
 
             awards: {
@@ -885,11 +885,10 @@ export const games = [
             },
           },
           {
-            type: 'Qualifier',
-            name: 'Broadalbin-Perth Qualifier',
-            date: 'January 25, 2026',
+            type: 'Regionals',
+            name: 'Utica Regionals',
+            date: 'March 7-8, 2026',
             upcoming: true,
-
             awards: {
 
             },
@@ -918,8 +917,8 @@ export const games = [
           },
           {
             type: 'Qualifier',
-            name: 'Albany Qualifier',
-            date: 'January 17, 2026',
+            name: 'Broadalbin-Perth Qualifier',
+            date: 'January 25, 2026',
             upcoming: true,
 
             awards: {
