@@ -245,6 +245,11 @@ module.exports = {
           'https://docs.google.com/document/d/1P4RiNdZgs2TBrm3c4mPYLu6QWD9-uddOUl5gdcuZPE8/edit?usp=drive_link',
         permanent: false,
       },
+      {
+        source: '/scrimmage',
+        destination: 'https://docs.google.com/forms/d/1TcCD7AnbgPXzCCohWq1BpmFXt_SfeZ0Z0AZqkthRkmM/edit',
+        permanent: false,
+      }
     ]
   },
 }
