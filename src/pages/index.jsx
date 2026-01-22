@@ -103,11 +103,11 @@ export default function Home() {
                   .
                 </p>
                 <p>          We went to the regional competition five years in a
-                  row, we have qualified for the{' '}
+                  row, and last year we qualified for the{' '}
                   <span className="font-bold text-slate-300">
                     World Championships
                   </span>{' '}
-                  in Houston this year!
+                  in Houston and are trying to qualify again this year!
                 </p>
               </div>
             </div>
@@ -304,7 +304,7 @@ export default function Home() {
                   className={linkStyle}
                   target="_blank"
                 >
-                  joe@jaybots.org
+                  hello@jaybots.org
                 </Link>
               </p>
               <p>

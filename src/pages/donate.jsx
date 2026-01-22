@@ -118,7 +118,7 @@ export default function Donate() {
                   <Link href="https://www.paypal.com/donate/?hosted_button_id=9ZWAFZYN8NTCS">
                     <div className="my-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-xl duration-150 hover:bg-blue-700">
                       <Image
-                        src="https://upload.wikimedia.org/wikipedia/donate/thumb/0/02/Paypal-logo-white.svg/2560px-Paypal-logo-white.svg.png"
+                        src="https://res.cloudinary.com/jaybots/image/upload/v1769110115/imagePaypal.webp"
                         height={200}
                         width={130}
                         alt="PayPal"
