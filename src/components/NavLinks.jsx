@@ -35,7 +35,7 @@ const links = [
   ['Join', '/interest', faBullhorn],
   ['Outreach', '/outreach', faComments],
   ['Awards', '/awards', faAward],
-  ['Tournament', '/highlights', faTrophy],
+  ['Highlights', '/highlights', faTrophy],
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
   ['Newsletters', '/news', faNewspaper],
@@ -321,7 +321,7 @@ export const Socials = [
   },
   {
     name: 'School',
-    link: 'https://www.wappingersschools.org/Domain/1118',
+    link: 'https://jjhs.wappingersschools.org/',
     image:
       'https://thecommencementgroup.com/wp-content/uploads/2016/09/NEW-JJHS-LOGO.gif',
     width: 45,

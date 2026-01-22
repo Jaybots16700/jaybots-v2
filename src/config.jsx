@@ -877,7 +877,7 @@ export const games = [
           {
             type: 'Qualifier',
             name: 'Broadalbin-Perth Qualifier',
-            date: 'January 25, 2026',
+            date: 'February 14, 2026',
             upcoming: true,
 
             awards: {
@@ -1510,6 +1510,15 @@ export const sponsors = [
       'Onsemi is an American semiconductor supplier company that specializes in delivering industry-leading intelligent power and intelligent sensing solutions  the automotive and industrial markets',
     image: '/onsemilogo',
     link: 'https://www.onsemi.com/company/environmental-social-and-governance/giving-now-program',
+    tier: 'Platinum',
+    tierColor: 'bg-purple-500',
+  },
+  {
+    name: 'Pizza & Stuff',
+    description:
+      'Best Pizza in Fishkill According to New What\'s Up Fishkill Poll! ',
+    image: 'https://res.cloudinary.com/jaybots/image/upload/v1769110574/PizzaandStuff_iomsoe.jpg',
+    link: 'https://www.pizzaandstuff.com/',
     tier: 'Platinum',
     tierColor: 'bg-purple-500',
   },
