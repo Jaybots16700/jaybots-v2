@@ -1517,9 +1517,9 @@ export const sponsors = [
     name: 'Pizza & Stuff',
     description:
       'Best Pizza in Fishkill According to New What\'s Up Fishkill Poll! ',
-    image: 'https://res.cloudinary.com/jaybots/image/upload/v1769110574/PizzaandStuff_iomsoe.jpg',
+    image: '/pizzaandstuff_logo',
     link: 'https://www.pizzaandstuff.com/',
-    tier: 'Platinum',
-    tierColor: 'bg-purple-500',
+    tier: 'Gold',
+    tierColor: 'bg-yellow-500',
   },
 ]
