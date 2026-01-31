@@ -197,7 +197,7 @@ export default function Dashboard() {
                   className={linkStyle}
                   target="_blank"
                 >
-                  joe@jaybots.org
+                  hello@jaybots.org
                 </Link>
               </p>
               <p>
