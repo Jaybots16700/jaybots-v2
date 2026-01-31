@@ -1374,7 +1374,7 @@ export const members = [
     committees: ['CAD', 'Manufacturing', 'Officers'],
     leader: '',
     bio: 'Anika is a sophomore at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
-    image: '/images/Anika.jpg',
+    image: '/images/anika3.jpg',
   },
   {
     name: 'Anthony',
