@@ -117,8 +117,7 @@ module.exports = {
       },
       {
         source: '/chocolate',
-        destination:
-          '/chocolate-workshop',
+        destination: '/chocolate-workshop',
         permanent: false,
       },
       {
@@ -147,11 +146,7 @@ module.exports = {
         destination: 'https://excelsiorny.org/live',
         permanent: true,
       },
-      {
-        source: '/workshops',
-        destination: 'https://tally.so/r/wa0xLy',
-        permanent: false,
-      },
+      /**/
       {
         source: '/lego-workshop',
         destination:
@@ -187,8 +182,7 @@ module.exports = {
       },
       {
         source: '/chocolateworkshop',
-        destination:
-          '/chocolate-workshop',
+        destination: '/chocolate-workshop',
         permanent: false,
       },
       {
@@ -247,9 +241,10 @@ module.exports = {
       },
       {
         source: '/scrimmage',
-        destination: 'https://docs.google.com/forms/d/1TcCD7AnbgPXzCCohWq1BpmFXt_SfeZ0Z0AZqkthRkmM/edit',
+        destination:
+          'https://docs.google.com/forms/d/1TcCD7AnbgPXzCCohWq1BpmFXt_SfeZ0Z0AZqkthRkmM/edit',
         permanent: false,
-      }
+      },
     ]
   },
 }
