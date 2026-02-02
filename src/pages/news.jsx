@@ -10,6 +10,15 @@ import Link from 'next/link'
 const newsletters = [
   {
     season: '2025-2026',
+    date: 'February 1, 2026',
+    title: "Jaybots Newsletter: January 2026",
+    description:
+      "We’re thrilled to share our January highlights with you! It’s been a month filled with energy, growth, and memorable moments. We’re excited for the competitions ahead and can’t wait to see you at our upcoming events. Lots to come in February!",
+    link:
+      '/newsletters/january-2026.pdf',
+  },
+  {
+    season: '2025-2026',
     date: 'January 16, 2026',
     title: "Jaybots Newsletter: December 2025",
     description:
