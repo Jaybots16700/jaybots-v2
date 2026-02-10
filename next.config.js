@@ -144,8 +144,8 @@ module.exports = {
 
       {
         source: '/live',
-        destination: 'https://www.youtube.com/live/aRALidvFmR0?si=KCZxNLsOFEtaPLIg',
-        permanent: false,
+        destination: 'https://excelsiorny.org/live',
+        permanent: true,
       },
       {
         source: '/workshops',
