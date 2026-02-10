@@ -862,7 +862,8 @@ export const games = [
     allComps: [
       {
         team: 'Jaybots',
-        images: 'https://res.cloudinary.com/jaybots/image/upload/v1768267510/Decodepic.webp',
+        images:
+          'https://res.cloudinary.com/jaybots/image/upload/v1768267510/Decodepic.webp',
         comps: [
           {
             type: 'Qualifier',
@@ -883,15 +884,14 @@ export const games = [
             awards: {
               finalistAlliance: 'Partner',
             },
+            awards: {},
           },
           {
             type: 'Regionals',
             name: 'Utica Regionals',
             date: 'March 7-8, 2026',
             upcoming: true,
-            awards: {
-
-            },
+            awards: {},
           },
         ],
       },
@@ -911,9 +911,7 @@ export const games = [
             date: 'January 11, 2026',
             upcoming: false,
 
-            awards: {
-
-            },
+            awards: {},
           },
           {
             type: 'Qualifier',
@@ -921,9 +919,7 @@ export const games = [
             date: 'January 25, 2026',
             upcoming: true,
 
-            awards: {
-
-            },
+            awards: {},
           },
         ],
       },
@@ -1365,8 +1361,7 @@ export const members = [
     committees: ['Officers'],
     leader: 'Treasurer',
     bio: 'Nhan Nguyen is currently a senior of John Jay. He’s in charge with the clubs funds and sponsors. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
-    image:
-      '/images/Nhan2.jpeg',
+    image: '/images/Nhan2.jpeg',
   },
   {
     name: 'Anika',
@@ -1374,7 +1369,7 @@ export const members = [
     committees: ['CAD', 'Manufacturing', 'Officers'],
     leader: '',
     bio: 'Anika is a sophomore at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
-    image: '/images/Anika.jpg',
+    image: '/images/anika3.jpg',
   },
   {
     name: 'Anthony',
@@ -1407,8 +1402,7 @@ export const members = [
     title: 'Secretary',
     committees: ['Officers', 'Media'],
     bio: 'Erika is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Secretary for the Jaybots team. She is also part of the Science Olympiad team and Computer Science Honor Society, fostering her love for science. She is excited to work with the other members of the Jaybots team this year!',
-    image:
-      '/images/Erika.jpeg',
+    image: '/images/Erika.jpeg',
   },
   {
     name: 'Mr. Amodio',
@@ -1427,6 +1421,59 @@ export const allImages = miscImages.concat(
 )
 
 export const linkStyle = 'font-bold text-blue-600 hover:text-blue-500'
+
+export const workshops = [
+  {
+    name: 'Chocolate 3D Printing Workshop',
+    registrationOpen: true,
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1769890431/unnamed_cs5mfx.png',
+    date: '2/8/26',
+    time: '10:00 am – 12:30 pm',
+    location:
+      'East Fishkill Community Center, 890 Route 82, East Fishkill, NY 12533',
+    cost: '$15 per student',
+    description:
+      'For students in grades 3–6. Learn how to CAD designs that get 3D printed in chocolate. Create a design to be 3D printed for you at the workshop, plus take home a chocolate 3D-printed design from our team.',
+    registrationUrl:
+      'https://docs.google.com/forms/d/e/1FAIpQLSf9NQFLjXDCh4r9J7mCPqenQ3727t6yZ2DyRzHO4ey1wYvj8w/viewform',
+  },
+  {
+    name: 'Cub Scout STEM Workshop: Paws, Print, and Play!',
+    registrationOpen: true,
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1769889161/cub_y6htia.png',
+    date: '2/21/25',
+    time: '9:30 am – 2:30 pm',
+    location: 'John Jay High School Cafeteria',
+    cost: '$25 per scout',
+    description:
+      'An all-encompassing STEM workshop featuring 3D printing, chocolate printing, TinkerCAD for CAD, and PLA printing. Presented with Scouting America. Participating Cub Scouts receive a badge and get a design they created printed and shipped to them.',
+    registrationUrl: 'https://mycouncil.ghvscouting.org/Event/9400',
+  },
+  {
+    name: 'LEGO Robotics Workshop',
+    registrationOpen: false,
+    date: '3/30/25 – 3/31/25',
+    time: 'TBD',
+    location: '',
+    cost: '',
+    description:
+      'Intro to LEGO robotics for elementary students. Registration opens March 10th.',
+    registrationUrl: '',
+  },
+  {
+    name: 'SciOly CAD Workshop',
+    registrationOpen: false,
+    date: 'TBD',
+    time: 'TBD',
+    location: 'John Jay High School',
+    cost: '',
+    description: 'teach scioly cad ',
+    registrationUrl: '',
+  },
+]
+export const workshopsInterestFormUrl = 'https://tally.so/r/wa0xLy'
 
 export const teamColors = (team, hover, border, justborder) => {
   if (hover) {
@@ -1516,7 +1563,7 @@ export const sponsors = [
   {
     name: 'Pizza & Stuff',
     description:
-      'Best Pizza in Fishkill According to New What\'s Up Fishkill Poll! ',
+      "Best Pizza in Fishkill According to New What's Up Fishkill Poll! ",
     image: '/pizzaandstuff_logo',
     link: 'https://www.pizzaandstuff.com/',
     tier: 'Gold',
