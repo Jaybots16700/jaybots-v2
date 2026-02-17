@@ -879,9 +879,17 @@ export const games = [
             name: 'Peekskill Qualifier',
             date: 'January 31, 2026',
             upcoming: false,
-
             awards: {
-              finalistAlliance: 'Partner',
+            },
+          },
+          {
+            type: 'Qualifier',
+            name: 'Broadalbin-Perth Qualifier',
+            date: 'February 14, 2026',
+            upcoming: false,
+            awards: {
+              first: ['innovate'],
+              finalistAlliance: 'Captain',
             },
           },
           {
