@@ -889,10 +889,9 @@ export const games = [
             date: 'February 14, 2026',
             upcoming: false,
             awards: {
-              first: ['innovate'],
+              first: ['Innovate'],
               finalistAlliance: 'Captain',
             },
-            awards: {},
           },
           {
             type: 'Regionals',
