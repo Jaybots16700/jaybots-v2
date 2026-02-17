@@ -881,6 +881,7 @@ export const games = [
             date: 'January 31, 2026',
             upcoming: false,
             awards: {
+              otherBronze: "4th Place Alliance Captain"
             },
           },
           {
