@@ -22,6 +22,7 @@ import {
   faEdit,
   faLock,
   faTrophy,
+  faChalkboardUser,
 } from '@fortawesome/free-solid-svg-icons'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
@@ -33,6 +34,7 @@ const links = [
   ['3D Printing', '/3dprint'],
   ['Meet the Team', '/team', faPeopleGroup],
   ['Join', '/interest', faBullhorn],
+  ['Workshops', '/workshops', faChalkboardUser],
   ['Outreach', '/outreach', faComments],
   ['Awards', '/awards', faAward],
   ['Highlights', '/highlights', faTrophy],
