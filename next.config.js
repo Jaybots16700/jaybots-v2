@@ -215,7 +215,7 @@ module.exports = {
       {
         source: '/cadworkshop',
         destination:
-          'https://docs.google.com/forms/d/e/1FAIpQLSdH1ivJsFfMjTW8a7HSxsQAz2DIqzE9wh076Pk8kaPdwRsgVQ/viewform',
+          'https://forms.gle/JBkg8TyDkyTu8xt19',
         permanent: false,
       },
       {
