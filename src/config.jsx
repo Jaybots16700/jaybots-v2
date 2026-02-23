@@ -1416,7 +1416,7 @@ export const members = [
     name: 'Mr. Amodio',
     title: 'Mentor & Coach',
     committees: ['Advisors'],
-    bio: 'James Amodio teaches Regents Physics and PLTW: Principles of Engineering at John Jay High School. While this is only his 5th year in the Wappingers Central School District, he has been an FTC Coach at Blind Brook High School as well as Roosevelt and Riverside High Schools in Yonkers, NY. He has also been coaching several Jr. FLL teams in the Arlington School District for the past 3 years. Mr. Amodio is very excited to be working with such a dedicated team as the JAYBOTS!',
+    bio: 'James Amodio teaches Regents Physics, Science Research 1, PLTW: Principles of Engineering, PLTW: Civil Engineering & Architecture at John Jay Sr. HIgh School.  While this is only his 8th year in the Wappingers Central School District, he has been an FTC Coach at Blind Brook High School as well as Roosevelt and Riverside High Schools in Yonkers, NY.  He also coached several Jr. FLL teams in the Arlington School District before COVID, and currently coaches the local FIRST LEGO League Team # 69854 Chocolate Croissants.  Mr Amodio reminds his robotics team members to "Keep Being AWESOME!"',
     image: 'https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg',
   },
 ]
