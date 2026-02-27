@@ -881,7 +881,7 @@ export const games = [
             date: 'January 31, 2026',
             upcoming: false,
             awards: {
-              otherBronze: "4th Place Alliance Captain"
+              otherBronze: '4th Place Alliance Captain',
             },
           },
           {
@@ -1433,7 +1433,7 @@ export const linkStyle = 'font-bold text-blue-600 hover:text-blue-500'
 export const workshops = [
   {
     name: 'Chocolate 3D Printing Workshop',
-    registrationOpen: true,
+    registrationOpen: false,
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1769890431/unnamed_cs5mfx.png',
     date: '2/8/26',
@@ -1448,7 +1448,7 @@ export const workshops = [
   },
   {
     name: 'Cub Scout STEM Workshop: Paws, Print, and Play!',
-    registrationOpen: true,
+    registrationOpen: false,
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1769889161/cub_y6htia.png',
     date: '2/21/25',
@@ -1478,6 +1478,32 @@ export const workshops = [
     location: 'John Jay High School',
     cost: '',
     description: 'teach scioly cad ',
+    registrationUrl: '',
+  },
+  {
+    name: 'FTC Cad Workshop',
+    registrationOpen: true,
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1772173698/cad-ftc1_qikvww.jpg',
+    date: 'March 4, 2026',
+    time: '4:00 pm – 6:00 pm EST',
+    location: 'Online',
+    cost: '',
+    description:
+      "In this workshop, we'll show you how to use Onshape to design your robot for FTC. We'll cover CAD basics, custom parts, and using commercial parts from the FTC Parts Library in assemblies. You'll follow along in Onshape as you CAD a robot yourself, with time for questions and one-on-one assistance. We'll also discuss advanced design topics to level up your robot design. No experience required. Questions? Email hello@jaybots.org.",
+    registrationUrl: 'https://jaybots.org/cadworkshop',
+  },
+  {
+    name: 'Animation Workshop: CapCut & Video Editing',
+    registrationOpen: true,
+    image:
+      'https://res.cloudinary.com/jaybots/image/upload/v1772174017/capcut_q7jmgz.png',
+    date: 'TBD',
+    time: 'TBD',
+    location: '',
+    cost: '',
+    description:
+      'In this workshop, we will show you how to create animations and edit videos using CapCut. You will learn the basics of timeline editing, effects, and exporting your projects. This workshop is coming soon, check back for the finalized date and time.',
     registrationUrl: '',
   },
 ]
