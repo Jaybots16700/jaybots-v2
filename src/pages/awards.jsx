@@ -174,10 +174,7 @@ function CompStats({ comp }) {
         {comp.awards.advanced && (
           <div className={awardsStyle}>
             <Ribbon />
-            {comp.type == 'Qualifier' && (
-              <p>Advanced to Regional Competition</p>
-            )}
-            {comp.type == 'Regionals' && <p>Advanced to World Competition</p>}
+            <p>Advanced to {comp.awards.advanced}</p>
           </div>
         )}
         {comp.awards.first && (

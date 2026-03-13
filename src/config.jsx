@@ -871,7 +871,7 @@ export const games = [
             date: 'January 11, 2026',
             upcoming: false,
             awards: {
-              advanced: true,
+              advanced: "Regional Championship",
               first: ['Inspire'],
             },
           },
@@ -898,8 +898,12 @@ export const games = [
             type: 'Regionals',
             name: 'Utica Regionals',
             date: 'March 7-8, 2026',
-            upcoming: true,
-            awards: {},
+
+            upcoming: false,
+            awards: {
+              advanced: "Premier Event",
+              second: ['Inspire'],
+            },
           },
         ],
       },
@@ -950,7 +954,7 @@ export const games = [
             name: 'Utica Qualifier',
             date: 'January 12, 2025',
             awards: {
-              advanced: true,
+              advanced: "Regional Championship",
               first: ['Inspire'],
             },
           },
@@ -973,7 +977,7 @@ export const games = [
             name: 'Utica Regionals',
             date: 'March 8-9, 2025',
             awards: {
-              advanced: true,
+              advanced: "World Championship",
               finalistAlliance: 'Partner',
               third: ['Inspire'],
             },
@@ -1043,7 +1047,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 11, 2024',
             awards: {
-              advanced: true,
+              advanced: "Regional Championship",
               first: ['Inspire'],
               winningAlliance: 'Second Pick',
             },
@@ -1096,7 +1100,7 @@ export const games = [
             type: 'Qualifier',
             date: 'January 14, 2023',
             awards: {
-              advanced: true,
+              advanced: "Regional Championship",
               first: ['Inspire', 'Control'],
             },
           },
@@ -1182,7 +1186,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 18, 2023',
             awards: {
-              advanced: true,
+              advanced: "Regional Championship",
               first: ['Inspire'],
               otherGold: ['Highest Scoring Team'],
             },
@@ -1213,7 +1217,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 13, 2022',
             awards: {
-              advanced: true,
+              advanced: "Regional Championship",
               first: ['Inspire'],
               winningAlliance: 'Captain',
               second: ['Connect', 'Design'],
@@ -1254,7 +1258,7 @@ export const games = [
             type: 'Qualifier',
             date: 'May 2 - 8, 2021',
             awards: {
-              advanced: true,
+              advanced: "Regional Championship",
               first: ['Inspire'],
               second: ['Innovate'],
             },
