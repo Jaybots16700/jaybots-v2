@@ -1,9 +1,15 @@
 import '@/styles/tailwind.css'
 import 'focus-visible'
 import { SessionProvider } from 'next-auth/react'
-
+import dynamic from 'next/dynamic'
 import posthog from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
+
+const FundraisingSplash = dynamic(
+  () =>
+    import('@/components/FundraisingSplash').then((m) => m.FundraisingSplash),
+  { ssr: false }
+)
 
 if (typeof window !== 'undefined') {
   // checks that we are client-side
@@ -25,6 +31,7 @@ export default function App({
     <>
       <PostHogProvider client={posthog}>
         <SessionProvider>
+          <FundraisingSplash />
           <Component {...pageProps} />
         </SessionProvider>
       </PostHogProvider>

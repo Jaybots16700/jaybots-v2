@@ -1434,6 +1434,22 @@ export const allImages = miscImages.concat(
 
 export const linkStyle = 'font-bold text-blue-600 hover:text-blue-500'
 
+/** First-visit modal; copy lives here so you can update the campaign without touching the component. */
+export const fundraisingSplash = {
+  /** Bump when you want everyone to see the splash again (new campaign). */
+  storageKeyVersion: 2,
+  queryParam: 'showFundraising',
+  /** Direct GoFundMe URL (splash buttons open this in a new tab). */
+  fundraisingUrl: 'https://www.gofundme.com/f/jaybots-canada',
+  title: 'Help us go to the Premier Event!',
+  subtitle:
+    'Registration, parts, and travel add up—community support keeps us competing and outreach running.',
+  paragraphs: [
+    'The Jaybots are going to the Premier Event in Canada! We need your help to cover the cost of travel, lodging, and registration fees.',
+    'If you can contribute, your support helps cover competition fees, materials, and transportation so we can focus on building and teaching.',
+  ],
+}
+
 export const workshops = [
   {
     name: 'Chocolate 3D Printing Workshop',

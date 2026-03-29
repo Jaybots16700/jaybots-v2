@@ -203,6 +203,12 @@ module.exports = {
         permanent: false,
       },
       {
+        source: '/fund-premier',
+        destination:
+          'https://www.gofundme.com/f/jaybots-canada',
+        permanent: false,
+      },
+      {
         source: '/join',
         destination: 'https://tally.so/r/w4LZ5k',
         permanent: true,
