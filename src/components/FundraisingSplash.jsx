@@ -71,10 +71,22 @@ export function FundraisingSplash() {
                     src="https://cdn.jaybots.org/logo/logo.png"
                     width={120}
                     height={120}
-                    className="h-24 w-24 rounded-full sm:h-28 sm:w-28"
+                    className="h-28 w-28 rounded-full sm:h-28 sm:w-28"
                     alt="Jaybots logo"
                   />
                 </div>
+                {fundraisingSplash.teamPhotoUrl ? (
+                  <div className="relative mx-auto mt-6 w-full max-w-lg overflow-hidden rounded-2xl border border-white/10 aspect-[16/9]">
+                    <Image
+                      src={fundraisingSplash.teamPhotoUrl}
+                      alt={fundraisingSplash.teamPhotoAlt || 'Jaybots team photo'}
+                      fill
+                      sizes="(max-width: 768px) 80vw, (max-width: 1200px) 60vw, 28rem"
+                      priority
+                      className="object-cover"
+                    />
+                  </div>
+                ) : null}
                 <Dialog.Title className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                   {fundraisingSplash.title}
                 </Dialog.Title>
