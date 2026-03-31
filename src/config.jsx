@@ -1444,8 +1444,12 @@ export const fundraisingSplash = {
   title: 'Help us go to the Premier Event!',
   subtitle:
     'Registration, parts, and travel add up—community support keeps us competing and outreach running.',
+  /** Team photo displayed in the splash modal (swap this placeholder later). */
+  teamPhotoUrl:
+    'https://res.cloudinary.com/jaybots/image/upload/v1774919876/IMG_0779_akpvme.jpg',
+  teamPhotoAlt: 'Jaybots team photo',
   paragraphs: [
-    'The Jaybots are going to the Premier Event in Canada! We need your help to cover the cost of travel, lodging, and registration fees.',
+    'The Jaybots are going to the Canada Cup of Robotics! We need your help to cover the cost of travel, lodging, and registration fees.',
     'If you can contribute, your support helps cover competition fees, materials, and transportation so we can focus on building and teaching.',
   ],
 }
