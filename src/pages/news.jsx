@@ -10,6 +10,15 @@ import Link from 'next/link'
 const newsletters = [
   {
     season: '2025-2026',
+    date: 'April 2, 2026',
+    title: "Jaybots Newsletter: March 2026",
+    description:
+      "After competing at the NY Excelsior Regional Championship earlier this month, the Jaybots have advanced to an exclusive competition in Canada! From our Regional Championship to community outreach and professional mentorship, we've had a busy month this March, with even more planned for April. Read more in the latest edition of the Jaybots' monthly newsletter!",
+    link:
+      '/newsletters/march-2026.pdf',
+  },
+  {
+    season: '2025-2026',
     date: 'March 11, 2026',
     title: "Jaybots Newsletter: Regionals 2026",
     description:

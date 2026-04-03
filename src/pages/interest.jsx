@@ -52,39 +52,45 @@ export default function Interest() {
 
               <div className="w-full space-y-4 font-normal">
                 <h1 className="mb-4 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-                  What is the FIRST World Championship?
+                  What is the Canada Cup of Robotics?
                 </h1>
                 <p>
                   The{' '}
                   <Link
-                    href="https://firstchampionship.org/"
+                    href="https://firstroboticscanada.org/canadacupofrobotics/"
                     className={linkStyle}
                     target="_blank"
                   >
-                    World Championship
+                    Canada Cup of Robotics
                   </Link>{' '}
-                  is a robotics competition where the top 256 teams from around
-                  the world come together to compete. It is held each year in
+                  is an official{' '}
                   <span className="font-bold text-gray-100">
-                    {' '}
-                    Houston, Texas
-                  </span>
-                  , and is from{' '}
-                  <span className="font-bold text-gray-100">
-                    April 16th to 19th
+                    FIRST Tech Challenge Premiere Event
                   </span>{' '}
-                  this season.
+                  where top teams from around the world meet for a culminating
+                  competition. In 2026 it runs{' '}
+                  <span className="font-bold text-gray-100">
+                    June 13th to 16th
+                  </span>{' '}
+                  at{' '}
+                  <span className="font-bold text-gray-100">
+                    Canada Games Park
+                  </span>{' '}
+                  in the Niagara region of Ontario, hosted by{' '}
+                  <span className="font-bold text-gray-100">
+                    Brock University
+                  </span>
+                  .
                 </p>
 
                 <p>
-                  This is the Jaybots&apos; first year qualifying for the World
-                  Championship! After being on the{' '}
+                  After being on the{' '}
                   <span className="font-bold text-gray-100">
                     finalist alliance
                   </span>{' '}
                   and winning the 3rd Place{' '}
                   <span className="font-bold text-gray-100">Inspire Award</span>{' '}
-                  at Regionals, we qualified for the World Championship!
+                  at Regionals, we qualified for the Canada Cup!
                 </p>
               </div>
 
@@ -93,10 +99,10 @@ export default function Interest() {
                   How Can <span className="italic">You</span> Help Us?
                 </h1>
                 <p>
-                  With the cost of transportation to Houston, lodging, food,
+                  With the cost of transportation to Canada, lodging, food,
                   registration fees, and improving our robot, we need your help!
                   Our goal is to raise{' '}
-                  <span className="font-bold text-gray-100">$32,000</span> to
+                  <span className="font-bold text-gray-100">$30,000</span> to
                   cover these expenses, and we need your help! Please consider
                   donating and spreading the word about our team!
                 </p>

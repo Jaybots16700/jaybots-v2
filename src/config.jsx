@@ -901,7 +901,7 @@ export const games = [
 
             upcoming: false,
             awards: {
-              advanced: "Premier Event",
+              advanced: "Canada Cup Premier Event",
               second: ['Inspire'],
             },
           },
