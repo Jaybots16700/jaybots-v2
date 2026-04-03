@@ -102,12 +102,15 @@ export default function Home() {
                   </Link>
                   .
                 </p>
-                <p>          We went to the regional competition five years in a
+                <p>          We went to the regional competition six years in a
                   row, and last year we qualified for the{' '}
                   <span className="font-bold text-slate-300">
                     World Championships
                   </span>{' '}
-                  in Houston and are trying to qualify again this year!
+                  in Houston and this year we are going to the{' '}
+                  <span className="font-bold text-slate-300">
+                    Canada Cup of Robotics!
+                  </span>{' '}
                 </p>
               </div>
             </div>
