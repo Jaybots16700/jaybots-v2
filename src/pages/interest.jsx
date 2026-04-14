@@ -45,7 +45,7 @@ export default function Interest() {
                   from September to March, teams compete in qualifiers to
                   advance to the Regional competition. This year, the game is
                   called{' '}
-                  <span className="font-bold text-gray-100">Into the Deep</span>
+                  <span className="font-bold text-gray-100">DECODE</span>
                   .
                 </p>
               </div>
@@ -86,9 +86,9 @@ export default function Interest() {
                 <p>
                   After being on the{' '}
                   <span className="font-bold text-gray-100">
-                    finalist alliance
+                    alliance
                   </span>{' '}
-                  and winning the 3rd Place{' '}
+                  and winning the 2nd Place{' '}
                   <span className="font-bold text-gray-100">Inspire Award</span>{' '}
                   at Regionals, we qualified for the Canada Cup!
                 </p>
