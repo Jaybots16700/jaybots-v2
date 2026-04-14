@@ -45,7 +45,7 @@ export default function Worlds() {
                   from September to March, teams compete in qualifiers to
                   advance to the Regional competition. This year, the game is
                   called{' '}
-                  <span className="font-bold text-gray-100">Into the Deep</span>
+                  <span className="font-bold text-gray-100">Decode</span>
                   .
                 </p>
               </div>
