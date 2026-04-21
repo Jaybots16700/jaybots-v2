@@ -871,7 +871,7 @@ export const games = [
             date: 'January 11, 2026',
             upcoming: false,
             awards: {
-              advanced: "Regional Championship",
+              advanced: 'Regional Championship',
               first: ['Inspire'],
             },
           },
@@ -901,7 +901,7 @@ export const games = [
 
             upcoming: false,
             awards: {
-              advanced: "Canada Cup Premier Event",
+              advanced: 'Canada Cup Premier Event',
               second: ['Inspire'],
             },
           },
@@ -954,7 +954,7 @@ export const games = [
             name: 'Utica Qualifier',
             date: 'January 12, 2025',
             awards: {
-              advanced: "Regional Championship",
+              advanced: 'Regional Championship',
               first: ['Inspire'],
             },
           },
@@ -977,7 +977,7 @@ export const games = [
             name: 'Utica Regionals',
             date: 'March 8-9, 2025',
             awards: {
-              advanced: "World Championship",
+              advanced: 'World Championship',
               finalistAlliance: 'Partner',
               third: ['Inspire'],
             },
@@ -1047,7 +1047,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 11, 2024',
             awards: {
-              advanced: "Regional Championship",
+              advanced: 'Regional Championship',
               first: ['Inspire'],
               winningAlliance: 'Second Pick',
             },
@@ -1100,7 +1100,7 @@ export const games = [
             type: 'Qualifier',
             date: 'January 14, 2023',
             awards: {
-              advanced: "Regional Championship",
+              advanced: 'Regional Championship',
               first: ['Inspire', 'Control'],
             },
           },
@@ -1186,7 +1186,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 18, 2023',
             awards: {
-              advanced: "Regional Championship",
+              advanced: 'Regional Championship',
               first: ['Inspire'],
               otherGold: ['Highest Scoring Team'],
             },
@@ -1217,7 +1217,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 13, 2022',
             awards: {
-              advanced: "Regional Championship",
+              advanced: 'Regional Championship',
               first: ['Inspire'],
               winningAlliance: 'Captain',
               second: ['Connect', 'Design'],
@@ -1258,7 +1258,7 @@ export const games = [
             type: 'Qualifier',
             date: 'May 2 - 8, 2021',
             awards: {
-              advanced: "Regional Championship",
+              advanced: 'Regional Championship',
               first: ['Inspire'],
               second: ['Innovate'],
             },
@@ -1360,21 +1360,21 @@ export const members = [
   },
   {
     name: 'Ava',
-    title: 'Media Manager',
+    title: 'Creative Director',
     committees: ['Branding', 'Officers'],
     leader: 'Media',
-    bio: "Ava is a junior at John Jay High School and is in her thirdyear on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
+    bio: "Ava is a junior at John Jay High School and is in her third year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
   },
-  {
+  /*{
     name: 'Nhan ',
     title: 'Treasurer',
     committees: ['Officers'],
     leader: 'Treasurer',
     bio: 'Nhan Nguyen is currently a senior of John Jay. He’s in charge with the clubs funds and sponsors. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
     image: '/images/Nhan2.jpeg',
-  },
+  },*/
   {
     name: 'Anika',
     title: 'CAD Leader',
