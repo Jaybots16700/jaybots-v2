@@ -126,7 +126,7 @@ export function FundraisingSplash() {
                   rel="noopener noreferrer"
                   className="order-1 inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 sm:order-2 sm:px-5"
                 >
-                  Open GoFundMe
+                  Watch on YouTube
                 </a>
               </div>
 
