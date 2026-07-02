@@ -862,8 +862,7 @@ export const games = [
     allComps: [
       {
         team: 'Jaybots',
-        images:
-          'https://res.cloudinary.com/jaybots/image/upload/v1768267510/Decodepic.webp',
+        images: '/images/robotPicture.png',
         comps: [
           {
             type: 'Qualifier',
@@ -903,6 +902,15 @@ export const games = [
             awards: {
               advanced: 'Canada Cup Premier Event',
               second: ['Inspire'],
+            },
+          },
+          {
+            type: 'Premier Event',
+            name: 'Canada Cup of Robotics',
+            date: 'June 13 - 16, 2026',
+            upcoming: false,
+            awards: {
+              second: ['Design'],
             },
           },
         ],
