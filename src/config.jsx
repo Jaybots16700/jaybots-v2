@@ -870,7 +870,7 @@ export const games = [
             date: 'January 11, 2026',
             upcoming: false,
             awards: {
-              advanced: 'Regional Championship',
+              advanced: "Regional Championship",
               first: ['Inspire'],
             },
           },
@@ -880,7 +880,7 @@ export const games = [
             date: 'January 31, 2026',
             upcoming: false,
             awards: {
-              otherBronze: '4th Place Alliance Captain',
+              otherBronze: "4th Place Alliance Captain"
             },
           },
           {
@@ -900,7 +900,7 @@ export const games = [
 
             upcoming: false,
             awards: {
-              advanced: 'Canada Cup Premier Event',
+              advanced: "Canada Cup Premier Event",
               second: ['Inspire'],
             },
           },
@@ -962,7 +962,7 @@ export const games = [
             name: 'Utica Qualifier',
             date: 'January 12, 2025',
             awards: {
-              advanced: 'Regional Championship',
+              advanced: "Regional Championship",
               first: ['Inspire'],
             },
           },
@@ -985,7 +985,7 @@ export const games = [
             name: 'Utica Regionals',
             date: 'March 8-9, 2025',
             awards: {
-              advanced: 'World Championship',
+              advanced: "World Championship",
               finalistAlliance: 'Partner',
               third: ['Inspire'],
             },
@@ -1055,7 +1055,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 11, 2024',
             awards: {
-              advanced: 'Regional Championship',
+              advanced: "Regional Championship",
               first: ['Inspire'],
               winningAlliance: 'Second Pick',
             },
@@ -1108,7 +1108,7 @@ export const games = [
             type: 'Qualifier',
             date: 'January 14, 2023',
             awards: {
-              advanced: 'Regional Championship',
+              advanced: "Regional Championship",
               first: ['Inspire', 'Control'],
             },
           },
@@ -1194,7 +1194,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 18, 2023',
             awards: {
-              advanced: 'Regional Championship',
+              advanced: "Regional Championship",
               first: ['Inspire'],
               otherGold: ['Highest Scoring Team'],
             },
@@ -1225,7 +1225,7 @@ export const games = [
             type: 'Qualifier',
             date: 'February 13, 2022',
             awards: {
-              advanced: 'Regional Championship',
+              advanced: "Regional Championship",
               first: ['Inspire'],
               winningAlliance: 'Captain',
               second: ['Connect', 'Design'],
@@ -1266,7 +1266,7 @@ export const games = [
             type: 'Qualifier',
             date: 'May 2 - 8, 2021',
             awards: {
-              advanced: 'Regional Championship',
+              advanced: "Regional Championship",
               first: ['Inspire'],
               second: ['Innovate'],
             },
@@ -1351,52 +1351,36 @@ export const games = [
 
 export const members = [
   {
-    name: 'Matthew',
+    name: 'Anika',
     title: 'President',
     committees: ['Officers'],
     leader: '',
-    bio: 'Matthew is a senior in his 4th year at the Robotics club. He enjoys math & science in school and is a member other clubs like Science Olympiad, Computer Science Honor Society, & Math Team. In his free time, he enjoys working on programming & 3d printing projects. Matthew is currently the President of the Robotics club.',
-    image: '/images/Matthew.jpg',
-  },
-  {
-    name: 'Hailey',
-    title: 'Vice President',
-    committees: ['Game Master', 'Officers'],
-    leader: 'Gamemaster',
-    bio: 'Hailey Kim is a senior at John Jay High School, and has been a part of the Robotics club for 4 years. From robotics, she has learned valuable skills in engineering. Other than Robotics, she participates in Science Olympiad and Math Team. Outside of school, she enjoys playing the violin and piano. She looks forward to a fun year working with her teammates.',
-    image: '/images/Hailey.jpg',
+    bio: 'Anika is a junior at John Jay High School and is currently in her third year on the Robotics Team. She enjoys robotics and CAD design, where she develops engineering and problem-solving skills. Outside of STEM, Anika is an Indian classical dancer and plays the piano in her free time. She is also a setter on the varsity volleyball team. Anika hopes to pursue a degree in engineering and combine her passion for technology, creativity, and innovation in her future career.',
+    image: '/images/anika3.jpg',
   },
   {
     name: 'Ava',
-    title: 'Creative Director',
-    committees: ['Branding', 'Officers'],
-    leader: 'Media',
-    bio: "Ava is a junior at John Jay High School and is in her third year on the robotics team, where she serves as the Branding Leader. Outside of robotics, she enjoys playing volleyball, conducting research, skiing, and playing several instruments. She is also involved in clubs like Science Olympiad, Tri-M, Science Research, Amnesty, and Pit Orchestra. She's excited to work with the team!",
+    title: 'Vice President',
+    committees: ['Officers'],
+    leader: 'Gamemaster',
+    bio: 'Ava is a senior at John Jay High School and this is her fourth year on the robotics team. She currently serves as the Vice President and has held other creative-based roles in the past, such as: Branding Leader and Creative Director where she managed the engineering portfolio, team banners, and information distribution/script for the teams judging interview. Outside of robotics, she is the president/founder of JJHS Psychology Club "Mind & Method", and enjoys doing other psychology and neuroscience research.',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
   },
-  /*{
-    name: 'Nhan ',
-    title: 'Treasurer',
-    committees: ['Officers'],
-    leader: 'Treasurer',
-    bio: 'Nhan Nguyen is currently a senior of John Jay. He’s in charge with the clubs funds and sponsors. Outside of Highchool, he goes to private lessons for the violin and tutors math. He’s in multiple clubs like Honor societies and Science Olympiad. He’s hopes to work under the medical field in the future.',
-    image: '/images/Nhan2.jpeg',
-  },*/
   {
-    name: 'Anika',
+    name: 'Gianni',
     title: 'CAD Leader',
     committees: ['CAD', 'Manufacturing', 'Officers'],
     leader: '',
-    bio: 'Anika is a sophomore at John Jay High School, who enjoys Robotics and CAD. She is also an Indian classical dancer and plays the piano in her free time. As a setter on the JV volleyball team, Anika thrives as the "brain of the court." Additionally, she is a member of Science Olympiad and math team. Anika wishes to major in engineering.',
-    image: '/images/anika3.jpg',
+    bio: 'Gianni is a sophomore at John Jay High School and enjoys CAD and building the robot. Outside of robotics he also enjoys watching one piece',
+    image: '',
   },
   {
     name: 'Anthony',
     title: 'Code Leader',
     committees: ['Code', 'Officers'],
     leader: 'Code Leader',
-    bio: 'Anthony is currently a sophomore at John Jay High School. He enjoys robotics and programming. He is also a member of the Math Team and Science Olympiad. Other than his passion for robotics he is also an athlete, playing on the school varsity tennis team. He hopes to go to college for engineering in the future.',
+    bio: 'Anthony is currently a junior at John Jay High School. He enjoys robotics and programming. He is also a member of the Math Team and Science Olympiad. Other than his passion for robotics he is also an athlete, playing on the school varsity tennis team. He hopes to go to college for engineering in the future.',
     image: '/images/AnthonyC.jpeg',
   },
   {
@@ -1404,24 +1388,31 @@ export const members = [
     title: 'Build Leader',
     committees: ['Build', 'Officers'],
     leader: 'Build Leader',
-    bio: 'Nate is a sophomore at John Jay High School. He enjoys building and designing robots. Outside of robotics he also enjoys playing chess and rock climbing,',
+    bio: 'Nate is a junior at John Jay High School. He enjoys building and designing robots. Outside of robotics he also enjoys playing chess and rock climbing,',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1747107416/72449C75-E8E0-4C2A-B1CE-DB5753B10BAB_4_5005_c_fij6sb.jpg',
   },
-
+  {
+    name: 'Kevin',
+    title: 'Creative Director',
+    committees: ['Branding', 'Officers'],
+    leader: 'Media',
+    bio: 'Kevin is a sophomore at John Jay High School. As the proud owner of an iconic propeller hat, he enjoys doing sports such as rowing and wrestling alongside his typical academics. Outside of robotics, he loves trying new things, such as model rocketry, furniture restoration, graphic design, and homelabbing. He is constantly at work, and he hopes to one day major in Cyber Science at the US Air Force Academy.',
+    image: '',
+  },
   {
     name: 'Nicole',
     title: 'Outreach Manager',
     committees: ['Outreach', 'Officers'],
-    bio: 'Nicole is a junior at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Club, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
+    bio: 'Nicole is a senior at John Jay High School, and has been on the robotics team for two years, and is now the Outreach Coordinator for the Jaybots team. She is a part of are Science Research Club, MHS, CHS, Tri-M, Science Olympiad, Orchestra, and Pit Orchestra. She is eager to contribute and is looking forward to collaborating with the members of the Jaybots team!',
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1741653723/A7289064-CA2D-404A-92B6-7598DBC3C42F_4_5005_c_mry8tc.jpg',
   },
   {
     name: 'Erika',
-    title: 'Secretary',
-    committees: ['Officers', 'Media'],
-    bio: 'Erika is a sophomore at John Jay High School, and has been on the robotics team for two years, and is now the Secretary for the Jaybots team. She is also part of the Science Olympiad team and Computer Science Honor Society, fostering her love for science. She is excited to work with the other members of the Jaybots team this year!',
+    title: 'SITCOM',
+    committees: ['Officers', 'Outreach'],
+    bio: 'Erika is a junior at John Jay High School, and has been on the robotics team for two years, and is now the Secretary for the Jaybots team. She is also part of the Science Olympiad team and Computer Science Honor Society, fostering her love for science. She is excited to work with the other members of the Jaybots team this year!',
     image: '/images/Erika.jpeg',
   },
   {
@@ -1430,6 +1421,34 @@ export const members = [
     committees: ['Advisors'],
     bio: 'James Amodio teaches Regents Physics, Science Research 1, PLTW: Principles of Engineering, PLTW: Civil Engineering & Architecture at John Jay Sr. HIgh School.  While this is only his 8th year in the Wappingers Central School District, he has been an FTC Coach at Blind Brook High School as well as Roosevelt and Riverside High Schools in Yonkers, NY.  He also coached several Jr. FLL teams in the Arlington School District before COVID, and currently coaches the local FIRST LEGO League Team # 69854 Chocolate Croissants.  Mr Amodio reminds his robotics team members to "Keep Being AWESOME!"',
     image: 'https://cdn.jaybots.org/team/amodio/amodioFULL.jpeg',
+  },
+  {
+    name: 'Raghav',
+    title: 'Webmaster',
+    committees: ['Code', 'Officers'],
+    bio: 'Raghav is a sophomore at John Jay High School and was a former phoenix member, and is now the webmaster for the Jaybots team. He is also part of the Science Olympiad team and is interested in STEM He is excited to work with the other members of the Jaybots team this year!',
+    image: '',
+  },
+  {
+    name: 'Collin',
+    title: 'Manufacturer',
+    committees: ['Build', 'CAD', 'Officers'],
+    bio: 'Collin is a sophomore at John Jay High School and is the Manufacturer for the Jaybots team.',
+    image: '',
+  },
+  {
+    name: 'George',
+    title: 'Gamemaster',
+    committees: ['Strategy', 'Officers'],
+    bio: 'George is a sophomore at John Jay High School and is the Gamemaster for the Jaybots Team',
+    image: '',
+  },
+  {
+    name: 'Johnny',
+    title: 'Librarian',
+    committees: ['Code', 'Officers'],
+    bio: 'Johnny is a sophomore at John Jay High School and is the Librarian for the Jaybots Team',
+    image: '',
   },
 ]
 
@@ -1464,7 +1483,7 @@ export const fundraisingSplash = {
 export const workshops = [
   {
     name: 'Chocolate 3D Printing Workshop',
-    registrationOpen: false,
+    registrationOpen: true,
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1769890431/unnamed_cs5mfx.png',
     date: '2/8/26',
@@ -1479,7 +1498,7 @@ export const workshops = [
   },
   {
     name: 'Cub Scout STEM Workshop: Paws, Print, and Play!',
-    registrationOpen: false,
+    registrationOpen: true,
     image:
       'https://res.cloudinary.com/jaybots/image/upload/v1769889161/cub_y6htia.png',
     date: '2/21/25',
@@ -1509,32 +1528,6 @@ export const workshops = [
     location: 'John Jay High School',
     cost: '',
     description: 'teach scioly cad ',
-    registrationUrl: '',
-  },
-  {
-    name: 'FTC Cad Workshop',
-    registrationOpen: true,
-    image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1772173698/cad-ftc1_qikvww.jpg',
-    date: 'March 4, 2026',
-    time: '4:00 pm – 6:00 pm EST',
-    location: 'Online',
-    cost: '',
-    description:
-      "In this workshop, we'll show you how to use Onshape to design your robot for FTC. We'll cover CAD basics, custom parts, and using commercial parts from the FTC Parts Library in assemblies. You'll follow along in Onshape as you CAD a robot yourself, with time for questions and one-on-one assistance. We'll also discuss advanced design topics to level up your robot design. No experience required. Questions? Email hello@jaybots.org.",
-    registrationUrl: 'https://jaybots.org/cadworkshop',
-  },
-  {
-    name: 'Animation Workshop: CapCut & Video Editing',
-    registrationOpen: true,
-    image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1772174017/capcut_q7jmgz.png',
-    date: 'TBD',
-    time: 'TBD',
-    location: '',
-    cost: '',
-    description:
-      'In this workshop, we will show you how to create animations and edit videos using CapCut. You will learn the basics of timeline editing, effects, and exporting your projects. This workshop is coming soon, check back for the finalized date and time.',
     registrationUrl: '',
   },
 ]
