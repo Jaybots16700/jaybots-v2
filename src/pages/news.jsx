@@ -10,84 +10,79 @@ import Link from 'next/link'
 const newsletters = [
   {
     season: '2025-2026',
+    date: 'June 25, 2026',
+    title: 'Jaybots Newsletter: June 2026',
+    description:
+      "Earlier this month, we traveled to Ontario, Canada,to compete at the Canada Cup Premier Event alongside 96 of the world's top FTC teams. After months of hard work, it was exciting to represent our community on an international stage and compete against some of the best teams in FIRST.",
+    link: '/newsletters/june-2026.pdf',
+  },
+  {
+    season: '2025-2026',
     date: 'April 2, 2026',
-    title: "Jaybots Newsletter: March 2026",
+    title: 'Jaybots Newsletter: March 2026',
     description:
       "After competing at the NY Excelsior Regional Championship earlier this month, the Jaybots have advanced to an exclusive competition in Canada! From our Regional Championship to community outreach and professional mentorship, we've had a busy month this March, with even more planned for April. Read more in the latest edition of the Jaybots' monthly newsletter!",
-    link:
-      '/newsletters/march-2026.pdf',
+    link: '/newsletters/march-2026.pdf',
   },
   {
     season: '2025-2026',
     date: 'March 11, 2026',
-    title: "Jaybots Newsletter: Regionals 2026",
+    title: 'Jaybots Newsletter: Regionals 2026',
     description:
-      "We are excited to share our Regionals highlights with you! We had a great time competing and are looking forward to the Premier Event!",
-    link:
-      '/newsletters/regionals-2026.pdf',
+      'We are excited to share our Regionals highlights with you! We had a great time competing and are looking forward to the Premier Event!',
+    link: '/newsletters/regionals-2026.pdf',
   },
   {
     season: '2025-2026',
     date: 'March 4, 2026',
-    title: "Jaybots Newsletter: February 2026",
+    title: 'Jaybots Newsletter: February 2026',
     description:
-      "It has been an eventful month! In the past few weeks we have held workshops and attended community events. We are excited to see what the future holds for our team.",
-    link:
-      '/newsletters/february-2026.pdf',
+      'It has been an eventful month! In the past few weeks we have held workshops and attended community events. We are excited to see what the future holds for our team.',
+    link: '/newsletters/february-2026.pdf',
   },
   {
     season: '2025-2026',
     date: 'February 1, 2026',
-    title: "Jaybots Newsletter: January 2026",
+    title: 'Jaybots Newsletter: January 2026',
     description:
-      "We’re thrilled to share our January highlights with you! It’s been a month filled with energy, growth, and memorable moments. We’re excited for the competitions ahead and can’t wait to see you at our upcoming events. Lots to come in February!",
-    link:
-      '/newsletters/january-2026.pdf',
+      'We’re thrilled to share our January highlights with you! It’s been a month filled with energy, growth, and memorable moments. We’re excited for the competitions ahead and can’t wait to see you at our upcoming events. Lots to come in February!',
+    link: '/newsletters/january-2026.pdf',
   },
   {
     season: '2025-2026',
     date: 'January 16, 2026',
-    title: "Jaybots Newsletter: December 2025",
+    title: 'Jaybots Newsletter: December 2025',
     description:
-      "We hope everyone had a restful holiday and a wonderful start to the new year! Thank you to all who competed at the John Jay Qualifier!",
-    link:
-      '/newsletters/december-2025.pdf',
+      'We hope everyone had a restful holiday and a wonderful start to the new year! Thank you to all who competed at the John Jay Qualifier!',
+    link: '/newsletters/december-2025.pdf',
   },
   {
     season: '2025-2026',
     date: 'November 25, 2025',
-    title: "Jaybots Newsletter: November 2025",
+    title: 'Jaybots Newsletter: November 2025',
     description:
-      "In the past month, our team has dedicated themselves to making even more progress on our robot in anticipation for the upcoming competition.",
-    link:
-      '/newsletters/november-2025.pdf',
+      'In the past month, our team has dedicated themselves to making even more progress on our robot in anticipation for the upcoming competition.',
+    link: '/newsletters/november-2025.pdf',
   },
   {
     season: '2025-2026',
     date: 'October 5, 2025',
-    title: "Jaybots Newsletter: October 2025",
+    title: 'Jaybots Newsletter: October 2025',
     description:
       "Welcome to the first 2025-26 season edition of the John Jay Robotics Team: Jaybots' monthly newsletter! Here we will share our robot progress, tournament details, and general team updates!",
-    link:
-      '/newsletters/october-2025.pdf',
+    link: '/newsletters/october-2025.pdf',
   },
   {
     season: '2024-2025',
     date: 'April 11, 2025',
-    title: "Hudson Valley Robot Builders to Battle in World Competition",
+    title: 'Hudson Valley Robot Builders to Battle in World Competition',
     description:
       'A group of impressive high school students is set to represent the Hudson Valley at the world championship of robotics, and they could use our help.',
-    link:
-      'https://wpdh.com/hudson-valley-robot-team/',
+    link: 'https://wpdh.com/hudson-valley-robot-team/',
   },
-
 ]
 
-const seasons = [
-  '2025-2026',
-  '2024-2025',
-
-]
+const seasons = ['2025-2026', '2024-2025']
 
 export default function Newsletters() {
   const [selectedSeason, setSelectedSeason] = useState(seasons[0])
@@ -128,24 +123,25 @@ export default function Newsletters() {
                   <button
                     key={season}
                     onClick={() => setSelectedSeason(season)}
-                    className={`rounded-full px-6 py-2 text-sm font-bold ${selectedSeason === season
-                      ? 'bg-blue-800 text-white'
-                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                      }`}
+                    className={`rounded-full px-6 py-2 text-sm font-bold ${
+                      selectedSeason === season
+                        ? 'bg-blue-800 text-white'
+                        : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                    }`}
                   >
                     {season}
                   </button>
                 ))}
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {filteredNewsletters.map((newsletter) => {
                   const key = newsletter.title
 
                   return (
                     <Link
                       key={key}
-                      className="bg-white/10 ring-1 ring-white/20 hover:ring-white/50 transition-all duration-300 p-4 rounded-3xl"
+                      className="rounded-3xl bg-white/10 p-4 ring-1 ring-white/20 transition-all duration-300 hover:ring-white/50"
                       href={newsletter.link}
                       target="_blank"
                     >
@@ -168,7 +164,7 @@ export default function Newsletters() {
           </div>
           <Footer />
         </div>
-      </main >
+      </main>
     </>
   )
 }
