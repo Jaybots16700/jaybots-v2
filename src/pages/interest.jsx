@@ -114,7 +114,7 @@ export default function Interest() {
                     Fill out our{' '}
                     <b className="font-bold  text-gray-200">Interest Form</b>!
                   </p>
-                  <Link href="https://docs.google.com/forms/d/1AGR_FZNmlev1sl2kBMSLAn5wS1NsLwnoopNnuqnTSEM/">
+                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdfYoCY1HNVDEUasn-cnXdZJlfoFhiQ0m91JkM7CQ17Any6LQ/viewform?usp=header">
                     <div className="my-6 flex h-16 items-center justify-center rounded-full bg-blue-800 text-3xl font-bold text-white duration-150 hover:bg-blue-700">
                       Join
                     </div>

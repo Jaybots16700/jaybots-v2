@@ -210,7 +210,8 @@ module.exports = {
       },
       {
         source: '/join',
-        destination: 'https://tally.so/r/w4LZ5k',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSdfYoCY1HNVDEUasn-cnXdZJlfoFhiQ0m91JkM7CQ17Any6LQ/viewform?usp=header',
         permanent: true,
       },
       {
