@@ -24,7 +24,7 @@ export default function Interest() {
             bold="passion"
             afterBold=" with us"
           />
-          
+
           <div className="w-full text-gray-400 lg:pb-24">
             <div className="relative isolate h-full w-full space-y-6 p-12 text-center text-lg font-semibold text-gray-300">
               <div className="w-full space-y-4 font-normal">
@@ -53,8 +53,8 @@ export default function Interest() {
 
                 </p>
               </div>
-               
-               <div className="w-full space-y-4 font-normal">
+
+              <div className="w-full space-y-4 font-normal">
                 <h1 className="mb-4 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
                   What can you learn from Robotics?
                 </h1>
@@ -80,7 +80,7 @@ export default function Interest() {
                   When does Robotics Meet?
                 </h1>
                 <p>
-                  We have general meetings on tuesdays that everyone is required to attend, and meetings on fridays which are mainly Phoenix focused. We meet in room 171 B in the technology wing. 
+                  We have general meetings on tuesdays that everyone is required to attend, and meetings on fridays which are mainly Phoenix focused. We meet in room 171 B in the technology wing.
                 </p>
               </div>
 
