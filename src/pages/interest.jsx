@@ -80,7 +80,7 @@ export default function Interest() {
                   When does Robotics Meet?
                 </h1>
                 <p>
-                  We have general meetings on tuesdays that everyone is required to attend, and meetings on fridays which are mainly Phoenix focused. We meet in room 171 B in the technology wing.
+                  We have general meetings on Tuesdays that everyone is required to attend, and meetings on fridays which are mainly Phoenix focused. We meet in room 171 B in the technology wing.
                 </p>
               </div>
 
