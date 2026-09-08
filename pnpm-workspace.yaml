@@ -1,4 +1,4 @@
 allowBuilds:
-  core-js: true
-  fsevents: true
-  unrs-resolver: true
+  core-js: set this to true or false
+  fsevents: set this to true or false
+  unrs-resolver: set this to true or false
