@@ -1371,9 +1371,9 @@ export const members = [
     name: 'Gianni',
     title: 'CAD Leader',
     committees: ['CAD', 'Manufacturing', 'Officers'],
-    leader: '',
+    leader: 'CAD',
     bio: 'Gianni is a sophomore at John Jay High School and enjoys CAD and building the robot. Outside of robotics he also enjoys watching one piece',
-    image: '',
+    image: '/images/gianni.jpeg',
   },
   {
     name: 'Anthony',
@@ -1427,7 +1427,7 @@ export const members = [
     title: 'Webmaster',
     committees: ['Code', 'Officers'],
     bio: 'Raghav is a sophomore at John Jay High School and was a former phoenix member, and is now the webmaster for the Jaybots team. He is also part of the Science Olympiad team and is interested in STEM He is excited to work with the other members of the Jaybots team this year!',
-    image: '',
+    image: '/images/Raghav.jpg',
   },
   {
     name: 'Collin',
