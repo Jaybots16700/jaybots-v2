@@ -216,7 +216,7 @@ module.exports = {
       },
       {
         source: '/highlights',
-        destination: 'https://youtu.be/IiSNRPTeu44?t=17672',
+        destination: 'https://youtu.be/IiSNRPTeu44?t=2981',
         permanent: true,
       },
       {
