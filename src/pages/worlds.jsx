@@ -19,7 +19,7 @@ export default function Worlds() {
       <main>
         <div className="animate-all z-50 flex h-screen w-full flex-col overflow-x-hidden overflow-y-scroll bg-black scrollbar scrollbar-track-slate-900 scrollbar-thumb-blue-900 lg:pl-64">
           <Header
-            title="World Championship"
+            title="World ChamPionship"
             beforeBold="We're going to "
             bold="Worlds"
             afterBold="!"
