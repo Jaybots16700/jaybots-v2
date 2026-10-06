@@ -141,7 +141,7 @@ module.exports = {
         permanent: true,
       },
 
-      {/*
+      /*
         source: '/live',
         destination: 'https://www.youtube.com/watch?v=IiSNRPTeu44',
         permanent: false,
