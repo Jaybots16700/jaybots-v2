@@ -910,17 +910,17 @@ export const games = [
             date: 'June 13 - 16, 2026',
             upcoming: false,
             awards: {
-              second: ['Design'],
+              second: ['design'],
             },
           },
         ],
       },
       {
         team: 'Phoenix',
-        images: '',
+        images: '/images/phoenixbotdecode.jpg',
         comps: [
           {
-            type: 'Qualifier',
+            type: 'Qualifier', git 
             name: 'John Jay Qualifier',
             date: 'December 6, 2025',
             awards: {},
