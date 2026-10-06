@@ -147,7 +147,6 @@ module.exports = {
        destination: 'https://forms.gle/TrTGVgAgjUgbvbDQ8',
        permanent: true,
       },
-      },
       /**/
       {
         source: '/lego-workshop',

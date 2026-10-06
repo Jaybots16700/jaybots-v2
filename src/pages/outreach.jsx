@@ -401,7 +401,7 @@ export default function Outreach() {
                 className="rounded bg-blue-600 px-4 py-2 font-semibold text-white"
                 onClick={() => setAddPromptOpen(true)}
               >
-                + Add New Season/Event
+                + Add new Season/Event
               </button>
             </div>
           )}
