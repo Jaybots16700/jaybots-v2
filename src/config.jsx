@@ -920,7 +920,7 @@ export const games = [
         images: '/images/phoenixbotdecode.jpg',
         comps: [
           {
-            type: 'Qualifier', git 
+            type: 'Qualifier',
             name: 'John Jay Qualifier',
             date: 'December 6, 2025',
             awards: {},
