@@ -141,12 +141,12 @@ module.exports = {
         permanent: true,
       },
 
-      /*
-         {
-        source: '/join-FLL',
-        destination: 'https://forms.gle/TrTGVgAgjUgbvbDQ8',
-        permanent: true,
-      },
+      
+      {
+       source: '/join-FLL',
+       destination: 'https://forms.gle/TrTGVgAgjUgbvbDQ8',
+       permanent: true,
+      },
       },
       /**/
       {
