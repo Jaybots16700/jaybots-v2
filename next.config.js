@@ -142,9 +142,11 @@ module.exports = {
       },
 
       /*
-        source: '/live',
-        destination: 'https://www.youtube.com/watch?v=IiSNRPTeu44',
-        permanent: false,
+         {
+        source: '/join-FLL',
+        destination: 'https://forms.gle/TrTGVgAgjUgbvbDQ8',
+        permanent: true,
+      },
       },
       /**/
       {
@@ -251,6 +253,11 @@ module.exports = {
         destination:
           'https://docs.google.com/forms/d/1TcCD7AnbgPXzCCohWq1BpmFXt_SfeZ0Z0AZqkthRkmM/edit',
         permanent: false,
+      },
+      {
+        source: '/join-FLL',
+        destination: 'https://forms.gle/TrTGVgAgjUgbvbDQ8',
+        permanent: true,
       },
     ]
   },
