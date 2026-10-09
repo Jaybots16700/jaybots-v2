@@ -1482,53 +1482,21 @@ export const fundraisingSplash = {
 
 export const workshops = [
   {
-    name: 'Chocolate 3D Printing Workshop',
+    name: 'CAD Workshop',
     registrationOpen: true,
     image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1769890431/unnamed_cs5mfx.png',
-    date: '2/8/26',
-    time: '10:00 am – 12:30 pm',
+      '',
+    date: '10/24/26 and 11/14/26',
+    time: '10:00am - 02:00pm',
     location:
-      'East Fishkill Community Center, 890 Route 82, East Fishkill, NY 12533',
-    cost: '$15 per student',
+      'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
+    cost: '$40 per student',
     description:
-      'For students in grades 3–6. Learn how to CAD designs that get 3D printed in chocolate. Create a design to be 3D printed for you at the workshop, plus take home a chocolate 3D-printed design from our team.',
+      'For students in grades 5+, Learn the basics of 3D modeling and design in TinkerCAD & Onshape.',
     registrationUrl:
-      'https://docs.google.com/forms/d/e/1FAIpQLSf9NQFLjXDCh4r9J7mCPqenQ3727t6yZ2DyRzHO4ey1wYvj8w/viewform',
+      'https://forms.gle/AsBWDLKcadHmoGba8 (USE THIS LINK)',
   },
   {
-    name: 'Cub Scout STEM Workshop: Paws, Print, and Play!',
-    registrationOpen: true,
-    image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1769889161/cub_y6htia.png',
-    date: '2/21/25',
-    time: '9:30 am – 2:30 pm',
-    location: 'John Jay High School Cafeteria',
-    cost: '$25 per scout',
-    description:
-      'An all-encompassing STEM workshop featuring 3D printing, chocolate printing, TinkerCAD for CAD, and PLA printing. Presented with Scouting America. Participating Cub Scouts receive a badge and get a design they created printed and shipped to them.',
-    registrationUrl: 'https://mycouncil.ghvscouting.org/Event/9400',
-  },
-  {
-    name: 'LEGO Robotics Workshop',
-    registrationOpen: false,
-    date: '3/30/25 – 3/31/25',
-    time: 'TBD',
-    location: '',
-    cost: '',
-    description:
-      'Intro to LEGO robotics for elementary students. Registration opens March 10th.',
-    registrationUrl: '',
-  },
-  {
-    name: 'SciOly CAD Workshop',
-    registrationOpen: false,
-    date: 'TBD',
-    time: 'TBD',
-    location: 'John Jay High School',
-    cost: '',
-    description: 'teach scioly cad ',
-    registrationUrl: '',
   },
 ]
 export const workshopsInterestFormUrl = 'https://tally.so/r/wa0xLy'

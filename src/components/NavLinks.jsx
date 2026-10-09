@@ -22,6 +22,7 @@ import {
   faEdit,
   faLock,
   faTrophy,
+  faChalkboardUser,
 } from '@fortawesome/free-solid-svg-icons'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
@@ -38,12 +39,14 @@ const links = [
   ['Highlights', '/highlights', faTrophy],
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
+  ['Upcoming workshops', '/workshops', faChalkboardUser],
   ['Newsletters', '/news', faNewspaper],
   ['Live', '/live', faVideo],
   ['Alumni', '/alumni', faGraduationCap],
   ['Sponsors', 'https://jaybotsboosters.org/sponsors', faCommentsDollar],
   ['Upcoming Events', '/events', faCalendarWeek],
   ['Contact Us', '/#contact', faEnvelopeOpenText],
+
 ]
 
 const dashboardLinks = [
