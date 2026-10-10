@@ -1441,7 +1441,7 @@ export const members = [
     title: 'Gamemaster',
     committees: ['Strategy', 'Officers'],
     bio: 'George is a sophomore at John Jay High School and is the Gamemaster for the Jaybots Team',
-    image: public/images/IMG_3390.heic'',
+    image: '/images/george.jpg',
   },
   {
     name: 'Johnny',
