@@ -1591,7 +1591,7 @@ export const sponsors = [
     name: 'Colandrea Pizza King',
     description:
       "BAuthentic Pizza and Italian Cuisine",
-    image: '/pizzaandstuff_logo',
+    image:'',
     link: '',
     tier: 'Diamond',
     tierColor: 'bg-cyan-500',
