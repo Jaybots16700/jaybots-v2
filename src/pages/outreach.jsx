@@ -21,6 +21,8 @@ export default function Outreach() {
   const { data: session } = useSession()
   const [outreach, setOutreach] = useState([])
   const [categories, setCategories] = useState([
+    'Year 8 (2026-2027)',
+    'Year 7 (2025-2026)',
     'Year 6 (2024-2025)',
     'Year 5 (2023-2024)',
     'Year 4 (2022-2023)',

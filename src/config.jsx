@@ -100,9 +100,19 @@ export const committeeDescript = [
 
 export const alumni = [
   {
+    name: 'Matthew',
+    title: 'President',
+    bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He was the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
+    image: '',
+    year: 2026,
+    college: 'Georgia Tech',
+    collegeLogo:
+      '',
+  },
+  {
     name: 'Nash',
     title: 'President',
-    bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He is now the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
+    bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He was the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
     image: 'https://cdn.jaybots.org/team/nash.png',
     year: 2025,
     college: 'Georgia Tech',
@@ -1569,22 +1579,6 @@ export const sponsors = [
     tierColor: 'bg-purple-500',
   },
   {
-    name: 'Hatfield Metal Fabrication',
-    description:
-      'One Source For All Metal Fabrication Needs. CNC Machine Shop Services. Mig and Tig Welding. Precision Sheet Metal Fabrication. Close Tolerance Laser Cutting. Dynamic Water Jet Cutting. Industrial Painting And Powder Coating. Certified ASME Manufacture And Repair. WBE Certified.',
-    image: 'Hatfield_Logo',
-    link: 'https://hatfieldmetal.com/',
-    tierColor: 'bg-yellow-500',
-  },
-  {
-    name: 'PTC',
-    description:
-      'PTC Inc. is a tech company that makes software for designing and managing products. It owns tools like Creo and Onshape for 3D design, Windchill for product data, and ThingWorx for connecting devices, helping companies build smarter and faster.',
-    image: 'ptc_logo',
-    link: 'https://www.ptc.com/en',
-    tierColor: 'bg-yellow-500',
-  },
-  {
     name: 'Onsemi Giving Now',
     description:
       'Onsemi is an American semiconductor supplier company that specializes in delivering industry-leading intelligent power and intelligent sensing solutions  the automotive and industrial markets',
@@ -1594,12 +1588,12 @@ export const sponsors = [
     tierColor: 'bg-purple-500',
   },
   {
-    name: 'Pizza & Stuff',
+    name: 'Colandrea Pizza King',
     description:
-      "Best Pizza in Fishkill According to New What's Up Fishkill Poll! ",
+      "BAuthentic Pizza and Italian Cuisine",
     image: '/pizzaandstuff_logo',
-    link: 'https://www.pizzaandstuff.com/',
-    tier: 'Gold',
-    tierColor: 'bg-yellow-500',
+    link: '',
+    tier: 'Diamond',
+    tierColor: 'bg-cyan-500',
   },
 ]
