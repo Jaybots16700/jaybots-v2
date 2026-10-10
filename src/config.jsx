@@ -1454,7 +1454,7 @@ export const members = [
     name: 'Garrett',
     title: 'Treasurer',
     committees: ['Officers'],
-    bio: 'Garret is a unc at John Jay High School and is the Treasurer for the Robotics Club, He enjoys playing video games in his free time (is a bum)',
+    bio: 'Garret is a junior at John Jay High School and is the Treasurer for the Robotics Club, He enjoys playing video games in his free time (is a larper)',
     image: '',
   },
 ]
@@ -1501,7 +1501,7 @@ export const workshops = [
     description:
       'For students in grades 5+, Learn the basics of 3D modeling and design in TinkerCAD & Onshape.',
     registrationUrl:
-      'https://forms.gle/AsBWDLKcadHmoGba8 (USE THIS LINK)',
+      'https://forms.gle/AsBWDLKcadHmoGba8',
   },
   {
   },

@@ -223,8 +223,8 @@ module.exports = {
       {
         source: '/cadworkshop',
         destination:
-          'https://forms.gle/JBkg8TyDkyTu8xt19',
-        permanent: false,
+          'https://forms.gle/AsBWDLKcadHmoGba8',
+        permanent: true,
       },
       {
         source: '/printfarm',
