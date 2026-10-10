@@ -1398,7 +1398,7 @@ export const members = [
     committees: ['Branding', 'Officers'],
     leader: 'Media',
     bio: 'Kevin is a sophomore at John Jay High School. As the proud owner of an iconic propeller hat, he enjoys doing sports such as rowing and wrestling alongside his typical academics. Outside of robotics, he loves trying new things, such as model rocketry, furniture restoration, graphic design, and homelabbing. He is constantly at work, and he hopes to one day major in Cyber Science at the US Air Force Academy.',
-    image: '',
+    image: '/images/jaybotmascot.png',
   },
   {
     name: 'Nicole',
@@ -1434,7 +1434,7 @@ export const members = [
     title: 'Manufacturer',
     committees: ['Build', 'CAD', 'Officers'],
     bio: 'Collin is a sophomore at John Jay High School and is the Manufacturer for the Jaybots team.',
-    image: '',
+    image: '/images/jaybotmascot.png',
   },
   {
     name: 'George',
@@ -1448,14 +1448,14 @@ export const members = [
     title: 'Librarian',
     committees: ['Code', 'Officers'],
     bio: 'Johnny is a sophomore at John Jay High School and is the Librarian for the Jaybots Team',
-    image: '',
+    image: '/images/jaybotmascot.png',
   },
    {
     name: 'Garrett',
     title: 'Treasurer',
     committees: ['Officers'],
     bio: 'Garret is a junior at John Jay High School and is the Treasurer for the Robotics Club, He enjoys playing video games in his free time',
-    image: '',
+    image: '/images/jaybotmascot.png',
   },
 ]
 
