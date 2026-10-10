@@ -1454,7 +1454,7 @@ export const members = [
     name: 'Garrett',
     title: 'Treasurer',
     committees: ['Officers'],
-    bio: 'Garret is a junior at John Jay High School and is the Treasurer for the Robotics Club, He enjoys playing video games in his free time (is a larper)',
+    bio: 'Garret is a junior at John Jay High School and is the Treasurer for the Robotics Club, He enjoys playing video games in his free time',
     image: '',
   },
 ]
