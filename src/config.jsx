@@ -1591,8 +1591,8 @@ export const sponsors = [
     name: 'Colandrea Pizza King',
     description:
       "BAuthentic Pizza and Italian Cuisine",
-    image:'',
-    link: '',
+    image:'/images/Ciandrea_Pizza_King_Logo.png',
+    link: 'https://colandreapizzafishkill.com',
     tier: 'Diamond',
     tierColor: 'bg-cyan-500',
   },
