@@ -1450,6 +1450,13 @@ export const members = [
     bio: 'Johnny is a sophomore at John Jay High School and is the Librarian for the Jaybots Team',
     image: '',
   },
+   {
+    name: 'Garrett',
+    title: 'Treasurer',
+    committees: ['Officers'],
+    bio: 'Garret is a unc at John Jay High School and is the Treasurer for the Robotics Club, He enjoys playing video games in his free time (is a bum)',
+    image: '',
+  },
 ]
 
 export const allImages = miscImages.concat(
