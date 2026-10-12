@@ -1375,7 +1375,7 @@ export const members = [
     leader: 'Gamemaster',
     bio: 'Ava is a senior at John Jay High School and this is her fourth year on the robotics team. She currently serves as the Vice President and has held other creative-based roles in the past, such as: Branding Leader and Creative Director where she managed the engineering portfolio, team banners, and information distribution/script for the teams judging interview. Outside of robotics, she is the president/founder of JJHS Psychology Club "Mind & Method", and enjoys doing other psychology and neuroscience research.',
     image:
-      'https://res.cloudinary.com/jaybots/image/upload/v1741213678/Ava_tflzuu.png',
+      '/images/avaphoto.jpg',
   },
   {
     name: 'Gianni',
