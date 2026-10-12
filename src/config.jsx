@@ -107,7 +107,7 @@ export const alumni = [
     year: 2026,
     college: 'Georgia Tech',
     collegeLogo:
-      '',
+      'https://res.cloudinary.com/jaybots/image/upload/v1744120871/Copy_of_Untitled_usbeel.svg',
   },
    {
     name: 'Hailey',
@@ -117,7 +117,7 @@ export const alumni = [
     year: 2026,
     college: 'UPenn',
     collegeLogo:
-      '',
+      'https://res.cloudinary.com/jaybots/image/upload/v1791748975/UniversityofPennsylvania_FullLogo_RGB-4_0_onhw0u.png',
   },
   {
     name: 'Nash',
