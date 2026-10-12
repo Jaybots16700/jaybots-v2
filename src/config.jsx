@@ -1514,6 +1514,20 @@ export const workshops = [
       'https://forms.gle/AsBWDLKcadHmoGba8',
   },
   {
+    name: 'Cub Scout STEM Workshop',
+    registrationOpen: false,
+    image:'',
+    date: '12/19',
+    time: '9:00-3:00pm',
+    location:
+      'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
+    cost: '',
+    description:
+      'Learn the basics of programming and problem solving through code.org',
+    registrationUrl:
+      '',
+  },
+  {
   },
 ]
 export const workshopsInterestFormUrl = 'https://tally.so/r/wa0xLy'
