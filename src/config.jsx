@@ -1515,7 +1515,7 @@ export const workshops = [
   },
   {
     name: 'Cub Scout STEM Workshop',
-    registrationOpen: false,
+    registrationOpen: true,
     image:'',
     date: '12/19',
     time: '9:00-3:00pm',
