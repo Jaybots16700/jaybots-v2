@@ -1460,7 +1460,7 @@ export const members = [
     bio: 'Johnny is a sophomore at John Jay High School and is the Librarian for the Jaybots Team',
     image: '/images/jaybotmascot.png',
   },
-   {
+  {
     name: 'Garrett',
     title: 'Treasurer',
     committees: ['Officers'],
@@ -1587,13 +1587,23 @@ export const sponsors = [
     tier: 'Platinum',
     tierColor: 'bg-purple-500',
   },
+
   {
     name: 'Colandrea Pizza King',
     description:
-      "BAuthentic Pizza and Italian Cuisine",
-    image:'/images/Ciandrea_Pizza_King_Logo.png',
+      "Authentic Pizza and Italian Cuisine",
+    image: 'Ciandrea_Pizza_King_Logo_kwozfi',
     link: 'https://colandreapizzafishkill.com',
     tier: 'Diamond',
     tierColor: 'bg-cyan-500',
+  },
+  {
+    name: 'Gene Hass',
+    description:
+      "To introdue to and educate individuals for the field of manufacturing technologies specifically CNC machining.",
+    image: '',
+    link: '',
+    tier: '',
+    tierColor: 'bg-slate-400',
   },
 ]
