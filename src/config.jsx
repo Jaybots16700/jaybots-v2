@@ -103,7 +103,7 @@ export const alumni = [
     name: 'Matthew',
     title: 'President',
     bio: 'Matthew has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He was the president and before that CAD leader',
-    image: 'https://cdn.jaybots.org/team/nash.png',
+    image: 'https://res.cloudinary.com/jaybots/image/upload/v1791748209/mg_bpef3s.png',
     year: 2026,
     college: 'Georgia Tech',
     collegeLogo:
@@ -113,7 +113,7 @@ export const alumni = [
     name: 'Hailey',
     title: 'Vice President',
     bio: 'Was the vice president on the Jaybots and previously the Strategist',
-    image: 'https://cdn.jaybots.org/team/nash.png',
+    image: 'https://res.cloudinary.com/jaybots/image/upload/v1791748386/Premier_JAYBOTS_EP-DE_Code_2_ouwyoh.jpg',
     year: 2026,
     college: 'UPenn',
     collegeLogo:
