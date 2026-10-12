@@ -102,10 +102,20 @@ export const alumni = [
   {
     name: 'Matthew',
     title: 'President',
-    bio: 'Nash has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He was the president, but in the past has been the programming leader for the team. Outside of robotics he is a member of Science Olympiad and Math Team and loves to tinker with his Linux computer. He currently uses NixOS, but has used Arch in the past. In the future, Nash would like to pursue a career in cybersecurity.',
-    image: '',
+    bio: 'Matthew has spent all 4 years of high school in the robotics club, and 3 years on the Jaybots. He was the president and before that CAD leader',
+    image: 'https://cdn.jaybots.org/team/nash.png',
     year: 2026,
     college: 'Georgia Tech',
+    collegeLogo:
+      '',
+  },
+   {
+    name: 'Hailey',
+    title: 'Vice President',
+    bio: 'Was the vice president on the Jaybots and previously the Strategist',
+    image: 'https://cdn.jaybots.org/team/nash.png',
+    year: 2026,
+    college: 'UPenn',
     collegeLogo:
       '',
   },
@@ -1422,7 +1432,7 @@ export const members = [
     name: 'Erika',
     title: 'SITCOM',
     committees: ['Officers', 'Outreach'],
-    bio: 'Erika is a junior at John Jay High School, and has been on the robotics team for two years, and is now the Secretary for the Jaybots team. She is also part of the Science Olympiad team and Computer Science Honor Society, fostering her love for science. She is excited to work with the other members of the Jaybots team this year!',
+    bio: 'Erika is a junior at John Jay High School, and has been on the robotics team for two years, and is now the S.I.T.C.O.M for the Jaybots team. She is also part of the Science Olympiad team and Computer Science Honor Society, fostering her love for science. She is excited to work with the other members of the Jaybots team this year!',
     image: '/images/Erika.jpeg',
   },
   {
