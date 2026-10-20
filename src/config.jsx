@@ -1520,7 +1520,7 @@ export const workshops = [
       'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
     cost: '$40 per student',
     description:
-      'For students in grades 5+, Learn the basics of 3D modeling and design in TinkerCAD & Onshape.',
+      'For students in grades 5+, Learn the basics of 3D modeling and design in TinkerCAD & Onshape. Food is included',
     registrationUrl:
       'https://forms.gle/AsBWDLKcadHmoGba8',
   },
