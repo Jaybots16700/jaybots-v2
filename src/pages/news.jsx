@@ -8,6 +8,14 @@ import Colors from '@/components/Colors'
 import Link from 'next/link'
 
 const newsletters = [
+    {
+    season: '2026-2027',
+    date: 'Oct 10, 2026',
+    title: 'Jaybots Newsletter: September 2026',
+    description:
+      "With the new FTC season underway, here's what the Jaybots have been up to this September",
+    link: '/newsletters/october-2026.pdf',
+  },
   {
     season: '2025-2026',
     date: 'June 25, 2026',
