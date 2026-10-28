@@ -8,9 +8,9 @@ import Colors from '@/components/Colors'
 import Link from 'next/link'
 
 const newsletters = [
-    {
+  {
     season: '2026-2027',
-    date: 'Oct 10, 2026',
+    date: 'October 10, 2026',
     title: 'Jaybots Newsletter: September 2026',
     description:
       "With the new FTC season underway, here's what the Jaybots have been up to this September",
@@ -90,7 +90,7 @@ const newsletters = [
   },
 ]
 
-const seasons = ['2025-2026', '2024-2025']
+const seasons = ['2025-2026', '2024-2025', '2026-2027']
 
 export default function Newsletters() {
   const [selectedSeason, setSelectedSeason] = useState(seasons[0])
