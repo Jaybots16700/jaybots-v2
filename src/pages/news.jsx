@@ -13,7 +13,7 @@ const newsletters = [
     date: 'October 10, 2026',
     title: 'Jaybots Newsletter: September 2026',
     description:
-      "With the new FTC season underway, here's what the Jaybots have been up to this September",
+      "With the new FTC season underway, The Jaybots have already doubled the size of their team and are preparing for the upcoming competition, We have participated in events such as Freshman Orientation, Dutchess County Fair and others we are excited to share with tou",
     link: '/newsletters/october-2026.pdf',
   },
   {
