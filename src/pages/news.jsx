@@ -90,7 +90,7 @@ const newsletters = [
   },
 ]
 
-const seasons = ['2025-2026', '2024-2025', '2026-2027']
+const seasons = ['2024-2025', '2025-2026',  '2026-2027']
 
 export default function Newsletters() {
   const [selectedSeason, setSelectedSeason] = useState(seasons[0])
