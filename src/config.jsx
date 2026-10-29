@@ -1626,7 +1626,7 @@ export const sponsors = [
     name: 'Gene Hass',
     description:
       "To introdue to and educate individuals for the field of manufacturing technologies specifically CNC machining.",
-    image: 'y0b0bb3sxcbhx4jvq15p',
+    image: 'https://res.cloudinary.com/jaybots/image/upload/v1736781249/sponsors/y0b0bb3sxcbhx4jvq15p.png',
     link: '',
     tier: '',
     tierColor: 'bg-slate-400',
