@@ -23,6 +23,7 @@ import {
   faLock,
   faTrophy,
   faChalkboardUser,
+  faGears,
 } from '@fortawesome/free-solid-svg-icons'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
@@ -40,6 +41,7 @@ const links = [
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
   ['Upcoming workshops', '/workshops', faChalkboardUser],
+ //['Engineering Kits', '/engkit', faGears],
   ['Newsletters', '/news', faNewspaper],
   ['Live', '/live', faVideo],
   ['Alumni', '/alumni', faGraduationCap],
@@ -302,7 +304,7 @@ export function NavLinks({ current }) {
 
 export const Socials = [
   {
-    name: 'X',
+    name: '',
     link: 'https://twitter.com/RoboticsJay',
     image:
       'https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png',
@@ -312,14 +314,14 @@ export const Socials = [
     name: 'Instagram',
     link: 'https://www.instagram.com/johnjayroboticsclub/',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png',
+      'https://res.cloudinary.com/jaybots/image/upload/v1794095647/download_fo5201.png',
     width: 35,
   },
   {
     name: 'YouTube',
     link: 'https://www.youtube.com/@jaybots16700',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png',
+      'https://res.cloudinary.com/jaybots/image/upload/v1794095898/YouTube_full-color_icon__2017.svg_n4mqbf.webp',
     width: 35,
   },
   {

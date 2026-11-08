@@ -317,7 +317,7 @@ export const alumni = [
     bio: 'Darren Wang was a senior at John Jay Senior High School. This is his fourth year on the robotics team. He plans to go to college for biology and mechanical engineering after high school. He enjoys cooking, reading, and sleeping in his spare time. Robotics is his only scholastic club, but outside of robotics, he attends a fiddle group, is part of a fencing team, and attends a research mentorship program. He joined the robotics team because he wants to help create a fun and welcoming place for people who enjoy tinkering and brainstorming. He aims to make everyone in the team feel like they belong and lead the team to success in the competition season.',
     image: '/images/Darren.jpeg',
     year: 2022,
-    college: 'Stoneybrook University',
+    college: 'Stony brook University',
     collegeLogo:
       'https://res.cloudinary.com/jaybots/image/upload/v1744132494/Untitled_design_6_q8zlda.svg',
   },
@@ -368,7 +368,7 @@ export const alumni = [
     title: ['Member'],
     bio: 'Jian was a senior at John Jay Senior High School when he was on the team. He prefered to be called Jason. Other than FTC, he was not in any other robotics team. Jason wanted to join the robotics club because he was very interested in building a robot and learning how to code. He aimed to learn leadership skills that he could bring with him to college. He was the treasurer of the club and in charge of fundraising. He also worked on the engineering notebook. He enjoys mathematics, statistics, economics and of course robotics. Other interests he has are basketball and League of Legends. After high school, he planned to go on to college, and was interested in majoring in biochemistry or biomedical engineering - he is now at Stony Brook University.',
     image: 'https://cdn.jaybots.org/alumni/jian.jpeg',
-    college: 'Stoneybrook University',
+    college: 'Stonybrook University',
     collegeLogo:
       'https://res.cloudinary.com/jaybots/image/upload/v1744132494/Untitled_design_6_q8zlda.svg',
   },
