@@ -1432,7 +1432,8 @@ export const members = [
     name: 'Erika',
     title: 'SITCOM',
     committees: ['Officers', 'Outreach'],
-    bio: 'Erika is a junior at John Jay High School, and has been on the robotics team for two years, and is now the S.I.T.C.O.M for the Jaybots team. She is also part of the Science Olympiad team and Computer Science Honor Society, fostering her love for science. She is excited to work with the other members of the Jaybots team this year!',
+    bio: 'Erika is a junior at John Jay High School and a three year member of the robotics team. She has previously served as the teams Secretary and Treasurer and she is now the teams S.I.T.C.O.M. (Sponsorship/Industry/Technology & Corporate Outreach Manager). Beyond robotics she enjoys serving the History Honor Society as their Treasurer and is a member of the Computer Science, Business, Spanish, Math and Tri-M Music Honor Societies. She is excited to continue contributing to the team this season, and cant wait to see what this year will bring. Go Jaybots!',
+
     image: '/images/Erika.jpeg',
   },
   {
