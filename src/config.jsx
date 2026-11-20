@@ -1519,7 +1519,7 @@ export const workshops = [
       'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
     cost: '',
     description:
-      'Students will learn about additive and subtractive manufacturing',
+      'For Grades 6-12, Learn to design 3D models using Onshape and explore both 3D printing and laser cutting! We will be showcasing the Bambu Lab H2D, demonstrating how one machine can do both, while introducing students to different printers, materials, and manufacturing techniques.',
     registrationUrl:
       '',
   },
@@ -1528,7 +1528,7 @@ export const workshops = [
     registrationOpen: true,
     image:'',
     date: '12/19',
-    time: '9:00-3:00pm',
+    time: '9:00am-3:00pm',
     location:
       'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
     cost: '',
