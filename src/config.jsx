@@ -1509,6 +1509,20 @@ export const fundraisingSplash = {
 }
 
 export const workshops = [
+    {
+    name: 'Manufacturing Workshop',
+    registrationOpen: true,
+    image:'',
+    date: '12/12',
+    time: 'TBD',
+    location:
+      'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
+    cost: '',
+    description:
+      'Students will learn about additive and subtractive manufacturing',
+    registrationUrl:
+      '',
+  },
   {
     name: 'Cub Scout STEM Workshop',
     registrationOpen: true,
@@ -1523,20 +1537,7 @@ export const workshops = [
     registrationUrl:
       '',
   },
-   {
-    name: 'Manufacturing Workshop',
-    registrationOpen: true,
-    image:'',
-    date: '12/12',
-    time: 'TBD',
-    location:
-      'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
-    cost: '',
-    description:
-      'Students will learn about additive and subtractive manufacturing',
-    registrationUrl:
-      '',
-  },
+ 
   {
   },
 ]
