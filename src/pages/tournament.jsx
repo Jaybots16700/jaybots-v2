@@ -17,14 +17,14 @@ const actions = [
   {
     title: 'Team Guide',
     description: 'Schedule, pits, parking, and day-of info.',
-    href: '/teamguide',
+    href: 'Coming Soon',
     cta: 'View Team Guide',
     external: false,
   },
   {
     title: 'Facebook Event',
     description: 'Updates and announcements for the weekend.',
-    href: 'https://www.facebook.com/events/818287127870931/',
+    href: 'Coming Soon',
     cta: 'Open Event Page',
     external: true,
   },
