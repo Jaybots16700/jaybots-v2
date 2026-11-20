@@ -80,7 +80,7 @@ const faqs = [
         external: false,
       },
       {
-        href: 'https://my.firstinspires.org/Volunteers/Wizard/Search/2?EventId=81682',
+        href: 'https://www.firstinspires.org/community/volunteers/roles',
         cta: (
           <>
             View Volunteer{' '}
@@ -160,7 +160,7 @@ export default function Tournaments() {
                           Opening Ceremonies
                         </dt>
                         <dd className="text-gray-300">
-                          Dec 5 · 2:30 PM
+                          Dec 5 · 7:15 PM
                         </dd>
                       </div>
                       <div className="flex flex-col gap-1 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 sm:flex-row sm:items-baseline sm:justify-between">
@@ -168,7 +168,7 @@ export default function Tournaments() {
                           Awards Ceremony
                         </dt>
                         <dd className="text-gray-300">
-                          Dec 5 · ~6:00 PM
+                          Dec 5 · ~6:30 PM
                         </dd>
                       </div>
                     </dl>

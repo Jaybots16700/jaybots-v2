@@ -1510,21 +1510,6 @@ export const fundraisingSplash = {
 
 export const workshops = [
   {
-    name: 'CAD Workshop',
-    registrationOpen: true,
-    image:
-      '',
-    date: '10/24/26 and 11/14/26',
-    time: '10:00am - 02:00pm',
-    location:
-      'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
-    cost: '$40 per student',
-    description:
-      'For students in grades 5+, Learn the basics of 3D modeling and design in TinkerCAD & Onshape. Food is included',
-    registrationUrl:
-      'https://forms.gle/AsBWDLKcadHmoGba8',
-  },
-  {
     name: 'Cub Scout STEM Workshop',
     registrationOpen: true,
     image:'',
@@ -1535,6 +1520,20 @@ export const workshops = [
     cost: '',
     description:
       'Learn the basics of programming and problem solving through code.org',
+    registrationUrl:
+      '',
+  },
+   {
+    name: 'Manufacturing Workshop',
+    registrationOpen: true,
+    image:'',
+    date: '12/12',
+    time: 'TBD',
+    location:
+      'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
+    cost: '',
+    description:
+      'Students will learn about additive and subtractive manufacturing',
     registrationUrl:
       '',
   },
