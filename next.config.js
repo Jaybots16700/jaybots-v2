@@ -167,7 +167,7 @@ module.exports = {
       {
         source: '/volunteer',
         destination:
-          'https://my.firstinspires.org/ExpressVolunteer/acknowledgements/2cabd8f1-9007-11f0-8745-00505699b848',
+          'https://my.firstinspires.org/ExpressVolunteer/landing-page/77595a62-b791-11f1-8a19-00505699b848',
         permanent: true,
       },
       {
