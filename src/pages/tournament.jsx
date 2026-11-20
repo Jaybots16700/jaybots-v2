@@ -160,7 +160,7 @@ export default function Tournaments() {
                           Opening Ceremonies
                         </dt>
                         <dd className="text-gray-300">
-                          Dec 5 · 7:15 PM
+                          Dec 5 · 7:15 AM
                         </dd>
                       </div>
                       <div className="flex flex-col gap-1 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 sm:flex-row sm:items-baseline sm:justify-between">
