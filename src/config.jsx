@@ -1521,7 +1521,7 @@ export const workshops = [
     description:
       'For Grades 6-12, Learn to design 3D models using Onshape and explore both 3D printing and laser cutting! We will be showcasing the Bambu Lab H2D, demonstrating how one machine can do both, while introducing students to different printers, materials, and manufacturing techniques.',
     registrationUrl:
-      '',
+      'https://docs.google.com/forms/d/e/1FAIpQLSelT_LYpjBFPVOOkfWjq06mmFkhaYsdMb_FkazNABoeTt08rA/viewform?usp=sharing&ouid=105347544045987434984',
   },
   {
     name: 'Cub Scout STEM Workshop',

@@ -14,7 +14,7 @@ const newsletters = [
     title: 'Jaybots Newsletter: September 2026',
     description:
       "With the new FTC season underway, The Jaybots have already doubled the size of their team and are preparing for the upcoming competition, We have participated in events such as Freshman Orientation, Dutchess County Fair and others we are excited to share with tou",
-    link: '/newsletters/october-2026.pdf',
+    link: '/newsletters/september-2026.pdf',
   },
   {
     season: '2025-2026',
@@ -87,6 +87,14 @@ const newsletters = [
     description:
       'A group of impressive high school students is set to represent the Hudson Valley at the world championship of robotics, and they could use our help.',
     link: 'https://wpdh.com/hudson-valley-robot-team/',
+  },
+    {
+    season: '2026-2027',
+    date: 'November 20, 2026',
+    title: 'Jaybots Newsletter: October 2026',
+    description:
+      "This october the Jaybots have been very busy as we are coming into the competition season. Stay tuned for updates on our upcoming qualifier and workshops",
+    link: '/newsletters/october-2026.pdf',
   },
 ]
 

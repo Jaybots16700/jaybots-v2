@@ -24,8 +24,8 @@ const actions = [
   {
     title: 'Facebook Event',
     description: 'Updates and announcements for the weekend.',
-    href: 'Coming Soon',
-    cta: 'Coming Soon',
+    href: 'https://www.facebook.com/share/1RXpG9mXpD/',
+    cta: 'Facebook Event',
     external: true,
   },
 ]
@@ -65,16 +65,16 @@ const faqs = [
     ),
   },
   {
-    question: 'How can I volunteer?',
+    question: 'How do I volunteer?',
     answer:
       'We welcome volunteers to help with setup, judging, refereeing, or general event support.',
-    links: [
+      links: [
       {
-        href: '/volunteer',
+        href: 'https://drive.google.com/file/d/1ixUMHdJvB_le91zGgjWr2ydNENLTQYYa/view',
         cta: (
           <>
-            Register to{' '}
-            <b className="font-bold">Volunteer</b>
+            {' '}
+            <b className="font-bold">Volunteer Video</b>
           </>
         ),
         external: false,
