@@ -44,7 +44,7 @@ const links = [
   ['Donate', '/donate', faCircleDollarToSlot],
   ['Media', '/media', faPhotoFilm],
   ['Upcoming workshops', '/workshops', faChalkboardUser],
- //['Engineering Kits', '/engkit', faGears],
+  ['Engineering Kits', '/engkit', faGears],
   ['Newsletters', '/news', faNewspaper],
   ['Live', '/live', faVideo],
   ['Alumni', '/alumni', faGraduationCap],
