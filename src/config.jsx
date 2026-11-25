@@ -1519,9 +1519,9 @@ export const workshops = [
       'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
     cost: '',
     description:
-      'For Grades 6-12, Learn to design 3D models using Onshape and explore both 3D printing and laser cutting! We will be showcasing the Bambu Lab H2D, demonstrating how one machine can do both, while introducing students to different printers, materials, and manufacturing techniques.',
+      '$30 For Grades 6-12, Learn to design 3D models using Onshape and explore both 3D printing and laser cutting! We will be showcasing the Bambu Lab H2D, demonstrating how one machine can do both, while introducing students to different printers, materials, and manufacturing techniques.',
     registrationUrl:
-      'https://docs.google.com/forms/d/e/1FAIpQLSelT_LYpjBFPVOOkfWjq06mmFkhaYsdMb_FkazNABoeTt08rA/viewform?usp=sharing&ouid=105347544045987434984',
+      'https://forms.gle/6ZGqchWXeNvsEQDt6',
   },
   {
     name: 'Cub Scout STEM Workshop',
@@ -1536,6 +1536,20 @@ export const workshops = [
       'Learn the basics of programming and problem solving through code.org',
     registrationUrl:
       '',
+  },
+  {
+    name: 'Animation Workshop',
+    registrationOpen: true,
+    image:'',
+    date: '12/18',
+    time: '9:00am-3:00pm',
+    location:
+      'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
+    cost: '',
+    description:
+      ' Ages 10+, 15$ Learn the basics of 2D animation and capcut',
+    registrationUrl:
+      'https://docs.google.com/forms/d/e/1FAIpQLScgWWkHqdv-x2cVPu6QfK-guAnS1ALi5VI1YfXLYuqfPeiOjw/viewform',
   },
  
   {
