@@ -11,7 +11,7 @@ const cardClass =
 const contentClass = 'flex flex-col p-6'
 
 function WorkshopCard({ workshop }) {
-  const when = [workshop.date, workshop.time].filter(Boolean).join(' · ')
+  const when = [workshop.date, workshop.time, workshop.ages].filter(Boolean).join(' · ')
   const hasRegister = Boolean(workshop.registrationUrl)
 
   return (

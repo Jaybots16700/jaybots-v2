@@ -1514,12 +1514,13 @@ export const workshops = [
     registrationOpen: true,
     image:'',
     date: '12/12',
-    time: 'TBD',
+    ages: 'Grades 6-12',
+    time: '10am-2pm',
     location:
       'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
-    cost: '',
+    cost: '$30',
     description:
-      '$30 For Grades 6-12, Learn to design 3D models using Onshape and explore both 3D printing and laser cutting! We will be showcasing the Bambu Lab H2D, demonstrating how one machine can do both, while introducing students to different printers, materials, and manufacturing techniques.',
+      'For Grades 6-12, Learn to design 3D models using Onshape and explore both 3D printing and laser cutting! We will be showcasing the Bambu Lab H2D, demonstrating how one machine can do both, while introducing students to different printers, materials, and manufacturing techniques.',
     registrationUrl:
       'https://forms.gle/6ZGqchWXeNvsEQDt6',
   },
@@ -1528,6 +1529,7 @@ export const workshops = [
     registrationOpen: true,
     image:'',
     date: '12/19',
+    ages: '',
     time: '9:00am-3:00pm',
     location:
       'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
