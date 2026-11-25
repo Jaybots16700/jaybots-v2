@@ -1542,7 +1542,7 @@ export const workshops = [
     registrationOpen: true,
     image:'',
     date: '12/18',
-    time: '9:00am-3:00pm',
+    time: '2:30pm-4:00pm',
     location:
       'John Jay Highschool 2012 NY-52, Hopewell Junction, NY 12533',
     cost: '',
