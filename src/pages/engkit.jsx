@@ -63,7 +63,7 @@ export default function Engkit() {
 
                 {/* Buy button */}
                 <a
-                  href="https://www.paypal.com/donate/?hosted_button_id=DBNCZM99KA84G"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScsL7ibeOYPeLQARz-JAKNMHfLTl2eitU3MMwhjcP-BdbxIeQ/viewform?usp=sharing&ouid=105772464316812217782"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block w-fit rounded-full bg-blue-600 px-8 py-4 text-center text-xl font-semibold text-white transition hover:bg-blue-700"
